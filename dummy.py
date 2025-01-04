@@ -1,100 +1,30 @@
+import requests
 from bs4 import BeautifulSoup
 
-html_content = """<div class="box-wraper box-boarder">
-    <div class="container-fluid">
-        <div class="row">
 
-                        <div class="col-md-4 col-12">
-                <div class="cand-box">
-                    <figure><img src="https://results.eci.gov.in/uploads1/candprofile/E27/2024/AC/S13/RAJES-2024-20241104033836.jpg" alt=""></figure>
-                    <div class="cand-info">
-                        <div class="status won">
-                            <div style="text-transform: capitalize">won</div>
-                            <div>146839 <span>(+ 53204)</span></div>
-                        </div>
-                        <div class="nme-prty">
-                            <h5>RAJESH UDESING PADVI</h5>
-                            <h6>Bharatiya Janata Party</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 col-12">
-                <div class="cand-box">
-                    <figure><img src="https://results.eci.gov.in/uploads1/candprofile/E27/2024/AC/S13/RAJED-2024-20241104033933.jpg" alt=""></figure>
-                    <div class="cand-info">
-                        <div class="status lost">
-                            <div style="text-transform: capitalize">lost</div>
-                            <div>93635 <span>( -53204)</span></div>
-                        </div>
-                        <div class="nme-prty">
-                            <h5>RAJENDRAKUMAR KRISHNARAO GAVIT</h5>
-                            <h6>Indian National Congress</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 col-12">
-                <div class="cand-box">
-                    <figure><img src="https://results.eci.gov.in/uploads1/candprofile/E27/2024/AC/S13/GOPAL-2024-20241104033952.jpg" alt=""></figure>
-                    <div class="cand-info">
-                        <div class="status lost">
-                            <div style="text-transform: capitalize">lost</div>
-                            <div>2396 <span>( -144443)</span></div>
-                        </div>
-                        <div class="nme-prty">
-                            <h5>GOPAL SURESH BHANDARI</h5>
-                            <h6>Independent</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-4 col-12">
-                <div class="cand-box">
-                    <figure><img src="img/nota.jpg" alt=""></figure>
-                    <div class="cand-info">
-                        <div class="status ">
-                            <div style="text-transform: capitalize"></div>
-                            <div>2425 <span>( -144414)</span></div>
-                        </div>
-                        <div class="nme-prty">
-                            <h5>NOTA</h5>
-                            <h6>None of the Above</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-    </div>
-</div>"""
+webpage_url = "https://results.eci.gov.in/ResultAcGenNov2024/partywisewinresult-369S13.htm"  # Replace with the actual URL
 
 
-soup = BeautifulSoup(html_content, "html.parser")
+headers =  {
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "Cache-Control": "max-age=0",
+    "Referer": "https://results.eci.gov.in/ResultAcGenNov2024/index.htm",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+}
 
-# Container holding the candidate details
-candidate_containers = soup.find_all('div', class_='cand-box')
 
-# Extract data for each candidate
-results = []
-for container in candidate_containers:
-    # Extract name and party
-    name = container.find('h5').text.strip()
-    party = container.find('h6').text.strip()
+response = requests.get(webpage_url, headers=headers)
+
+if response.status_code == 200:
+   
+    soup = BeautifulSoup(response.text, 'html.parser')
     
-    # Extract votes and status
-    status_div = container.find('div', class_='status')
-    status = status_div.find('div', style="text-transform: capitalize").text.strip() if status_div else "Unknown"
-    votes = status_div.find_all('div')[1].text.strip() if status_div else "0"
-    
-    results.append({
-        'Candidate Name': name,
-        'Party': party,
-        'Votes': votes.split()[0],  # Extract vote number only
-        'Status': status,
-        'Vote Margin': votes.split("(")[-1].strip(")")
-    })
-
-
-for result in results:
-    print(result)
-
+   
+    target_div = soup.find("div", {"class": "custom-table"}) 
+    if target_div:
+        print("Data in <div>:", target_div.text.strip())  
+    else:
+        print("Target <div> not found.")
+else:
+    print(f"Failed to fetch data. Status code: {response.status_code}")
