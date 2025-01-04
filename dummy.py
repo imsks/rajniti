@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 
-# The HTML content provided
 html_content = """<div class="box-wraper box-boarder">
     <div class="container-fluid">
         <div class="row">
@@ -69,7 +68,7 @@ html_content = """<div class="box-wraper box-boarder">
     </div>
 </div>"""
 
-# Parse the HTML content
+
 soup = BeautifulSoup(html_content, "html.parser")
 
 # Container holding the candidate details
@@ -87,7 +86,6 @@ for container in candidate_containers:
     status = status_div.find('div', style="text-transform: capitalize").text.strip() if status_div else "Unknown"
     votes = status_div.find_all('div')[1].text.strip() if status_div else "0"
     
-    # Add candidate details to results
     results.append({
         'Candidate Name': name,
         'Party': party,
@@ -96,7 +94,7 @@ for container in candidate_containers:
         'Vote Margin': votes.split("(")[-1].strip(")")
     })
 
-# Display the results
+
 for result in results:
     print(result)
 
