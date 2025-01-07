@@ -2,11 +2,9 @@ import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-# Directory to save HTML files
 output_dir = Path("html_files")
-output_dir.mkdir(exist_ok=True)  # Create directory if it doesn't exist
+output_dir.mkdir(exist_ok=True)  
 
-# URL for the specific page
 webpage_url = "https://results.eci.gov.in/ResultAcGenNov2024/partywiseresult-S13.htm"
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -17,10 +15,7 @@ headers = {
 }
 
 def fetch_and_save_html(url, output_file):
-    """
-    Fetch HTML content from the URL and save it to a file.
-    If the file exists, read from it instead of making a request.
-    """
+
     if output_file.exists():
         print(f"Reading HTML content from cached file: {output_file}")
         html_content = output_file.read_text(encoding="utf-8")
@@ -44,9 +39,7 @@ def fetch_and_save_html(url, output_file):
     return html_content
 
 def scrape_inner_data(full_link):
-    """
-    Fetch and scrape data from the full link.
-    """
+    
     print(f"Fetching data from: {full_link}")
     try:
         response = requests.get(full_link, headers=headers, timeout=10)
@@ -68,9 +61,7 @@ def scrape_inner_data(full_link):
         print(f"Error fetching {full_link}: {e}")
 
 def scrape_constituency_data(html_content):
-    """
-    Scrape constituency data from the given HTML content.
-    """
+   
     soup = BeautifulSoup(html_content, "html.parser")
 
     # Locate the table containing constituency data
@@ -100,7 +91,7 @@ def scrape_constituency_data(html_content):
     else:
         print("No table found in the HTML content.")
 
-# Path to save the HTML file
+
 output_file = output_dir / "partywiseresult.html"  # Updated file name to match the new URL
 
 # Fetch or load the HTML file and scrape the data
