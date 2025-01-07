@@ -2,7 +2,7 @@ import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-# Directory to save HTML files
+
 output_dir = Path("html_files")
 output_dir.mkdir(exist_ok=True)  # Create directory if it doesn't exist
 
@@ -17,10 +17,7 @@ headers = {
 }
 
 def fetch_and_save_html(url, output_file):
-    """
-    Fetch HTML content from the URL and save it to a file.
-    If the file exists, read from it instead of making a request.
-    """
+  
     if output_file.exists():
         print(f"Reading HTML content from cached file: {output_file}")
         html_content = output_file.read_text(encoding="utf-8")
@@ -44,9 +41,7 @@ def fetch_and_save_html(url, output_file):
     return html_content
 
 def scrape_party_results(html_content):
-    """
-    Scrape party-wise results from the given HTML content.
-    """
+  
     soup = BeautifulSoup(html_content, "html.parser")
 
     # Locate the table containing party-wise results
@@ -85,10 +80,10 @@ def scrape_party_results(html_content):
     else:
         print("No table found in the HTML content.")
 
-# Path to save the HTML file
+
 output_file = output_dir / "partywiseresult-S13.html"  # Save the file with a suitable name
 
-# Fetch or load the HTML file and scrape the data
+
 html_content = fetch_and_save_html(webpage_url, output_file)
 if html_content:
     scrape_party_results(html_content)
