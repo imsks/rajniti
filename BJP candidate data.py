@@ -2,8 +2,46 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+def scrape_and_save_sorted_data(urls, headers, output_file):
+    data = []
+
+    for url in urls:
+        try:
+            response = requests.get(url, headers=headers)
+            if response.status_code == 200:
+                soup = BeautifulSoup(response.text, 'html.parser')
+
+                box_wrapper = soup.find_all("div", class_="box-wraper box-boarder")
+
+                if box_wrapper:
+                    for box in box_wrapper:
+                        content = box.get_text(strip=True)
+                        data.append([content])
+                else:
+                    print(f"No elements found with the class 'box-wraper box-boarder' at {url}")
+            else:
+                print(f"Failed to fetch the URL {url}. Status code: {response.status_code}")
+
+        except requests.exceptions.RequestException as e:
+            print(f"Error fetching {url}: {e}")
+
+    data.sort(key=lambda x: x[0])
+
+    if data:
+        with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+            writer = csv.writer(file)
+            writer.writerow(["Content"])
+            writer.writerows(data)
+
+        print(f"Sorted data saved to {output_file}.")
+    else:
+        print("No data scraped.")
+
+# Example usage
 urls = [
-"https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S132.htm",
+    "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S132.htm",
+    "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S133.htm",
+    "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S132.htm",
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S133.htm",
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S136.htm",
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S137.htm",
@@ -135,6 +173,7 @@ urls = [
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S13282.htm",
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S13284.htm",
 "https://results.eci.gov.in/ResultAcGenNov2024/candidateswise-S13288.htm",
+    
 ]
 
 headers = {
@@ -145,38 +184,6 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
 }
 
+output_file = "scraped_sorted_data.csv"
+scrape_and_save_sorted_data(urls, headers, output_file)
 
-data = []
-
-for url in urls:
-    try:
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            soup = BeautifulSoup(response.text, 'html.parser')
-
-            box_wrapper = soup.find_all("div", class_="box-wraper box-boarder")
-
-            if box_wrapper:
-                for box in box_wrapper:
-                    content = box.get_text(strip=True)
-                    data.append([content]) 
-            else:
-                print(f"No elements found with the class 'box-wraper box-boarder' at {url}")
-        else:
-            print(f"Failed to fetch the URL {url}. Status code: {response.status_code}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching {url}: {e}")
-
-data.sort(key=lambda x: x[0])  
-
-if data:
-    csv_file = "scraped_sorted_data.csv"
-    with open(csv_file, mode="w", newline="", encoding="utf-8") as file:
-        writer = csv.writer(file)
-        writer.writerow(["Content"]) 
-        writer.writerows(data)  
-
-    print(f"Sorted data saved to {csv_file}.")
-else:
-    print("No data scraped.")
