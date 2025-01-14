@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
+import pandas as pd
 
 def scrape_and_save_sorted_data(urls, headers, output_file):
     data = []
@@ -11,6 +11,7 @@ def scrape_and_save_sorted_data(urls, headers, output_file):
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
 
+                # Find all divs with class "box-wraper box-boarder"
                 box_wrapper = soup.find_all("div", class_="box-wraper box-boarder")
 
                 if box_wrapper:
@@ -25,15 +26,19 @@ def scrape_and_save_sorted_data(urls, headers, output_file):
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
 
-    data.sort(key=lambda x: x[0])
-
+    # Convert the data to a pandas DataFrame
     if data:
-        with open(output_file, mode="w", newline="", encoding="utf-8") as file:
-            writer = csv.writer(file)
-            writer.writerow(["Content"])
-            writer.writerows(data)
+        df = pd.DataFrame(data, columns=["Content"])
+
+        # Sort the DataFrame based on the "Content" column
+        df_sorted = df.sort_values(by="Content", ascending=True)
+
+        # Save the sorted DataFrame to a CSV file
+        df_sorted.to_csv(output_file, index=False, encoding="utf-8")
 
         print(f"Sorted data saved to {output_file}.")
+        print("\nPreview of the sorted data:")
+        print(df_sorted.head())
     else:
         print("No data scraped.")
 
