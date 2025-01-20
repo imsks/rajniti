@@ -4,10 +4,8 @@ from pathlib import Path
 import csv
 import re
 
-
 output_dir = Path("html_files")
 output_dir.mkdir(exist_ok=True)
-
 
 headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -18,9 +16,6 @@ headers = {
 }
 
 def fetch_html(url, output_file):
-    """
-    Fetch HTML content from a URL using a session and cache it locally.
-    """
     try:
         if output_file.exists():
             print(f"Reading cached file: {output_file}")
@@ -40,9 +35,6 @@ def fetch_html(url, output_file):
         return None
 
 def extract_links_from_main_page(main_page_url):
-    """
-    Extract all links matching the pattern `partywisewinresult-<ID>S13.htm` from the main page.
-    """
     try:
         print(f"Fetching main page: {main_page_url}")
         response = requests.get(main_page_url, headers=headers, timeout=10)
@@ -63,9 +55,6 @@ def extract_links_from_main_page(main_page_url):
         return []
 
 def extract_data_from_html(html_content):
-    """
-    Extract constituency data with S.No, Constituency, Winning Candidate, Total Votes, and Margin from the HTML content.
-    """
     soup = BeautifulSoup(html_content, 'html.parser')
     table = soup.find('table')  # Adjust based on the structure of the page
 
@@ -77,25 +66,20 @@ def extract_data_from_html(html_content):
     data = []
     for row in rows:
         cells = row.find_all('td')
-        if len(cells) >= 5: 
-            s_no = cells[0].text.strip()
-            constituency = cells[1].text.strip()
-            winning_candidate = cells[2].text.strip()
-            total_votes = cells[3].text.strip()
-            margin = cells[4].text.strip()
-            data.append({
-                "S.No": s_no,
-                "Constituency": constituency,
-                "Winning Candidate": winning_candidate,
-                "Total Votes": total_votes,
-                "Margin": margin
-            })
+        if len(cells) >= 2: 
+            constituency_full = cells[1].text.strip()
+            match = re.match(r"(.*)\((\d+)\)", constituency_full)
+            if match:
+                constituency_name = match.group(1).strip()
+                constituency_id = match.group(2).strip()
+                data.append({
+                    "Constituency Name": constituency_name,
+                    "Constituency ID": constituency_id,
+                    "State ID": "S13"
+                })
     return data
 
 def scrape_all_data(main_page_url):
-    """
-    Scrape all constituency data from links ending with `S13.htm`.
-    """
     print(f"Extracting links from the main page: {main_page_url}")
     links = extract_links_from_main_page(main_page_url)
     if not links:
@@ -103,6 +87,8 @@ def scrape_all_data(main_page_url):
         return []
 
     all_data = []
+    unique_constituencies = set()
+    
     for url in links:
         print(f"Processing URL: {url}")
         constituency_id = url.split('-')[-1].split('S')[0]
@@ -110,22 +96,26 @@ def scrape_all_data(main_page_url):
         html_content = fetch_html(url, output_file)
         if html_content:
             constituency_data = extract_data_from_html(html_content)
-            all_data.extend(constituency_data)
+            for entry in constituency_data:
+                if entry["Constituency ID"] not in unique_constituencies:
+                    unique_constituencies.add(entry["Constituency ID"])
+                    all_data.append(entry)
     return all_data
 
 # Main page URL for scraping
 main_page_url = "https://results.eci.gov.in/ResultAcGenNov2024/partywiseresult-S13.htm"
-
 
 all_constituency_data = scrape_all_data(main_page_url)
 
 if all_constituency_data:
     csv_file = "constituency_data.csv"
     try:
+        # Sort data by Constituency ID before saving
+        sorted_data = sorted(all_constituency_data, key=lambda x: int(x["Constituency ID"]))
         with open(csv_file, mode="w", newline="", encoding="utf-8") as file:
-            writer = csv.DictWriter(file, fieldnames=["S.No", "Constituency", "Winning Candidate", "Total Votes", "Margin"])
+            writer = csv.DictWriter(file, fieldnames=["Constituency Name", "Constituency ID", "State ID"])
             writer.writeheader()
-            writer.writerows(all_constituency_data)
+            writer.writerows(sorted_data)
         print(f"Scraping completed successfully. Data saved to {csv_file}.")
     except Exception as e:
         print(f"Error saving data to CSV: {e}")
