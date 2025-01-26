@@ -5,12 +5,21 @@ import json
 import re
 
 def clean_votes(votes):
-    """Cleans the 'Votes' field by removing unwanted characters like '(+', '(-', '("', and ')'."""
     if votes:
         # Remove unwanted characters such as '(+' , '(-', '("', and ')'
         cleaned_votes = re.sub(r'[+()"]', '', votes).strip()
         return cleaned_votes
     return None
+
+def clean_margin(margin):
+    """Cleans the 'Margin' field by ensuring '(' appears before the margin value, but removes ')'."""
+    if margin:
+        # Remove closing parenthesis if it exists
+        margin = margin.replace(')', '').strip()
+        # Add opening parenthesis '(' if margin starts with '+'
+        if margin.startswith('+'):
+            margin = f"({margin}"
+    return margin
 
 def get_with_retry(url, headers, retries=3, timeout=20):
     """Attempt to fetch a URL with retries in case of a timeout or other errors."""
@@ -45,25 +54,40 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
 
             # Extract data for each candidate
             for candidate in candidates:
-                # Extract status
+                # Extract the status
                 status_div = candidate.find("div", class_="status")
-                status = status_div.find("div").get_text(strip=True) if status_div and status_div.find("div") else None
+                status = None
+                if status_div:
+                    status_class = status_div.get("class", [])
+                    if "won" in status_class:
+                        status = "Won"
+                    elif "lost" in status_class:
+                        status = "Lost"
+                    elif "nota" in status_class:
+                        status = "NOTA"
 
                 # Extract votes and margin
-                votes_and_margin = status_div.find_all("div")[1].get_text(strip=True) if status_div and len(status_div.find_all("div")) > 1 else None
-                votes = votes_and_margin.split(" ")[0] if votes_and_margin else None
-                margin = votes_and_margin.split(" ")[1][1:-1] if votes_and_margin and len(votes_and_margin.split(" ")) > 1 else None
+                votes_and_margin = None
+                if status_div and len(status_div.find_all("div")) > 1:
+                    votes_and_margin = status_div.find_all("div")[1].get_text(strip=True)
 
-                # Clean the votes field to remove unwanted characters like '(', '+', and '"'
+                # Handle votes and margin extraction
+                votes, margin = None, None
+                if votes_and_margin:
+                    split_data = votes_and_margin.split(" ")
+                    votes = split_data[0] if split_data else None
+                    margin = split_data[1] if len(split_data) > 1 else None
+
+                # Clean the votes and margin
                 votes = clean_votes(votes)
-                margin = margin.replace('"', '').strip() if margin else None
+                margin = clean_margin(margin)  # Apply margin cleaning
 
                 # Extract name and party
                 nme_prty_div = candidate.find("div", class_="nme-prty")
                 name = nme_prty_div.find("h5").get_text(strip=True) if nme_prty_div and nme_prty_div.find("h5") else None
                 party = nme_prty_div.find("h6").get_text(strip=True) if nme_prty_div and nme_prty_div.find("h6") else None
 
-                # Append data to list
+                # Append the data for this candidate
                 all_data.append({
                     "Constituency Code": f"S13-{i}",
                     "Name": name,
@@ -98,5 +122,5 @@ headers = {
 }
 
 # Run the scraping function
-output_file = "candidates_data.json"  # The output file for saving the data
+output_file = "VS_election.json"  # The output file for saving the data
 scrape_candidates_data(start=1, end=288, base_url=base_url, headers=headers, output_file=output_file)
