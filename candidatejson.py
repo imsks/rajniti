@@ -1,0 +1,73 @@
+import requests
+from bs4 import BeautifulSoup
+import time
+import json
+
+def scrape_candidates_data(start, end, base_url, headers, output_file):
+    """Scrapes candidate data and saves it to a JSON file."""
+    all_data = []
+
+    for i in range(start, end + 1):
+        url = f"{base_url}candidateswise-S13{i}.htm"
+        try:
+            # Request the page content
+            response = requests.get(url, headers=headers, timeout=10)
+            response.raise_for_status()
+
+            # Parse the HTML content
+            soup = BeautifulSoup(response.content, 'html.parser')
+            candidates = soup.find_all("div", class_="cand-info")
+
+            # Extract data for each candidate
+            for candidate in candidates:
+                # Extract status
+                status_div = candidate.find("div", class_="status")
+                status = status_div.find("div").get_text(strip=True) if status_div and status_div.find("div") else None
+
+                # Extract votes and margin
+                votes_and_margin = status_div.find_all("div")[1].get_text(strip=True) if status_div and len(status_div.find_all("div")) > 1 else None
+                votes = votes_and_margin.split(" ")[0] if votes_and_margin else None
+                margin = votes_and_margin.split(" ")[1][1:-1] if votes_and_margin and len(votes_and_margin.split(" ")) > 1 else None
+
+                # Extract name and party
+                nme_prty_div = candidate.find("div", class_="nme-prty")
+                name = nme_prty_div.find("h5").get_text(strip=True) if nme_prty_div and nme_prty_div.find("h5") else None
+                party = nme_prty_div.find("h6").get_text(strip=True) if nme_prty_div and nme_prty_div.find("h6") else None
+
+                # Append data to list
+                all_data.append({
+                    "Constituency Code": f"S13-{i}",
+                    "Name": name,
+                    "Party": party,
+                    "Status": status,
+                    "Votes": votes,
+                    "Margin": margin
+                })
+
+        except requests.exceptions.RequestException as e:
+            print(f"Error fetching {url}: {e}")
+        except AttributeError as e:
+            print(f"Attribute Error processing {url}: {e}")
+
+        # Sleep to avoid overwhelming the server
+        time.sleep(2)
+
+    # Save data to a JSON file
+    if all_data:
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(all_data, f, indent=4, ensure_ascii=False)
+        print(f"Data saved to {output_file}.")
+    else:
+        print("No data scraped.")
+
+base_url = "https://results.eci.gov.in/ResultAcGenNov2024/"
+headers = {
+    "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+    "Referer": "https://results.eci.gov.in/ResultAcGenNov2024/partywiseresult-S13.htm",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+    "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
+    "Cache-Control": "max-age=0",
+}
+# Run the scraping function
+output_file = "candidates_data.json"  # The output file for saving the data
+scrape_candidates_data(start=1, end=288, base_url=base_url, headers=headers, output_file=output_file)
