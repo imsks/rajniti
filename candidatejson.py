@@ -2,6 +2,30 @@ import requests
 from bs4 import BeautifulSoup
 import time
 import json
+import re
+
+def clean_votes(votes):
+    """Cleans the 'Votes' field by removing unwanted characters like '(+', '(-', '("', and ')'."""
+    if votes:
+        # Remove unwanted characters such as '(+' , '(-', '("', and ')'
+        cleaned_votes = re.sub(r'[+()"]', '', votes).strip()
+        return cleaned_votes
+    return None
+
+def get_with_retry(url, headers, retries=3, timeout=20):
+    """Attempt to fetch a URL with retries in case of a timeout or other errors."""
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, headers=headers, timeout=timeout)
+            response.raise_for_status()  # Check if request was successful
+            return response
+        except requests.exceptions.RequestException as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt < retries - 1:
+                time.sleep(5)  # Wait before retrying
+            else:
+                print("Max retries reached, skipping.")
+                return None
 
 def scrape_candidates_data(start, end, base_url, headers, output_file):
     """Scrapes candidate data and saves it to a JSON file."""
@@ -9,11 +33,12 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
 
     for i in range(start, end + 1):
         url = f"{base_url}candidateswise-S13{i}.htm"
-        try:
-            # Request the page content
-            response = requests.get(url, headers=headers, timeout=10)
-            response.raise_for_status()
+        response = get_with_retry(url, headers, retries=3, timeout=20)
 
+        if response is None:
+            continue  # Skip this URL if it couldn't be fetched
+
+        try:
             # Parse the HTML content
             soup = BeautifulSoup(response.content, 'html.parser')
             candidates = soup.find_all("div", class_="cand-info")
@@ -28,6 +53,10 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
                 votes_and_margin = status_div.find_all("div")[1].get_text(strip=True) if status_div and len(status_div.find_all("div")) > 1 else None
                 votes = votes_and_margin.split(" ")[0] if votes_and_margin else None
                 margin = votes_and_margin.split(" ")[1][1:-1] if votes_and_margin and len(votes_and_margin.split(" ")) > 1 else None
+
+                # Clean the votes field to remove unwanted characters like '(', '+', and '"'
+                votes = clean_votes(votes)
+                margin = margin.replace('"', '').strip() if margin else None
 
                 # Extract name and party
                 nme_prty_div = candidate.find("div", class_="nme-prty")
@@ -44,13 +73,11 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
                     "Margin": margin
                 })
 
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching {url}: {e}")
-        except AttributeError as e:
-            print(f"Attribute Error processing {url}: {e}")
-
+        except Exception as e:
+            print(f"Error processing {url}: {e}")
+        
         # Sleep to avoid overwhelming the server
-        time.sleep(2)
+        time.sleep(5)
 
     # Save data to a JSON file
     if all_data:
@@ -60,6 +87,7 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
     else:
         print("No data scraped.")
 
+# Configuration for scraping
 base_url = "https://results.eci.gov.in/ResultAcGenNov2024/"
 headers = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
@@ -68,6 +96,7 @@ headers = {
     "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
     "Cache-Control": "max-age=0",
 }
+
 # Run the scraping function
 output_file = "candidates_data.json"  # The output file for saving the data
 scrape_candidates_data(start=1, end=288, base_url=base_url, headers=headers, output_file=output_file)
