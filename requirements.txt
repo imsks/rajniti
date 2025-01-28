@@ -3,3 +3,8 @@ bs4
 flask 
 Flask-SQLAlchemy
 requests
+csv 
+re
+sqllite3
+time 
+jsonify
