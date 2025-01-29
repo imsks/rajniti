@@ -1,28 +1,25 @@
 import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
-import csv
+import json
 
-def fetch_scrape_sort_save(url, html_dir, csv_file_path):
+def fetch_scrape_sort_save_json(url, html_dir, json_file_path):
     """
-    Fetch HTML content from a URL, scrape data, sort it, and save to a CSV file.
+    Fetch HTML content from a URL, scrape data, sort it, and save to a JSON file.
 
     Parameters:
         url (str): The webpage URL to scrape.
         html_dir (Path): Directory to save the HTML file.
-        csv_file_path (str): Path to save the sorted CSV file.
+        json_file_path (str): Path to save the sorted JSON file.
     """
     headers = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "Accept-Language": "en-GB,en-US;q=0.9,en;q=0.8",
-        "Cache-Control": "max-age=0",
-        "Referer": url,
         "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
     }
 
-    html_file = html_dir / f"{url.split('/')[-1]}"  # Save HTML file locally
+    html_file = html_dir / f"{url.split('/')[-1]}" 
 
-    # Fetch and cache the HTML content
+   
     if html_file.exists():
         print(f"Reading HTML content from cached file: {html_file}")
         html_content = html_file.read_text(encoding="utf-8")
@@ -43,7 +40,6 @@ def fetch_scrape_sort_save(url, html_dir, csv_file_path):
             print(f"Error fetching {url}: {e}")
             return
 
-    # Scrape and process data
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table")
 
@@ -52,10 +48,6 @@ def fetch_scrape_sort_save(url, html_dir, csv_file_path):
         rows = table.find_all("tr")
         data = []
 
-        # Prepare headers for the CSV
-        headers = ["Party Name", "Symbol", "Total Seats"]
-
-        # Process table rows (skip header)
         for row in rows[1:]:
             columns = row.find_all("td")
             if len(columns) >= 4:
@@ -65,28 +57,29 @@ def fetch_scrape_sort_save(url, html_dir, csv_file_path):
                 else:
                     party_name_full = columns[0].text.strip()
 
-                # Extract party symbol (abbreviation) from the full name
                 if " - " in party_name_full:
                     party_name, symbol = party_name_full.split(" - ", 1)
                 else:
                     party_name = party_name_full
                     symbol = "N/A"
 
-                # Convert seat numbers to integers for sorting
                 total_seats = int(columns[3].text.strip()) if columns[3].text.strip().isdigit() else 0
 
                 # Append the data row
-                data.append([party_name, symbol, total_seats])
+                data.append({
+                    "party_name": party_name,
+                    "symbol": symbol,
+                    "total_seats": total_seats
+                })
 
         # Sort data by total seats (descending) and then by party name (alphabetically)
-        data.sort(key=lambda x: (-x[2], x[0]))
+        data.sort(key=lambda x: (-x["total_seats"], x["party_name"]))
 
-        # Save to CSV
-        with open(csv_file_path, mode="w", newline="", encoding="utf-8") as csv_file:
-            writer = csv.writer(csv_file)
-            writer.writerow(headers)  # Write headers
-            writer.writerows(data)  # Write rows
-        print(f"Party-wise results saved to: {csv_file_path}")
+        # Save to JSON
+        with open(json_file_path, mode="w", encoding="utf-8") as json_file:
+            json.dump(data, json_file, indent=4, ensure_ascii=False)
+
+        print(f"Party-wise results saved to: {json_file_path}")
     else:
         print("No table found in the HTML content.")
 
@@ -96,8 +89,8 @@ output_dir.mkdir(exist_ok=True)
 
 # Webpage URL for scraping
 webpage_url = "https://results.eci.gov.in/ResultAcGenNov2024/partywiseresult-S13.htm"
-# CSV file to save the sorted results
-csv_file_path = "partywiseresults_sorted_with_symbols.csv"
+# JSON file to save the sorted results
+json_file_path = "partywiseresults_sorted.json"
 
 # Call the function
-fetch_scrape_sort_save(webpage_url, output_dir, csv_file_path)
+fetch_scrape_sort_save_json(webpage_url, output_dir, json_file_path)
