@@ -103,7 +103,6 @@ def scrape_constituencywise():
                 )
                 db.session.add(constituency)
         
-        # Commit only once to avoid multiple commits
         db.session.commit()
         return jsonify({"message": "Constituencywise data inserted successfully!"}), 201
     except FileNotFoundError as e:
@@ -114,18 +113,14 @@ def scrape_constituencywise():
 @app.route('/scrape/vselection', methods=['GET'])
 def scrape_vselection():
     try:
-        # Load new data from the JSON file
         data = load_json("VSelection.json")
         
         for record in data:
-            # Ensure status is not None and provide a default value if necessary
-            status = record.get("Status", "Unknown")  # Default to "Unknown" if status is None or missing
             
-            # If status is None (shouldn't happen due to above check), manually set it
+            status = record.get("Status", "Unknown") 
             if status is None:
                 status = "Unknown"
             
-            # Check if the candidate with the same constituency_code and candidate_name already exists
             existing_candidate = VSelection.query.filter_by(
                 constituency_code=record["Constituency Code"], 
                 candidate_name=record["Name"]
@@ -133,12 +128,12 @@ def scrape_vselection():
             
             if not existing_candidate:
                 candidate = VSelection(
-                    constituency_code=record["Constituency Code"],  # Corresponding to 'S13-1'
-                    candidate_name=record["Name"],  # Candidate's name (e.g., 'AMSHYA FULJI PADVI')
-                    party=record["Party"],  # Party (e.g., 'Shiv Sena')
-                    status=status,  # Election status (e.g., 'Won') or 'Unknown'
-                    votes=int(record["Votes"]),  # Votes as an integer (e.g., 72629)
-                    margin=int(record["Margin"])  # Margin as an integer (e.g., 2904)
+                    constituency_code=record["Constituency Code"],  
+                    candidate_name=record["Name"], 
+                    party=record["Party"], 
+                    status=status,  
+                    votes=int(record["Votes"]),  
+                    margin=int(record["Margin"]) 
                 )
                 db.session.add(candidate)
         
