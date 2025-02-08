@@ -8,3 +8,6 @@ re
 sqllite3
 time 
 jsonify
+postegreSql
+.exc
+
