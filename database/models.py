@@ -1,40 +1,28 @@
-from database.db import db
+from flask_sqlalchemy import SQLAlchemy
 
-class BaseModel(db.Model):
-    __abstract__ = True
+db = SQLAlchemy()
 
-    def save(self):
-        db.session.add(self)
-        try:
-            db.session.commit()
-        except Exception as e:
-            db.session.rollback()
-            raise e
-
-    def delete(self):
-        db.session.delete(self)
-        try:
-            db.session.commit()
-        except Exception as e:
-            db.session.rollback()
-            raise e
-
-class PartyResults(BaseModel):
+class PartyResults(db.Model):
     __tablename__ = 'party_results'
     id = db.Column(db.Integer, primary_key=True)
-    party_name = db.Column(db.String(255), unique=True, nullable=False)
+    party_name = db.Column(db.String(255), nullable=False, unique=True)
     symbol = db.Column(db.String(255), nullable=False)
     total_seats = db.Column(db.Integer, nullable=False)
+    party_type = db.Column(db.String(50), nullable=False, default="State")
 
-class ConstituencyResults(BaseModel):
-    __tablename__ = 'constituency_results'
-    constituency_id = db.Column(db.String(50), primary_key=True)
+class State(db.Model):
+    __tablename__ = 'state'
+    id = db.Column(db.String(10), primary_key=True)
+    name = db.Column(db.String(100), nullable=False, unique=True)
+
+class Constituency(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     constituency_name = db.Column(db.String(255), nullable=False)
+    constituency_id = db.Column(db.String(50), nullable=False, unique=True)
     state_id = db.Column(db.String(10), nullable=False)
 
-class CandidateResults(BaseModel):
-    __tablename__ = 'candidate_results'
-    id = db.Column(db.Integer, primary_key=True)
+class CandidateResults(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     constituency_code = db.Column(db.String(50), nullable=False)
     name = db.Column(db.String(255), nullable=False)
     party = db.Column(db.String(255), nullable=False)
