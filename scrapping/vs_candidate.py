@@ -98,5 +98,5 @@ headers = {
     "Cache-Control": "max-age=0",
 }
 
-output_file = "VS_election_with_images.json"
+output_file = "VS_candidate.json"
 scrape_candidates_data(start=1, end=288, base_url=base_url, headers=headers, output_file=output_file)
