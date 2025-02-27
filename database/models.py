@@ -43,7 +43,7 @@ class Candidate(db.Model):
     
     id = db.Column(db.String, primary_key=True)
     name = db.Column(db.String, nullable=False)
-    photo = db.Column(db.String, nullable=True)  # Candidate's image URL
+    image = db.Column(db.String, nullable=True)  # Candidate's image URL
     constituency_id = db.Column(db.String, db.ForeignKey('constituency.id'), nullable=False)
     party_id = db.Column(db.String, db.ForeignKey('party.id'), nullable=False)
     election_id = db.Column(db.String, db.ForeignKey('election.id'), nullable=False)
