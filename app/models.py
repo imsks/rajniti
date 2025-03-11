@@ -5,7 +5,7 @@ import uuid
 db = SQLAlchemy()
 
 class State(db.Model):
-    __tablename__ = 'state'
+    __tablename__ = 'State'
     id = db.Column(db.String(10), primary_key=True)  # State abbreviation (e.g., UP, MH)
     name = db.Column(db.String(100), nullable=False, unique=True)  # Full state name
     cm_party_id = db.Column(db.String, db.ForeignKey('party.id'))
