@@ -14,7 +14,6 @@ class State(db.Model):
 
     def __repr__(self):
         return f"<State(id={self.id}, name={self.name})>"
-
     @staticmethod
     def populate_states():
         """Populates the State table with all Indian states."""

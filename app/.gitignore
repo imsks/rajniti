@@ -1,47 +1,7 @@
-# Virtual Environment
-venv/
-env/
-
-# Byte-compiled Python files
+venv
+migrations
+# Ignore Python cache files
+__pycache__/
 *.pyc
 *.pyo
-__pycache__/
-
-# Environment Variables and Secrets
-.env
-.env.example
-instance/
-
-# Logs and Debugging
-*.log
-logs/
-debug.log
-
-# Cache and Temporary Files
-*.sqlite3
-*.db
-*.sqlite
-cache/
-tmp/
-*.swp
-*.swo
-
-# Compiled Files
-*.egg-info/
-dist/
-build/
-
-# Migrations (if using Flask-Migrate, only ignore auto-generated files)
-migrations/versions/
-
-# VS Code and JetBrains IDEs
 .vscode/
-.idea/
-
-# Jupyter Notebooks Checkpoints (if using Jupyter)
-.ipynb_checkpoints/
-
-# Docker and Deployment
-docker-compose.override.yml
-.DS_Store  # macOS specific
-*.pid  # Process ID files
