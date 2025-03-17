@@ -1,7 +1,28 @@
-venv
-migrations
-# Ignore Python cache files
+# Ignore Python bytecode files
 __pycache__/
 *.pyc
 *.pyo
-.vscode/
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore database files
+*.sqlite3
+*.db
+
+# Ignore environment variables
+.env
+*.env
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore compiled files
+*.o
+*.so
+*.out
+
+# Ignore dependency directories
+node_modules/
