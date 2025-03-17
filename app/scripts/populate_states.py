@@ -6,11 +6,12 @@ from database.populate import PopulateDB
 
 app = Flask(__name__)
 
-# ✅ Database Configuration
+#  Database Configuration
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# ✅ Initialize Database
+# Initialize Database
 db.init_app(app)
 migrate = Migrate(app, db)
 
@@ -21,7 +22,7 @@ def init_db():
 
         print(" Database Initialized.")
 
-        # ✅ Populate Database
+        # Populate Database
         try:
             print("📥 Populating States...")
             State.populate_states()
