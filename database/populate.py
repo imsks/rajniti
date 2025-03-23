@@ -1,4 +1,4 @@
-from models import db, State
+from database.models import db, State
 
 class PopulateDB:
     def __init__(self, db):

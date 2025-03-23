@@ -5,15 +5,17 @@ import uuid
 db = SQLAlchemy()
 
 class State(db.Model):
-    __tablename__ = 'State'
-    id = db.Column(db.String(10), primary_key=True)  # State abbreviation (e.g., UP, MH)
-    name = db.Column(db.String(100), nullable=False, unique=True)  # Full state name
-    cm_party_id = db.Column(db.String, db.ForeignKey('party.id'))
-    elections = db.relationship('Election', backref='State', lazy=True)
-    constituencies = db.relationship('Constituency', backref='State', lazy=True)
+    __tablename__ = 'state'
+    id = db.Column(db.String(10), primary_key=True)  # State abbreviation
+    name = db.Column(db.String(100), nullable=False, unique=True)
+    CM_party_id = db.Column(UUID(as_uuid=True), db.ForeignKey('party.id'), nullable=True)
+
+    elections = db.relationship('Election', backref='state', lazy=True)
+    constituencies = db.relationship('Constituency', backref='state', lazy=True)
 
     def __repr__(self):
         return f"<State(id={self.id}, name={self.name})>"
+
     @staticmethod
     def populate_states():
         """Populates the State table with all Indian states."""
@@ -60,27 +62,32 @@ class State(db.Model):
             for state in states:
                 if not State.query.filter_by(id=state["id"]).first():
                     db.session.add(State(id=state["id"], name=state["name"]))
-            
+
             db.session.commit()
             print("State table populated successfully.")
         except Exception as e:
             db.session.rollback()
             print(f"Error populating states: {str(e)}")
 
+
 class Election(db.Model):
-    id = db.Column(db.String, primary_key=True)
-     
+    __tablename__ = 'election'
+    id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = db.Column(db.String, nullable=False)
     type = db.Column(db.Enum('LOKSABHA', 'VIDHANSABHA', name='election_type'), nullable=False)
     year = db.Column(db.Integer, nullable=False)
-    state_id = db.Column(db.String, db.ForeignKey('state.id'), nullable=False)
+    state_id = db.Column(db.String(10), db.ForeignKey('state.id'), nullable=False)
+
 
 class Party(db.Model):
+    __tablename__ = 'party'
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    name = db.Column(db.String, nullable=False)
+    name = db.Column(db.String(100), nullable=False)
     symbol = db.Column(db.String, nullable=False)
 
+
 class Candidate(db.Model):
+    __tablename__ = 'candidate'
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = db.Column(db.String, nullable=False)
     photo = db.Column(db.String)
@@ -89,10 +96,31 @@ class Candidate(db.Model):
     status = db.Column(db.Enum('WON', 'LOST', name='candidate_status'), nullable=False)
     elec_type = db.Column(db.String, nullable=False)
 
+
 class Constituency(db.Model):
+    __tablename__ = 'constituency'
     id = db.Column(db.String, primary_key=True)
     name = db.Column(db.String, nullable=False)
-    state_id = db.Column(db.String, db.ForeignKey('state.id'), nullable=False)
+    state_id = db.Column(db.String(10), db.ForeignKey('state.id'), nullable=False)
     mla_id = db.Column(UUID(as_uuid=True), db.ForeignKey('candidate.id'))
     mp_id = db.Column(UUID(as_uuid=True), db.ForeignKey('candidate.id'))
-    candidates = db.relationship('Candidate', backref='constituency', lazy=True)
+
+    # ✅ Fixed relationship by specifying foreign_keys
+    candidates = db.relationship(
+        'Candidate',
+        backref='constituency',
+        lazy=True,
+        foreign_keys='Candidate.const_id'
+    )
+
+    # (Optional) Define MLA and MP relationships explicitly if needed
+    mla = db.relationship(
+        'Candidate',
+        foreign_keys=[mla_id],
+        uselist=False
+    )
+    mp = db.relationship(
+        'Candidate',
+        foreign_keys=[mp_id],
+        uselist=False
+    )

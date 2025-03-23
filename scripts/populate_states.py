@@ -1,24 +1,17 @@
 import traceback
 from flask import Flask
 from flask_migrate import Migrate
-from database.models import db , State
-from populate import PopulateDB  
+from database.models import db, State
+from database.populate import PopulateDB  
 
 app = Flask(__name__)
 
-<<<<<<< HEAD
 #  Database Configuration
-=======
->>>>>>> fc56277 (updated code)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-<<<<<<< HEAD
 # Initialize Database
-=======
-#  Initialize Database
->>>>>>> fc56277 (updated code)
 db.init_app(app)
 migrate = Migrate(app, db)
 
@@ -29,11 +22,7 @@ def init_db():
 
         print(" Database Initialized.")
 
-<<<<<<< HEAD
         # Populate Database
-=======
-        #  Populate Database
->>>>>>> fc56277 (updated code)
         try:
             print(" Populating States...")
             State.populate_states()

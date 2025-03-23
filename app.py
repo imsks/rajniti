@@ -1,12 +1,14 @@
-from flask_sqlalchemy import SQLAlchemy
-from database.models import db
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 
-db = SQLAlchemy()
+app = Flask(__name__)
 
-def create_app():
-    app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
-    db.init_app(app)
+# Your database config here
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    return app
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+from database.models import *  # or wherever your models are
