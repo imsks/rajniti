@@ -1,8 +1,9 @@
-from flask_sqlalchemy import SQLAlchemy
+from database import db  
 from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.schema import UniqueConstraint
 import uuid
 
-db = SQLAlchemy()
+
 
 class State(db.Model):
     __tablename__ = 'state'
@@ -77,6 +78,11 @@ class Election(db.Model):
     type = db.Column(db.Enum('LOKSABHA', 'VIDHANSABHA', name='election_type'), nullable=False)
     year = db.Column(db.Integer, nullable=False)
     state_id = db.Column(db.String(10), db.ForeignKey('state.id'), nullable=False)
+
+    # Add UNIQUE constraint
+    __table_args__ = (
+        UniqueConstraint('state_id', 'year', 'type', name='unique_state_year_type'),
+    )
 
 
 class Party(db.Model):
