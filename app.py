@@ -3,7 +3,9 @@ from flask_migrate import Migrate
 from database import db    
 from database.models import State, Election
 from sqlalchemy.exc import IntegrityError
-
+from routes.party import party_bp 
+from routes.constituency import constituency_bp
+from routes.candidate import candidate_bp
 
 def create_app():
     app = Flask(__name__)
@@ -16,12 +18,15 @@ def create_app():
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    # ----------- POST API for Election -----------
+    # Register Blueprints
+    app.register_blueprint(party_bp, url_prefix='/api') 
+    app.register_blueprint(constituency_bp, url_prefix='/api')
+    app.register_blueprint(candidate_bp, url_prefix="/api")
+
     @app.route('/api/elections', methods=['POST'])
     def create_election():
         data = request.get_json()
 
-        # Input validation
         required_fields = ['name', 'type', 'year', 'state_id']
         for field in required_fields:
             if field not in data:

@@ -90,6 +90,7 @@ class Party(db.Model):
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = db.Column(db.String(100), nullable=False)
     symbol = db.Column(db.String, nullable=False)
+    total_seats = db.Column(db.Integer, nullable=True)  
 
 
 class Candidate(db.Model):
@@ -111,7 +112,6 @@ class Constituency(db.Model):
     mla_id = db.Column(UUID(as_uuid=True), db.ForeignKey('candidate.id'))
     mp_id = db.Column(UUID(as_uuid=True), db.ForeignKey('candidate.id'))
 
-    # ✅ Fixed relationship by specifying foreign_keys
     candidates = db.relationship(
         'Candidate',
         backref='constituency',
@@ -119,7 +119,6 @@ class Constituency(db.Model):
         foreign_keys='Candidate.const_id'
     )
 
-    # (Optional) Define MLA and MP relationships explicitly if needed
     mla = db.relationship(
         'Candidate',
         foreign_keys=[mla_id],
@@ -129,4 +128,5 @@ class Constituency(db.Model):
         'Candidate',
         foreign_keys=[mp_id],
         uselist=False
-    )
+    )  
+
