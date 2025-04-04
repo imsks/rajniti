@@ -1,66 +1,35 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 from flask_migrate import Migrate
 from database import db    
-from database.models import State, Election
-from sqlalchemy.exc import IntegrityError
+from database.populate import PopulateDB
 from routes.party import party_bp 
 from routes.constituency import constituency_bp
 from routes.candidate import candidate_bp
+from routes.election import election_bp
 
-def create_app():
-    app = Flask(__name__)
+app = Flask(__name__)
 
-    # Configure DB
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# Configure DB
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@localhost/INDIA'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    # Initialize extensions
-    db.init_app(app)
-    migrate = Migrate(app, db)
+# Register Blueprints
+app.register_blueprint(party_bp, url_prefix='/api/v1') 
+app.register_blueprint(constituency_bp, url_prefix='/api/v1')
+app.register_blueprint(candidate_bp, url_prefix="/api/v1")
+app.register_blueprint(election_bp, url_prefix="/api/v1")
 
-    # Register Blueprints
-    app.register_blueprint(party_bp, url_prefix='/api') 
-    app.register_blueprint(constituency_bp, url_prefix='/api')
-    app.register_blueprint(candidate_bp, url_prefix="/api")
 
-    @app.route('/api/elections', methods=['POST'])
-    def create_election():
-        data = request.get_json()
+# Initialize extensions
+db.init_app(app)
+migrate = Migrate(app, db)
 
-        required_fields = ['name', 'type', 'year', 'state_id']
-        for field in required_fields:
-            if field not in data:
-                return jsonify({'error': f'Missing field: {field}'}), 400
+# Initialize the database
+def init_db():
+    with app.app_context():
+        migrate.init_app(app, db)
+        print("Database initialized")
 
-        if data['type'] not in ['LOKSABHA', 'VIDHANSABHA']:
-            return jsonify({'error': 'Invalid election type. Must be LOKSABHA or VIDHANSABHA.'}), 400
-
-        state = State.query.filter_by(id=data['state_id']).first()
-        if not state:
-            return jsonify({'error': 'Invalid state_id.'}), 400
-
-        try:
-            election = Election(
-                name=data['name'],
-                type=data['type'],
-                year=data['year'],
-                state_id=data['state_id']
-            )
-            db.session.add(election)
-            db.session.commit()
-
-            return jsonify({
-                'message': 'Election created successfully.',
-                'election_id': str(election.id)
-            }), 201
-
-        except IntegrityError as e:
-            db.session.rollback()
-            if 'unique_state_year_type' in str(e.orig):
-                return jsonify({'error': 'Election for this state, year, and type already exists.'}), 400
-            return jsonify({'error': 'Database Integrity Error!'}), 500
-        except Exception as e:
-            db.session.rollback()
-            return jsonify({'error': str(e)}), 500
-
-    return app
+        populate = PopulateDB(db, app.config['SQLALCHEMY_DATABASE_URI'])
+        populate.init_populate()
+        print("Database populated")

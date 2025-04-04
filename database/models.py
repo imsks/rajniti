@@ -3,8 +3,6 @@ from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.schema import UniqueConstraint
 import uuid
 
-
-
 class State(db.Model):
     __tablename__ = 'state'
     id = db.Column(db.String(10), primary_key=True)  # State abbreviation
@@ -16,6 +14,30 @@ class State(db.Model):
 
     def __repr__(self):
         return f"<State(id={self.id}, name={self.name})>"
+
+    def to_dict(self):
+        return {"id": self.id, "name": self.name, "CM_party_id": self.CM_party_id}
+
+    @staticmethod
+    def get_all():
+        return [state.to_dict() for state in State.query.all()]
+
+    @staticmethod
+    def get_by_id(state_id):
+        state = State.query.filter_by(id=state_id).first()
+        return state.to_dict() if state else None
+
+    @staticmethod
+    def create(data):
+        try:
+            state = State(**data)
+            db.session.add(state)
+            db.session.commit()
+            return state.to_dict()
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return None
 
     @staticmethod
     def populate_states():
@@ -84,6 +106,30 @@ class Election(db.Model):
         UniqueConstraint('state_id', 'year', 'type', name='unique_state_year_type'),
     )
 
+    def to_dict(self):
+        return {"id": str(self.id), "name": self.name, "type": self.type, "year": self.year, "state_id": self.state_id}
+
+    @staticmethod
+    def get_all():
+        return [e.to_dict() for e in Election.query.all()]
+
+    @staticmethod
+    def get_by_id(election_id):
+        e = Election.query.get(election_id)
+        return e.to_dict() if e else None
+
+    @staticmethod
+    def create(data):
+        try:
+            e = Election(**data)
+            db.session.add(e)
+            db.session.commit()
+            return e.to_dict()
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return None
+
 
 class Party(db.Model):
     __tablename__ = 'party'
@@ -91,6 +137,30 @@ class Party(db.Model):
     name = db.Column(db.String(100), nullable=False)
     symbol = db.Column(db.String, nullable=False)
     total_seats = db.Column(db.Integer, nullable=True)  
+
+    def to_dict(self):
+        return {"id": str(self.id), "name": self.name, "symbol": self.symbol, "total_seats": self.total_seats}
+
+    @staticmethod
+    def get_all():
+        return [p.to_dict() for p in Party.query.all()]
+
+    @staticmethod
+    def get_by_id(party_id):
+        p = Party.query.get(party_id)
+        return p.to_dict() if p else None
+
+    @staticmethod
+    def create(data):
+        try:
+            p = Party(**data)
+            db.session.add(p)
+            db.session.commit()
+            return p.to_dict()
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return None
 
 
 class Candidate(db.Model):
@@ -102,6 +172,33 @@ class Candidate(db.Model):
     party_id = db.Column(UUID(as_uuid=True), db.ForeignKey('party.id'), nullable=False)
     status = db.Column(db.Enum('WON', 'LOST', name='candidate_status'), nullable=False)
     elec_type = db.Column(db.String, nullable=False)
+
+    def to_dict(self):
+        return {
+            "id": str(self.id), "name": self.name, "photo": self.photo, "const_id": self.const_id,
+            "party_id": str(self.party_id), "status": self.status, "elec_type": self.elec_type
+        }
+
+    @staticmethod
+    def get_all():
+        return [c.to_dict() for c in Candidate.query.all()]
+
+    @staticmethod
+    def get_by_id(candidate_id):
+        c = Candidate.query.get(candidate_id)
+        return c.to_dict() if c else None
+
+    @staticmethod
+    def create(data):
+        try:
+            c = Candidate(**data)
+            db.session.add(c)
+            db.session.commit()
+            return c.to_dict()
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return None
 
 
 class Constituency(db.Model):
@@ -130,3 +227,30 @@ class Constituency(db.Model):
         uselist=False
     )  
 
+    def to_dict(self):
+        return {
+            "id": self.id, "name": self.name, "state_id": self.state_id,
+            "mla_id": str(self.mla_id) if self.mla_id else None,
+            "mp_id": str(self.mp_id) if self.mp_id else None
+        }
+
+    @staticmethod
+    def get_all():
+        return [c.to_dict() for c in Constituency.query.all()]
+
+    @staticmethod
+    def get_by_id(const_id):
+        c = Constituency.query.get(const_id)
+        return c.to_dict() if c else None
+
+    @staticmethod
+    def create(data):
+        try:
+            c = Constituency(**data)
+            db.session.add(c)
+            db.session.commit()
+            return c.to_dict()
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return None
