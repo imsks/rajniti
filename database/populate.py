@@ -1,9 +1,11 @@
 from database.models import db, State
 
-class PopulateDB:
-    def __init__(self, db):
-        self.db = db
 
+class PopulateDB:
+    def __init__(self, db, db_uri):
+        self.db = db
+        self.db_uri = db_uri
+        
     def init_populate(self):
         """Populates the database with states."""
         states = [
