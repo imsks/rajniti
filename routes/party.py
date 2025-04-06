@@ -6,7 +6,7 @@ from database.models import Party, Election
 party_bp = Blueprint('party', __name__)
 
 # Use your actual JSON file path
-SCRAPED_PARTIES_PATH = "scripts/party_results.json"
+SCRAPED_PARTIES_PATH = "data/MH-party.json"
 
 @party_bp.route('/election/<election_id>/party/scrape', methods=['GET'])
 def scraped_party(election_id):

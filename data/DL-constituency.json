@@ -1,0 +1,352 @@
+[
+    {
+        "constituency_name": "NERELA",
+        "constituency_id": "1",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BURARI",
+        "constituency_id": "2",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "TIMARPUR",
+        "constituency_id": "3",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "ADARSH NAGAR",
+        "constituency_id": "4",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BADLI",
+        "constituency_id": "5",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "RITHALA",
+        "constituency_id": "6",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BAWANA",
+        "constituency_id": "7",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MUNDKA",
+        "constituency_id": "8",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KIRARI",
+        "constituency_id": "9",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SULTANPUR MAJRA",
+        "constituency_id": "10",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "NANGLOI JAT",
+        "constituency_id": "11",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MANGOL PURI",
+        "constituency_id": "12",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "ROHINI",
+        "constituency_id": "13",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SHALIMAR BAGH",
+        "constituency_id": "14",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SHAKUR BASTI",
+        "constituency_id": "15",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "TRI NAGAR",
+        "constituency_id": "16",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "WAZIRPUR",
+        "constituency_id": "17",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MODEL TOWN",
+        "constituency_id": "18",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SADAR BAZAR",
+        "constituency_id": "19",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "CHANDNI CHOWK",
+        "constituency_id": "20",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MATIA MAHAL",
+        "constituency_id": "21",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BALLIMARAN",
+        "constituency_id": "22",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KAROL BAGH",
+        "constituency_id": "23",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "PATEL NAGAR",
+        "constituency_id": "24",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MOTI NAGAR",
+        "constituency_id": "25",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MADIPUR",
+        "constituency_id": "26",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "RAJOURI GARDEN",
+        "constituency_id": "27",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "HARI NAGAR",
+        "constituency_id": "28",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "TILAK NAGAR",
+        "constituency_id": "29",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "JANAKPURI",
+        "constituency_id": "30",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "VIKASPURI",
+        "constituency_id": "31",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "UTTAM NAGAR",
+        "constituency_id": "32",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "DWARKA",
+        "constituency_id": "33",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MATIALA",
+        "constituency_id": "34",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "NAJAFGARH",
+        "constituency_id": "35",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BIJWASAN",
+        "constituency_id": "36",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "PALAM",
+        "constituency_id": "37",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "DELHI CANTT",
+        "constituency_id": "38",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "RAJINDER NAGAR",
+        "constituency_id": "39",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "NEW DELHI",
+        "constituency_id": "40",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "JANGPURA",
+        "constituency_id": "41",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KASTURBA NAGAR",
+        "constituency_id": "42",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MALVIYA NAGAR",
+        "constituency_id": "43",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "R. K. PURAM",
+        "constituency_id": "44",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MEHRAULI",
+        "constituency_id": "45",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "CHHATARPUR",
+        "constituency_id": "46",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "DEOLI",
+        "constituency_id": "47",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "AMBEDKAR NAGAR",
+        "constituency_id": "48",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SANGAM VIHAR",
+        "constituency_id": "49",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "GREATER KAILASH",
+        "constituency_id": "50",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KALKAJI",
+        "constituency_id": "51",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "TUGHLAKABAD",
+        "constituency_id": "52",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BADARPUR",
+        "constituency_id": "53",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "OKHLA",
+        "constituency_id": "54",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "TRILOKPURI",
+        "constituency_id": "55",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KONDLI",
+        "constituency_id": "56",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "PATPARGANJ",
+        "constituency_id": "57",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "LAXMI NAGAR",
+        "constituency_id": "58",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "VISHWAS NAGAR",
+        "constituency_id": "59",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KRISHNA NAGAR",
+        "constituency_id": "60",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "GANDHI NAGAR",
+        "constituency_id": "61",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SHAHDARA",
+        "constituency_id": "62",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SEEMAPURI",
+        "constituency_id": "63",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "ROHTAS NAGAR",
+        "constituency_id": "64",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "SEELAM PUR",
+        "constituency_id": "65",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "GHONDA",
+        "constituency_id": "66",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "BABARPUR",
+        "constituency_id": "67",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "GOKALPUR",
+        "constituency_id": "68",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "MUSTAFABAD",
+        "constituency_id": "69",
+        "state_id": "DL"
+    },
+    {
+        "constituency_name": "KARAWAL NAGAR",
+        "constituency_id": "70",
+        "state_id": "DL"
+    }
+]

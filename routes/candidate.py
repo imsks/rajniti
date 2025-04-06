@@ -6,7 +6,7 @@ from database.models import Candidate, Constituency, Election
 candidate_bp = Blueprint('candidate', __name__)
 
 # Path to your JSON file
-CANDIDATE_JSON_PATH = "scripts/candidate.json"
+CANDIDATE_JSON_PATH = "data/MH-candidate.json"
 
 # -------------------- /scrape --------------------
 @candidate_bp.route('/election/<election_id>/candidate/scrape', methods=['GET'])

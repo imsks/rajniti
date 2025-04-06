@@ -7,7 +7,7 @@ from database.models import Constituency, State
 
 constituency_bp = Blueprint('constituency', __name__)
 
-SCRAPED_CONSTITUENCY_PATH = "scripts/constituency.json"
+SCRAPED_CONSTITUENCY_PATH = "data/MH-constituency.json"
 
 @constituency_bp.route('/election/<election_id>/constituency/scrape', methods=['GET'])
 def scrape_constituencies(election_id):
