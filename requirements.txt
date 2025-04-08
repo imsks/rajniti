@@ -5,3 +5,5 @@ flask-cors
 psycopg2-binary
 requests
 beautifulsoup4
+feedparser
+pandas
