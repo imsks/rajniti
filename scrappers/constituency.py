@@ -53,7 +53,7 @@ def extract_constituencies(html):
                 cid = match.group(2).strip()
                 data.append({
                     "constituency_name": name,
-                    "constituency_id": cid,
+                    "constituency_id": f"DL-{cid}",  # 👈 prefix DL here
                     "state_id": "DL"
                 })
     return data
@@ -75,7 +75,7 @@ for url in urls:
 
 # Save to JSON
 if all_data:
-    all_data.sort(key=lambda x: int(x["constituency_id"]))
+    all_data.sort(key=lambda x: int(x["constituency_id"].split("-")[1]))  # Sort by number part only
     with open(json_output, "w", encoding="utf-8") as f:
         json.dump(all_data, f, indent=4, ensure_ascii=False)
     print(f"[DONE] {len(all_data)} constituencies saved to: {json_output}")

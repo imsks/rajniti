@@ -8,7 +8,6 @@ election_bp = Blueprint('election', __name__)
 @election_bp.route('/election', methods=['POST'])
 def create_election():
     data = request.get_json()
-
     required_fields = ['name', 'type', 'year', 'state_id']
     for field in required_fields:
         if field not in data:
