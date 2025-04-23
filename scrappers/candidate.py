@@ -45,9 +45,9 @@ def scrape_candidates_data(start, end, base_url, headers, output_file):
 
                 status = None
                 if "won" in status_class:
-                    status = "Won"
+                    status = "WON"
                 elif "lost" in status_class:
-                    status = "Lost"
+                    status = "LOST"
                 elif "nota" in status_class:
                     status = "NOTA"
 

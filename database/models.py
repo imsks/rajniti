@@ -5,9 +5,9 @@ import uuid
 
 class State(db.Model):
     __tablename__ = 'state'
-    id = db.Column(db.String(10), primary_key=True)  # State abbreviation
+    id = db.Column(db.String(10), primary_key=True)
     name = db.Column(db.String(100), nullable=False, unique=True)
-    CM_party_id = db.Column(UUID(as_uuid=True), db.ForeignKey('party.id'), nullable=True)
+    CM_party_id = db.Column(db.String, db.ForeignKey('party.name'), nullable=True)
 
     elections = db.relationship('Election', backref='state', lazy=True)
     constituencies = db.relationship('Constituency', backref='state', lazy=True)
@@ -41,7 +41,6 @@ class State(db.Model):
 
     @staticmethod
     def populate_states():
-        """Populates the State table with all Indian states."""
         states = [
             {"id": "AP", "name": "Andhra Pradesh"},
             {"id": "AR", "name": "Arunachal Pradesh"},
@@ -101,7 +100,6 @@ class Election(db.Model):
     year = db.Column(db.Integer, nullable=False)
     state_id = db.Column(db.String(10), db.ForeignKey('state.id'), nullable=False)
 
-    # Add UNIQUE constraint
     __table_args__ = (
         UniqueConstraint('state_id', 'year', 'type', name='unique_state_year_type'),
     )
@@ -133,21 +131,20 @@ class Election(db.Model):
 
 class Party(db.Model):
     __tablename__ = 'party'
-    id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    name = db.Column(db.String(100), nullable=False)
+    name = db.Column(db.String(100), primary_key=True)
     symbol = db.Column(db.String, nullable=False)
-    total_seats = db.Column(db.Integer, nullable=True)  
+    total_seats = db.Column(db.Integer, nullable=True)
 
     def to_dict(self):
-        return {"id": str(self.id), "name": self.name, "symbol": self.symbol, "total_seats": self.total_seats}
+        return {"name": self.name, "symbol": self.symbol, "total_seats": self.total_seats}
 
     @staticmethod
     def get_all():
         return [p.to_dict() for p in Party.query.all()]
 
     @staticmethod
-    def get_by_id(party_id):
-        p = Party.query.get(party_id)
+    def get_by_id(party_name):
+        p = Party.query.get(party_name)
         return p.to_dict() if p else None
 
     @staticmethod
@@ -169,14 +166,14 @@ class Candidate(db.Model):
     name = db.Column(db.String, nullable=False)
     photo = db.Column(db.String)
     const_id = db.Column(db.String, db.ForeignKey('constituency.id'), nullable=False)
-    party_id = db.Column(UUID(as_uuid=True), db.ForeignKey('party.id'), nullable=False)
-    status = db.Column(db.Enum('WON', 'LOST', name='candidate_status'), nullable=False)
+    party_id = db.Column(db.String, db.ForeignKey('party.name'), nullable=False)
+    status = db.Column(db.Enum('won', 'lost', name='candidate_status'), nullable=True)
     elec_type = db.Column(db.String, nullable=False)
 
     def to_dict(self):
         return {
             "id": str(self.id), "name": self.name, "photo": self.photo, "const_id": self.const_id,
-            "party_id": str(self.party_id), "status": self.status, "elec_type": self.elec_type
+            "party_id": self.party_id, "status": self.status, "elec_type": self.elec_type
         }
 
     @staticmethod
@@ -188,17 +185,21 @@ class Candidate(db.Model):
         c = Candidate.query.get(candidate_id)
         return c.to_dict() if c else None
 
-    @staticmethod
-    def create(data):
-        try:
-            c = Candidate(**data)
-            db.session.add(c)
-            db.session.commit()
-            return c.to_dict()
-        except Exception as e:
-            db.session.rollback()
-            print(e)
-            return None
+@staticmethod
+def create(data):
+    try:
+        if "status" in data and data["status"]:
+            data["status"] = data["status"].lower()  # 👈 convert to lowercase
+
+        c = Candidate(**data)
+        db.session.add(c)
+        db.session.commit()
+        return c.to_dict()
+    except Exception as e:
+        db.session.rollback()
+        print(e)
+        return None
+
 
 
 class Constituency(db.Model):
@@ -225,7 +226,7 @@ class Constituency(db.Model):
         'Candidate',
         foreign_keys=[mp_id],
         uselist=False
-    )  
+    )
 
     def to_dict(self):
         return {

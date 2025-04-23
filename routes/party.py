@@ -6,7 +6,7 @@ from database.models import Party, Election
 party_bp = Blueprint('party', __name__)
 
 # Use your actual JSON file path
-SCRAPED_PARTIES_PATH = "data/MH-party.json"
+SCRAPED_PARTIES_PATH = "data/DL-party.json"
 
 @party_bp.route('/election/<election_id>/party/scrape', methods=['GET'])
 def scraped_party(election_id):
@@ -62,7 +62,7 @@ def insert_party(election_id):
                 new_party = Party(
                     name=party_data["party_name"],
                     symbol=party_data["symbol"],
-                    total_seats=party_data.get("total_seats")  # safe fallback
+                    total_seats=party_data.get("total_seats")
                 )
                 db.session.add(new_party)
                 inserted += 1
@@ -77,3 +77,32 @@ def insert_party(election_id):
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
 
+
+@party_bp.route('/party/search', methods=['GET'])
+def search_party():
+    """Search party by name query param"""
+    name = request.args.get('name')
+    if not name:
+        return jsonify({"error": "Missing query param ?name=..."}), 400
+
+    parties = Party.query.filter(Party.name.ilike(f"%{name}%")).all()
+    return jsonify({
+        "results": [p.to_dict() for p in parties],
+        "count": len(parties)
+    })
+
+
+# ✅ New: Get party by name (exact match)
+@party_bp.route('/party/<string:party_name>', methods=['GET'])
+def get_party_by_name(party_name):
+    party = Party.query.get(party_name)
+    if not party:
+        return jsonify({"error": "Party not found"}), 404
+    return jsonify(party.to_dict())
+
+
+# ✅ New: Get all parties
+@party_bp.route('/parties', methods=['GET'])
+def get_all_parties():
+    parties = Party.query.all()
+    return jsonify([p.to_dict() for p in parties])

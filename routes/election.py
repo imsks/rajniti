@@ -44,6 +44,21 @@ def get_election(election_id):
         return jsonify({'error': 'Election not found.'}), 404
     return jsonify(election), 200
 
+# -------------------- Get Elections by Filters --------------------
+@election_bp.route('/elections', methods=['GET'])
+def get_elections_by_filters():
+    state_id = request.args.get('state_id')
+    year = request.args.get('year')
+
+    query = Election.query
+    if state_id:
+        query = query.filter_by(state_id=state_id)
+    if year:
+        query = query.filter_by(year=int(year))
+
+    elections = query.all()
+    return jsonify([e.to_dict() for e in elections]), 200
+
 # -------------------- Update Election --------------------
 @election_bp.route('/election/<election_id>', methods=['PUT'])
 def update_election(election_id):

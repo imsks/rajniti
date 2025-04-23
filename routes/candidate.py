@@ -5,8 +5,7 @@ from database.models import Candidate, Constituency, Election
 
 candidate_bp = Blueprint('candidate', __name__)
 
-# Path to your JSON file
-CANDIDATE_JSON_PATH = "data/MH-candidate.json"
+CANDIDATE_JSON_PATH = "data/DL_candidate_data.json"
 
 # -------------------- /scrape --------------------
 @candidate_bp.route('/election/<election_id>/candidate/scrape', methods=['GET'])
@@ -61,23 +60,16 @@ def insert_candidates(election_id):
             photo = entry.get("Image URL")
             elec_type = election.type
 
-            # ❌ Skip NOTA
             if name.strip().upper() == "NOTA":
-                print(f"Skipping NOTA candidate: {entry}")
                 continue
 
-            # ❌ Skip incomplete entries
-            if not name or not const_id or not party_name or not status or not elec_type:
-                print(f"Skipping incomplete candidate: {entry}")
+            if not name or not const_id or not party_name or not elec_type:
                 continue
 
-            # ❌ Skip invalid constituency
             constituency = Constituency.query.filter_by(id=const_id).first()
             if not constituency:
-                print(f"Skipping invalid constituency_id: {const_id}")
                 continue
 
-            # ✅ Skip if candidate already exists
             existing = Candidate.query.filter_by(
                 name=name,
                 const_id=const_id,
@@ -92,7 +84,7 @@ def insert_candidates(election_id):
                 photo=photo,
                 const_id=const_id,
                 party_id=party_name,
-                status=status,
+                status=status.lower() if status else None,
                 elec_type=elec_type
             )
             db.session.add(new_candidate)
@@ -104,3 +96,27 @@ def insert_candidates(election_id):
     except Exception as e:
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
+
+# -------------------- GET APIs --------------------
+
+@candidate_bp.route('/candidates', methods=['GET'])
+def get_all_candidates():
+    candidates = Candidate.query.all()
+    return jsonify({"candidates": [c.to_dict() for c in candidates]})
+
+@candidate_bp.route('/candidate/<candidate_id>', methods=['GET'])
+def get_candidate_by_id(candidate_id):
+    candidate = Candidate.query.get(candidate_id)
+    if not candidate:
+        return jsonify({"error": "Candidate not found"}), 404
+    return jsonify(candidate.to_dict())
+
+@candidate_bp.route('/candidates/constituency/<const_id>', methods=['GET'])
+def get_candidates_by_constituency(const_id):
+    candidates = Candidate.query.filter_by(const_id=const_id).all()
+    return jsonify({"results": [c.to_dict() for c in candidates], "count": len(candidates)})
+
+@candidate_bp.route('/candidates/party/<party_name>', methods=['GET'])
+def get_candidates_by_party(party_name):
+    candidates = Candidate.query.filter_by(party_id=party_name).all()
+    return jsonify({"results": [c.to_dict() for c in candidates], "count": len(candidates)})

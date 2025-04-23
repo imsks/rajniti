@@ -1,5 +1,3 @@
-# ✅ FILE: routes/constituency_routes.py
-
 import json
 from flask import Blueprint, request, jsonify
 from database import db
@@ -7,7 +5,7 @@ from database.models import Constituency, State
 
 constituency_bp = Blueprint('constituency', __name__)
 
-SCRAPED_CONSTITUENCY_PATH = "data/MH-constituency.json"
+SCRAPED_CONSTITUENCY_PATH = "data/DL-constituency.json"
 
 @constituency_bp.route('/election/<election_id>/constituency/scrape', methods=['GET'])
 def scrape_constituencies(election_id):
@@ -75,3 +73,29 @@ def insert_constituencies(election_id):
         db.session.rollback()
         print("Error inserting constituencies:", e)
         return jsonify({"error": str(e)}), 500
+
+
+# ------------------- New APIs -------------------
+
+@constituency_bp.route('/constituency/<constituency_id>', methods=['GET'])
+def get_constituency_by_id(constituency_id):
+    constituency = Constituency.query.get(constituency_id)
+    if not constituency:
+        return jsonify({"error": "Constituency not found"}), 404
+    return jsonify(constituency.to_dict())
+
+
+@constituency_bp.route('/constituencies', methods=['GET'])
+def get_all_constituencies():
+    all_data = Constituency.get_all()
+    return jsonify({"results": all_data, "count": len(all_data)})
+
+
+@constituency_bp.route('/constituencies/state/<state_id>', methods=['GET'])
+def get_constituencies_by_state(state_id):
+    constituencies = Constituency.query.filter_by(state_id=state_id).all()
+    return jsonify({
+        "state_id": state_id,
+        "results": [c.to_dict() for c in constituencies],
+        "count": len(constituencies)
+    })
