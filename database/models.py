@@ -92,6 +92,7 @@ class State(db.Model):
             print(f"Error populating states: {str(e)}")
 
 
+
 class Election(db.Model):
     __tablename__ = 'election'
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
