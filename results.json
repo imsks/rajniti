@@ -1,0 +1,1442 @@
+[
+    {
+        "constituency": "Anakapalle(5)",
+        "candidate_name": "C.M.RAMESH",
+        "votes": "762069",
+        "margin": "296530"
+    },
+    {
+        "constituency": "Rajahmundry(8)",
+        "candidate_name": "DAGGUBATI PURANDHESHWARI",
+        "votes": "726515",
+        "margin": "239139"
+    },
+    {
+        "constituency": "Narsapuram(9)",
+        "candidate_name": "BHUPATHI RAJU SRINIVASA VARMA (B.J.P.VARMA)",
+        "votes": "707343",
+        "margin": "276802"
+    },
+    {
+        "constituency": "Arunachal West(1)",
+        "candidate_name": "KIREN RIJIJU",
+        "votes": "205417",
+        "margin": "100738"
+    },
+    {
+        "constituency": "Arunachal East(2)",
+        "candidate_name": "TAPIR GAO",
+        "votes": "145581",
+        "margin": "30421"
+    },
+    {
+        "constituency": "Darrang-Udalguri(4)",
+        "candidate_name": "DILIP SAIKIA",
+        "votes": "868387",
+        "margin": "329012"
+    },
+    {
+        "constituency": "Guwahati(5)",
+        "candidate_name": "BIJULI KALITA MEDHI",
+        "votes": "894887",
+        "margin": "251090"
+    },
+    {
+        "constituency": "Diphu(6)",
+        "candidate_name": "AMARSING TISSO",
+        "votes": "334620",
+        "margin": "147603"
+    },
+    {
+        "constituency": "Karimganj(7)",
+        "candidate_name": "KRIPANATH MALLAH",
+        "votes": "545093",
+        "margin": "18360"
+    },
+    {
+        "constituency": "Silchar (8)",
+        "candidate_name": "PARIMAL SUKLABAIDYA",
+        "votes": "652405",
+        "margin": "264311"
+    },
+    {
+        "constituency": "Kaziranga(10)",
+        "candidate_name": "KAMAKHYA PRASAD TASA",
+        "votes": "897043",
+        "margin": "248947"
+    },
+    {
+        "constituency": "Sonitpur(11)",
+        "candidate_name": "RANJIT DUTTA",
+        "votes": "775788",
+        "margin": "361408"
+    },
+    {
+        "constituency": "Lakhimpur(12)",
+        "candidate_name": "PRADAN BARUAH",
+        "votes": "663122",
+        "margin": "201257"
+    },
+    {
+        "constituency": "Dibrugarh(13)",
+        "candidate_name": "SARBANANDA SONOWAL",
+        "votes": "693762",
+        "margin": "279321"
+    },
+    {
+        "constituency": "Paschim Champaran(2)",
+        "candidate_name": "DR.SANJAY JAISWAL",
+        "votes": "580421",
+        "margin": "136568"
+    },
+    {
+        "constituency": "Purvi Champaran(3)",
+        "candidate_name": "RADHA MOHAN SINGH",
+        "votes": "542193",
+        "margin": "88287"
+    },
+    {
+        "constituency": "Madhubani(6)",
+        "candidate_name": "ASHOK KUMAR YADAV",
+        "votes": "553428",
+        "margin": "151945"
+    },
+    {
+        "constituency": "Araria(9)",
+        "candidate_name": "PRADEEP KUMAR SINGH",
+        "votes": "600146",
+        "margin": "20094"
+    },
+    {
+        "constituency": "Darbhanga(14)",
+        "candidate_name": "GOPAL JEE THAKUR",
+        "votes": "566630",
+        "margin": "178156"
+    },
+    {
+        "constituency": "Muzaffarpur(15)",
+        "candidate_name": "RAJ BHUSHAN CHOUDHARY",
+        "votes": "619749",
+        "margin": "234927"
+    },
+    {
+        "constituency": "Maharajganj(19)",
+        "candidate_name": "JANARDAN SINGH \"SIGRIWAL\"",
+        "votes": "529533",
+        "margin": "102651"
+    },
+    {
+        "constituency": "Saran(20)",
+        "candidate_name": "RAJIV PRATAP RUDY",
+        "votes": "471752",
+        "margin": "13661"
+    },
+    {
+        "constituency": "Ujiarpur(22)",
+        "candidate_name": "NITYANAND RAI",
+        "votes": "515965",
+        "margin": "60102"
+    },
+    {
+        "constituency": "Begusarai(24)",
+        "candidate_name": "GIRIRAJ SINGH",
+        "votes": "649331",
+        "margin": "81480"
+    },
+    {
+        "constituency": "Patna Sahib(30)",
+        "candidate_name": "RAVI SHANKAR PRASAD",
+        "votes": "588270",
+        "margin": "153846"
+    },
+    {
+        "constituency": "Nawada(39)",
+        "candidate_name": "VIVEK THAKUR",
+        "votes": "410608",
+        "margin": "67670"
+    },
+    {
+        "constituency": "North Goa(1)",
+        "candidate_name": "SHRIPAD YESSO NAIK",
+        "votes": "257326",
+        "margin": "116015"
+    },
+    {
+        "constituency": "Kachchh(1)",
+        "candidate_name": "CHAVDA VINOD LAKHAMSHI",
+        "votes": "659574",
+        "margin": "268782"
+    },
+    {
+        "constituency": "Patan(3)",
+        "candidate_name": "DABHI  BHARATSINHJI  SHANKARJI",
+        "votes": "591947",
+        "margin": "31876"
+    },
+    {
+        "constituency": "Mahesana(4)",
+        "candidate_name": "HARIBHAI PATEL",
+        "votes": "686406",
+        "margin": "328046"
+    },
+    {
+        "constituency": "Sabarkantha(5)",
+        "candidate_name": "SHOBHANABEN MAHENDRASINH BARAIYA",
+        "votes": "677318",
+        "margin": "155682"
+    },
+    {
+        "constituency": "Gandhinagar(6)",
+        "candidate_name": "AMIT SHAH",
+        "votes": "1010972",
+        "margin": "744716"
+    },
+    {
+        "constituency": "Ahmedabad East(7)",
+        "candidate_name": "HASMUKHBHAI PATEL (H.S.PATEL)",
+        "votes": "770459",
+        "margin": "461755"
+    },
+    {
+        "constituency": "Ahmedabad West(8)",
+        "candidate_name": "DINESHBHAI MAKWANA (ADVOCATE)",
+        "votes": "611704",
+        "margin": "286437"
+    },
+    {
+        "constituency": "Surendranagar(9)",
+        "candidate_name": "CHANDUBHAI CHHAGANBHAI SHIHORA",
+        "votes": "669749",
+        "margin": "261617"
+    },
+    {
+        "constituency": "Rajkot(10)",
+        "candidate_name": "PARSHOTTAMBHAI RUPALA",
+        "votes": "857984",
+        "margin": "484260"
+    },
+    {
+        "constituency": "Porbandar(11)",
+        "candidate_name": "DR. MANSUKH MANDAVIYA",
+        "votes": "633118",
+        "margin": "383360"
+    },
+    {
+        "constituency": "Jamnagar(12)",
+        "candidate_name": "POONAMBEN HEMATBHAI MAADAM",
+        "votes": "620049",
+        "margin": "238008"
+    },
+    {
+        "constituency": "Junagadh(13)",
+        "candidate_name": "CHUDASAMA RAJESHBHAI NARANBHAI",
+        "votes": "584049",
+        "margin": "135494"
+    },
+    {
+        "constituency": "Amreli(14)",
+        "candidate_name": "BHARATBHAI MANUBHAI SUTARIYA",
+        "votes": "580872",
+        "margin": "321068"
+    },
+    {
+        "constituency": "Bhavnagar(15)",
+        "candidate_name": "NIMUBEN JAYANTIBHAI BAMBHANIYA (NIMUBEN BAMBHANIYA)",
+        "votes": "716883",
+        "margin": "455289"
+    },
+    {
+        "constituency": "Anand(16)",
+        "candidate_name": "MITESH PATEL (BAKABHAI)",
+        "votes": "612484",
+        "margin": "89939"
+    },
+    {
+        "constituency": "Kheda(17)",
+        "candidate_name": "DEVUSINH CHAUHAN",
+        "votes": "744435",
+        "margin": "357758"
+    },
+    {
+        "constituency": "Panchmahal(18)",
+        "candidate_name": "RAJPALSINH MAHENDRASINH JADAV",
+        "votes": "794579",
+        "margin": "509342"
+    },
+    {
+        "constituency": "Dahod(19)",
+        "candidate_name": "JASWANTSINH SUMANBHAI BHABHOR",
+        "votes": "688715",
+        "margin": "333677"
+    },
+    {
+        "constituency": "Vadodara(20)",
+        "candidate_name": "DR. HEMANG JOSHI",
+        "votes": "873189",
+        "margin": "582126"
+    },
+    {
+        "constituency": "Chhota Udaipur(21)",
+        "candidate_name": "JASHUBHAI BHILUBHAI RATHVA",
+        "votes": "796589",
+        "margin": "398777"
+    },
+    {
+        "constituency": "Bharuch(22)",
+        "candidate_name": "MANSUKHBHAI DHANJIBHAI VASAVA",
+        "votes": "608157",
+        "margin": "85696"
+    },
+    {
+        "constituency": "Bardoli(23)",
+        "candidate_name": "PARBHUBHAI NAGARBHAI VASAVA",
+        "votes": "763950",
+        "margin": "230253"
+    },
+    {
+        "constituency": "Surat(24)",
+        "candidate_name": "MUKESHKUMAR CHANDRAKAANT DALAL (Uncontested)",
+        "votes": "-",
+        "margin": "-"
+    },
+    {
+        "constituency": "Navsari(25)",
+        "candidate_name": "C R PATIL",
+        "votes": "1031065",
+        "margin": "773551"
+    },
+    {
+        "constituency": "Valsad(26)",
+        "candidate_name": "DHAVAL LAXMANBHAI PATEL",
+        "votes": "764226",
+        "margin": "210704"
+    },
+    {
+        "constituency": "KURUKSHETRA(2)",
+        "candidate_name": "NAVEEN JINDAL",
+        "votes": "542175",
+        "margin": "29021"
+    },
+    {
+        "constituency": "KARNAL(5)",
+        "candidate_name": "MANOHAR LAL",
+        "votes": "739285",
+        "margin": "232577"
+    },
+    {
+        "constituency": "BHIWANI-MAHENDRAGARH(8)",
+        "candidate_name": "DHARAMBIR SINGH",
+        "votes": "588664",
+        "margin": "41510"
+    },
+    {
+        "constituency": "GURGAON(9)",
+        "candidate_name": "RAO INDERJIT SINGH",
+        "votes": "808336",
+        "margin": "75079"
+    },
+    {
+        "constituency": "FARIDABAD(10)",
+        "candidate_name": "KRISHAN PAL",
+        "votes": "788569",
+        "margin": "172914"
+    },
+    {
+        "constituency": "KANGRA(1)",
+        "candidate_name": "DR RAJEEV BHARDWAJ",
+        "votes": "632793",
+        "margin": "251895"
+    },
+    {
+        "constituency": "MANDI(2)",
+        "candidate_name": "KANGNA RANAUT",
+        "votes": "537022",
+        "margin": "74755"
+    },
+    {
+        "constituency": "HAMIRPUR(3)",
+        "candidate_name": "ANURAG SINGH THAKUR",
+        "votes": "607068",
+        "margin": "182357"
+    },
+    {
+        "constituency": "SHIMLA(4)",
+        "candidate_name": "Suresh Kumar Kashyap",
+        "votes": "519748",
+        "margin": "91451"
+    },
+    {
+        "constituency": "Belgaum(2)",
+        "candidate_name": "JAGADISH SHETTAR",
+        "votes": "762029",
+        "margin": "178437"
+    },
+    {
+        "constituency": "Bagalkot(3)",
+        "candidate_name": "GADDIGOUDAR. PARVATAGOUDA. CHANDANAGOUDA.",
+        "votes": "671039",
+        "margin": "68399"
+    },
+    {
+        "constituency": "Bijapur(4)",
+        "candidate_name": "RAMESH JIGAJINAGI",
+        "votes": "672781",
+        "margin": "77229"
+    },
+    {
+        "constituency": "Haveri(10)",
+        "candidate_name": "BASAVARAJ BOMMAI",
+        "votes": "705538",
+        "margin": "43513"
+    },
+    {
+        "constituency": "Dharwad(11)",
+        "candidate_name": "PRALHAD JOSHI",
+        "votes": "716231",
+        "margin": "97324"
+    },
+    {
+        "constituency": "Uttara Kannada(12)",
+        "candidate_name": "VISHWESHWAR HEGDE KAGERI",
+        "votes": "782495",
+        "margin": "337428"
+    },
+    {
+        "constituency": "Shimoga(14)",
+        "candidate_name": "B.Y.RAGHAVENDRA",
+        "votes": "778721",
+        "margin": "243715"
+    },
+    {
+        "constituency": "Udupi Chikmagalur(15)",
+        "candidate_name": "KOTA SRINIVAS POOJARY",
+        "votes": "732234",
+        "margin": "259175"
+    },
+    {
+        "constituency": "Dakshina Kannada(17)",
+        "candidate_name": "CAPTAIN BRIJESH CHOWTA",
+        "votes": "764132",
+        "margin": "149208"
+    },
+    {
+        "constituency": "Chitradurga(18)",
+        "candidate_name": "GOVIND MAKTHAPPA KARJOL",
+        "votes": "684890",
+        "margin": "48121"
+    },
+    {
+        "constituency": "Tumkur(19)",
+        "candidate_name": "V. SOMANNA",
+        "votes": "720946",
+        "margin": "175594"
+    },
+    {
+        "constituency": "Mysore(21)",
+        "candidate_name": "YADUVEER KRISHNADATTA CHAMARAJA WADIYAR",
+        "votes": "795503",
+        "margin": "139262"
+    },
+    {
+        "constituency": "Bangalore Rural(23)",
+        "candidate_name": "DR C N MANJUNATH",
+        "votes": "1079002",
+        "margin": "269647"
+    },
+    {
+        "constituency": "Bangalore North(24)",
+        "candidate_name": "SHOBHA KARANDLAJE",
+        "votes": "986049",
+        "margin": "259476"
+    },
+    {
+        "constituency": "Bangalore central(25)",
+        "candidate_name": "P C MOHAN",
+        "votes": "658915",
+        "margin": "32707"
+    },
+    {
+        "constituency": "Bangalore South(26)",
+        "candidate_name": "TEJASVI SURYA",
+        "votes": "750830",
+        "margin": "277083"
+    },
+    {
+        "constituency": "Chikkballapur(27)",
+        "candidate_name": "DR.K.SUDHAKAR",
+        "votes": "822619",
+        "margin": "163460"
+    },
+    {
+        "constituency": "Thrissur(10)",
+        "candidate_name": "SURESH GOPI",
+        "votes": "412338",
+        "margin": "74686"
+    },
+    {
+        "constituency": "MORENA(1)",
+        "candidate_name": "SHIVMANGAL SINGH TOMAR",
+        "votes": "515477",
+        "margin": "52530"
+    },
+    {
+        "constituency": "BHIND(2)",
+        "candidate_name": "SANDHYA RAY",
+        "votes": "537065",
+        "margin": "64840"
+    },
+    {
+        "constituency": "GWALIOR(3)",
+        "candidate_name": "BHARAT SINGH KUSHWAH",
+        "votes": "671535",
+        "margin": "70210"
+    },
+    {
+        "constituency": "GUNA(4)",
+        "candidate_name": "JYOTIRADITYA M. SCINDIA",
+        "votes": "923302",
+        "margin": "540929"
+    },
+    {
+        "constituency": "SAGAR(5)",
+        "candidate_name": "DR. LATA WANKHEDE",
+        "votes": "787979",
+        "margin": "471222"
+    },
+    {
+        "constituency": "TIKAMGARH(6)",
+        "candidate_name": "DR. VIRENDRA KUMAR",
+        "votes": "715050",
+        "margin": "403312"
+    },
+    {
+        "constituency": "DAMOH(7)",
+        "candidate_name": "RAHUL SINGH LODHI",
+        "votes": "709768",
+        "margin": "406426"
+    },
+    {
+        "constituency": "KHAJURAHO(8)",
+        "candidate_name": "VISHNU DATT SHARMA (V.D.SHARMA)",
+        "votes": "772774",
+        "margin": "541229"
+    },
+    {
+        "constituency": "SATNA(9)",
+        "candidate_name": "GANESH SINGH",
+        "votes": "459728",
+        "margin": "84949"
+    },
+    {
+        "constituency": "REWA(10)",
+        "candidate_name": "JANARDAN MISHRA",
+        "votes": "477459",
+        "margin": "193374"
+    },
+    {
+        "constituency": "SIDHI(11)",
+        "candidate_name": "DR. RAJESH MISHRA",
+        "votes": "583559",
+        "margin": "206416"
+    },
+    {
+        "constituency": "SHAHDOL(12)",
+        "candidate_name": "SMT. HIMADRI SINGH",
+        "votes": "711143",
+        "margin": "397340"
+    },
+    {
+        "constituency": "JABALPUR(13)",
+        "candidate_name": "ASHISH DUBEY",
+        "votes": "790133",
+        "margin": "486674"
+    },
+    {
+        "constituency": "MANDLA(14)",
+        "candidate_name": "FAGGAN SINGH KULASTE",
+        "votes": "751375",
+        "margin": "103846"
+    },
+    {
+        "constituency": "BALAGHAT(15)",
+        "candidate_name": "BHARTI PARDHI",
+        "votes": "712660",
+        "margin": "174512"
+    },
+    {
+        "constituency": "CHHINDWARA(16)",
+        "candidate_name": "BUNTY VIVEK SAHU",
+        "votes": "644738",
+        "margin": "113618"
+    },
+    {
+        "constituency": "HOSHANGABAD(17)",
+        "candidate_name": "DARSHAN SINGH CHOUDHARY",
+        "votes": "812147",
+        "margin": "431696"
+    },
+    {
+        "constituency": "VIDISHA(18)",
+        "candidate_name": "SHIVRAJ SINGH CHOUHAN",
+        "votes": "1116460",
+        "margin": "821408"
+    },
+    {
+        "constituency": "BHOPAL(19)",
+        "candidate_name": "ALOK SHARMA",
+        "votes": "981109",
+        "margin": "501499"
+    },
+    {
+        "constituency": "RAJGARH(20)",
+        "candidate_name": "RODMAL NAGAR",
+        "votes": "758743",
+        "margin": "146089"
+    },
+    {
+        "constituency": "DEWAS(21)",
+        "candidate_name": "MAHENDRA SINGH SOLANKY",
+        "votes": "928941",
+        "margin": "425225"
+    },
+    {
+        "constituency": "UJJAIN(22)",
+        "candidate_name": "ANIL FIROJIYA",
+        "votes": "836104",
+        "margin": "375860"
+    },
+    {
+        "constituency": "MANDSOUR(23)",
+        "candidate_name": "SUDHEER GUPTA",
+        "votes": "945761",
+        "margin": "500655"
+    },
+    {
+        "constituency": "RATLAM(24)",
+        "candidate_name": "ANITA NAGARSINGH CHOUHAN",
+        "votes": "795863",
+        "margin": "207232"
+    },
+    {
+        "constituency": "DHAR(25)",
+        "candidate_name": "SAVITRI THAKUR",
+        "votes": "794449",
+        "margin": "218665"
+    },
+    {
+        "constituency": "INDORE(26)",
+        "candidate_name": "SHANKAR LALWANI",
+        "votes": "1226751",
+        "margin": "1175092"
+    },
+    {
+        "constituency": "KHARGONE(27)",
+        "candidate_name": "GAJENDRA SINGH PATEL",
+        "votes": "819863",
+        "margin": "135018"
+    },
+    {
+        "constituency": "KHANDWA(28)",
+        "candidate_name": "GYANESHWAR PATIL",
+        "votes": "862679",
+        "margin": "269971"
+    },
+    {
+        "constituency": "BETUL(29)",
+        "candidate_name": "DURGADAS (D. D.) UIKEY",
+        "votes": "848236",
+        "margin": "379761"
+    },
+    {
+        "constituency": "Jalgaon(3)",
+        "candidate_name": "SMITA UDAY WAGH",
+        "votes": "674428",
+        "margin": "251594"
+    },
+    {
+        "constituency": "Raver(4)",
+        "candidate_name": "KHADSE RAKSHA NIKHIL",
+        "votes": "630879",
+        "margin": "272183"
+    },
+    {
+        "constituency": "Akola(6)",
+        "candidate_name": "ANUP SANJAY DHOTRE",
+        "votes": "457030",
+        "margin": "40626"
+    },
+    {
+        "constituency": "Nagpur(10)",
+        "candidate_name": "NITIN JAIRAM GADKARI",
+        "votes": "655027",
+        "margin": "137603"
+    },
+    {
+        "constituency": "Palghar(22)",
+        "candidate_name": "DR. HEMANT VISHNU SAVARA",
+        "votes": "601244",
+        "margin": "183306"
+    },
+    {
+        "constituency": "Mumbai North(26)",
+        "candidate_name": "PIYUSH GOYAL",
+        "votes": "680146",
+        "margin": "357608"
+    },
+    {
+        "constituency": "Pune(34)",
+        "candidate_name": "MURLIDHAR MOHOL",
+        "votes": "584728",
+        "margin": "123038"
+    },
+    {
+        "constituency": "Satara(45)",
+        "candidate_name": "SHRIMANT CHH UDAYANRAJE PRATAPSINHAMAHARAJ BHONSLE",
+        "votes": "571134",
+        "margin": "32771"
+    },
+    {
+        "constituency": "Ratnagiri- Sindhudurg(46)",
+        "candidate_name": "NARAYAN TATU RANE",
+        "votes": "448514",
+        "margin": "47858"
+    },
+    {
+        "constituency": "Bargarh(1)",
+        "candidate_name": "PRADEEP PUROHIT",
+        "votes": "716359",
+        "margin": "251667"
+    },
+    {
+        "constituency": "Sundargarh(2)",
+        "candidate_name": "JUAL ORAM",
+        "votes": "494282",
+        "margin": "138808"
+    },
+    {
+        "constituency": "Sambalpur(3)",
+        "candidate_name": "DHARMENDRA PRADHAN",
+        "votes": "592162",
+        "margin": "119836"
+    },
+    {
+        "constituency": "Keonjhar(4)",
+        "candidate_name": "ANANTA NAYAK",
+        "votes": "573923",
+        "margin": "97042"
+    },
+    {
+        "constituency": "Mayurbhanj(5)",
+        "candidate_name": "NABA CHARAN MAJHI",
+        "votes": "585971",
+        "margin": "219334"
+    },
+    {
+        "constituency": "Balasore(6)",
+        "candidate_name": "PRATAP CHANDRA SARANGI",
+        "votes": "563865",
+        "margin": "147156"
+    },
+    {
+        "constituency": "Bhadrak(7)",
+        "candidate_name": "AVIMANYU SETHI",
+        "votes": "573319",
+        "margin": "91544"
+    },
+    {
+        "constituency": "Jajpur(8)",
+        "candidate_name": "RABINDRA NARAYAN BEHERA",
+        "votes": "534239",
+        "margin": "1587"
+    },
+    {
+        "constituency": "Dhenkanal(9)",
+        "candidate_name": "RUDRA NARAYAN PANY",
+        "votes": "598721",
+        "margin": "76567"
+    },
+    {
+        "constituency": "Bolangir(10)",
+        "candidate_name": "SANGEETA KUMARI SINGH DEO",
+        "votes": "617744",
+        "margin": "132664"
+    },
+    {
+        "constituency": "Kalahandi(11)",
+        "candidate_name": "MALVIKA DEVI",
+        "votes": "544303",
+        "margin": "133813"
+    },
+    {
+        "constituency": "Nabarangpur(12)",
+        "candidate_name": "BALABHADRA MAJHI",
+        "votes": "481396",
+        "margin": "87536"
+    },
+    {
+        "constituency": "Kandhamal(13)",
+        "candidate_name": "SUKANTA KUMAR PANIGRAHI",
+        "votes": "416415",
+        "margin": "21371"
+    },
+    {
+        "constituency": "Cuttack(14)",
+        "candidate_name": "BHARTRUHARI MAHTAB",
+        "votes": "531601",
+        "margin": "57077"
+    },
+    {
+        "constituency": "Kendrapara(15)",
+        "candidate_name": "BAIJAYANT PANDA",
+        "votes": "615705",
+        "margin": "66536"
+    },
+    {
+        "constituency": "Jagatsinghpur(16)",
+        "candidate_name": "BIBHU PRASAD TARAI",
+        "votes": "589093",
+        "margin": "40696"
+    },
+    {
+        "constituency": "Puri(17)",
+        "candidate_name": "SAMBIT PATRA",
+        "votes": "629330",
+        "margin": "104709"
+    },
+    {
+        "constituency": "Bhubaneswar(18)",
+        "candidate_name": "APARAJITA SARANGI",
+        "votes": "512519",
+        "margin": "35152"
+    },
+    {
+        "constituency": "Aska(19)",
+        "candidate_name": "ANITA SUBHADARSHINI",
+        "votes": "494226",
+        "margin": "99974"
+    },
+    {
+        "constituency": "Berhampur(20)",
+        "candidate_name": "DR. PRADEEP KUMAR PANIGRAHY",
+        "votes": "513102",
+        "margin": "165476"
+    },
+    {
+        "constituency": "BIKANER (2)",
+        "candidate_name": "ARJUN RAM MEGHWAL",
+        "votes": "566737",
+        "margin": "55711"
+    },
+    {
+        "constituency": "JAIPUR RURAL(6)",
+        "candidate_name": "RAO RAJENDRA SINGH",
+        "votes": "617877",
+        "margin": "1615"
+    },
+    {
+        "constituency": "JAIPUR(7)",
+        "candidate_name": "MANJU SHARMA",
+        "votes": "886850",
+        "margin": "331767"
+    },
+    {
+        "constituency": "ALWAR(8)",
+        "candidate_name": "BHUPENDER YADAV",
+        "votes": "631992",
+        "margin": "48282"
+    },
+    {
+        "constituency": "AJMER (13)",
+        "candidate_name": "BHAGIRATH CHOUDHARY",
+        "votes": "747462",
+        "margin": "329991"
+    },
+    {
+        "constituency": "PALI(15)",
+        "candidate_name": "P. P. CHAUDHARY",
+        "votes": "757389",
+        "margin": "245351"
+    },
+    {
+        "constituency": "JODHPUR(16)",
+        "candidate_name": "GAJENDRA SINGH SHEKHAWAT",
+        "votes": "730056",
+        "margin": "115677"
+    },
+    {
+        "constituency": "JALORE (18)",
+        "candidate_name": "LUMBARAM",
+        "votes": "796783",
+        "margin": "201543"
+    },
+    {
+        "constituency": "UDAIPUR (19)",
+        "candidate_name": "MANNA LAL RAWAT",
+        "votes": "738286",
+        "margin": "261608"
+    },
+    {
+        "constituency": "CHITTORGARH(21)",
+        "candidate_name": "CHANDRA PRAKASH JOSHI",
+        "votes": "888202",
+        "margin": "389877"
+    },
+    {
+        "constituency": "RAJSAMAND(22)",
+        "candidate_name": "MAHIMA KUMARI MEWAR",
+        "votes": "781203",
+        "margin": "392223"
+    },
+    {
+        "constituency": "BHILWARA(23)",
+        "candidate_name": "DAMODAR AGARWAL",
+        "votes": "807640",
+        "margin": "354606"
+    },
+    {
+        "constituency": "KOTA(24)",
+        "candidate_name": "OM BIRLA",
+        "votes": "750496",
+        "margin": "41974"
+    },
+    {
+        "constituency": "JHALAWAR-BARAN(25)",
+        "candidate_name": "DUSHYANT SINGH",
+        "votes": "865376",
+        "margin": "370989"
+    },
+    {
+        "constituency": "Tripura West(1)",
+        "candidate_name": "BIPLAB KUMAR DEB",
+        "votes": "881341",
+        "margin": "611578"
+    },
+    {
+        "constituency": "Tripura East(2)",
+        "candidate_name": "KRITI DEVI DEBBARMAN",
+        "votes": "777447",
+        "margin": "486819"
+    },
+    {
+        "constituency": "Amroha(9)",
+        "candidate_name": "KANWAR SINGH TANWAR",
+        "votes": "476506",
+        "margin": "28670"
+    },
+    {
+        "constituency": "Meerut(10)",
+        "candidate_name": "ARUN GOVIL",
+        "votes": "546469",
+        "margin": "10585"
+    },
+    {
+        "constituency": "Ghaziabad(12)",
+        "candidate_name": "ATUL GARG",
+        "votes": "854170",
+        "margin": "336965"
+    },
+    {
+        "constituency": "Gautam Buddha Nagar(13)",
+        "candidate_name": "DR. MAHESH SHARMA",
+        "votes": "857829",
+        "margin": "559472"
+    },
+    {
+        "constituency": "Bulandshahr(14)",
+        "candidate_name": "DR BHOLA SINGH",
+        "votes": "597310",
+        "margin": "275134"
+    },
+    {
+        "constituency": "Aligarh(15)",
+        "candidate_name": "SATISH KUMAR GAUTAM",
+        "votes": "501834",
+        "margin": "15647"
+    },
+    {
+        "constituency": "Hathras(16)",
+        "candidate_name": "ANOOP PRADHAN BALMIKI",
+        "votes": "554746",
+        "margin": "247318"
+    },
+    {
+        "constituency": "Mathura(17)",
+        "candidate_name": "HEMAMALINI DHARMENDRA DEOL",
+        "votes": "510064",
+        "margin": "293407"
+    },
+    {
+        "constituency": "Agra(18)",
+        "candidate_name": "PROF S P SINGH BAGHEL",
+        "votes": "599397",
+        "margin": "271294"
+    },
+    {
+        "constituency": "Fatehpur Sikri(19)",
+        "candidate_name": "RAJKUMAR CHAHAR",
+        "votes": "445657",
+        "margin": "43405"
+    },
+    {
+        "constituency": "Bareilly(25)",
+        "candidate_name": "CHHATRA PAL SINGH GANGWAR",
+        "votes": "567127",
+        "margin": "34804"
+    },
+    {
+        "constituency": "Pilibhit(26)",
+        "candidate_name": "JITIN PRASADA",
+        "votes": "607158",
+        "margin": "164935"
+    },
+    {
+        "constituency": "Shahjahanpur(27)",
+        "candidate_name": "ARUN KUMAR SAGAR",
+        "votes": "592718",
+        "margin": "55379"
+    },
+    {
+        "constituency": "Hardoi(31)",
+        "candidate_name": "JAI PRAKASH",
+        "votes": "486798",
+        "margin": "27856"
+    },
+    {
+        "constituency": "Misrikh(32)",
+        "candidate_name": "ASHOK KUMAR RAWAT",
+        "votes": "475016",
+        "margin": "33406"
+    },
+    {
+        "constituency": "Unnao(33)",
+        "candidate_name": "SWAMI SACHCHIDANAND HARI SAKSHI",
+        "votes": "616133",
+        "margin": "35818"
+    },
+    {
+        "constituency": "Lucknow(35)",
+        "candidate_name": "RAJ NATH SINGH",
+        "votes": "612709",
+        "margin": "135159"
+    },
+    {
+        "constituency": "Farrukhabad(40)",
+        "candidate_name": "MUKESH RAJPUT",
+        "votes": "487963",
+        "margin": "2678"
+    },
+    {
+        "constituency": "Kanpur(43)",
+        "candidate_name": "RAMESH AWASTHI",
+        "votes": "443055",
+        "margin": "20968"
+    },
+    {
+        "constituency": "Akbarpur(44)",
+        "candidate_name": "DEVENDRA SINGH ALIAS BHOLE SINGH",
+        "votes": "517423",
+        "margin": "44345"
+    },
+    {
+        "constituency": "Jhansi(46)",
+        "candidate_name": "ANURAG SHARMA",
+        "votes": "690316",
+        "margin": "102614"
+    },
+    {
+        "constituency": "Phulpur(51)",
+        "candidate_name": "PRAVEEN PATEL",
+        "votes": "452600",
+        "margin": "4332"
+    },
+    {
+        "constituency": "Baharaich(56)",
+        "candidate_name": "ANAND KUMAR",
+        "votes": "518802",
+        "margin": "64227"
+    },
+    {
+        "constituency": "Kaiserganj(57)",
+        "candidate_name": "KARAN BHUSHAN SINGH",
+        "votes": "571263",
+        "margin": "148843"
+    },
+    {
+        "constituency": "Gonda(59)",
+        "candidate_name": "KIRTIVARDHAN SINGH",
+        "votes": "474258",
+        "margin": "46224"
+    },
+    {
+        "constituency": "Domariyaganj(60)",
+        "candidate_name": "JAGDAMBIKA PAL",
+        "votes": "463303",
+        "margin": "42728"
+    },
+    {
+        "constituency": "Maharajganj(63)",
+        "candidate_name": "PANKAJ CHAUDHARY",
+        "votes": "591310",
+        "margin": "35451"
+    },
+    {
+        "constituency": "Gorakhpur(64)",
+        "candidate_name": "RAVINDRA SHUKLA ALIAS RAVI KISHAN",
+        "votes": "585834",
+        "margin": "103526"
+    },
+    {
+        "constituency": "Kushi Nagar(65)",
+        "candidate_name": "VIJAY KUMAR DUBAY",
+        "votes": "516345",
+        "margin": "81790"
+    },
+    {
+        "constituency": "Deoria(66)",
+        "candidate_name": "SHASHANK MANI",
+        "votes": "504541",
+        "margin": "34842"
+    },
+    {
+        "constituency": "Bansgaon(67)",
+        "candidate_name": "KAMLESH PASWAN",
+        "votes": "428693",
+        "margin": "3150"
+    },
+    {
+        "constituency": "Varanasi(77)",
+        "candidate_name": "NARENDRA MODI",
+        "votes": "612970",
+        "margin": "152513"
+    },
+    {
+        "constituency": "Bhadohi(78)",
+        "candidate_name": "DR. VINOD KUMAR BIND",
+        "votes": "459982",
+        "margin": "44072"
+    },
+    {
+        "constituency": "Alipurduars(2)",
+        "candidate_name": "MANOJ TIGGA",
+        "votes": "695314",
+        "margin": "75447"
+    },
+    {
+        "constituency": "Jalpaiguri(3)",
+        "candidate_name": "DR JAYANTA KUMAR ROY",
+        "votes": "766568",
+        "margin": "86693"
+    },
+    {
+        "constituency": "Darjeeling(4)",
+        "candidate_name": "RAJU BISTA",
+        "votes": "679331",
+        "margin": "178525"
+    },
+    {
+        "constituency": "Raiganj(5)",
+        "candidate_name": "KARTICK CHANDRA PAUL",
+        "votes": "560897",
+        "margin": "68197"
+    },
+    {
+        "constituency": "Balurghat(6)",
+        "candidate_name": "SUKANTA MAJUMDAR",
+        "votes": "574996",
+        "margin": "10386"
+    },
+    {
+        "constituency": "Maldaha Uttar(7)",
+        "candidate_name": "KHAGEN MURMU",
+        "votes": "527023",
+        "margin": "77708"
+    },
+    {
+        "constituency": "Ranaghat(13)",
+        "candidate_name": "JAGANNATH SARKAR",
+        "votes": "782396",
+        "margin": "186899"
+    },
+    {
+        "constituency": "Bangaon(14)",
+        "candidate_name": "SHANTANU THAKUR",
+        "votes": "719505",
+        "margin": "73693"
+    },
+    {
+        "constituency": "Tamluk(30)",
+        "candidate_name": "ABHIJIT GANGOPADHYAY",
+        "votes": "765584",
+        "margin": "77733"
+    },
+    {
+        "constituency": "Kanthi(31)",
+        "candidate_name": "ADHIKARI SOUMENDU",
+        "votes": "763195",
+        "margin": "47764"
+    },
+    {
+        "constituency": "Purulia(35)",
+        "candidate_name": "JYOTIRMAY SINGH MAHATO",
+        "votes": "578489",
+        "margin": "17079"
+    },
+    {
+        "constituency": "Bishnupur(37)",
+        "candidate_name": "KHAN SAUMITRA",
+        "votes": "680130",
+        "margin": "5567"
+    },
+    {
+        "constituency": "SURGUJA(1)",
+        "candidate_name": "CHINTAMANI MAHARAJ",
+        "votes": "713200",
+        "margin": "64822"
+    },
+    {
+        "constituency": "RAIGARH(2)",
+        "candidate_name": "RADHESHYAM RATHIYA",
+        "votes": "808275",
+        "margin": "240391"
+    },
+    {
+        "constituency": "JANJGIR-CHAMPA(3)",
+        "candidate_name": "KAMLESH JANGDE",
+        "votes": "678199",
+        "margin": "60000"
+    },
+    {
+        "constituency": "BILASPUR(5)",
+        "candidate_name": "TOKHAN SAHU",
+        "votes": "724937",
+        "margin": "164558"
+    },
+    {
+        "constituency": "RAJNANDGAON(6)",
+        "candidate_name": "SANTOSH PANDEY",
+        "votes": "712057",
+        "margin": "44411"
+    },
+    {
+        "constituency": "DURG(7)",
+        "candidate_name": "VIJAY BAGHEL",
+        "votes": "956497",
+        "margin": "438226"
+    },
+    {
+        "constituency": "RAIPUR(8)",
+        "candidate_name": "BRIJMOHAN AGRAWAL",
+        "votes": "1050351",
+        "margin": "575285"
+    },
+    {
+        "constituency": "MAHASAMUND(9)",
+        "candidate_name": "ROOP KUMARI CHOUDHARY",
+        "votes": "703659",
+        "margin": "145456"
+    },
+    {
+        "constituency": "BASTAR(10)",
+        "candidate_name": "MAHESH KASHYAP",
+        "votes": "458398",
+        "margin": "55245"
+    },
+    {
+        "constituency": "KANKER(11)",
+        "candidate_name": "BHOJRAJ NAG",
+        "votes": "597624",
+        "margin": "1884"
+    },
+    {
+        "constituency": "Godda(3)",
+        "candidate_name": "NISHIKANT DUBEY",
+        "votes": "693140",
+        "margin": "101813"
+    },
+    {
+        "constituency": "Chatra(4)",
+        "candidate_name": "KALI CHARAN SINGH",
+        "votes": "574556",
+        "margin": "220959"
+    },
+    {
+        "constituency": "Kodarma(5)",
+        "candidate_name": "ANNPURNA DEVI",
+        "votes": "791657",
+        "margin": "377014"
+    },
+    {
+        "constituency": "Dhanbad(7)",
+        "candidate_name": "DULU MAHATO",
+        "votes": "789172",
+        "margin": "331583"
+    },
+    {
+        "constituency": "Ranchi(8)",
+        "candidate_name": "SANJAY SETH",
+        "votes": "664732",
+        "margin": "120512"
+    },
+    {
+        "constituency": "Jamshedpur(9)",
+        "candidate_name": "BIDYUT BARAN MAHATO",
+        "votes": "726174",
+        "margin": "259782"
+    },
+    {
+        "constituency": "Palamau(13)",
+        "candidate_name": "VISHNU DAYAL RAM",
+        "votes": "770362",
+        "margin": "288807"
+    },
+    {
+        "constituency": "Hazaribagh(14)",
+        "candidate_name": "MANISH JAISWAL",
+        "votes": "654613",
+        "margin": "276686"
+    },
+    {
+        "constituency": "Tehri Garhwal(1)",
+        "candidate_name": "MALA RAJYA LAKSHMI SHAH",
+        "votes": "462603",
+        "margin": "272493"
+    },
+    {
+        "constituency": "Garhwal(2)",
+        "candidate_name": "ANIL BALUNI",
+        "votes": "432159",
+        "margin": "163503"
+    },
+    {
+        "constituency": "Almora(3)",
+        "candidate_name": "AJAY TAMTA",
+        "votes": "429167",
+        "margin": "234097"
+    },
+    {
+        "constituency": "Nainital-Udhamsingh Nagar(4)",
+        "candidate_name": "AJAY BHATT",
+        "votes": "772671",
+        "margin": "334548"
+    },
+    {
+        "constituency": "Haridwar(5)",
+        "candidate_name": "TRIVENDRA SINGH RAWAT",
+        "votes": "653808",
+        "margin": "164056"
+    },
+    {
+        "constituency": "Adilabad (1)",
+        "candidate_name": "GODAM NAGESH",
+        "votes": "568168",
+        "margin": "90652"
+    },
+    {
+        "constituency": "Karimnagar (3)",
+        "candidate_name": "BANDI SANJAY KUMAR",
+        "votes": "585116",
+        "margin": "225209"
+    },
+    {
+        "constituency": "Nizamabad(4)",
+        "candidate_name": "ARVIND DHARMAPURI",
+        "votes": "592318",
+        "margin": "109241"
+    },
+    {
+        "constituency": "Medak(6)",
+        "candidate_name": "MADHAVANENI RAGHUNANDAN RAO",
+        "votes": "471217",
+        "margin": "39139"
+    },
+    {
+        "constituency": "Malkajgiri(7)",
+        "candidate_name": "EATALA RAJENDER",
+        "votes": "991042",
+        "margin": "391475"
+    },
+    {
+        "constituency": "Secunderabad(8)",
+        "candidate_name": "G. KISHAN REDDY",
+        "votes": "473012",
+        "margin": "49944"
+    },
+    {
+        "constituency": "Chevella(10)",
+        "candidate_name": "KONDA VISHWESHWAR REDDY",
+        "votes": "809882",
+        "margin": "172897"
+    },
+    {
+        "constituency": "Mahbubnagar(11)",
+        "candidate_name": "ARUNA. D. K",
+        "votes": "510747",
+        "margin": "4500"
+    },
+    {
+        "constituency": "Andaman & Nicobar Islands(1)",
+        "candidate_name": "BISHNU PADA RAY",
+        "votes": "102436",
+        "margin": "24396"
+    },
+    {
+        "constituency": "Dadar & Nagar Haveli(2)",
+        "candidate_name": "DELKAR KALABEN MOHANBHAI",
+        "votes": "121074",
+        "margin": "57584"
+    },
+    {
+        "constituency": "Chandni Chowk(1)",
+        "candidate_name": "PRAVEEN KHANDELWAL",
+        "votes": "516496",
+        "margin": "89325"
+    },
+    {
+        "constituency": "North-East Delhi(2)",
+        "candidate_name": "MANOJ TIWARI",
+        "votes": "824451",
+        "margin": "138778"
+    },
+    {
+        "constituency": "East Delhi(3)",
+        "candidate_name": "HARSH MALHOTRA",
+        "votes": "664819",
+        "margin": "93663"
+    },
+    {
+        "constituency": "New Delhi(4)",
+        "candidate_name": "BANSURI SWARAJ",
+        "votes": "453185",
+        "margin": "78370"
+    },
+    {
+        "constituency": "North-West Delhi(5)",
+        "candidate_name": "YOGENDER CHANDOLIYA",
+        "votes": "866483",
+        "margin": "290849"
+    },
+    {
+        "constituency": "West Delhi(6)",
+        "candidate_name": "KAMALJEET SEHRAWAT",
+        "votes": "842658",
+        "margin": "199013"
+    },
+    {
+        "constituency": "South Delhi(7)",
+        "candidate_name": "RAMVIR SINGH BIDHURI",
+        "votes": "692832",
+        "margin": "124333"
+    },
+    {
+        "constituency": "UDHAMPUR(4)",
+        "candidate_name": "DR JITENDRA SINGH",
+        "votes": "571076",
+        "margin": "124373"
+    },
+    {
+        "constituency": "JAMMU(5)",
+        "candidate_name": "JUGAL KISHORE",
+        "votes": "687588",
+        "margin": "135498"
+    }
+]

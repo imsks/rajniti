@@ -1,72 +1,59 @@
-import json
-import re
-import time
-from pathlib import Path
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
+import requests
 from bs4 import BeautifulSoup
+import json
+from time import sleep
 
-URL = "https://results.eci.gov.in/PcResultGenJune2024/partywisewinresultState-369.htm"
-OUTPUT_FILE = "output/constituencies_369.json"
+party_ids = [
+    369, 742, 1680, 140, 582, 1745, 805, 3369, 3620, 3529, 3165, 1888, 1420,
+    547, 772, 1, 852, 860, 545, 804, 1847, 544, 1458, 834, 1998, 83, 664, 911,
+    1534, 1142, 3388, 2757, 1584, 2484, 3482, 1658, 1046, 2989, 2070, 160, 118, 743
+]
 
-def setup_driver():
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920x1080")
-    return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+BASE_URL = "https://results.eci.gov.in/PcResultGenJune2024/partywisewinresultState-{}.htm"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "Referer": "https://results.eci.gov.in/PcResultGenJune2024/index.htm"
+}
 
-def extract_constituency_data(driver, url):
-    driver.get(url)
-    time.sleep(2)
-    soup = BeautifulSoup(driver.page_source, "html.parser")
+all_data = []
 
-    table = soup.find("table")
-    if not table:
-        print("[ERROR] No table found!")
-        return []
-
-    rows = table.find_all("tr")[1:]  # Skip the header row
-    results = []
-
-    for row in rows:
-        cols = row.find_all("td")
-        if len(cols) >= 3:
-            constituency_text = cols[2].get_text(strip=True)
-            match = re.match(r"(.*)\((\d+)\)", constituency_text)
-            if not match:
-                continue
-
-            constituency_name = match.group(1).strip()
-            cid = match.group(2).strip()
-            state_id = cid[:2] if cid.isdigit() else "NA"
-
-            results.append({
-                "constituency_name": constituency_name,
-                "constituency_id": f"S{state_id}-{cid}",
-                "state_id": state_id
-            })
-
-    return results
-
-def main():
-    Path("output").mkdir(exist_ok=True)
-    driver = setup_driver()
-
+for party_id in party_ids:
+    url = BASE_URL.format(party_id)
+    print(f"Visiting: {url}")
     try:
-        print("[INFO] Scraping:", URL)
-        data = extract_constituency_data(driver, URL)
-        if data:
-            with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-                json.dump(data, f, indent=4, ensure_ascii=False)
-            print(f"[OK] Scraped {len(data)} constituencies")
-            print(f"[OK] Saved to: {OUTPUT_FILE}")
-        else:
-            print("[INFO] No data found in the table.")
-    finally:
-        driver.quit()
+        response = requests.get(url, headers=HEADERS, timeout=10)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.content, "html.parser")
 
-if __name__ == "__main__":
-    main()
+        table = soup.find("table", {"class": "table table-striped table-bordered"})
+        if not table:
+            print(f"No table found for party {party_id}")
+            continue
+
+        rows = table.find("tbody").find_all("tr")
+        for row in rows:
+            cols = row.find_all("td")
+            if len(cols) < 5:
+                continue
+            constituency_link = cols[1].find("a")
+            constituency = constituency_link.text.strip() if constituency_link else cols[1].text.strip()
+            candidate_name = cols[2].text.strip()
+            votes = cols[3].text.strip()
+            margin = cols[4].text.strip()
+
+            all_data.append({
+                "party_id": party_id,
+                "constituency": constituency,
+                "candidate_name": candidate_name,
+                "votes": votes,
+                "margin": margin
+            })
+        sleep(0.5)  # Be polite to the server
+    except Exception as e:
+        print(f"Failed for party {party_id}: {e}")
+
+# Save combined results
+with open("all_party_results.json", "w", encoding="utf-8") as f:
+    json.dump(all_data, f, ensure_ascii=False, indent=4)
+
+print(" All party data scraped and saved to all_party_results.json")
