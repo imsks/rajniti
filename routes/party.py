@@ -8,6 +8,7 @@ party_bp = Blueprint('party', __name__)
 # Use your actual JSON file path
 SCRAPED_PARTIES_PATH = "data/DL-party.json"
 
+# ------------------------
 @party_bp.route('/election/<election_id>/party/scrape', methods=['GET'])
 def scraped_party(election_id):
     """Check if election exists and scraped data file is available."""
@@ -27,7 +28,7 @@ def scraped_party(election_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
+# ------------------------
 @party_bp.route('/election/<election_id>/party/verify', methods=['GET'])
 def verify_party(election_id):
     election = Election.query.get(election_id)
@@ -41,7 +42,7 @@ def verify_party(election_id):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
+# ------------------------
 @party_bp.route('/election/<election_id>/party/insert', methods=['POST'])
 def insert_party(election_id):
     election = Election.query.get(election_id)
@@ -77,7 +78,7 @@ def insert_party(election_id):
         db.session.rollback()
         return jsonify({"error": str(e)}), 500
 
-
+# ------------------------
 @party_bp.route('/party/search', methods=['GET'])
 def search_party():
     """Search party by name query param"""
@@ -91,8 +92,7 @@ def search_party():
         "count": len(parties)
     })
 
-
-# ✅ New: Get party by name (exact match)
+# ------------------------
 @party_bp.route('/party/<string:party_name>', methods=['GET'])
 def get_party_by_name(party_name):
     party = Party.query.get(party_name)
@@ -100,8 +100,7 @@ def get_party_by_name(party_name):
         return jsonify({"error": "Party not found"}), 404
     return jsonify(party.to_dict())
 
-
-# ✅ New: Get all parties
+# ------------------------
 @party_bp.route('/parties', methods=['GET'])
 def get_all_parties():
     parties = Party.query.all()
