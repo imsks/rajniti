@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Maharashtra Constituencies 2024 Schema",
+  "description": "Schema for Maharashtra Assembly constituencies",
+  "items": {
+    "type": "object",
+    "required": ["constituency_name", "constituency_id", "state_id"],
+    "properties": {
+      "constituency_name": {
+        "type": "string",
+        "description": "Official name of the constituency",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "constituency_id": {
+        "type": "string",
+        "description": "Unique identifier for Maharashtra constituency",
+        "pattern": "^S13-\\d+$"
+      },
+      "state_id": {
+        "type": "string",
+        "description": "State identifier for Maharashtra",
+        "enum": ["MH"]
+      }
+    },
+    "additionalProperties": false
+  }
+}

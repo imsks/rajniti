@@ -1,0 +1,61 @@
+{
+  "dataset_name": "candidates",
+  "title": "Election Candidates Data",
+  "description": "Comprehensive candidate data including election results, vote counts, and margins",
+  "source": "Election Commission of India (ECI)",
+  "source_url": "https://results.eci.gov.in",
+  "election": {
+    "type": "Assembly Election", 
+    "state": "Delhi",
+    "year": 2025,
+    "date": "February 2025"
+  },
+  "last_updated": "2025-01-20T06:05:35Z",
+  "version": "1.0.0",
+  "format": "JSON",
+  "encoding": "UTF-8", 
+  "total_records": null,
+  "fields": [
+    {
+      "name": "Constituency Code",
+      "type": "string",
+      "description": "Constituency identifier where candidate contested"
+    },
+    {
+      "name": "Name",
+      "type": "string",
+      "description": "Full name of the candidate"
+    },
+    {
+      "name": "Party", 
+      "type": "string",
+      "description": "Political party affiliation"
+    },
+    {
+      "name": "Status",
+      "type": "string",
+      "description": "Election result status (WON/LOST/NOTA)"
+    },
+    {
+      "name": "Votes",
+      "type": "string", 
+      "description": "Number of votes received"
+    },
+    {
+      "name": "Margin",
+      "type": "string",
+      "description": "Victory margin or vote difference"
+    },
+    {
+      "name": "Image URL",
+      "type": "string",
+      "description": "URL to candidate's photo"
+    }
+  ],
+  "license": "Public Domain",
+  "keywords": ["candidates", "elections", "results", "votes", "delhi", "assembly"],
+  "contact": {
+    "name": "Rajniti API", 
+    "email": "api@rajniti.com"
+  }
+}

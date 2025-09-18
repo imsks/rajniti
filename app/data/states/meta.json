@@ -1,0 +1,64 @@
+{
+  "dataset_name": "states",
+  "title": "Indian States and Union Territories",
+  "description": "Comprehensive data about Indian states and union territories including demographics and political information",
+  "source": "Census of India, Election Commission of India",
+  "source_url": "https://census.gov.in, https://eci.gov.in",
+  "last_updated": "2025-01-15T12:00:00Z",
+  "version": "1.0.0",
+  "format": "JSON",
+  "encoding": "UTF-8",
+  "total_records": 1,
+  "coverage": {
+    "states": ["Delhi"],
+    "data_types": ["demographic", "political", "geographic"]
+  },
+  "fields": [
+    {
+      "name": "state_id",
+      "type": "string",
+      "description": "Two-letter state identifier code"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Official name of the state/UT"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "description": "Administrative type (State/Union Territory)"
+    },
+    {
+      "name": "capital",
+      "type": "string",
+      "description": "Capital city name"
+    },
+    {
+      "name": "assembly_constituencies",
+      "type": "integer",
+      "description": "Number of assembly constituencies"
+    },
+    {
+      "name": "population",
+      "type": "integer",
+      "description": "Total population"
+    },
+    {
+      "name": "area_sq_km",
+      "type": "number",
+      "description": "Area in square kilometers"
+    },
+    {
+      "name": "literacy_rate",
+      "type": "number",
+      "description": "Literacy rate percentage"
+    }
+  ],
+  "license": "Public Domain",
+  "keywords": ["states", "demographics", "geography", "politics", "india"],
+  "contact": {
+    "name": "Rajniti API",
+    "email": "api@rajniti.com"
+  }
+}

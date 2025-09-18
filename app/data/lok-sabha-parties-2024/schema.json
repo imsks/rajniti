@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Lok Sabha 2024 Party Results Schema",
+  "description": "Schema for Lok Sabha 2024 party-wise seat summary",
+  "items": {
+    "type": "object",
+    "required": ["party_name", "symbol", "total_seats"],
+    "properties": {
+      "party_name": {
+        "type": "string",
+        "description": "Official name of the political party",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "symbol": {
+        "type": "string",
+        "description": "Official election symbol/abbreviation",
+        "minLength": 1,
+        "maxLength": 50
+      },
+      "total_seats": {
+        "type": "integer",
+        "description": "Total number of Lok Sabha seats won",
+        "minimum": 0,
+        "maximum": 543
+      }
+    },
+    "additionalProperties": false
+  }
+}
