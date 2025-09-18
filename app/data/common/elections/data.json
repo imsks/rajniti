@@ -1,0 +1,21 @@
+[
+  {
+    "election_id": "DL-2025-ASSEMBLY",
+    "name": "Delhi Assembly Election 2025",
+    "type": "VIDHANSABHA",
+    "year": 2025,
+    "date": "2025-02-05",
+    "state_id": "DL",
+    "state_name": "Delhi",
+    "total_constituencies": 70,
+    "total_candidates": 6914,
+    "total_parties": 3,
+    "voter_turnout": null,
+    "result_status": "DECLARED",
+    "result_date": "2025-02-08",
+    "winning_party": "Bharatiya Janata Party",
+    "winning_party_seats": 48,
+    "runner_up_party": "Aam Aadmi Party", 
+    "runner_up_seats": 22
+  }
+]

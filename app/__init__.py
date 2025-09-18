@@ -7,11 +7,10 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 
 from app.config.config import get_config, BaseConfig
-from app.models import db
-from app.models.populate import PopulateDB
 from app.core.logging_config import setup_logging, get_logger
 from app.core.exceptions import RajnitiException
 from app.core.responses import APIResponse
+from app.db import DatabaseConfig, DatabaseManager
 
 
 def create_app(config_name: Optional[str] = None) -> Flask:
@@ -53,11 +52,20 @@ def create_app(config_name: Optional[str] = None) -> Flask:
 
 def _init_extensions(app: Flask, config: BaseConfig) -> None:
     """Initialize Flask extensions."""
-    # Database
-    db.init_app(app)
+    # Setup optional database
+    db_config = DatabaseConfig()
+    db_enabled = db_config.enable_database(app)
     
-    # Migrations
-    Migrate(app, db)
+    # Store database configuration in app for access by other components
+    app.db_config = db_config
+    app.db_manager = DatabaseManager(db_config)
+    
+    if db_enabled:
+        logger = get_logger("rajniti.app")
+        logger.info("Database functionality enabled")
+    else:
+        logger = get_logger("rajniti.app")
+        logger.info("Database functionality disabled - running in JSON-only mode")
     
     # CORS
     CORS(app, origins=config.CORS_ORIGINS)
@@ -70,6 +78,7 @@ def _register_blueprints(app: Flask, config: BaseConfig) -> None:
     from app.routes.candidate import candidate_bp
     from app.routes.election import election_bp
     from app.routes.data_routes import data_bp
+    from app.routes.election_routes import lok_sabha_bp, vidhan_sabha_bp, election_bp as election_types_bp
     
     api_prefix = f"/api/{config.API_VERSION}"
     
@@ -81,6 +90,11 @@ def _register_blueprints(app: Flask, config: BaseConfig) -> None:
     
     # Register dynamic data routes
     app.register_blueprint(data_bp, url_prefix=api_prefix)
+    
+    # Register new election-type specific routes
+    app.register_blueprint(lok_sabha_bp, url_prefix=f"{api_prefix}/lok_sabha")
+    app.register_blueprint(vidhan_sabha_bp, url_prefix=f"{api_prefix}/vidhan_sabha")
+    app.register_blueprint(election_types_bp, url_prefix=f"{api_prefix}/elections")
 
 
 def _register_error_handlers(app: Flask) -> None:
@@ -134,23 +148,29 @@ def _register_error_handlers(app: Flask) -> None:
 
 
 def _setup_database(app: Flask, config: BaseConfig) -> None:
-    """Setup database tables and initial data."""
+    """Setup database tables and initial data if database is enabled."""
     
     @app.before_first_request
     def create_tables():
         """Create database tables and populate initial data."""
         logger = get_logger("rajniti.database")
         
+        # Only setup database if it's enabled
+        if not hasattr(app, 'db_config') or not app.db_config.is_enabled():
+            logger.info("Database disabled, skipping table creation and data population")
+            return
+        
         try:
-            db.create_all()
-            logger.info("Database tables created successfully")
+            # Create tables
+            tables_created = app.db_config.create_tables(app)
+            if tables_created:
+                logger.info("Database tables created successfully")
             
             # Populate initial data
-            populate = PopulateDB(db, config.SQLALCHEMY_DATABASE_URI)
-            populate.init_populate()
-            logger.info("Initial data populated successfully")
+            data_populated = app.db_config.populate_initial_data(app)
+            if data_populated:
+                logger.info("Initial data populated successfully")
             
         except Exception as e:
-            logger.error("Failed to setup database", error=str(e))
-            raise
+            logger.warning("Database setup failed - continuing in JSON-only mode", error=str(e))
 

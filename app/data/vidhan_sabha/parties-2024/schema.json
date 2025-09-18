@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Maharashtra Parties 2024 Schema",
+  "description": "Schema for Maharashtra Assembly 2024 party results",
+  "items": {
+    "type": "object",
+    "required": ["party_name", "symbol", "total_seats"],
+    "properties": {
+      "party_name": {
+        "type": "string",
+        "description": "Official name of the political party",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "symbol": {
+        "type": "string",
+        "description": "Official election symbol/abbreviation",
+        "minLength": 1,
+        "maxLength": 50
+      },
+      "total_seats": {
+        "type": "integer",
+        "description": "Total assembly seats won by the party",
+        "minimum": 0,
+        "maximum": 288
+      }
+    },
+    "additionalProperties": false
+  }
+}

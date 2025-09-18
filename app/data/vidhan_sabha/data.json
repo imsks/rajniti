@@ -1,0 +1,30 @@
+{
+  "election_info": {
+    "type": "VIDHANSABHA",
+    "scope": "State",
+    "covered_states": ["Maharashtra"]
+  },
+  "datasets": {
+    "maharashtra_2024": "maharashtra-2024/data.json",
+    "constituencies_2024": "constituencies-2024/data.json",
+    "parties_2024": "parties-2024/data.json"
+  },
+  "state_elections": {
+    "maharashtra": {
+      "year": 2024,
+      "total_constituencies": 288,
+      "election_date": "2024-11-20",
+      "total_candidates": 39817
+    }
+  },
+  "summary": {
+    "total_states_covered": 1,
+    "last_updated": "2024-11-23T18:00:00Z",
+    "data_sources": ["Election Commission of India"]
+  },
+  "structure": {
+    "note": "This file serves as an index to the actual data files within this election type",
+    "data_location": "Individual datasets are stored in their respective subdirectories",
+    "access_pattern": "Use the datasets field to locate specific data files"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "type": "object",
+  "title": "Lok Sabha Elections Data Schema",
+  "description": "Schema for Lok Sabha (Parliamentary) election data structure",
+  "properties": {
+    "election_info": {
+      "type": "object",
+      "properties": {
+        "type": {"type": "string", "enum": ["LOKSABHA"]},
+        "year": {"type": "integer", "minimum": 1947},
+        "total_constituencies": {"type": "integer"},
+        "phases": {"type": "integer"},
+        "scope": {"type": "string", "enum": ["National"]}
+      },
+      "required": ["type", "year", "total_constituencies"]
+    },
+    "datasets": {
+      "type": "object",
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "party_id": {"type": ["integer", "string"]},
+              "constituency": {"type": "string"},
+              "candidate_name": {"type": "string"},
+              "votes": {"type": ["string", "integer"]},
+              "margin": {"type": ["string", "integer"]},
+              "status": {"type": "string", "enum": ["won", "lost"]}
+            },
+            "required": ["party_id", "constituency", "candidate_name", "votes"]
+          }
+        },
+        "parties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "symbol": {"type": "string"},
+              "total_seats": {"type": ["integer", "null"]}
+            },
+            "required": ["name", "symbol"]
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

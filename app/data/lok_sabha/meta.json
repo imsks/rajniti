@@ -1,0 +1,35 @@
+{
+  "dataset_name": "lok_sabha",
+  "title": "Lok Sabha Elections Data",
+  "description": "Comprehensive data from Lok Sabha (Parliamentary) elections including candidates, results, parties and constituencies",
+  "source": "Election Commission of India (ECI)",
+  "source_url": "https://results.eci.gov.in",
+  "election": {
+    "type": "General Election (Lok Sabha)",
+    "scope": "National",
+    "description": "Parliamentary elections for the lower house of Indian Parliament"
+  },
+  "last_updated": "2024-11-23T18:00:00Z",
+  "version": "1.0.0",
+  "format": "JSON",
+  "encoding": "UTF-8",
+  "coverage": {
+    "scope": "National",
+    "total_constituencies": 543,
+    "data_type": "Candidate results, party information, and constituency data"
+  },
+  "available_datasets": [
+    "lok-sabha-2024",
+    "parties-2024"
+  ],
+  "structure": {
+    "lok-sabha-2024": "Main candidate results from 2024 Lok Sabha elections",
+    "parties-2024": "Party-wise performance and seat distribution"
+  },
+  "license": "Public Domain",
+  "keywords": ["lok sabha", "parliament", "general election", "national", "india"],
+  "contact": {
+    "name": "Rajniti API",
+    "email": "api@rajniti.com"
+  }
+}

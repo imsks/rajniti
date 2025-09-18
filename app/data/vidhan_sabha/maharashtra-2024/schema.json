@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Maharashtra Assembly 2024 Results Schema",
+  "description": "Schema for Maharashtra Assembly 2024 election candidate results",
+  "items": {
+    "type": "object",
+    "required": ["Constituency Code", "Name", "Party", "Status"],
+    "properties": {
+      "Constituency Code": {
+        "type": "string",
+        "description": "Constituency identifier for Maharashtra",
+        "pattern": "^S13-\\d+$"
+      },
+      "Name": {
+        "type": "string",
+        "description": "Full name of the candidate",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "Party": {
+        "type": "string",
+        "description": "Political party affiliation",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "Status": {
+        "type": "string",
+        "description": "Election result status",
+        "enum": ["Won", "Lost", "NOTA"]
+      },
+      "Votes": {
+        "type": "string",
+        "description": "Number of votes received",
+        "pattern": "^\\d+$"
+      },
+      "Margin": {
+        "type": "string",
+        "description": "Victory margin",
+        "pattern": "^\\d+$"
+      },
+      "Image URL": {
+        "type": "string",
+        "description": "URL to candidate's photo",
+        "format": "uri"
+      }
+    },
+    "additionalProperties": false
+  }
+}

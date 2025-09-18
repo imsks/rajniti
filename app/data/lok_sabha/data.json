@@ -1,0 +1,23 @@
+{
+  "election_info": {
+    "type": "LOKSABHA",
+    "year": 2024,
+    "total_constituencies": 543,
+    "phases": 7,
+    "scope": "National"
+  },
+  "datasets": {
+    "candidates_2024": "lok-sabha-2024/data.json",
+    "parties_2024": "parties-2024/data.json"
+  },
+  "summary": {
+    "total_candidates": 3802,
+    "last_updated": "2024-06-04T18:00:00Z",
+    "data_sources": ["Election Commission of India"]
+  },
+  "structure": {
+    "note": "This file serves as an index to the actual data files within this election type",
+    "data_location": "Individual datasets are stored in their respective subdirectories",
+    "access_pattern": "Use the datasets field to locate specific data files"
+  }
+}

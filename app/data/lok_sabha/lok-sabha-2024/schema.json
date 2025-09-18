@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "title": "Lok Sabha 2024 Results Schema",
+  "description": "Schema for Lok Sabha 2024 election candidate results",
+  "items": {
+    "type": "object",
+    "required": ["party_id", "constituency", "candidate_name", "votes"],
+    "properties": {
+      "party_id": {
+        "type": "integer",
+        "description": "Unique party identifier",
+        "minimum": 1
+      },
+      "constituency": {
+        "type": "string",
+        "description": "Constituency name with number",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "candidate_name": {
+        "type": "string",
+        "description": "Full name of the candidate",
+        "minLength": 1,
+        "maxLength": 200
+      },
+      "votes": {
+        "type": "string",
+        "description": "Number of votes received",
+        "pattern": "^\\d+$"
+      },
+      "margin": {
+        "type": "string",
+        "description": "Victory margin",
+        "pattern": "^\\d+$"
+      }
+    },
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_name": "constituencies",
+  "title": "Electoral Constituencies Data", 
+  "description": "List of electoral constituencies with identifiers and state mappings",
+  "source": "Election Commission of India (ECI)",
+  "source_url": "https://results.eci.gov.in",
+  "election": {
+    "type": "Assembly Election",
+    "state": "Delhi", 
+    "year": 2025,
+    "date": "February 2025"
+  },
+  "last_updated": "2025-01-20T06:05:35Z",
+  "version": "1.0.0",
+  "format": "JSON",
+  "encoding": "UTF-8",
+  "total_records": null,
+  "fields": [
+    {
+      "name": "constituency_name",
+      "type": "string",
+      "description": "Official name of the constituency"
+    },
+    {
+      "name": "constituency_id",
+      "type": "string", 
+      "description": "Unique identifier for the constituency (format: ST-NN)"
+    },
+    {
+      "name": "state_id",
+      "type": "string",
+      "description": "Two-letter state identifier code"
+    }
+  ],
+  "license": "Public Domain",
+  "keywords": ["constituencies", "elections", "geography", "delhi", "assembly"],
+  "contact": {
+    "name": "Rajniti API",
+    "email": "api@rajniti.com"
+  }
+}

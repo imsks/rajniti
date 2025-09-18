@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "title": "Vidhan Sabha Elections Data Schema",
+  "description": "Schema for Vidhan Sabha (State Assembly) election data structure",
+  "properties": {
+    "election_info": {
+      "type": "object",
+      "properties": {
+        "type": {"type": "string", "enum": ["VIDHANSABHA"]},
+        "year": {"type": "integer", "minimum": 1947},
+        "state": {"type": "string"},
+        "total_constituencies": {"type": "integer"},
+        "scope": {"type": "string", "enum": ["State"]}
+      },
+      "required": ["type", "year", "state", "total_constituencies"]
+    },
+    "datasets": {
+      "type": "object",
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "constituency_code": {"type": "string"},
+              "name": {"type": "string"},
+              "party": {"type": "string"},
+              "status": {"type": "string", "enum": ["Won", "Lost", "NOTA"]},
+              "votes": {"type": ["string", "integer"]},
+              "margin": {"type": ["string", "integer"]},
+              "image_url": {"type": ["string", "null"]}
+            },
+            "required": ["constituency_code", "name", "party", "status", "votes"]
+          }
+        },
+        "constituencies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {"type": "string"},
+              "name": {"type": "string"},
+              "state_id": {"type": "string"}
+            },
+            "required": ["id", "name", "state_id"]
+          }
+        },
+        "parties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "symbol": {"type": "string"},
+              "total_seats": {"type": ["integer", "null"]}
+            },
+            "required": ["name", "symbol"]
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}
