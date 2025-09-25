@@ -1,74 +1,14 @@
 version: '3.8'
 
 services:
-  # Main API service
+  # Simple Flask API serving JSON data
   rajniti-api:
     build: .
     container_name: rajniti-api
     ports:
       - "8080:8080"
     environment:
-      - FLASK_ENV=development
-      - FLASK_HOST=0.0.0.0
-      - FLASK_PORT=8080
-      - SECRET_KEY=dev-secret-key-change-in-production
-      - LOG_LEVEL=INFO
-      - REDIS_URL=redis://redis:6379/0
+      - SECRET_KEY=dev-secret-key
     volumes:
-      - ./app/data:/app/app/data:ro  # Mount data as read-only
-      - ./logs:/app/logs             # Mount logs directory
-    depends_on:
-      - redis
+      - ./app/data:/app/app/data:ro  # Mount election data as read-only
     restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v2/elections/overview"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-    networks:
-      - rajniti-network
-
-  # Redis for caching (optional but recommended)
-  redis:
-    image: redis:7-alpine
-    container_name: rajniti-redis
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis_data:/data
-    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-    networks:
-      - rajniti-network
-
-  # Nginx reverse proxy (optional, for production)
-  nginx:
-    image: nginx:alpine
-    container_name: rajniti-nginx
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./nginx/ssl:/etc/nginx/ssl:ro
-    depends_on:
-      - rajniti-api
-    restart: unless-stopped
-    profiles:
-      - production
-    networks:
-      - rajniti-network
-
-volumes:
-  redis_data:
-    driver: local
-
-networks:
-  rajniti-network:
-    driver: bridge
-    name: rajniti-network
