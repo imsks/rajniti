@@ -1,6 +1,5 @@
-[
-  {
-    "election_id": "DL-2025-ASSEMBLY",
+{
+    "election_id": "DL_2025_ASSEMBLY",
     "name": "Delhi Assembly Election 2025",
     "type": "VIDHANSABHA",
     "year": 2025,
@@ -15,7 +14,6 @@
     "result_date": "2025-02-08",
     "winning_party": "Bharatiya Janata Party",
     "winning_party_seats": 48,
-    "runner_up_party": "Aam Aadmi Party", 
+    "runner_up_party": "Aam Aadmi Party",
     "runner_up_seats": 22
-  }
-]
+}

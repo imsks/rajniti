@@ -1,0 +1,19 @@
+{
+    "election_id": "MH_2024_ASSEMBLY",
+    "name": "Maharashtra Assembly Election 2024",
+    "type": "VIDHANSABHA",
+    "year": 2024,
+    "date": "2024-10-05",
+    "state_id": "MH",
+    "state_name": "Maharashtra",
+    "total_constituencies": 70,
+    "total_candidates": 7014,
+    "total_parties": 7,
+    "voter_turnout": null,
+    "result_status": "DECLARED",
+    "result_date": "2024-10-08",
+    "winning_party": "Bharatiya Janata Party",
+    "winning_party_seats": 70,
+    "runner_up_party": "Nationalist Congress Party",
+    "runner_up_seats": 10
+}
