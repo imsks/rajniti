@@ -73,6 +73,7 @@ def _init_extensions(app: Flask, config: BaseConfig) -> None:
 
 def _register_blueprints(app: Flask, config: BaseConfig) -> None:
     """Register application blueprints."""
+    # Import legacy routes
     from app.routes.party import party_bp
     from app.routes.constituency import constituency_bp
     from app.routes.candidate import candidate_bp
@@ -80,9 +81,15 @@ def _register_blueprints(app: Flask, config: BaseConfig) -> None:
     from app.routes.data_routes import data_bp
     from app.routes.election_routes import lok_sabha_bp, vidhan_sabha_bp, election_bp as election_types_bp
     
+    # Import new API v2
+    from app.api import api_bp
+    
     api_prefix = f"/api/{config.API_VERSION}"
     
-    # Register original CRUD routes
+    # Register new API v2 (primary API)
+    app.register_blueprint(api_bp)
+    
+    # Register original CRUD routes (for backward compatibility)
     app.register_blueprint(party_bp, url_prefix=api_prefix)
     app.register_blueprint(constituency_bp, url_prefix=api_prefix)
     app.register_blueprint(candidate_bp, url_prefix=api_prefix)
