@@ -9,7 +9,7 @@ Flask-CORS==4.0.0
 python-dotenv==1.0.0
 
 # Data validation (simple)
-pydantic==2.5.0
+pydantic==2.10.0
 
 # Web scraping libraries
 requests==2.31.0

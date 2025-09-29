@@ -8,7 +8,7 @@ These models can be used with JSON storage now and easily adapted for DB later.
 from .candidate import Candidate, LokSabhaCandidate, AssemblyCandidate
 from .party import Party
 from .constituency import Constituency
-from .election import Election
+from .election import Election, ElectionType
 
 __all__ = [
     "Candidate",
@@ -16,5 +16,6 @@ __all__ = [
     "AssemblyCandidate",
     "Party",
     "Constituency", 
-    "Election"
+    "Election",
+    "ElectionType"
 ]

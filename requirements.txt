@@ -81,9 +81,9 @@ pluggy==1.6.0
     # via pytest
 pycodestyle==2.11.1
     # via flake8
-pydantic==2.5.0
+pydantic==2.10.0
     # via -r requirements.in
-pydantic-core==2.14.1
+pydantic-core==2.27.0
     # via pydantic
 pyflakes==3.1.0
     # via flake8
