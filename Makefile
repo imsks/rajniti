@@ -48,3 +48,17 @@ docker-build: ## Build Docker image
 docker-run: ## Run Docker container
 	@echo "🐳 Running Docker container..."
 	docker run -p 8080:8080 rajniti
+
+scrape: ## Run election data scraping
+	@echo "🕸️ Starting election data scraping..."
+	@source venv/bin/activate && python scripts/scrape_elections.py
+
+scrape-help: ## Show scraping help
+	@echo "🕸️ Election Data Scraping Commands:"
+	@echo "  make scrape        - Run the main scraping script"
+	@echo "  python scripts/scrape_elections.py - Run scraping directly"
+	@echo ""
+	@echo "📚 Available scraping tools:"
+	@echo "  - requests: HTTP requests"
+	@echo "  - beautifulsoup4: HTML parsing"
+	@echo "  - httpx: Async HTTP requests"

@@ -60,22 +60,35 @@ docker-compose up -d
 # Health check: http://localhost:8080/api/v1/health
 ```
 
-### **Option 2: Local Installation**
+### **Option 2: Local Installation (Automated)**
 
 ```bash
 # Clone and setup
 git clone https://github.com/your-username/rajniti.git
 cd rajniti
 
+# Automated setup (recommended)
+make setup
+
+# Start development server
+make dev
+
+# Or run directly
+python run.py
+```
+
+### **Option 3: Manual Setup**
+
+```bash
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies (using pip-compile)
-pip install pip-tools
-
-# Or install directly
+# Install dependencies
 pip install -r requirements.txt
+
+# Install pre-commit hooks
+pre-commit install
 
 # Run development server
 python run.py
