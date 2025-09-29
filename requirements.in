@@ -1,0 +1,26 @@
+# Dependency management
+pip-tools
+
+# Core Flask for API
+Flask==3.0.0
+Flask-CORS==4.0.0
+
+# Environment configuration  
+python-dotenv==1.0.0
+
+# Data validation (simple)
+pydantic==2.5.0
+
+# Web scraping libraries
+requests==2.31.0
+beautifulsoup4==4.12.2
+httpx==0.25.2
+
+# Production server
+gunicorn==21.2.0
+
+# Development tools
+pytest==7.4.3
+black==23.11.0
+isort==5.12.0
+flake8==6.1.0

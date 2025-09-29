@@ -1,15 +1,14 @@
-# 🗳️ Rajniti - Indian Election Data API
+# 🗳️ Rajniti - Simple Election Data API
 
-> **The most comprehensive and developer-friendly API for Indian election data**
+> **A clean, lightweight Flask API for Indian election data**
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0+-green.svg)](https://flask.palletsprojects.com/)
-[![API Version](https://img.shields.io/badge/API-v2.0-orange.svg)](#api-documentation)
+[![API Version](https://img.shields.io/badge/API-v1.0-orange.svg)](#api-documentation)
 [![License](https://img.shields.io/badge/License-MIT-red.svg)](LICENSE)
-[![Swagger](https://img.shields.io/badge/API-Documented-brightgreen.svg)](#swagger-documentation)
 [![Data Coverage](https://img.shields.io/badge/Data-50K%2B_Records-purple.svg)](#data-coverage)
 
-A world-class, production-ready REST API providing comprehensive access to Indian Election Commission data. Built with modern Flask architecture, featuring interactive Swagger documentation, advanced search capabilities, and robust analytics.
+A simple, clean REST API serving Indian Election Commission data from JSON files. Built with minimal Flask setup for easy deployment and scraping capabilities.
 
 ---
 
@@ -19,12 +18,12 @@ A world-class, production-ready REST API providing comprehensive access to India
 
 | Feature | Description |
 |---------|-------------|
-| 🚀 **Modern API Architecture** | RESTful endpoints with Swagger/OpenAPI documentation |
-| 📊 **Comprehensive Data** | 50,000+ records across Lok Sabha & Assembly elections |  
-| 🔍 **Advanced Search** | Intelligent search with autocomplete and filtering |
-| 📈 **Rich Analytics** | Statistical insights, trends, and demographic analysis |
-| ⚡ **High Performance** | Optimized queries with caching and pagination |
-| 🐳 **Docker Ready** | Containerized deployment with Docker Compose |
+| 🚀 **Simple Flask API** | Clean RESTful endpoints serving JSON data |
+| 📊 **Election Data** | 50,000+ records across Lok Sabha & Assembly elections |  
+| 🔍 **Search & Filter** | Basic search and filtering capabilities |
+| 🕸️ **Web Scraping** | Built-in scraping tools for data collection |
+| ⚡ **Lightweight** | Minimal dependencies, fast startup |
+| 🐳 **Docker Ready** | Single container deployment |
 
 </div>
 
@@ -58,7 +57,7 @@ cd rajniti
 docker-compose up -d
 
 # API available at http://localhost:8080
-# Swagger docs at http://localhost:8080/api/v2/docs
+# Health check: http://localhost:8080/api/v1/health
 ```
 
 ### **Option 2: Local Installation**
@@ -72,7 +71,10 @@ cd rajniti
 python3 -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install dependencies
+# Install dependencies (using pip-compile)
+pip install pip-tools
+
+# Or install directly
 pip install -r requirements.txt
 
 # Run development server
@@ -83,62 +85,41 @@ python run.py
 
 ## 📚 **API Documentation**
 
-### **🎯 Interactive Documentation**
-- **Swagger UI**: `http://localhost:8080/api/v2/docs/`
-- **API Base URL**: `http://localhost:8080/api/v2/`
+### **🎯 Simple API Documentation**
+- **API Base URL**: `http://localhost:8080/api/v1/`
+- **Health Check**: `http://localhost:8080/api/v1/health`
 
 ### **🔥 Core Endpoints**
 
 #### **Elections API**
 ```bash
-GET /api/v2/elections/overview                    # Elections overview
-GET /api/v2/elections/{election-id}               # Election details  
-GET /api/v2/elections/{election-id}/results       # Election results
-GET /api/v2/elections/{election-id}/winners       # Winners only
-GET /api/v2/elections/{election-id}/statistics    # Detailed analytics
+GET /api/v1/elections                             # All elections
+GET /api/v1/elections/{election-id}               # Election details  
+GET /api/v1/elections/{election-id}/results       # Election results
+GET /api/v1/elections/{election-id}/winners       # Winners only
 ```
 
 #### **Candidates API** 
 ```bash
-GET /api/v2/candidates/search?q=modi              # Search candidates
-GET /api/v2/candidates/winners                    # All winners
-GET /api/v2/candidates/party/{party-name}         # Party candidates
-GET /api/v2/candidates/constituency/{code}        # Constituency candidates
-GET /api/v2/candidates/statistics                 # Candidate analytics
+GET /api/v1/candidates/search?q=modi              # Search candidates
+GET /api/v1/candidates/winners                    # All winners
+GET /api/v1/candidates/party/{party-name}         # Party candidates
+GET /api/v1/elections/{id}/candidates/{id}        # Candidate details
 ```
 
 #### **Constituencies API**
 ```bash
-GET /api/v2/constituencies/overview               # Constituencies overview
-GET /api/v2/constituencies/{code}                 # Constituency details
-GET /api/v2/constituencies/{code}/candidates      # All candidates
-GET /api/v2/constituencies/state/{state-code}     # State constituencies
-GET /api/v2/constituencies/closest-contests       # Closest margins
+GET /api/v1/elections/{id}/constituencies          # Election constituencies
+GET /api/v1/elections/{id}/constituencies/{id}     # Constituency details
+GET /api/v1/constituencies/state/{state-code}      # State constituencies
 ```
 
 #### **Parties API**
 ```bash
-GET /api/v2/parties/overview                      # Parties overview
-GET /api/v2/parties/{party-name}                  # Party details
-GET /api/v2/parties/{party-name}/performance      # Performance analytics
-GET /api/v2/parties/comparison?parties=BJP,Congress # Party comparison
-GET /api/v2/parties/national-parties              # National parties
-```
-
-#### **Analytics API**
-```bash
-GET /api/v2/analytics/overview                    # Comprehensive analytics
-GET /api/v2/analytics/vote-share                  # Vote share analysis
-GET /api/v2/analytics/margins                     # Victory margin analysis  
-GET /api/v2/analytics/trends                      # Electoral trends
-GET /api/v2/analytics/demographics                # Demographic insights
-```
-
-#### **Search API**
-```bash
-GET /api/v2/search?q=query                        # Universal search
-GET /api/v2/search/suggestions?q=partial          # Search suggestions
-GET /api/v2/search/advanced                       # Advanced search
+GET /api/v1/elections/{id}/parties                 # Election parties
+GET /api/v1/elections/{id}/parties/{name}          # Party details
+GET /api/v1/parties                               # All parties
+GET /api/v1/parties/{name}/performance            # Party performance
 ```
 
 ---
@@ -148,30 +129,30 @@ GET /api/v2/search/advanced                       # Advanced search
 ### **Basic Queries**
 
 ```bash
-# Get all Lok Sabha 2024 winners
-curl "http://localhost:8080/api/v2/elections/lok-sabha-2024/winners"
+# Get all elections
+curl "http://localhost:8080/api/v1/elections"
 
-# Search for candidates named "Modi"
-curl "http://localhost:8080/api/v2/candidates/search?q=modi"
+# Search for candidates named "Modi"  
+curl "http://localhost:8080/api/v1/candidates/search?q=modi"
 
-# Get Delhi constituency results
-curl "http://localhost:8080/api/v2/constituencies/DL-1"
+# Get Lok Sabha 2024 winners
+curl "http://localhost:8080/api/v1/elections/lok-sabha-2024/winners"
 
-# Compare BJP and Congress performance
-curl "http://localhost:8080/api/v2/parties/comparison?parties=BJP,Congress"
+# Get all parties
+curl "http://localhost:8080/api/v1/parties"
 ```
 
-### **Advanced Filtering**
+### **Filtering Examples**
 
 ```bash
-# Get winning candidates from Maharashtra with 100K+ votes
-curl "http://localhost:8080/api/v2/search/advanced?status=WON&state=MH&min_votes=100000"
+# Get candidates by party
+curl "http://localhost:8080/api/v1/candidates/party/Bharatiya%20Janata%20Party"
 
-# Find closest electoral contests
-curl "http://localhost:8080/api/v2/constituencies/closest-contests"
+# Get constituency candidates
+curl "http://localhost:8080/api/v1/elections/delhi-assembly-2025/constituencies/DL-1/candidates"
 
-# Analyze vote share trends
-curl "http://localhost:8080/api/v2/analytics/vote-share?election=lok-sabha-2024"
+# Get party performance
+curl "http://localhost:8080/api/v1/parties/Bharatiya%20Janata%20Party/performance"
 ```
 
 ### **Python Integration**
@@ -179,23 +160,24 @@ curl "http://localhost:8080/api/v2/analytics/vote-share?election=lok-sabha-2024"
 ```python
 import requests
 
-# Initialize API client
-BASE_URL = "http://localhost:8080/api/v2"
+# Simple API client
+BASE_URL = "http://localhost:8080/api/v1"
 
 # Search for candidates
-response = requests.get(f"{BASE_URL}/candidates/search", params={
-    "q": "modi",
-    "election": "lok-sabha-2024",
-    "limit": 10
-})
+response = requests.get(f"{BASE_URL}/candidates/search", params={"q": "modi"})
+data = response.json()
 
-candidates = response.json()['data']['candidates']
-for candidate in candidates:
-    print(f"{candidate['name']} - {candidate['party']} - {candidate['status']}")
+if data['success']:
+    for candidate in data['data']['candidates']:
+        name = candidate.get('Name') or candidate.get('candidate_name', '')
+        party = candidate.get('Party', '')
+        print(f"{name} - {party}")
 
-# Get election statistics
-stats = requests.get(f"{BASE_URL}/elections/lok-sabha-2024/statistics").json()
-print(f"Total votes: {stats['data']['vote_analysis']['total_votes_polled']:,}")
+# Get election details
+response = requests.get(f"{BASE_URL}/elections/lok-sabha-2024")
+election = response.json()
+print(f"Election: {election['data']['name']}")
+print(f"Total candidates: {election['data']['statistics']['total_candidates']}")
 ```
 
 ---
@@ -205,25 +187,21 @@ print(f"Total votes: {stats['data']['vote_analysis']['total_votes_polled']:,}")
 ```
 rajniti/
 ├── app/
-│   ├── api/                    # 🆕 Modern API v2 (Flask-RESTX)
-│   │   ├── __init__.py         # API initialization & Swagger config  
-│   │   ├── models.py           # Pydantic/Marshmallow schemas
-│   │   ├── elections.py        # Elections endpoints
-│   │   ├── candidates.py       # Candidates endpoints
-│   │   ├── constituencies.py   # Constituencies endpoints
-│   │   ├── parties.py          # Parties endpoints
-│   │   ├── analytics.py        # Analytics & insights
-│   │   └── search.py           # Advanced search features
-│   ├── routes/                 # Legacy API v1 (backward compatibility)
-│   ├── core/                   # Core utilities & error handling
+│   ├── controllers/            # 🎯 MVC Controllers (business logic)
+│   ├── core/                   # 🔧 Simple utilities & exceptions
 │   ├── data/                   # 📊 Election data (JSON files)
 │   │   ├── lok_sabha/          # Lok Sabha election data
-│   │   └── vidhan_sabha/       # Assembly election data
-│   └── config/                 # Configuration management
-├── tests/                      # Comprehensive test suite
-├── docker-compose.yml          # Docker orchestration
-├── Dockerfile                  # Container configuration
-└── requirements.txt            # Python dependencies
+│   │   └── vidhan_sabha/       # Assembly election data  
+│   ├── models/                 # 📋 Pydantic models
+│   ├── routes/                 # 🌐 Flask API routes
+│   ├── services/               # 💾 Data access layer
+│   └── __init__.py             # Flask app factory
+├── tests/                      # Test files
+├── requirements.in             # 📦 Direct dependencies
+├── requirements.txt            # 📦 Compiled dependencies (pip-compile)
+├── docker-compose.yml          # 🐳 Docker setup
+├── dockerfile                  # 🐳 Container config
+└── run.py                      # 🚀 Development server
 ```
 
 ---
@@ -233,22 +211,9 @@ rajniti/
 ### **Environment Variables**
 
 ```bash
-# Application
-FLASK_ENV=production                    # Environment (development/production)
-FLASK_HOST=0.0.0.0                     # Server host
-FLASK_PORT=8080                        # Server port
+# Application (minimal configuration)
 SECRET_KEY=your-secret-key              # Flask secret key
-
-# Database (Optional - API works without DB)
-DATABASE_URL=postgresql://user:pass@host/db
-
-# API Configuration  
-API_VERSION=v2                          # API version
-CORS_ORIGINS=*                         # CORS allowed origins
-LOG_LEVEL=INFO                         # Logging level
-
-# Performance
-REDIS_URL=redis://localhost:6379       # Redis for caching (optional)
+FLASK_ENV=production                    # Environment (development/production)
 ```
 
 ---
@@ -303,59 +268,46 @@ docker push your-registry/rajniti-api
 
 ## 🧪 **Testing & Development**
 
+### **Dependency Management (pip-compile)**
+```bash
+# Install pip-tools
+pip install pip-tools
+
+# Add new dependency to requirements.in
+echo "new-package==1.0.0" >> requirements.in
+
+# Compile dependencies
+pip-compile requirements.in
+
+# Install compiled dependencies  
+pip-sync requirements.txt
+
+# Or upgrade all
+pip-compile --upgrade requirements.in
+```
+
 ### **Running Tests**
 ```bash
-# Install test dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# Run test suite
+# Run tests
 pytest tests/ -v
 
-# Run with coverage
-pytest --cov=app tests/
-
-# Run specific test modules
-pytest tests/test_api/ -v
-```
-
-### **Code Quality**
-```bash
 # Format code
-black app/ tests/
-isort app/ tests/
-
-# Lint code  
-flake8 app/ tests/
-
-# Type checking
-mypy app/
+black app/
+isort app/
+flake8 app/
 ```
-
-### **API Testing**
-```bash
-# Test API endpoints
-pytest tests/test_api/ -v
-
-# Load testing with locust
-locust -f tests/load_test.py --host=http://localhost:8080
-```
-
----
 
 ## 📈 **Performance & Scalability**
 
-### **Performance Metrics**
-- **Response Time**: < 100ms for most endpoints
-- **Throughput**: 1000+ requests/second  
-- **Data Volume**: 50,000+ records efficiently served
-- **Memory Usage**: < 512MB base memory footprint
-
-### **Optimization Features**
-- **Caching**: Redis-based response caching
-- **Pagination**: Efficient large dataset handling
-- **Indexing**: Optimized search algorithms
-- **Compression**: GZIP response compression
-- **CDN Ready**: Static asset optimization
+### **Performance Features**
+- **Fast Startup**: Minimal dependencies, quick boot time
+- **JSON Serving**: Direct file-based data serving  
+- **Simple Search**: Basic filtering and search capabilities
+- **Memory Efficient**: Low memory footprint
+- **Stateless**: No database dependencies
 
 ---
 
@@ -372,9 +324,9 @@ cd rajniti
 # Create feature branch  
 git checkout -b feature/amazing-feature
 
-# Install dev dependencies
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+# Install dependencies using pip-compile
+pip install pip-tools
+pip-sync requirements.txt
 
 # Make your changes and test
 pytest tests/
