@@ -4,7 +4,7 @@ Controllers for Rajniti API
 Controllers handle business logic and coordinate between services and routes.
 They follow the MVC pattern where:
 - Models define data structure
-- Controllers handle business logic  
+- Controllers handle business logic
 - Routes (Views) handle HTTP requests/responses
 """
 

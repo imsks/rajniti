@@ -9,8 +9,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from app.models import (AssemblyCandidate, Constituency, Election,
-                        ElectionType, LokSabhaCandidate, Party)
+from app.models import Constituency, Election, ElectionType, Party
 
 from .data_service import DataService
 

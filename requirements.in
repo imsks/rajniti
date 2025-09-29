@@ -5,7 +5,7 @@ pip-tools
 Flask==3.0.0
 Flask-CORS==4.0.0
 
-# Environment configuration  
+# Environment configuration
 python-dotenv==1.0.0
 
 # Data validation (simple)
@@ -24,3 +24,5 @@ pytest==7.4.3
 black==23.11.0
 isort==5.12.0
 flake8==6.1.0
+pre-commit==3.6.0
+autoflake==2.2.1

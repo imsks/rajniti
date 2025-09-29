@@ -4,7 +4,7 @@ Party Controller
 Handles business logic for party-related operations.
 """
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 from app.services import data_service
 

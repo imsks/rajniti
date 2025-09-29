@@ -19,7 +19,7 @@ A simple, clean REST API serving Indian Election Commission data from JSON files
 | Feature | Description |
 |---------|-------------|
 | 🚀 **Simple Flask API** | Clean RESTful endpoints serving JSON data |
-| 📊 **Election Data** | 50,000+ records across Lok Sabha & Assembly elections |  
+| 📊 **Election Data** | 50,000+ records across Lok Sabha & Assembly elections |
 | 🔍 **Search & Filter** | Basic search and filtering capabilities |
 | 🕸️ **Web Scraping** | Built-in scraping tools for data collection |
 | ⚡ **Lightweight** | Minimal dependencies, fast startup |
@@ -94,12 +94,12 @@ python run.py
 #### **Elections API**
 ```bash
 GET /api/v1/elections                             # All elections
-GET /api/v1/elections/{election-id}               # Election details  
+GET /api/v1/elections/{election-id}               # Election details
 GET /api/v1/elections/{election-id}/results       # Election results
 GET /api/v1/elections/{election-id}/winners       # Winners only
 ```
 
-#### **Candidates API** 
+#### **Candidates API**
 ```bash
 GET /api/v1/candidates/search?q=modi              # Search candidates
 GET /api/v1/candidates/winners                    # All winners
@@ -132,7 +132,7 @@ GET /api/v1/parties/{name}/performance            # Party performance
 # Get all elections
 curl "http://localhost:8080/api/v1/elections"
 
-# Search for candidates named "Modi"  
+# Search for candidates named "Modi"
 curl "http://localhost:8080/api/v1/candidates/search?q=modi"
 
 # Get Lok Sabha 2024 winners
@@ -191,7 +191,7 @@ rajniti/
 │   ├── core/                   # 🔧 Simple utilities & exceptions
 │   ├── data/                   # 📊 Election data (JSON files)
 │   │   ├── lok_sabha/          # Lok Sabha election data
-│   │   └── vidhan_sabha/       # Assembly election data  
+│   │   └── vidhan_sabha/       # Assembly election data
 │   ├── models/                 # 📋 Pydantic models
 │   ├── routes/                 # 🌐 Flask API routes
 │   ├── services/               # 💾 Data access layer
@@ -235,7 +235,7 @@ services:
       - SECRET_KEY=${SECRET_KEY}
     volumes:
       - ./app/data:/app/app/data:ro
-    
+
   redis:
     image: redis:7-alpine
     ports:
@@ -279,7 +279,7 @@ echo "new-package==1.0.0" >> requirements.in
 # Compile dependencies
 pip-compile requirements.in
 
-# Install compiled dependencies  
+# Install compiled dependencies
 pip-sync requirements.txt
 
 # Or upgrade all
@@ -304,7 +304,7 @@ flake8 app/
 
 ### **Performance Features**
 - **Fast Startup**: Minimal dependencies, quick boot time
-- **JSON Serving**: Direct file-based data serving  
+- **JSON Serving**: Direct file-based data serving
 - **Simple Search**: Basic filtering and search capabilities
 - **Memory Efficient**: Low memory footprint
 - **Stateless**: No database dependencies
@@ -321,7 +321,7 @@ We welcome contributions! Here's how to get started:
 git clone https://github.com/your-username/rajniti.git
 cd rajniti
 
-# Create feature branch  
+# Create feature branch
 git checkout -b feature/amazing-feature
 
 # Install dependencies using pip-compile

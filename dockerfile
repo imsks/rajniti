@@ -1,7 +1,7 @@
 # Simple Dockerfile for Rajniti Election Data API
 FROM python:3.9-slim
 
-# Set environment variables  
+# Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 

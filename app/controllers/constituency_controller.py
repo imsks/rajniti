@@ -4,7 +4,7 @@ Constituency Controller
 Handles business logic for constituency-related operations.
 """
 
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, Optional
 
 from app.services import data_service
 

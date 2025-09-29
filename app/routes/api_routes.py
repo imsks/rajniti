@@ -3,15 +3,19 @@ Simple API Routes for Rajniti Election Data
 
 Clean Flask routes following MVC pattern:
 - Routes handle HTTP requests/responses
-- Controllers handle business logic  
+- Controllers handle business logic
 - Models define data structure
 - Services handle data access
 """
 
 from flask import Blueprint, jsonify, request
 
-from app.controllers import (CandidateController, ConstituencyController,
-                             ElectionController, PartyController)
+from app.controllers import (
+    CandidateController,
+    ConstituencyController,
+    ElectionController,
+    PartyController,
+)
 
 # Create blueprint
 api_bp = Blueprint("api", __name__, url_prefix="/api/v1")

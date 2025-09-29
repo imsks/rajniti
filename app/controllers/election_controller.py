@@ -6,7 +6,6 @@ Handles business logic for election-related operations.
 
 from typing import Any, Dict, List, Optional
 
-from app.models import Election
 from app.services import data_service
 
 
