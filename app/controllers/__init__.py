@@ -8,14 +8,14 @@ They follow the MVC pattern where:
 - Routes (Views) handle HTTP requests/responses
 """
 
-from .election_controller import ElectionController
 from .candidate_controller import CandidateController
-from .party_controller import PartyController
 from .constituency_controller import ConstituencyController
+from .election_controller import ElectionController
+from .party_controller import PartyController
 
 __all__ = [
     "ElectionController",
-    "CandidateController", 
+    "CandidateController",
     "PartyController",
-    "ConstituencyController"
+    "ConstituencyController",
 ]

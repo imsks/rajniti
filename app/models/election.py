@@ -2,9 +2,10 @@
 Election data model 
 """
 
-from pydantic import BaseModel
 from enum import Enum
 from typing import Optional
+
+from pydantic import BaseModel
 
 
 class ElectionType(str, Enum):
@@ -14,6 +15,7 @@ class ElectionType(str, Enum):
 
 class Election(BaseModel):
     """Election model for organizing our data"""
+
     id: str  # e.g., "lok-sabha-2024", "delhi-assembly-2025"
     name: str
     type: ElectionType
