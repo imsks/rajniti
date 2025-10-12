@@ -1,8 +1,18 @@
 """
-Election Data Scrapers
-
-This module contains scrapers for election data from ECI (Election Commission of India).
-Separate from the API layer, these scrapers are used for data collection.
+Election data scrapers for Lok Sabha and Vidhan Sabha elections.
 """
 
-__version__ = "1.0.0"
+from .base import clean_margin, clean_votes, get_with_retry, save_json
+from .lok_sabha import LokSabhaScraper
+from .vidhan_sabha import VidhanSabhaScraper
+
+__all__ = [
+    # Scrapers
+    "LokSabhaScraper",
+    "VidhanSabhaScraper",
+    # Utility functions
+    "get_with_retry",
+    "save_json",
+    "clean_votes",
+    "clean_margin",
+]

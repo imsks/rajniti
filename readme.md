@@ -126,7 +126,7 @@ python scripts/scrape_interactive.py
 
 ```bash
 # Direct URL scraping (no hardcoded values!)
-python scripts/scrape_lok_sabha.py --url https://results.eci.gov.in/PcResultGen2024
+python scripts/scrape_lok_sabha.py --url https://results.eci.gov.in/PcResultGenJune2024/index.htm
 python scripts/scrape_vidhan_sabha.py --url https://results.eci.gov.in/ResultAcGenFeb2025
 
 # Legacy: State/Year based (constructs URLs automatically)
@@ -166,7 +166,7 @@ python scripts/scrape_interactive.py
 # 4. Start scraping with full auto-discovery!
 
 # Example URLs you can use:
-# - https://results.eci.gov.in/PcResultGen2024         (Lok Sabha 2024)
+# - https://results.eci.gov.in/PcResultGenJune2024/index.htm         (Lok Sabha 2024)
 # - https://results.eci.gov.in/ResultAcGenFeb2025     (Delhi 2025)
 # - https://results.eci.gov.in/ResultAcGenOct2024     (Maharashtra 2024)
 ```
@@ -175,7 +175,7 @@ python scripts/scrape_interactive.py
 
 ```bash
 # Lok Sabha Elections (URL-based)
-python scripts/scrape_lok_sabha.py --url https://results.eci.gov.in/PcResultGen2024
+python scripts/scrape_lok_sabha.py --url https://results.eci.gov.in/PcResultGenJune2024/index.htm
 
 # Vidhan Sabha Elections (URL-based)
 python scripts/scrape_vidhan_sabha.py --url https://results.eci.gov.in/ResultAcGenFeb2025
@@ -185,33 +185,48 @@ python scripts/scrape_lok_sabha.py --url URL --output-dir data/custom
 python scripts/scrape_vidhan_sabha.py --url URL --output-dir data/custom
 ```
 
-### **🏗️ Scraper Architecture**
+### **🏗️ Scraper Architecture (Simplified)**
 
 ```
 app/scrapers/
-├── base.py                    # 🏗️ Base scraping classes
-│   ├── BaseScraper            # Core scraping functionality
-│   ├── ECIScraper             # ECI-specific scraper with auto-discovery
-│   │   ├── discover_constituency_links()  # Auto-find constituencies
-│   │   └── discover_party_links()         # Auto-find parties
-│   ├── PartyScraper           # Party data extraction
-│   ├── CandidateScraper       # Candidate data extraction
-│   └── ConstituencyScraper    # Constituency data extraction
-├── lok_sabha.py              # 🏛️ Lok Sabha scrapers (URL-based)
-└── vidhan_sabha.py           # 🏛️ Assembly scrapers (URL-based)
+├── base.py                    # 🔧 Utility functions (no classes)
+│   ├── get_with_retry()       # HTTP requests with retry logic
+│   ├── save_json()            # Save data to JSON files
+│   ├── clean_votes()          # Clean vote count strings
+│   └── clean_margin()         # Clean margin strings
+├── lok_sabha.py              # 🏛️ Single Lok Sabha scraper
+│   └── LokSabhaScraper       # One class that does everything
+│       ├── scrape()          # Main orchestrator
+│       ├── _scrape_parties() # Party data extraction
+│       ├── _scrape_constituencies()  # Constituency discovery
+│       ├── _scrape_candidates()      # Candidate data extraction
+│       └── _extract_metadata()       # Election metadata
+└── vidhan_sabha.py           # 🏛️ Single Vidhan Sabha scraper
+    └── VidhanSabhaScraper    # One class that does everything
+        ├── scrape()          # Main orchestrator
+        ├── _detect_state_info()      # Auto-detect state & year
+        ├── _scrape_parties()         # Party data extraction
+        ├── _scrape_constituencies()  # Constituency discovery
+        ├── _scrape_candidates()      # Candidate data extraction
+        └── _save_all_data()          # Save all 4 JSON files
 
 scripts/
-├── scrape_interactive.py     # ✨ NEW: Interactive URL-based scraper
-├── scrape_lok_sabha.py       # 🏛️ Parliamentary elections (URL/legacy)
-├── scrape_vidhan_sabha.py    # 🏛️ Assembly elections (URL/legacy)
-└── scrape_all.py             # 🎯 Complete scraping script (legacy)
+└── scripts/scrape_interactive.py     # ✨ Interactive URL-based scraper
 ```
+
+**Key Principles:**
+
+-   ✅ No hardcoded state names, constituencies, or candidates
+-   ✅ Everything scraped and auto-detected from ECI website
+-   ✅ Auto-generates folder names from scraped data
+-   ✅ Each scraper is self-contained - one URL input → 4 JSON outputs
+-   ✅ Simple, linear flow: URL → Scrape → Save
 
 ### **📊 Data Sources & URLs**
 
 The scrapers automatically fetch data from:
 
--   **Lok Sabha 2024**: `https://results.eci.gov.in/PcResultGen2024/`
+-   **Lok Sabha 2024**: `https://results.eci.gov.in/PcResultGenJune2024/index.htm/`
 -   **Assembly Elections**: State-specific ECI result pages
 -   **Party Results**: Party-wise winner lists
 -   **Candidate Data**: Complete candidate profiles with photos
@@ -236,28 +251,29 @@ The scrapers automatically fetch data from:
 #### **Custom Scraping Configuration**
 
 ```python
-from app.scrapers.lok_sabha import LokSabhaScraper
-from app.scrapers.vidhan_sabha import VidhanSabhaScraper
+from app.scrapers import LokSabhaScraper, VidhanSabhaScraper
 
-# URL-based scraping (recommended)
+# Simple URL-based scraping - everything auto-detected!
 lok_sabha_scraper = LokSabhaScraper(
-    base_url="https://results.eci.gov.in/PcResultGen2024",
-    output_dir="custom_data/lok_sabha"
+    url="https://results.eci.gov.in/PcResultGenJune2024/index.htm"
 )
 
 vidhan_sabha_scraper = VidhanSabhaScraper(
-    base_url="https://results.eci.gov.in/ResultAcGenFeb2025",
-    output_dir="custom_data/vidhan_sabha",
-    state_code="DL"  # Optional, auto-detected if not provided
+    url="https://results.eci.gov.in/ResultAcGenFeb2025"
 )
 
-# Run scraping with auto-discovery
+# Run scraping - automatically:
+# 1. Detects state/year from URL and page
+# 2. Scrapes parties, constituencies, candidates
+# 3. Generates folder name (e.g., "DL_2025_ASSEMBLY")
+# 4. Saves 4 JSON files in proper structure
 lok_sabha_scraper.scrape()
 vidhan_sabha_scraper.scrape()
 
-# Auto-discovery also available independently
-constituencies = scraper.discover_constituency_links()
-parties = scraper.discover_party_links()
+# Data is saved to:
+# - app/data/lok_sabha/lok-sabha-{year}/
+# - app/data/vidhan_sabha/{STATE}_{YEAR}_ASSEMBLY/
+# - app/data/elections/ (metadata files)
 ```
 
 #### **Environment Variables**
@@ -285,29 +301,101 @@ export SCRAPER_TIMEOUT=30
 
 ### **📋 Output Data Structure**
 
-#### **Candidates Data**
+Each scraper produces 4 JSON files:
+
+#### **1. parties.json**
+
+```json
+[
+    {
+        "party_name": "Bharatiya Janata Party",
+        "symbol": "Lotus",
+        "total_seats": 240
+    }
+]
+```
+
+#### **2. constituencies.json**
+
+```json
+[
+    {
+        "constituency_id": "1",
+        "constituency_name": "Constituency Name",
+        "state_id": "DL"
+    }
+]
+```
+
+#### **3. candidates.json**
+
+**Lok Sabha format:**
+
+```json
+[
+    {
+        "party_id": 369,
+        "constituency": "Varanasi(77)",
+        "candidate_name": "NARENDRA MODI",
+        "votes": "612970",
+        "margin": "152513"
+    }
+]
+```
+
+**Vidhan Sabha format:**
+
+```json
+[
+    {
+        "Constituency Code": "U051",
+        "Name": "Candidate Name",
+        "Party": "Party Name",
+        "Status": "WON",
+        "Votes": "12345",
+        "Margin": "1234",
+        "Image URL": "https://..."
+    }
+]
+```
+
+#### **4. Election Metadata (elections/\*.json)**
+
+**Lok Sabha:**
 
 ```json
 {
-    "name": "Candidate Name",
-    "party": "Party Name",
-    "constituency": "Constituency Name",
-    "status": "WON/LOST",
-    "votes": "12345",
-    "margin": "1234",
-    "image_url": "https://results.eci.gov.in/...",
-    "election_type": "LOK_SABHA/VIDHAN_SABHA"
+    "election_id": "lok-sabha-2024",
+    "name": "Lok Sabha General Election 2024",
+    "type": "LOK_SABHA",
+    "year": 2024,
+    "total_constituencies": 543,
+    "total_candidates": 3802,
+    "total_parties": 211,
+    "result_status": "DECLARED",
+    "winning_party": "Bharatiya Janata Party",
+    "winning_party_seats": 240
 }
 ```
 
-#### **Party Results**
+**Vidhan Sabha:**
 
 ```json
 {
-  "party_name": "Party Name",
-  "symbol": "Party Symbol",
-  "total_seats": 303,
-  "winning_candidates": [...]
+    "election_id": "DL_2025_ASSEMBLY",
+    "name": "Delhi Assembly Election 2025",
+    "type": "VIDHANSABHA",
+    "year": 2025,
+    "state_id": "DL",
+    "state_name": "Delhi",
+    "total_constituencies": 70,
+    "total_candidates": 6914,
+    "total_parties": 3,
+    "result_status": "DECLARED",
+    "winning_party": "Bharatiya Janata Party",
+    "winning_party_seats": 48,
+    "runner_up_party": "Aam Aadmi Party",
+    "runner_up_seats": 22
 }
 ```
 

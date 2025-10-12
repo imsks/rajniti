@@ -2,235 +2,140 @@
 """
 Interactive Election Data Scraper
 
-Prompts for Election URL and type, then scrapes all available data.
-
-Usage:
-    python scripts/scrape_interactive.py
-
-The script will interactively ask for:
-1. Election results URL (e.g., https://results.eci.gov.in/ResultAcGenFeb2025)
-2. Election type (LOK_SABHA or VIDHAN_SABHA)
+Simple script to scrape election data from ECI website.
+Prompts for URL and automatically detects election type.
 """
 
-import logging
 import re
 import sys
 from pathlib import Path
 
-# Add app directory to path
-sys.path.append(str(Path(__file__).parent.parent))
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from app.scrapers.lok_sabha import LokSabhaScraper  # noqa: E402
-from app.scrapers.vidhan_sabha import VidhanSabhaScraper  # noqa: E402
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
-logger = logging.getLogger(__name__)
+from app.scrapers import LokSabhaScraper, VidhanSabhaScraper
 
 
 def validate_url(url: str) -> bool:
-    """Validate if the URL is a valid ECI results URL."""
+    """Validate if URL is from ECI results website."""
     if not url:
         return False
-
-    # Check if it's a valid URL format
-    url_pattern = re.compile(
-        r"^https?://"  # http:// or https://
-        r"(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+[A-Z]{2,6}\.?|"  # domain...
-        r"localhost|"  # localhost...
-        r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})"  # ...or ip
-        r"(?::\d+)?"  # optional port
-        r"(?:/?|[/?]\S+)$",
-        re.IGNORECASE,
-    )
-
-    if not url_pattern.match(url):
-        return False
-
-    # Check if it's an ECI URL
-    if "results.eci.gov.in" not in url.lower():
-        logger.warning("URL does not appear to be from results.eci.gov.in")
-        return True  # Still allow it, just warn
-
-    return True
+    
+    url_lower = url.lower()
+    return "results.eci.gov.in" in url_lower
 
 
 def detect_election_type(url: str) -> str:
     """
-    Try to detect election type from URL.
-    Returns 'LOK_SABHA', 'VIDHAN_SABHA', or 'UNKNOWN'.
+    Auto-detect election type from URL.
+    
+    Returns:
+        'lok_sabha', 'vidhan_sabha', or 'unknown'
     """
     url_lower = url.lower()
-
+    
     # Lok Sabha patterns
-    if "pcresultgen" in url_lower or "parliamentaryconstituencies" in url_lower:
-        return "LOK_SABHA"
-
+    if any(pattern in url_lower for pattern in ["pcresult", "loksabha", "general"]):
+        return "lok_sabha"
+    
     # Vidhan Sabha patterns
-    if (
-        "resultacgen" in url_lower
-        or "assemblyconstituencies" in url_lower
-        or "acgen" in url_lower
-    ):
-        return "VIDHAN_SABHA"
-
-    return "UNKNOWN"
-
-
-def get_output_directory(url: str, election_type: str) -> str:
-    """Generate output directory based on URL and election type."""
-    # Extract identifier from URL
-    match = re.search(r"/(PcResultGen|ResultAcGen)([^/]+)/?$", url, re.IGNORECASE)
-
-    if match:
-        identifier = match.group(2).strip("/")
-    else:
-        identifier = "custom"
-
-    if election_type == "LOK_SABHA":
-        base_dir = "data/lok_sabha"
-    elif election_type == "VIDHAN_SABHA":
-        base_dir = "data/vidhan_sabha"
-    else:
-        base_dir = "data/elections"
-
-    # Create directory name with identifier
-    if identifier and identifier != "custom":
-        output_dir = f"{base_dir}/{identifier}"
-    else:
-        output_dir = base_dir
-
-    return output_dir
+    if any(pattern in url_lower for pattern in ["acresult", "assembly", "vidhansabha"]):
+        return "vidhan_sabha"
+    
+    # Try to detect from URL structure
+    if re.search(r"pc.*gen", url_lower):
+        return "lok_sabha"
+    if re.search(r"ac.*gen", url_lower):
+        return "vidhan_sabha"
+    
+    return "unknown"
 
 
 def prompt_for_url() -> str:
-    """Prompt user for election results URL."""
-    print("\n" + "=" * 80)
-    print("ELECTION DATA SCRAPER - Interactive Mode")
-    print("=" * 80)
-    print("\nPlease provide the Election Commission of India (ECI) results URL.")
-    print("\nExamples:")
-    print("  - Lok Sabha 2024: https://results.eci.gov.in/PcResultGen2024")
-    print("  - Delhi 2025: https://results.eci.gov.in/ResultAcGenFeb2025")
-    print("  - Maharashtra 2024: https://results.eci.gov.in/ResultAcGenOct2024")
+    """Prompt user for ECI results URL."""
+    print("\n" + "="*70)
+    print("  RAJNITI - ELECTION DATA SCRAPER")
+    print("="*70)
+    print("\nEnter the ECI results page URL")
+    print("Examples:")
+    print("  - Lok Sabha: https://results.eci.gov.in/PcResultGenJune2024/index.htm")
+    print("  - Vidhan Sabha: https://results.eci.gov.in/ResultAcGenFeb2025")
     print()
-
+    
     while True:
-        url = input("Enter Election Results URL: ").strip()
-
+        url = input("URL: ").strip()
+        
         if not url:
-            print("❌ URL cannot be empty. Please try again.\n")
+            print("❌ URL cannot be empty")
             continue
-
+        
         if not validate_url(url):
-            print("❌ Invalid URL format. Please enter a valid URL.\n")
+            print("❌ Invalid URL. Must be from results.eci.gov.in")
             continue
-
+        
         return url
 
 
-def prompt_for_election_type(detected_type: str = None) -> str:
-    """Prompt user for election type."""
-    print("\n" + "-" * 80)
-    print("Election Type Selection")
-    print("-" * 80)
-
-    if detected_type and detected_type != "UNKNOWN":
-        print(f"\n✓ Auto-detected election type: {detected_type}")
-        confirm = input("Is this correct? (Y/n): ").strip().lower()
-        if confirm in ["", "y", "yes"]:
-            return detected_type
-
-    print("\nPlease select the election type:")
-    print("  1. LOK_SABHA (Parliamentary Elections)")
-    print("  2. VIDHAN_SABHA (State Assembly Elections)")
-    print()
-
-    while True:
-        choice = input("Enter choice (1 or 2): ").strip()
-
-        if choice == "1":
-            return "LOK_SABHA"
-        elif choice == "2":
-            return "VIDHAN_SABHA"
-        else:
-            print("❌ Invalid choice. Please enter 1 or 2.\n")
-
-
-def confirm_scraping(url: str, election_type: str, output_dir: str) -> bool:
-    """Confirm scraping details with user."""
-    print("\n" + "=" * 80)
-    print("Scraping Configuration")
-    print("=" * 80)
-    print(f"\nURL:           {url}")
-    print(f"Election Type: {election_type}")
-    print(f"Output Dir:    {output_dir}")
-    print()
-
-    confirm = input("Proceed with scraping? (Y/n): ").strip().lower()
-    return confirm in ["", "y", "yes"]
-
-
 def main():
-    """Main interactive scraping function."""
+    """Main interactive scraper."""
     try:
-        # Step 1: Get URL
+        # Get URL from user
         url = prompt_for_url()
-
-        # Step 2: Detect and confirm election type
-        detected_type = detect_election_type(url)
-        election_type = prompt_for_election_type(detected_type)
-
-        # Step 3: Generate output directory
-        output_dir = get_output_directory(url, election_type)
-
-        # Step 4: Confirm before starting
-        if not confirm_scraping(url, election_type, output_dir):
-            print("\n❌ Scraping cancelled by user.")
-            sys.exit(0)
-
-        # Step 5: Start scraping
-        print("\n" + "=" * 80)
-        print("Starting Scraping Process")
-        print("=" * 80)
-        print()
-
-        if election_type == "LOK_SABHA":
-            logger.info("Initializing Lok Sabha scraper...")
-            scraper = LokSabhaScraper(base_url=url, output_dir=output_dir)
-        elif election_type == "VIDHAN_SABHA":
-            logger.info("Initializing Vidhan Sabha scraper...")
-            scraper = VidhanSabhaScraper(base_url=url, output_dir=output_dir)
-        else:
-            logger.error(f"Unknown election type: {election_type}")
-            sys.exit(1)
-
-        # Run the scraper
+        
+        # Detect election type
+        election_type = detect_election_type(url)
+        
+        print(f"\n📊 URL: {url}")
+        
+        if election_type == "unknown":
+            print("\n⚠️  Could not auto-detect election type")
+            print("Please select:")
+            print("  1. Lok Sabha")
+            print("  2. Vidhan Sabha")
+            
+            while True:
+                choice = input("\nEnter choice (1 or 2): ").strip()
+                if choice == "1":
+                    election_type = "lok_sabha"
+                    break
+                elif choice == "2":
+                    election_type = "vidhan_sabha"
+                    break
+                else:
+                    print("❌ Invalid choice. Enter 1 or 2.")
+        
+        print(f"🎯 Election Type: {election_type.replace('_', ' ').title()}")
+        
+        # Confirm and start scraping
+        print("\n" + "="*70)
+        print("Starting scraper...")
+        print("="*70 + "\n")
+        
+        # Instantiate appropriate scraper
+        if election_type == "lok_sabha":
+            scraper = LokSabhaScraper(url)
+        else:  # vidhan_sabha
+            scraper = VidhanSabhaScraper(url)
+        
+        # Run scraper
         scraper.scrape()
-
-        # Success message
-        print("\n" + "=" * 80)
-        print("✓ SCRAPING COMPLETED SUCCESSFULLY")
-        print("=" * 80)
-        print(f"\nData saved to: {output_dir}")
-        print("\nYou can find the following files:")
-        print("  - Candidates data")
-        print("  - Parties data")
-        print("  - Constituencies data")
-        print()
-
+        
+        print("\n" + "="*70)
+        print("✅ SCRAPING COMPLETED SUCCESSFULLY!")
+        print("="*70)
+        print("\nData saved to:")
+        print(f"  - app/data/{election_type}/")
+        print(f"  - app/data/elections/")
+        
     except KeyboardInterrupt:
-        print("\n\n❌ Scraping interrupted by user (Ctrl+C)")
+        print("\n\n⚠️  Scraping interrupted by user")
         sys.exit(1)
     except Exception as e:
-        logger.error(f"Scraping failed: {e}", exc_info=True)
-        print(f"\n❌ Error: {e}")
+        print(f"\n\n❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
         sys.exit(1)
 
 
 if __name__ == "__main__":
     main()
-
