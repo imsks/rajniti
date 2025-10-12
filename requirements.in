@@ -12,9 +12,9 @@ python-dotenv==1.0.0
 pydantic==2.10.0
 
 # Web scraping libraries
-requests==2.31.0
+# NOTE: httpx[http2] is REQUIRED - ECI website blocks HTTP/1.1 requests
+httpx[http2]==0.25.2
 beautifulsoup4==4.12.2
-httpx==0.25.2
 
 # Production server
 gunicorn==21.2.0

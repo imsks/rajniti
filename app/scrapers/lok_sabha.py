@@ -13,7 +13,7 @@ from typing import Dict, List
 
 from bs4 import BeautifulSoup
 
-from .base import clean_margin, clean_votes, get_with_retry, save_json
+from .base import clean_margin, clean_votes, get_with_retry, normalize_base_url, save_json
 
 logger = logging.getLogger(__name__)
 
@@ -29,7 +29,7 @@ class LokSabhaScraper:
             url: ECI Lok Sabha results page URL
                  (e.g., https://results.eci.gov.in/PcResultGenJune2024/index.htm)
         """
-        self.base_url = url.rstrip("/")
+        self.base_url = normalize_base_url(url)
         self.year = None
         self.election_name = None
         self.folder_name = None
