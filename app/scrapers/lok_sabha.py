@@ -5,6 +5,7 @@ Scrapes Lok Sabha election data from ECI website.
 """
 
 import logging
+from typing import Dict, List
 
 from bs4 import BeautifulSoup
 
@@ -16,17 +17,22 @@ logger = logging.getLogger(__name__)
 class LokSabhaScraper(ECIScraper):
     """Main scraper for Lok Sabha elections."""
 
-    def __init__(self, election_year: str = "2024", output_dir: str = "data/lok_sabha"):
-        base_url = f"https://results.eci.gov.in/PcResultGen{election_year}"
+    def __init__(self, base_url: str, output_dir: str = "data/lok_sabha"):
+        """
+        Initialize Lok Sabha scraper with base URL.
+
+        Args:
+            base_url: ECI results page URL (e.g., https://results.eci.gov.in/PcResultGen2024)
+            output_dir: Directory to save scraped data
+        """
         super().__init__(base_url, output_dir)
-        self.election_year = election_year
         self.party_scraper = LokSabhaPartyScraper(base_url, output_dir)
         self.candidate_scraper = LokSabhaCandidateScraper(base_url, output_dir)
         self.constituency_scraper = LokSabhaConstituencyScraper(base_url, output_dir)
 
     def scrape(self) -> None:
         """Scrape all Lok Sabha election data."""
-        logger.info(f"Starting Lok Sabha {self.election_year} data scraping")
+        logger.info(f"Starting Lok Sabha data scraping from {self.base_url}")
 
         # Scrape party-wise results
         self.party_scraper.scrape()
@@ -45,58 +51,26 @@ class LokSabhaPartyScraper(PartyScraper):
 
     def __init__(self, base_url: str, output_dir: str):
         super().__init__(base_url, output_dir)
-        self.party_ids = [
-            369,
-            742,
-            1680,
-            140,
-            582,
-            1745,
-            805,
-            3369,
-            3620,
-            3529,
-            3165,
-            1888,
-            1420,
-            547,
-            772,
-            1,
-            852,
-            860,
-            545,
-            804,
-            1847,
-            544,
-            1458,
-            834,
-            1998,
-            83,
-            664,
-            911,
-            1534,
-            1142,
-            3388,
-            2757,
-            1584,
-            2484,
-            3482,
-            1658,
-            1046,
-            2989,
-            2070,
-            160,
-            118,
-            743,
-        ]
 
     def scrape(self) -> None:
-        """Scrape party-wise results for all parties."""
+        """Scrape party-wise results using auto-discovery."""
         logger.info("Scraping Lok Sabha party-wise results")
 
-        all_data = []
+        # Auto-discover party links
+        party_links = self.discover_party_links()
 
-        for party_id in self.party_ids:
+        if not party_links:
+            logger.warning("No parties discovered via auto-discovery")
+            return
+
+        all_data = []
+        total_parties = len(party_links)
+
+        for idx, party_info in enumerate(party_links, 1):
+            party_id = party_info["party_id"]
+            party_name = party_info.get("name", f"Party {party_id}")
+            logger.info(f"Scraping party {idx}/{total_parties}: {party_name}")
+
             url = f"{self.base_url}/partywisewinresultState-{party_id}.htm"
             response = self.get_with_retry(url)
 
@@ -126,6 +100,7 @@ class LokSabhaPartyScraper(PartyScraper):
                                 all_data.append(
                                     {
                                         "party_id": party_id,
+                                        "party_name": party_name,
                                         "constituency": constituency,
                                         "candidate_name": candidate_name,
                                         "votes": votes,
@@ -139,62 +114,96 @@ class LokSabhaPartyScraper(PartyScraper):
             time.sleep(0.5)
 
         # Save party-wise results
-        self.save_json(all_data, f"lok_sabha_{self.election_year}_party_results.json")
-        logger.info(f"Scraped {len(all_data)} party-wise results")
+        self.save_json(all_data, "lok_sabha_party_results.json")
+        logger.info(f"Scraped {len(all_data)} party-wise results from {total_parties} parties")
 
 
 class LokSabhaCandidateScraper(CandidateScraper):
     """Scraper for Lok Sabha candidate data."""
 
     def scrape(self) -> None:
-        """Scrape candidate data for Lok Sabha elections."""
+        """Scrape candidate data for Lok Sabha elections using auto-discovery."""
         logger.info("Scraping Lok Sabha candidate data")
 
-        # Main results page
-        url = f"{self.base_url}/partywisewinresult-369.htm"
-        response = self.get_with_retry(url)
+        # Auto-discover constituency links
+        constituency_links = self.discover_constituency_links()
 
-        if response:
-            soup = BeautifulSoup(response.content, "html.parser")
-            table = soup.find("table", {"class": "table-scroll"})
+        if not constituency_links:
+            logger.warning("No constituencies discovered, trying fallback approach")
+            # Fallback: Try to scrape from a known party page
+            constituency_links = self._fallback_discovery()
 
-            if table:
-                rows = table.find_all("tr")[1:]  # Skip header
-                all_data = []
+        all_data = []
+        total_constituencies = len(constituency_links)
 
-                for row in rows:
-                    cols = row.find_all("td")
-                    if len(cols) < 6:
-                        continue
+        for idx, constituency in enumerate(constituency_links, 1):
+            logger.info(
+                f"Scraping constituency {idx}/{total_constituencies}: "
+                f"{constituency.get('name', constituency['constituency_code'])}"
+            )
 
-                    constituency_code = cols[0].text.strip()
-                    name = cols[1].text.strip()
-                    party = cols[2].text.strip()
-                    status = cols[3].text.strip()
-                    votes = cols[4].text.strip()
-                    margin = cols[5].text.strip()
+            url = constituency.get("url") or f"{self.base_url}/candidateswise-{constituency['constituency_code']}.htm"
+            response = self.get_with_retry(url)
 
-                    image_tag = cols[1].find("img")
-                    image_url = (
-                        f"{self.base_url}/{image_tag['src']}" if image_tag else ""
-                    )
+            if response:
+                soup = BeautifulSoup(response.content, "html.parser")
+                candidate_data = self.extract_candidate_data(soup)
 
-                    all_data.append(
-                        {
-                            "constituency_code": constituency_code,
-                            "name": name,
-                            "party": party,
-                            "status": status,
-                            "votes": votes,
-                            "margin": margin,
-                            "image_url": image_url,
-                        }
-                    )
+                # Add constituency code to each candidate
+                for candidate in candidate_data:
+                    candidate["constituency_code"] = constituency["constituency_code"]
+                    candidate["constituency_name"] = constituency.get("name", "")
 
-                self.save_json(
-                    all_data, f"lok_sabha_{self.election_year}_candidates.json"
-                )
-                logger.info(f"Scraped {len(all_data)} candidate records")
+                all_data.extend(candidate_data)
+
+            # Be polite to the server
+            import time
+
+            time.sleep(1)
+
+        self.save_json(all_data, "lok_sabha_candidates.json")
+        logger.info(f"Scraped {len(all_data)} candidate records from {total_constituencies} constituencies")
+
+    def _fallback_discovery(self) -> List[Dict[str, str]]:
+        """Fallback method to discover candidates from party-wise results."""
+        logger.info("Using fallback discovery from party results page")
+        constituencies = []
+
+        # Try common party result pages
+        party_ids = ["369", "1"]  # BJP and INC as common starting points
+        for party_id in party_ids:
+            url = f"{self.base_url}/partywisewinresult-{party_id}.htm"
+            response = self.get_with_retry(url)
+
+            if response:
+                soup = BeautifulSoup(response.content, "html.parser")
+                # Look for constituency links
+                for link in soup.find_all("a", href=True):
+                    href = link["href"]
+                    if "candidateswise" in href.lower():
+                        import re
+
+                        match = re.search(r"candidateswise-([^.]+)\.htm", href)
+                        if match:
+                            const_code = match.group(1)
+                            constituencies.append(
+                                {
+                                    "constituency_code": const_code,
+                                    "name": link.get_text(strip=True),
+                                    "url": f"{self.base_url}/{href}",
+                                }
+                            )
+
+        # Remove duplicates
+        seen = set()
+        unique = []
+        for const in constituencies:
+            if const["constituency_code"] not in seen:
+                seen.add(const["constituency_code"])
+                unique.append(const)
+
+        logger.info(f"Fallback discovered {len(unique)} constituencies")
+        return unique
 
 
 class LokSabhaConstituencyScraper(ConstituencyScraper):
@@ -205,17 +214,27 @@ class LokSabhaConstituencyScraper(ConstituencyScraper):
         return "LS"  # Lok Sabha
 
     def scrape(self) -> None:
-        """Scrape constituency data for Lok Sabha."""
+        """Scrape constituency data for Lok Sabha using auto-discovery."""
         logger.info("Scraping Lok Sabha constituency data")
 
-        # This would need to be implemented based on specific constituency URLs
-        # For now, we'll create a placeholder structure
+        # Use auto-discovery to find constituencies
+        constituency_links = self.discover_constituency_links()
+
         constituencies = []
+        for constituency in constituency_links:
+            constituencies.append(
+                {
+                    "constituency_id": constituency["constituency_code"],
+                    "constituency_name": constituency.get("name", ""),
+                    "state_id": "LS",
+                }
+            )
 
-        # You would need to implement the actual constituency scraping logic here
-        # based on the specific URLs and structure for Lok Sabha constituencies
+        # Sort by constituency ID
+        try:
+            constituencies.sort(key=lambda x: int(x["constituency_id"]))
+        except (ValueError, KeyError):
+            constituencies.sort(key=lambda x: x.get("constituency_id", ""))
 
-        self.save_json(
-            constituencies, f"lok_sabha_{self.election_year}_constituencies.json"
-        )
+        self.save_json(constituencies, "lok_sabha_constituencies.json")
         logger.info(f"Scraped {len(constituencies)} constituency records")

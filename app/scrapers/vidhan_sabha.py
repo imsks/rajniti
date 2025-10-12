@@ -5,6 +5,7 @@ Scrapes Vidhan Sabha (State Assembly) election data from ECI website.
 """
 
 import logging
+from typing import Dict, List
 
 from bs4 import BeautifulSoup
 
@@ -17,37 +18,80 @@ class VidhanSabhaScraper(ECIScraper):
     """Main scraper for Vidhan Sabha elections."""
 
     def __init__(
-        self, state_code: str, election_year: str, output_dir: str = "data/vidhan_sabha"
+        self,
+        base_url: str,
+        output_dir: str = "data/vidhan_sabha",
+        state_code: str = None,
     ):
-        # Different base URLs for different states and years
-        base_url = self._get_base_url(state_code, election_year)
+        """
+        Initialize Vidhan Sabha scraper with base URL.
+
+        Args:
+            base_url: ECI results page URL (e.g., https://results.eci.gov.in/ResultAcGenFeb2025)
+            output_dir: Directory to save scraped data
+            state_code: Optional state code (will be auto-extracted if not provided)
+        """
         super().__init__(base_url, output_dir)
-        self.state_code = state_code
-        self.election_year = election_year
-        self.party_scraper = VidhanSabhaPartyScraper(base_url, output_dir, state_code)
+        self.state_code = state_code or self._extract_state_code()
+        self.party_scraper = VidhanSabhaPartyScraper(base_url, output_dir, self.state_code)
         self.candidate_scraper = VidhanSabhaCandidateScraper(
-            base_url, output_dir, state_code
+            base_url, output_dir, self.state_code
         )
         self.constituency_scraper = VidhanSabhaConstituencyScraper(
-            base_url, output_dir, state_code
+            base_url, output_dir, self.state_code
         )
 
-    def _get_base_url(self, state_code: str, election_year: str) -> str:
-        """Get the appropriate base URL for the state and election year."""
-        # This would need to be updated based on actual ECI URLs
-        if state_code == "DL" and election_year == "2025":
-            return "https://results.eci.gov.in/ResultAcGenFeb2025"
-        elif state_code == "MH" and election_year == "2024":
-            return "https://results.eci.gov.in/ResultAcGenOct2024"
-        else:
-            # Default fallback
-            return f"https://results.eci.gov.in/ResultAcGen{election_year}"
+    def _extract_state_code(self) -> str:
+        """
+        Extract state code from URL or page content.
+        Falls back to 'VS' (Vidhan Sabha) if unable to determine.
+        """
+        import re
+
+        # Try to extract from URL patterns
+        url_lower = self.base_url.lower()
+
+        # Common state codes in URLs
+        state_patterns = {
+            r"delhi|dl": "DL",
+            r"maharashtra|mh": "MH",
+            r"karnataka|ka": "KA",
+            r"gujarat|gj": "GJ",
+            r"rajasthan|rj": "RJ",
+            r"punjab|pb": "PB",
+            r"haryana|hr": "HR",
+            r"uttarpradesh|up": "UP",
+            r"bihar|br": "BR",
+            r"westbengal|wb": "WB",
+        }
+
+        for pattern, code in state_patterns.items():
+            if re.search(pattern, url_lower):
+                logger.info(f"Extracted state code: {code}")
+                return code
+
+        # Try fetching from the page
+        response = self.get_with_retry(f"{self.base_url}/index.htm")
+        if response:
+            from bs4 import BeautifulSoup
+
+            soup = BeautifulSoup(response.content, "html.parser")
+            # Look for state name in title or headings
+            title = soup.find("title")
+            if title:
+                title_text = title.get_text()
+                for pattern, code in state_patterns.items():
+                    if re.search(pattern, title_text, re.IGNORECASE):
+                        logger.info(f"Extracted state code from page: {code}")
+                        return code
+
+        logger.warning("Could not extract state code, using default 'VS'")
+        return "VS"
 
     def scrape(self) -> None:
         """Scrape all Vidhan Sabha election data for the state."""
         logger.info(
-            f"Starting Vidhan Sabha {self.election_year} data scraping "
-            f"for {self.state_code}"
+            f"Starting Vidhan Sabha data scraping for {self.state_code} from {self.base_url}"
         )
 
         # Scrape party-wise results
@@ -95,15 +139,28 @@ class VidhanSabhaCandidateScraper(CandidateScraper):
         self.state_code = state_code
 
     def scrape(self) -> None:
-        """Scrape candidate data for Vidhan Sabha elections."""
+        """Scrape candidate data for Vidhan Sabha elections using auto-discovery."""
         logger.info(f"Scraping Vidhan Sabha candidate data for {self.state_code}")
 
-        # Get constituency range based on state
-        start, end = self._get_constituency_range()
-        all_data = []
+        # Auto-discover constituency links
+        constituency_links = self.discover_constituency_links()
 
-        for i in range(start, end + 1):
-            url = f"{self.base_url}/candidateswise-U05{i}.htm"
+        if not constituency_links:
+            logger.warning(
+                "No constituencies discovered, trying sequential approach as fallback"
+            )
+            constituency_links = self._fallback_sequential_discovery()
+
+        all_data = []
+        total_constituencies = len(constituency_links)
+
+        for idx, constituency in enumerate(constituency_links, 1):
+            logger.info(
+                f"Scraping constituency {idx}/{total_constituencies}: "
+                f"{constituency.get('name', constituency['constituency_code'])}"
+            )
+
+            url = constituency.get("url") or f"{self.base_url}/candidateswise-{constituency['constituency_code']}.htm"
             response = self.get_with_retry(url)
 
             if response:
@@ -112,7 +169,8 @@ class VidhanSabhaCandidateScraper(CandidateScraper):
 
                 # Add constituency code to each candidate
                 for candidate in candidate_data:
-                    candidate["constituency_code"] = f"{self.state_code}-{i}"
+                    candidate["constituency_code"] = constituency["constituency_code"]
+                    candidate["constituency_name"] = constituency.get("name", "")
 
                 all_data.extend(candidate_data)
 
@@ -122,16 +180,44 @@ class VidhanSabhaCandidateScraper(CandidateScraper):
             time.sleep(2)
 
         self.save_json(all_data, f"{self.state_code}_candidates.json")
-        logger.info(f"Scraped {len(all_data)} candidate records")
+        logger.info(f"Scraped {len(all_data)} candidate records from {total_constituencies} constituencies")
 
-    def _get_constituency_range(self) -> tuple:
-        """Get constituency range based on state."""
-        ranges = {
-            "DL": (1, 70),  # Delhi has 70 constituencies
-            "MH": (1, 288),  # Maharashtra has 288 constituencies
-            # Add more states as needed
-        }
-        return ranges.get(self.state_code, (1, 50))  # Default range
+    def _fallback_sequential_discovery(self) -> List[Dict[str, str]]:
+        """
+        Fallback method to discover constituencies by trying sequential codes.
+        Stops after 10 consecutive 404s.
+        """
+        logger.info("Using fallback sequential discovery method")
+        constituencies = []
+        consecutive_failures = 0
+        max_failures = 10
+        i = 1
+
+        while consecutive_failures < max_failures:
+            url = f"{self.base_url}/candidateswise-U05{i}.htm"
+            response = self.get_with_retry(url, retries=1)
+
+            if response and response.status_code == 200:
+                constituencies.append(
+                    {
+                        "constituency_code": f"U05{i}",
+                        "name": f"Constituency {i}",
+                        "url": url,
+                    }
+                )
+                consecutive_failures = 0
+                logger.info(f"Found constituency: U05{i}")
+            else:
+                consecutive_failures += 1
+
+            i += 1
+
+            # Safety limit
+            if i > 500:
+                break
+
+        logger.info(f"Fallback discovery found {len(constituencies)} constituencies")
+        return constituencies
 
 
 class VidhanSabhaConstituencyScraper(ConstituencyScraper):
@@ -146,30 +232,49 @@ class VidhanSabhaConstituencyScraper(ConstituencyScraper):
         return self.state_code
 
     def scrape(self) -> None:
-        """Scrape constituency data for Vidhan Sabha."""
+        """Scrape constituency data for Vidhan Sabha using auto-discovery."""
         logger.info(f"Scraping Vidhan Sabha constituency data for {self.state_code}")
 
-        # URLs for constituency data (based on existing code)
-        urls = [
-            f"{self.base_url}/partywisewinresult-1U05.htm",
-            f"{self.base_url}/partywisewinresult-369U05.htm",
-        ]
+        # Use auto-discovery to find constituency data
+        constituency_links = self.discover_constituency_links()
 
         all_data = []
         unique_ids = set()
 
-        for url in urls:
-            response = self.get_with_retry(url)
-            if response:
-                constituency_data = self.extract_constituency_data(response.text)
+        # If auto-discovery worked, use those results
+        if constituency_links:
+            for constituency in constituency_links:
+                const_id = constituency["constituency_code"]
+                if const_id not in unique_ids:
+                    all_data.append(
+                        {
+                            "constituency_id": const_id,
+                            "constituency_name": constituency.get("name", ""),
+                            "state_id": self.state_code,
+                        }
+                    )
+                    unique_ids.add(const_id)
+        else:
+            # Fallback: Try discovering from party-wise result pages
+            logger.info("Trying party-wise pages for constituency discovery")
+            party_suffixes = ["1U05", "369U05", ""]
+            
+            for suffix in party_suffixes:
+                url = f"{self.base_url}/partywisewinresult-{suffix}.htm"
+                response = self.get_with_retry(url)
+                if response:
+                    constituency_data = self.extract_constituency_data(response.text)
 
-                for item in constituency_data:
-                    if item["constituency_id"] not in unique_ids:
-                        all_data.append(item)
-                        unique_ids.add(item["constituency_id"])
+                    for item in constituency_data:
+                        if item["constituency_id"] not in unique_ids:
+                            all_data.append(item)
+                            unique_ids.add(item["constituency_id"])
 
-        # Sort by constituency number
-        all_data.sort(key=lambda x: int(x["constituency_id"].split("-")[1]))
+        # Sort by constituency ID
+        try:
+            all_data.sort(key=lambda x: int(x["constituency_id"].replace("U05", "")))
+        except (ValueError, KeyError):
+            all_data.sort(key=lambda x: x.get("constituency_id", ""))
 
         self.save_json(all_data, f"{self.state_code}_constituencies.json")
         logger.info(f"Scraped {len(all_data)} constituency records")
@@ -179,15 +284,37 @@ class DelhiVidhanSabhaScraper(VidhanSabhaScraper):
     """Specialized scraper for Delhi Vidhan Sabha elections."""
 
     def __init__(
-        self, election_year: str = "2025", output_dir: str = "data/vidhan_sabha"
+        self, base_url: str = None, output_dir: str = "data/vidhan_sabha"
     ):
-        super().__init__("DL", election_year, output_dir)
+        """
+        Initialize Delhi Vidhan Sabha scraper.
+        
+        Args:
+            base_url: ECI results page URL. If not provided, defaults to latest available.
+            output_dir: Directory to save scraped data
+        """
+        if base_url is None:
+            # Default to 2025 elections
+            base_url = "https://results.eci.gov.in/ResultAcGenFeb2025"
+            logger.info(f"No URL provided, using default: {base_url}")
+        super().__init__(base_url, output_dir, state_code="DL")
 
 
 class MaharashtraVidhanSabhaScraper(VidhanSabhaScraper):
     """Specialized scraper for Maharashtra Vidhan Sabha elections."""
 
     def __init__(
-        self, election_year: str = "2024", output_dir: str = "data/vidhan_sabha"
+        self, base_url: str = None, output_dir: str = "data/vidhan_sabha"
     ):
-        super().__init__("MH", election_year, output_dir)
+        """
+        Initialize Maharashtra Vidhan Sabha scraper.
+        
+        Args:
+            base_url: ECI results page URL. If not provided, defaults to latest available.
+            output_dir: Directory to save scraped data
+        """
+        if base_url is None:
+            # Default to 2024 elections
+            base_url = "https://results.eci.gov.in/ResultAcGenOct2024"
+            logger.info(f"No URL provided, using default: {base_url}")
+        super().__init__(base_url, output_dir, state_code="MH")

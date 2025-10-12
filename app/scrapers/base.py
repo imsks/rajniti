@@ -93,6 +93,110 @@ class ECIScraper(BaseScraper):
         # Update referer for ECI requests
         self.headers["Referer"] = self.base_url
 
+    def discover_constituency_links(self) -> List[Dict[str, str]]:
+        """
+        Auto-discover constituency links from the main results page.
+        Returns list of dicts with constituency_code, name, and URL.
+        """
+        logger.info("Auto-discovering constituency links...")
+        constituency_links = []
+
+        # Try main index page
+        url = f"{self.base_url}/index.htm"
+        response = self.get_with_retry(url)
+
+        if not response:
+            logger.warning("Could not fetch index page for auto-discovery")
+            return constituency_links
+
+        soup = BeautifulSoup(response.content, "html.parser")
+
+        # Look for constituency links in tables
+        tables = soup.find_all("table")
+        for table in tables:
+            rows = table.find_all("tr")
+            for row in rows:
+                cells = row.find_all("td")
+                for cell in cells:
+                    link = cell.find("a", href=True)
+                    if link and "candidateswise" in link["href"].lower():
+                        href = link["href"]
+                        text = link.get_text(strip=True)
+
+                        # Extract constituency code from href
+                        import re
+
+                        match = re.search(r"candidateswise-([^.]+)\.htm", href)
+                        if match:
+                            constituency_code = match.group(1)
+                            full_url = (
+                                f"{self.base_url}/{href}"
+                                if not href.startswith("http")
+                                else href
+                            )
+                            constituency_links.append(
+                                {
+                                    "constituency_code": constituency_code,
+                                    "name": text,
+                                    "url": full_url,
+                                }
+                            )
+
+        logger.info(f"Discovered {len(constituency_links)} constituencies")
+        return constituency_links
+
+    def discover_party_links(self) -> List[Dict[str, str]]:
+        """
+        Auto-discover party links from the main results page.
+        Returns list of dicts with party_id, name, and URL.
+        """
+        logger.info("Auto-discovering party links...")
+        party_links = []
+
+        # Try party-wise results page
+        urls_to_try = [
+            f"{self.base_url}/index.htm",
+            f"{self.base_url}/partywiseresult.htm",
+        ]
+
+        for url in urls_to_try:
+            response = self.get_with_retry(url)
+            if not response:
+                continue
+
+            soup = BeautifulSoup(response.content, "html.parser")
+
+            # Look for party links
+            for link in soup.find_all("a", href=True):
+                href = link["href"]
+                if "partywise" in href.lower():
+                    import re
+
+                    # Extract party ID from URL patterns
+                    match = re.search(r"partywise.*?-?(\d+)(?:U05)?\.htm", href)
+                    if match:
+                        party_id = match.group(1)
+                        party_name = link.get_text(strip=True)
+                        full_url = (
+                            f"{self.base_url}/{href}"
+                            if not href.startswith("http")
+                            else href
+                        )
+                        party_links.append(
+                            {"party_id": party_id, "name": party_name, "url": full_url}
+                        )
+
+        # Remove duplicates based on party_id
+        seen = set()
+        unique_parties = []
+        for party in party_links:
+            if party["party_id"] not in seen:
+                seen.add(party["party_id"])
+                unique_parties.append(party)
+
+        logger.info(f"Discovered {len(unique_parties)} parties")
+        return unique_parties
+
     def parse_table(self, html: str, table_selector: str = "table") -> List[Dict]:
         """Parse HTML table into list of dictionaries."""
         soup = BeautifulSoup(html, "html.parser")
