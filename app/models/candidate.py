@@ -27,6 +27,7 @@ class Candidate(BaseModel):
 class LokSabhaCandidate(BaseModel):
     """Lok Sabha candidate model matching existing JSON structure"""
 
+    uuid: Optional[str] = None
     party_id: int
     constituency: str
     candidate_name: str = Field(alias="candidate_name")
@@ -40,6 +41,7 @@ class LokSabhaCandidate(BaseModel):
 class AssemblyCandidate(BaseModel):
     """Assembly candidate model matching existing JSON structure"""
 
+    uuid: Optional[str] = None
     constituency_code: str = Field(alias="Constituency Code")
     name: str = Field(alias="Name")
     party: str = Field(alias="Party")
