@@ -8,6 +8,7 @@ Single scraper that extracts all Vidhan Sabha (State Assembly) election data
 import logging
 import re
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List
 
@@ -377,6 +378,7 @@ class VidhanSabhaScraper:
                     img_src = f"{self.base_url}/{img_src}"
             
             candidates.append({
+                "ID": str(uuid.uuid4()),
                 "Constituency Code": constituency_code,
                 "Name": name,
                 "Party": party,

@@ -16,6 +16,7 @@ class CandidateStatus(str, Enum):
 class Candidate(BaseModel):
     """Base candidate model"""
 
+    id: Optional[str] = None  # UUID for the candidate
     name: str
     party: str
     constituency: str
@@ -27,6 +28,7 @@ class Candidate(BaseModel):
 class LokSabhaCandidate(BaseModel):
     """Lok Sabha candidate model matching existing JSON structure"""
 
+    id: Optional[str] = None  # UUID for the candidate
     party_id: int
     constituency: str
     candidate_name: str = Field(alias="candidate_name")
@@ -40,6 +42,7 @@ class LokSabhaCandidate(BaseModel):
 class AssemblyCandidate(BaseModel):
     """Assembly candidate model matching existing JSON structure"""
 
+    id: Optional[str] = Field(alias="ID", default=None)  # UUID for the candidate
     constituency_code: str = Field(alias="Constituency Code")
     name: str = Field(alias="Name")
     party: str = Field(alias="Party")

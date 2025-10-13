@@ -8,6 +8,7 @@ from ECI Lok Sabha results page.
 import logging
 import re
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List
 
@@ -128,6 +129,7 @@ class LokSabhaScraper:
                                     party_candidates[party_id] = []
                                 
                                 party_candidates[party_id].append({
+                                    "id": str(uuid.uuid4()),
                                     "party_id": int(party_id),
                                     "constituency": constituency,
                                     "candidate_name": candidate_name,
