@@ -8,6 +8,7 @@ Single scraper that extracts all Vidhan Sabha (State Assembly) election data
 import logging
 import re
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List
 
@@ -41,6 +42,10 @@ class VidhanSabhaScraper:
         self.constituencies_data = []
         self.candidates_data = []
         self.metadata = {}
+
+    def _generate_uuid(self) -> str:
+        """Generate a unique UUID for a candidate."""
+        return str(uuid.uuid4())
 
     def scrape(self) -> None:
         """Main scraping orchestrator - scrapes all data and saves to JSON files."""
@@ -377,6 +382,7 @@ class VidhanSabhaScraper:
                     img_src = f"{self.base_url}/{img_src}"
             
             candidates.append({
+                "uuid": self._generate_uuid(),
                 "Constituency Code": constituency_code,
                 "Name": name,
                 "Party": party,

@@ -8,6 +8,7 @@ from ECI Lok Sabha results page.
 import logging
 import re
 import time
+import uuid
 from pathlib import Path
 from typing import Dict, List
 
@@ -39,6 +40,10 @@ class LokSabhaScraper:
         self.constituencies_data = []
         self.candidates_data = []
         self.metadata = {}
+
+    def _generate_uuid(self) -> str:
+        """Generate a unique UUID for a candidate."""
+        return str(uuid.uuid4())
 
     def scrape(self) -> None:
         """Main scraping orchestrator - scrapes all data and saves to JSON files."""
@@ -128,6 +133,7 @@ class LokSabhaScraper:
                                     party_candidates[party_id] = []
                                 
                                 party_candidates[party_id].append({
+                                    "uuid": self._generate_uuid(),
                                     "party_id": int(party_id),
                                     "constituency": constituency,
                                     "candidate_name": candidate_name,
