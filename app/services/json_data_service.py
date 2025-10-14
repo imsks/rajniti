@@ -193,13 +193,23 @@ class JsonDataService(DataService):
     def get_candidate_by_id(
         self, candidate_id: str, election_id: str
     ) -> Optional[Dict[str, Any]]:
-        """Get a specific candidate - simplified for JSON data"""
+        """Get a specific candidate by UUID or name (for backward compatibility)"""
         candidates = self.get_candidates(election_id)
-        # For simplicity, match by name since we don't have proper IDs in JSON
+
+        # First, try to match by UUID
+        for candidate in candidates:
+            if (
+                candidate.get("id") == candidate_id
+                or candidate.get("ID") == candidate_id
+            ):
+                return candidate
+
+        # Fallback to name-based matching for backward compatibility
         for candidate in candidates:
             name_field = candidate.get("candidate_name") or candidate.get("Name", "")
             if name_field.replace(" ", "_").lower() == candidate_id.lower():
                 return candidate
+
         return None
 
     def get_party_by_name(self, party_name: str, election_id: str) -> Optional[Party]:

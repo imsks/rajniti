@@ -16,6 +16,7 @@ class CandidateStatus(str, Enum):
 class Candidate(BaseModel):
     """Base candidate model"""
 
+    id: Optional[str] = None  # UUID for the candidate
     name: str
     party: str
     constituency: str
