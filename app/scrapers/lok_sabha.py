@@ -47,6 +47,10 @@ class LokSabhaScraper:
         self.candidates_data = []
         self.metadata = {}
 
+    def _generate_uuid(self) -> str:
+        """Generate a unique UUID for a candidate."""
+        return str(uuid.uuid4())
+
     def scrape(self) -> None:
         """Main scraping orchestrator - scrapes all data and saves to JSON files."""
         logger.info(f"Starting Lok Sabha scraping from {self.base_url}")
@@ -137,18 +141,16 @@ class LokSabhaScraper:
                                 # Store for candidates data
                                 if party_id not in party_candidates:
                                     party_candidates[party_id] = []
-
-                                party_candidates[party_id].append(
-                                    {
-                                        "id": str(uuid.uuid4()),
-                                        "party_id": int(party_id),
-                                        "constituency": constituency,
-                                        "candidate_name": candidate_name,
-                                        "votes": votes,
-                                        "margin": margin,
-                                    }
-                                )
-
+                                
+                                party_candidates[party_id].append({
+                                    "uuid": self._generate_uuid(),
+                                    "party_id": int(party_id),
+                                    "constituency": constituency,
+                                    "candidate_name": candidate_name,
+                                    "votes": votes,
+                                    "margin": margin
+                                })
+            
             time.sleep(0.3)  # Be polite to server
 
         # Build parties list with seat counts

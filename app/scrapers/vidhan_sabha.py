@@ -49,6 +49,10 @@ class VidhanSabhaScraper:
         self.candidates_data = []
         self.metadata = {}
 
+    def _generate_uuid(self) -> str:
+        """Generate a unique UUID for a candidate."""
+        return str(uuid.uuid4())
+
     def scrape(self) -> None:
         """Main scraping orchestrator - scrapes all data and saves to JSON files."""
         logger.info(f"Starting Vidhan Sabha scraping from {self.base_url}")
@@ -413,20 +417,18 @@ class VidhanSabhaScraper:
                 img_src = img_tag["src"].strip()
                 if img_src and not img_src.startswith("http"):
                     img_src = f"{self.base_url}/{img_src}"
-
-            candidates.append(
-                {
-                    "ID": str(uuid.uuid4()),
-                    "Constituency Code": constituency_code,
-                    "Name": name,
-                    "Party": party,
-                    "Status": status,
-                    "Votes": votes,
-                    "Margin": margin,
-                    "Image URL": img_src,
-                }
-            )
-
+            
+            candidates.append({
+                "uuid": self._generate_uuid(),
+                "Constituency Code": constituency_code,
+                "Name": name,
+                "Party": party,
+                "Status": status,
+                "Votes": votes,
+                "Margin": margin,
+                "Image URL": img_src
+            })
+        
         return candidates
 
     def _save_all_data(self) -> None:
