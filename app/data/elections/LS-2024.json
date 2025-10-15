@@ -6,10 +6,10 @@
         "year": 2024,
         "date": null,
         "total_constituencies": 0,
-        "total_candidates": 0,
-        "total_parties": 0,
+        "total_candidates": 543,
+        "total_parties": 42,
         "result_status": "DECLARED",
-        "winning_party": null,
-        "winning_party_seats": 0
+        "winning_party": "240",
+        "winning_party_seats": 240
     }
 ]

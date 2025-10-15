@@ -59,12 +59,15 @@ class LokSabhaScraper:
         self._extract_metadata()
 
         # Scrape all data
+        # Layer 1: Party-wise results
         logger.info("Scraping party-wise results...")
         self._scrape_parties()
 
+        # Layer 2: Constituencies
         logger.info("Discovering constituencies...")
         self._scrape_constituencies()
 
+        # Layer 3: Candidates
         logger.info("Candidates already scraped from party pages")
 
         # Save all data
@@ -93,6 +96,7 @@ class LokSabhaScraper:
         """Scrape party-wise results and compile party list with seat counts."""
         # Discover party links from main page
         party_links = self._discover_party_links()
+        print("HERE", party_links)
 
         if not party_links:
             logger.warning("No parties discovered")
@@ -110,7 +114,7 @@ class LokSabhaScraper:
             logger.info(f"  [{idx}/{len(party_links)}] {party_name}")
 
             # Try party-wise winning results page
-            url = f"{self.base_url}/partywisewinresult-{party_id}.htm"
+            url = f"{self.base_url}/partywisewinresultState-{party_id}.htm"
             response = get_with_retry(url, referer=self.base_url)
 
             if not response:
