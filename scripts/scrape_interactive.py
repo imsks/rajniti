@@ -63,7 +63,7 @@ def prompt_for_url() -> str:
     print()
     
     while True:
-        url = input("URL: ").strip()
+        url = input("URL: ").strip() or "https://results.eci.gov.in/PcResultGenJune2024/index.htm"
         
         if not url:
             print("❌ URL cannot be empty")

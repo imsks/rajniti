@@ -95,23 +95,23 @@ class LokSabhaScraper:
     def _scrape_parties(self) -> None:
         """Scrape party-wise results and compile party list with seat counts."""
         # Discover party links from main page
-        party_links = self._discover_party_links()
-        print("HERE", party_links)
+        party_details = self._discover_parties_details()
+        print("HERE", party_details)
 
-        if not party_links:
+        if not party_details:
             logger.warning("No parties discovered")
             return
 
         # Track candidates by party to count seats
         party_candidates = {}
 
-        logger.info(f"Found {len(party_links)} parties, scraping results...")
+        logger.info(f"Found {len(party_details)} parties, scraping results...")
 
-        for idx, party_info in enumerate(party_links, 1):
+        for idx, party_info in enumerate(party_details, 1):
             party_id = party_info["party_id"]
             party_name = party_info.get("name", f"Party {party_id}")
 
-            logger.info(f"  [{idx}/{len(party_links)}] {party_name}")
+            logger.info(f"  [{idx}/{len(party_details)}] {party_name}")
 
             # Try party-wise winning results page
             url = f"{self.base_url}/partywisewinresultState-{party_id}.htm"
@@ -158,7 +158,7 @@ class LokSabhaScraper:
             time.sleep(0.3)  # Be polite to server
 
         # Build parties list with seat counts
-        for party_info in party_links:
+        for party_info in party_details:
             party_id = party_info["party_id"]
             party_name = party_info["name"]
 
@@ -189,14 +189,13 @@ class LokSabhaScraper:
 
         logger.info(f"Scraped {len(self.parties_data)} parties")
 
-    def _discover_party_links(self) -> List[Dict[str, str]]:
+    def _discover_parties_details(self) -> List[Dict[str, str]]:
         """Discover party links from main results page."""
-        party_links = []
+        party_details = []
 
         # Try multiple pages
         urls_to_try = [
             f"{self.base_url}/index.htm",
-            f"{self.base_url}/partywiseresult.htm",
         ]
 
         for url in urls_to_try:
@@ -206,27 +205,28 @@ class LokSabhaScraper:
 
             soup = BeautifulSoup(response.content, "html.parser")
 
-            # Look for party links
-            for link in soup.find_all("a", href=True):
-                href = link["href"]
-                if "partywise" in href.lower() and "result" in href.lower():
-                    # Extract party ID
-                    match = re.search(
-                        r"partywise.*?-?(\d+)(?:U05)?\.htm", href, re.IGNORECASE
-                    )
-                    if match:
-                        party_id = match.group(1)
-                        party_name = link.get_text(strip=True)
+            # Find the party results table
+            table = soup.find("table", {"class": "table"})
+            if not table:
+                logger.warning("No party table found on main page")
+                return party_details
 
-                        if party_name:  # Skip empty names
-                            party_links.append(
-                                {"party_id": party_id, "name": party_name}
-                            )
+            tbody = table.find("tbody")
+            if tbody:
+                rows = tbody.find_all("tr")
+                for row in rows:
+                    cols = row.find_all("td")
+                    if len(cols) >= 2:
+                        party_full_name = cols[0].text.strip()
+                        party_name = party_full_name.split(" - ")[0]
+                        party_id = party_full_name.split(" - ")[1]
+                        seats_won = cols[1].text.strip()
+                        party_details.append({"name": party_name, "party_id": party_id, "total_seats": seats_won})
 
         # Remove duplicates
         seen = set()
         unique_parties = []
-        for party in party_links:
+        for party in party_details:
             if party["party_id"] not in seen:
                 seen.add(party["party_id"])
                 unique_parties.append(party)

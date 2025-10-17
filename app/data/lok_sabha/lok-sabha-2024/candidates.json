@@ -1,6 +1,6 @@
 [
     {
-        "uuid": "c05cde18-df4e-4144-afe1-09e9e242dea8",
+        "uuid": "0882be95-7866-41f5-889a-ed31b3ad5189",
         "party_id": 369,
         "constituency": "Anakapalle(5)",
         "candidate_name": "C.M.RAMESH",
@@ -8,7 +8,7 @@
         "margin": "296530"
     },
     {
-        "uuid": "2af8d5a2-f486-40ca-b911-d434dbc16724",
+        "uuid": "3aa285db-9a01-4d28-b948-10e9eb594350",
         "party_id": 369,
         "constituency": "Rajahmundry(8)",
         "candidate_name": "DAGGUBATI PURANDHESHWARI",
@@ -16,7 +16,7 @@
         "margin": "239139"
     },
     {
-        "uuid": "52cef554-7882-45c6-8314-2741cf31a455",
+        "uuid": "3c23fcca-ca3e-45b9-ba89-a6c85e4eb58f",
         "party_id": 369,
         "constituency": "Narsapuram(9)",
         "candidate_name": "BHUPATHI RAJU SRINIVASA VARMA (B.J.P.VARMA)",
@@ -24,7 +24,7 @@
         "margin": "276802"
     },
     {
-        "uuid": "7d118f46-24f4-4258-a0f2-ca04d1be82ac",
+        "uuid": "a887f72d-99ea-49c3-ab2a-480c25b890b2",
         "party_id": 369,
         "constituency": "Arunachal West(1)",
         "candidate_name": "KIREN RIJIJU",
@@ -32,7 +32,7 @@
         "margin": "100738"
     },
     {
-        "uuid": "10c00904-86c7-430b-ba76-10589f386b0e",
+        "uuid": "3ab43e1e-3c85-4cdf-882f-ff5aca03c44e",
         "party_id": 369,
         "constituency": "Arunachal East(2)",
         "candidate_name": "TAPIR GAO",
@@ -40,7 +40,7 @@
         "margin": "30421"
     },
     {
-        "uuid": "700ea0f1-29f0-4bea-98e4-92fc55cbf8e1",
+        "uuid": "bb7f8efc-39a8-4771-a2c6-087d60457e91",
         "party_id": 369,
         "constituency": "Darrang-Udalguri(4)",
         "candidate_name": "DILIP SAIKIA",
@@ -48,7 +48,7 @@
         "margin": "329012"
     },
     {
-        "uuid": "6181202a-036a-469c-85d0-06f6aa88e283",
+        "uuid": "3efcd674-438b-46d4-8ff7-affa0ef6e759",
         "party_id": 369,
         "constituency": "Guwahati(5)",
         "candidate_name": "BIJULI KALITA MEDHI",
@@ -56,7 +56,7 @@
         "margin": "251090"
     },
     {
-        "uuid": "0d21f3ee-a7bb-472f-acdc-3f38f9628045",
+        "uuid": "b74df960-e065-4c1f-a203-1e6f3669b78a",
         "party_id": 369,
         "constituency": "Diphu(6)",
         "candidate_name": "AMARSING TISSO",
@@ -64,7 +64,7 @@
         "margin": "147603"
     },
     {
-        "uuid": "3da5aa9f-5fab-47a7-aaa3-dd7f6d603f89",
+        "uuid": "6badfbb3-4ffe-49cc-bd8a-218d58ad86b7",
         "party_id": 369,
         "constituency": "Karimganj(7)",
         "candidate_name": "KRIPANATH MALLAH",
@@ -72,7 +72,7 @@
         "margin": "18360"
     },
     {
-        "uuid": "971a71fe-0662-48e5-ba7a-65e1dbd67970",
+        "uuid": "ce1b50d9-50dc-49ba-a2a1-a487ecd38779",
         "party_id": 369,
         "constituency": "Silchar (8)",
         "candidate_name": "PARIMAL SUKLABAIDYA",
@@ -80,7 +80,7 @@
         "margin": "264311"
     },
     {
-        "uuid": "5f45d7fd-82f6-470e-830e-3e3d58d3c9ee",
+        "uuid": "52fa572c-47cf-4174-8ba8-5972c13c889f",
         "party_id": 369,
         "constituency": "Kaziranga(10)",
         "candidate_name": "KAMAKHYA PRASAD TASA",
@@ -88,7 +88,7 @@
         "margin": "248947"
     },
     {
-        "uuid": "54f266cf-a267-4af0-acd6-60a382013aaf",
+        "uuid": "7267d95b-a6a1-4d89-8af1-a7adbe814085",
         "party_id": 369,
         "constituency": "Sonitpur(11)",
         "candidate_name": "RANJIT DUTTA",
@@ -96,7 +96,7 @@
         "margin": "361408"
     },
     {
-        "uuid": "5edb6fc3-ecc2-44f9-a69d-3446006ddf73",
+        "uuid": "6cca111b-7840-4d63-bfdb-a7cebbc70c62",
         "party_id": 369,
         "constituency": "Lakhimpur(12)",
         "candidate_name": "PRADAN BARUAH",
@@ -104,7 +104,7 @@
         "margin": "201257"
     },
     {
-        "uuid": "a7009c13-2483-4bdb-bff3-9671e7d705c5",
+        "uuid": "c1a09049-e1be-43d5-acd2-660a3cc5fd36",
         "party_id": 369,
         "constituency": "Dibrugarh(13)",
         "candidate_name": "SARBANANDA SONOWAL",
@@ -112,7 +112,7 @@
         "margin": "279321"
     },
     {
-        "uuid": "2ba55eed-fcc0-4504-a354-5eef3845ebae",
+        "uuid": "e7088b63-fd7f-4164-a36f-e601006dc366",
         "party_id": 369,
         "constituency": "Paschim Champaran(2)",
         "candidate_name": "DR.SANJAY JAISWAL",
@@ -120,7 +120,7 @@
         "margin": "136568"
     },
     {
-        "uuid": "cde4cf66-3d4a-4441-b8b9-ca96db894bd5",
+        "uuid": "f0e58b5d-0eef-4b6b-ac96-322d805d9cfe",
         "party_id": 369,
         "constituency": "Purvi Champaran(3)",
         "candidate_name": "RADHA MOHAN SINGH",
@@ -128,7 +128,7 @@
         "margin": "88287"
     },
     {
-        "uuid": "1651d308-bd50-45ac-8d35-772840bfd9e0",
+        "uuid": "af49b9fd-f4c5-4950-9d5a-c5c2ba294f46",
         "party_id": 369,
         "constituency": "Madhubani(6)",
         "candidate_name": "ASHOK KUMAR YADAV",
@@ -136,7 +136,7 @@
         "margin": "151945"
     },
     {
-        "uuid": "c898f5ee-cb94-4117-bfb9-1ed403bfc913",
+        "uuid": "1f1fa4d6-11b1-4b28-89d4-cc360506f1e2",
         "party_id": 369,
         "constituency": "Araria(9)",
         "candidate_name": "PRADEEP KUMAR SINGH",
@@ -144,7 +144,7 @@
         "margin": "20094"
     },
     {
-        "uuid": "bcece6f9-33fc-48f2-a636-78aca6947e5d",
+        "uuid": "e58341b1-6d95-4dd5-8ce9-83ff7f07bb8a",
         "party_id": 369,
         "constituency": "Darbhanga(14)",
         "candidate_name": "GOPAL JEE THAKUR",
@@ -152,7 +152,7 @@
         "margin": "178156"
     },
     {
-        "uuid": "b0456426-e998-4ce4-a75f-c54b025063eb",
+        "uuid": "e929bd18-52af-44eb-a5a2-fce4e9042600",
         "party_id": 369,
         "constituency": "Muzaffarpur(15)",
         "candidate_name": "RAJ BHUSHAN CHOUDHARY",
@@ -160,7 +160,7 @@
         "margin": "234927"
     },
     {
-        "uuid": "e9885b89-a4a1-4c6c-83e1-739dbe1a68cc",
+        "uuid": "8eede0f4-62ea-423b-af6b-ce36959fd42d",
         "party_id": 369,
         "constituency": "Maharajganj(19)",
         "candidate_name": "JANARDAN SINGH \"SIGRIWAL\"",
@@ -168,7 +168,7 @@
         "margin": "102651"
     },
     {
-        "uuid": "634f528d-00a3-42a4-bb1c-a0e54e418cc6",
+        "uuid": "49635085-8a5d-4883-b0b4-57a98ab29475",
         "party_id": 369,
         "constituency": "Saran(20)",
         "candidate_name": "RAJIV PRATAP RUDY",
@@ -176,7 +176,7 @@
         "margin": "13661"
     },
     {
-        "uuid": "988099a6-30bd-44b4-8234-6a37d90469b5",
+        "uuid": "99d50a3f-7f8e-438b-a91f-bc6df5040c54",
         "party_id": 369,
         "constituency": "Ujiarpur(22)",
         "candidate_name": "NITYANAND RAI",
@@ -184,7 +184,7 @@
         "margin": "60102"
     },
     {
-        "uuid": "11c4f884-f376-44ac-b3c6-9eb14fbc4569",
+        "uuid": "9a38a949-cecf-4e3e-83ab-61b159c75431",
         "party_id": 369,
         "constituency": "Begusarai(24)",
         "candidate_name": "GIRIRAJ SINGH",
@@ -192,7 +192,7 @@
         "margin": "81480"
     },
     {
-        "uuid": "072ec2ba-e848-407a-bf6d-07d42ea46232",
+        "uuid": "70d23ccb-051f-431f-91c4-4134f294e54c",
         "party_id": 369,
         "constituency": "Patna Sahib(30)",
         "candidate_name": "RAVI SHANKAR PRASAD",
@@ -200,7 +200,7 @@
         "margin": "153846"
     },
     {
-        "uuid": "ed902325-b6c8-4f6a-9dcf-bfd57657828c",
+        "uuid": "d28068e5-3c72-4e95-b546-fb88a33ef0b3",
         "party_id": 369,
         "constituency": "Nawada(39)",
         "candidate_name": "VIVEK THAKUR",
@@ -208,7 +208,7 @@
         "margin": "67670"
     },
     {
-        "uuid": "fe24ad3c-7b0a-46ba-bbcc-7d9421d1e802",
+        "uuid": "31fe13d1-9928-4a22-8bf3-c0821c42bd35",
         "party_id": 369,
         "constituency": "North Goa(1)",
         "candidate_name": "SHRIPAD YESSO NAIK",
@@ -216,7 +216,7 @@
         "margin": "116015"
     },
     {
-        "uuid": "44edf6ee-0de9-405d-a2d2-0c59b0ae248d",
+        "uuid": "345c5b73-a1f2-4212-a599-946894ff5906",
         "party_id": 369,
         "constituency": "Kachchh(1)",
         "candidate_name": "CHAVDA VINOD LAKHAMSHI",
@@ -224,7 +224,7 @@
         "margin": "268782"
     },
     {
-        "uuid": "320677fd-0398-400c-99a9-af35c2c86933",
+        "uuid": "d6681ae9-959f-4152-a0f9-f0f0d6540f42",
         "party_id": 369,
         "constituency": "Patan(3)",
         "candidate_name": "DABHI  BHARATSINHJI  SHANKARJI",
@@ -232,7 +232,7 @@
         "margin": "31876"
     },
     {
-        "uuid": "2ebf499c-f15e-4199-a6d8-fc470d649793",
+        "uuid": "8717ef15-bf0a-461f-9df8-3acdef2605f4",
         "party_id": 369,
         "constituency": "Mahesana(4)",
         "candidate_name": "HARIBHAI PATEL",
@@ -240,7 +240,7 @@
         "margin": "328046"
     },
     {
-        "uuid": "a197d747-e44b-4031-bbdb-b6b5c9fdb857",
+        "uuid": "2929b67f-f145-4705-8b8f-9018534a848d",
         "party_id": 369,
         "constituency": "Sabarkantha(5)",
         "candidate_name": "SHOBHANABEN MAHENDRASINH BARAIYA",
@@ -248,7 +248,7 @@
         "margin": "155682"
     },
     {
-        "uuid": "25231733-4b0e-4366-993a-3c35d4fd5b64",
+        "uuid": "f70bcde0-9264-486f-9521-0341592ca4fd",
         "party_id": 369,
         "constituency": "Gandhinagar(6)",
         "candidate_name": "AMIT SHAH",
@@ -256,7 +256,7 @@
         "margin": "744716"
     },
     {
-        "uuid": "d3586823-1d09-4b74-ac2d-89198187b045",
+        "uuid": "66bc9503-4c44-4ac7-93e4-a32de8cce2fc",
         "party_id": 369,
         "constituency": "Ahmedabad East(7)",
         "candidate_name": "HASMUKHBHAI PATEL (H.S.PATEL)",
@@ -264,7 +264,7 @@
         "margin": "461755"
     },
     {
-        "uuid": "4d9fe2b2-924f-45c2-845c-0e49c54e4a34",
+        "uuid": "af158b11-91f7-4d0b-b355-7c57aaf958b0",
         "party_id": 369,
         "constituency": "Ahmedabad West(8)",
         "candidate_name": "DINESHBHAI MAKWANA (ADVOCATE)",
@@ -272,7 +272,7 @@
         "margin": "286437"
     },
     {
-        "uuid": "ff5a32e1-4d1f-4d53-93c4-08aa9b173620",
+        "uuid": "bc2a474e-7b82-4da9-ab79-d5ac7c6a6f23",
         "party_id": 369,
         "constituency": "Surendranagar(9)",
         "candidate_name": "CHANDUBHAI CHHAGANBHAI SHIHORA",
@@ -280,7 +280,7 @@
         "margin": "261617"
     },
     {
-        "uuid": "fbc71c08-4ea7-40e2-ad9e-0c0268206782",
+        "uuid": "a5755922-4b83-44f9-ac49-9ba6a42b3c4c",
         "party_id": 369,
         "constituency": "Rajkot(10)",
         "candidate_name": "PARSHOTTAMBHAI RUPALA",
@@ -288,7 +288,7 @@
         "margin": "484260"
     },
     {
-        "uuid": "fcd1b0e7-583d-4aec-9fb7-9d5ba020ca37",
+        "uuid": "8b90372b-c32b-4aa4-b1cb-4f613cc4191e",
         "party_id": 369,
         "constituency": "Porbandar(11)",
         "candidate_name": "DR. MANSUKH MANDAVIYA",
@@ -296,7 +296,7 @@
         "margin": "383360"
     },
     {
-        "uuid": "7306432a-456e-4f1f-a213-91e9709c7c75",
+        "uuid": "1499057b-a3dd-4567-a0fb-c8648f640a76",
         "party_id": 369,
         "constituency": "Jamnagar(12)",
         "candidate_name": "POONAMBEN HEMATBHAI MAADAM",
@@ -304,7 +304,7 @@
         "margin": "238008"
     },
     {
-        "uuid": "0c0af7b0-d87d-4ddf-bcd7-dc38352b8224",
+        "uuid": "89453c4e-a801-4a98-a1c7-9788bb1f35bd",
         "party_id": 369,
         "constituency": "Junagadh(13)",
         "candidate_name": "CHUDASAMA RAJESHBHAI NARANBHAI",
@@ -312,7 +312,7 @@
         "margin": "135494"
     },
     {
-        "uuid": "ed7ba177-dc2f-400b-a652-d1875a3558bc",
+        "uuid": "ac4d83c5-d8a0-4879-8586-f3544988218c",
         "party_id": 369,
         "constituency": "Amreli(14)",
         "candidate_name": "BHARATBHAI MANUBHAI SUTARIYA",
@@ -320,7 +320,7 @@
         "margin": "321068"
     },
     {
-        "uuid": "226002ef-c2bc-484d-b352-0cec1efa9a39",
+        "uuid": "4d73a533-e9b9-4fbf-b35a-170f8ea120be",
         "party_id": 369,
         "constituency": "Bhavnagar(15)",
         "candidate_name": "NIMUBEN JAYANTIBHAI BAMBHANIYA (NIMUBEN BAMBHANIYA)",
@@ -328,7 +328,7 @@
         "margin": "455289"
     },
     {
-        "uuid": "749b1316-4bad-4c65-8017-2a198fb19e4c",
+        "uuid": "4170aebe-f6b3-4074-81f0-bcebf4126a0e",
         "party_id": 369,
         "constituency": "Anand(16)",
         "candidate_name": "MITESH PATEL (BAKABHAI)",
@@ -336,7 +336,7 @@
         "margin": "89939"
     },
     {
-        "uuid": "65b41f57-9eda-49ef-9499-93200a3d46e4",
+        "uuid": "48063972-e9cf-4c99-baa8-aba60ff47ceb",
         "party_id": 369,
         "constituency": "Kheda(17)",
         "candidate_name": "DEVUSINH CHAUHAN",
@@ -344,7 +344,7 @@
         "margin": "357758"
     },
     {
-        "uuid": "eab8c606-68aa-493c-bc38-1f15ef7b5765",
+        "uuid": "27c06c3f-e116-4d7a-9a32-16b825c62d13",
         "party_id": 369,
         "constituency": "Panchmahal(18)",
         "candidate_name": "RAJPALSINH MAHENDRASINH JADAV",
@@ -352,7 +352,7 @@
         "margin": "509342"
     },
     {
-        "uuid": "49a03d91-d947-4ee9-972d-301b4c73ecc2",
+        "uuid": "b32ef645-fd2c-46fb-b0b8-fd2962311717",
         "party_id": 369,
         "constituency": "Dahod(19)",
         "candidate_name": "JASWANTSINH SUMANBHAI BHABHOR",
@@ -360,7 +360,7 @@
         "margin": "333677"
     },
     {
-        "uuid": "39416b26-dcc4-43f0-9428-3458a6182798",
+        "uuid": "3ba57d40-1f9d-41ad-ac1d-9122414e4c89",
         "party_id": 369,
         "constituency": "Vadodara(20)",
         "candidate_name": "DR. HEMANG JOSHI",
@@ -368,7 +368,7 @@
         "margin": "582126"
     },
     {
-        "uuid": "525cb556-97a5-421f-8d12-61e61210621c",
+        "uuid": "b0c733ef-8851-453b-a133-69ec4b403854",
         "party_id": 369,
         "constituency": "Chhota Udaipur(21)",
         "candidate_name": "JASHUBHAI BHILUBHAI RATHVA",
@@ -376,7 +376,7 @@
         "margin": "398777"
     },
     {
-        "uuid": "9f455231-a32d-49a9-a316-be2151d49567",
+        "uuid": "033282ad-f88e-4ec5-af26-05cecff2065f",
         "party_id": 369,
         "constituency": "Bharuch(22)",
         "candidate_name": "MANSUKHBHAI DHANJIBHAI VASAVA",
@@ -384,7 +384,7 @@
         "margin": "85696"
     },
     {
-        "uuid": "2b0c94e5-5401-4eca-9446-f98343546a2a",
+        "uuid": "0bbb917c-e896-49cf-8720-84314030dca3",
         "party_id": 369,
         "constituency": "Bardoli(23)",
         "candidate_name": "PARBHUBHAI NAGARBHAI VASAVA",
@@ -392,7 +392,7 @@
         "margin": "230253"
     },
     {
-        "uuid": "1e0a4737-f633-443f-980e-dc6d6a334a78",
+        "uuid": "800a2bee-4b82-48ee-8dbb-839e01186bac",
         "party_id": 369,
         "constituency": "Surat(24)",
         "candidate_name": "MUKESHKUMAR CHANDRAKAANT DALAL (Uncontested)",
@@ -400,7 +400,7 @@
         "margin": "-"
     },
     {
-        "uuid": "f1425860-5230-4b00-a619-d13c0a7f9de2",
+        "uuid": "7d73a2cf-0abf-4f01-a00a-323c7f81bfc6",
         "party_id": 369,
         "constituency": "Navsari(25)",
         "candidate_name": "C R PATIL",
@@ -408,7 +408,7 @@
         "margin": "773551"
     },
     {
-        "uuid": "3ba7b828-530c-41f1-bf0e-a773956ff65e",
+        "uuid": "b3093a40-61d7-483c-ba2f-2bb222663a20",
         "party_id": 369,
         "constituency": "Valsad(26)",
         "candidate_name": "DHAVAL LAXMANBHAI PATEL",
@@ -416,7 +416,7 @@
         "margin": "210704"
     },
     {
-        "uuid": "1bf4dc8d-fe82-4986-b0f1-06a720e97df7",
+        "uuid": "2dd3f336-0520-4cca-940a-7e6433fee63f",
         "party_id": 369,
         "constituency": "KURUKSHETRA(2)",
         "candidate_name": "NAVEEN JINDAL",
@@ -424,7 +424,7 @@
         "margin": "29021"
     },
     {
-        "uuid": "926e801f-a803-4368-9369-661ee85d6390",
+        "uuid": "183653da-2c4d-450c-bb79-2c9c0550c7ed",
         "party_id": 369,
         "constituency": "KARNAL(5)",
         "candidate_name": "MANOHAR LAL",
@@ -432,7 +432,7 @@
         "margin": "232577"
     },
     {
-        "uuid": "74e389c4-5aa0-4c09-9b5d-6fbe2bb14a71",
+        "uuid": "9d437361-b586-464e-9984-ec0399dbb5a8",
         "party_id": 369,
         "constituency": "BHIWANI-MAHENDRAGARH(8)",
         "candidate_name": "DHARAMBIR SINGH",
@@ -440,7 +440,7 @@
         "margin": "41510"
     },
     {
-        "uuid": "6a07526b-eaa1-4b1d-b754-1372f33ccbda",
+        "uuid": "9a99f27f-da6d-414e-becc-adb0e541dc77",
         "party_id": 369,
         "constituency": "GURGAON(9)",
         "candidate_name": "RAO INDERJIT SINGH",
@@ -448,7 +448,7 @@
         "margin": "75079"
     },
     {
-        "uuid": "fda2ed3e-8e16-4094-81bb-41fcdc8972e7",
+        "uuid": "bb21034f-5153-45f4-80b6-37c69885bedd",
         "party_id": 369,
         "constituency": "FARIDABAD(10)",
         "candidate_name": "KRISHAN PAL",
@@ -456,7 +456,7 @@
         "margin": "172914"
     },
     {
-        "uuid": "01380f3c-424a-4eca-86e7-f0a2441dab78",
+        "uuid": "1fea58eb-6516-470f-a11d-6ef9143b64f9",
         "party_id": 369,
         "constituency": "KANGRA(1)",
         "candidate_name": "DR RAJEEV BHARDWAJ",
@@ -464,7 +464,7 @@
         "margin": "251895"
     },
     {
-        "uuid": "36c94b18-c627-46e9-89e8-08a1cda9aeea",
+        "uuid": "bc8a0729-30e9-49eb-b476-d6a3d7e231c9",
         "party_id": 369,
         "constituency": "MANDI(2)",
         "candidate_name": "KANGNA RANAUT",
@@ -472,7 +472,7 @@
         "margin": "74755"
     },
     {
-        "uuid": "78333fef-efe2-4dac-978c-d510c5083e6f",
+        "uuid": "ef4c53c0-481b-404f-98b6-76bc9cee2da1",
         "party_id": 369,
         "constituency": "HAMIRPUR(3)",
         "candidate_name": "ANURAG SINGH THAKUR",
@@ -480,7 +480,7 @@
         "margin": "182357"
     },
     {
-        "uuid": "22d86c53-0a94-407a-b16e-eb6a568088cb",
+        "uuid": "8fd0db83-8317-4021-8a93-94d7889a5472",
         "party_id": 369,
         "constituency": "SHIMLA(4)",
         "candidate_name": "Suresh Kumar Kashyap",
@@ -488,7 +488,7 @@
         "margin": "91451"
     },
     {
-        "uuid": "4af9918b-f448-4f91-9e7c-e34c0b26b7ba",
+        "uuid": "b9416842-c791-4123-96d2-3d00a1bafa78",
         "party_id": 369,
         "constituency": "Belgaum(2)",
         "candidate_name": "JAGADISH SHETTAR",
@@ -496,7 +496,7 @@
         "margin": "178437"
     },
     {
-        "uuid": "6f46c343-7b91-4fa5-8dec-e024e427d233",
+        "uuid": "c714089a-cc08-4431-886f-b68e9175e0e0",
         "party_id": 369,
         "constituency": "Bagalkot(3)",
         "candidate_name": "GADDIGOUDAR. PARVATAGOUDA. CHANDANAGOUDA.",
@@ -504,7 +504,7 @@
         "margin": "68399"
     },
     {
-        "uuid": "5efd648b-b89f-420f-8abd-819ef59393fb",
+        "uuid": "a0f2772d-a2c8-4af1-9118-68d725ca9386",
         "party_id": 369,
         "constituency": "Bijapur(4)",
         "candidate_name": "RAMESH JIGAJINAGI",
@@ -512,7 +512,7 @@
         "margin": "77229"
     },
     {
-        "uuid": "51faa7ab-a303-4a05-8d86-052b4549d292",
+        "uuid": "eef472bd-d4eb-44e0-a697-fd7048ffc32a",
         "party_id": 369,
         "constituency": "Haveri(10)",
         "candidate_name": "BASAVARAJ BOMMAI",
@@ -520,7 +520,7 @@
         "margin": "43513"
     },
     {
-        "uuid": "0981caf1-e6fc-4465-ab75-4f445b5667ec",
+        "uuid": "7951b61d-fe63-4e2d-ba6a-ebb1db355317",
         "party_id": 369,
         "constituency": "Dharwad(11)",
         "candidate_name": "PRALHAD JOSHI",
@@ -528,7 +528,7 @@
         "margin": "97324"
     },
     {
-        "uuid": "7b34a675-5c83-4c90-8c31-2e3174e35e34",
+        "uuid": "248cea63-8295-42ad-a9ff-f2fd09c5ca62",
         "party_id": 369,
         "constituency": "Uttara Kannada(12)",
         "candidate_name": "VISHWESHWAR HEGDE KAGERI",
@@ -536,7 +536,7 @@
         "margin": "337428"
     },
     {
-        "uuid": "4b04942e-8825-4b1d-927e-1b6c515c39c9",
+        "uuid": "2c521722-dcc7-4145-a4c1-dab3942a09cf",
         "party_id": 369,
         "constituency": "Shimoga(14)",
         "candidate_name": "B.Y.RAGHAVENDRA",
@@ -544,7 +544,7 @@
         "margin": "243715"
     },
     {
-        "uuid": "786e39a0-8833-427f-b680-8952aa7caec6",
+        "uuid": "57aeea8e-2c84-4e4c-a44f-8180b67b01e8",
         "party_id": 369,
         "constituency": "Udupi Chikmagalur(15)",
         "candidate_name": "KOTA SRINIVAS POOJARY",
@@ -552,7 +552,7 @@
         "margin": "259175"
     },
     {
-        "uuid": "f7621c32-fb30-4d4b-86e6-e8b70e86ac2c",
+        "uuid": "95ddcf2b-11f6-486d-820b-2d66abeaa66a",
         "party_id": 369,
         "constituency": "Dakshina Kannada(17)",
         "candidate_name": "CAPTAIN BRIJESH CHOWTA",
@@ -560,7 +560,7 @@
         "margin": "149208"
     },
     {
-        "uuid": "6eb06e13-a561-47b6-98aa-22b4c5c51e63",
+        "uuid": "ccd46d6d-27f3-40ff-9e03-3c3f3d0cf9a0",
         "party_id": 369,
         "constituency": "Chitradurga(18)",
         "candidate_name": "GOVIND MAKTHAPPA KARJOL",
@@ -568,7 +568,7 @@
         "margin": "48121"
     },
     {
-        "uuid": "fa0d2dde-1b50-4f58-a4ec-f5907565424a",
+        "uuid": "6bb756ad-21ef-4d6c-943f-d1d72a3c3fae",
         "party_id": 369,
         "constituency": "Tumkur(19)",
         "candidate_name": "V. SOMANNA",
@@ -576,7 +576,7 @@
         "margin": "175594"
     },
     {
-        "uuid": "94ec447e-0068-4cc6-8cca-c6f6e0b5a3c3",
+        "uuid": "0da8e84a-eb52-4147-b8bc-fc9e56ac591c",
         "party_id": 369,
         "constituency": "Mysore(21)",
         "candidate_name": "YADUVEER KRISHNADATTA CHAMARAJA WADIYAR",
@@ -584,7 +584,7 @@
         "margin": "139262"
     },
     {
-        "uuid": "980460c5-37d4-4104-9fd8-d459692d7b57",
+        "uuid": "1fa28b8e-4876-415c-b4b1-4e71f1418e3b",
         "party_id": 369,
         "constituency": "Bangalore Rural(23)",
         "candidate_name": "DR C N MANJUNATH",
@@ -592,7 +592,7 @@
         "margin": "269647"
     },
     {
-        "uuid": "dfdea6c3-ddb1-4867-94d3-8451d0db6b85",
+        "uuid": "7c6259f5-2217-4ea8-af80-77e4ce7e531f",
         "party_id": 369,
         "constituency": "Bangalore North(24)",
         "candidate_name": "SHOBHA KARANDLAJE",
@@ -600,7 +600,7 @@
         "margin": "259476"
     },
     {
-        "uuid": "2bab13e7-5bf0-4890-86ca-8f9db90c816c",
+        "uuid": "e2b3de90-ca62-487f-903f-5cd8cfaa84a8",
         "party_id": 369,
         "constituency": "Bangalore central(25)",
         "candidate_name": "P C MOHAN",
@@ -608,7 +608,7 @@
         "margin": "32707"
     },
     {
-        "uuid": "d027f225-ad71-467a-afe2-2ed99fb0c0b4",
+        "uuid": "7c5e700b-71b6-4043-92bc-4e77d10f5628",
         "party_id": 369,
         "constituency": "Bangalore South(26)",
         "candidate_name": "TEJASVI SURYA",
@@ -616,7 +616,7 @@
         "margin": "277083"
     },
     {
-        "uuid": "67180424-1950-487b-a675-2140312c286f",
+        "uuid": "5b5cd2bc-d8b2-4201-8452-6739724cab59",
         "party_id": 369,
         "constituency": "Chikkballapur(27)",
         "candidate_name": "DR.K.SUDHAKAR",
@@ -624,7 +624,7 @@
         "margin": "163460"
     },
     {
-        "uuid": "aea2b60c-e86e-4c48-9a98-9ff8844401a1",
+        "uuid": "580507fb-5479-4185-ab9f-b3b9749f36b0",
         "party_id": 369,
         "constituency": "Thrissur(10)",
         "candidate_name": "SURESH GOPI",
@@ -632,7 +632,7 @@
         "margin": "74686"
     },
     {
-        "uuid": "d9b03f4c-09f2-4e1b-b016-c98f3317bece",
+        "uuid": "fec73aff-68ca-4901-b0af-9164d1b2df73",
         "party_id": 369,
         "constituency": "MORENA(1)",
         "candidate_name": "SHIVMANGAL SINGH TOMAR",
@@ -640,7 +640,7 @@
         "margin": "52530"
     },
     {
-        "uuid": "ec3cefc3-814e-4a29-b38c-7ee23f7f089d",
+        "uuid": "17e00000-8626-4248-8dfc-5c1fa94c644e",
         "party_id": 369,
         "constituency": "BHIND(2)",
         "candidate_name": "SANDHYA RAY",
@@ -648,7 +648,7 @@
         "margin": "64840"
     },
     {
-        "uuid": "632c4c51-8e5c-4dd3-a244-922dc3721b5a",
+        "uuid": "5e7efac9-1606-457a-a0cf-bbd38932c9c9",
         "party_id": 369,
         "constituency": "GWALIOR(3)",
         "candidate_name": "BHARAT SINGH KUSHWAH",
@@ -656,7 +656,7 @@
         "margin": "70210"
     },
     {
-        "uuid": "555cb248-8e6d-4e4c-a709-59c6340ba783",
+        "uuid": "a4d22872-8a33-4791-8393-3b1c035d10f5",
         "party_id": 369,
         "constituency": "GUNA(4)",
         "candidate_name": "JYOTIRADITYA M. SCINDIA",
@@ -664,7 +664,7 @@
         "margin": "540929"
     },
     {
-        "uuid": "b4389fec-c5f9-4e83-acc3-267b533a49ab",
+        "uuid": "7b3f8706-13bd-41a1-98ec-c7a4d910b968",
         "party_id": 369,
         "constituency": "SAGAR(5)",
         "candidate_name": "DR. LATA WANKHEDE",
@@ -672,7 +672,7 @@
         "margin": "471222"
     },
     {
-        "uuid": "fed65e2d-fd17-4ae1-9fe1-3b8457f3a001",
+        "uuid": "82a2efd0-4bf3-4379-8492-699da2898a5f",
         "party_id": 369,
         "constituency": "TIKAMGARH(6)",
         "candidate_name": "DR. VIRENDRA KUMAR",
@@ -680,7 +680,7 @@
         "margin": "403312"
     },
     {
-        "uuid": "717eb1ad-f7d9-494f-a2e6-5eb8b5da196e",
+        "uuid": "288315e7-4902-4082-b148-2ef7945acc2f",
         "party_id": 369,
         "constituency": "DAMOH(7)",
         "candidate_name": "RAHUL SINGH LODHI",
@@ -688,7 +688,7 @@
         "margin": "406426"
     },
     {
-        "uuid": "b48661f2-56a6-48bd-a653-23d04238b438",
+        "uuid": "862f2653-d737-4758-873e-6b55393d7eca",
         "party_id": 369,
         "constituency": "KHAJURAHO(8)",
         "candidate_name": "VISHNU DATT SHARMA (V.D.SHARMA)",
@@ -696,7 +696,7 @@
         "margin": "541229"
     },
     {
-        "uuid": "ea2d2d02-0d13-4aa7-9018-dab57b1cfe50",
+        "uuid": "a95bfbf7-cf01-4510-97d1-3930f173479e",
         "party_id": 369,
         "constituency": "SATNA(9)",
         "candidate_name": "GANESH SINGH",
@@ -704,7 +704,7 @@
         "margin": "84949"
     },
     {
-        "uuid": "fec9b645-0eb7-4b88-bf68-d31cf1f2d38f",
+        "uuid": "f4b21470-4db8-4332-bed7-7d98f9961d7b",
         "party_id": 369,
         "constituency": "REWA(10)",
         "candidate_name": "JANARDAN MISHRA",
@@ -712,7 +712,7 @@
         "margin": "193374"
     },
     {
-        "uuid": "cb15aa89-645f-4beb-ae07-f4d11111483e",
+        "uuid": "486765f0-6286-4a15-98fa-ce364b9c0ab8",
         "party_id": 369,
         "constituency": "SIDHI(11)",
         "candidate_name": "DR. RAJESH MISHRA",
@@ -720,7 +720,7 @@
         "margin": "206416"
     },
     {
-        "uuid": "8f575c31-5da7-41f6-a096-bf4729e1a8e5",
+        "uuid": "8d2cdfb2-47a9-4850-b35f-a44bb24a3754",
         "party_id": 369,
         "constituency": "SHAHDOL(12)",
         "candidate_name": "SMT. HIMADRI SINGH",
@@ -728,7 +728,7 @@
         "margin": "397340"
     },
     {
-        "uuid": "ff4e102f-b431-4350-9cfb-c04869e3bfbb",
+        "uuid": "a32d249f-2990-4d20-a7ad-3f56d0bb72d1",
         "party_id": 369,
         "constituency": "JABALPUR(13)",
         "candidate_name": "ASHISH DUBEY",
@@ -736,7 +736,7 @@
         "margin": "486674"
     },
     {
-        "uuid": "a4b77174-1eef-4bcd-96a2-afbda6afea00",
+        "uuid": "c76abde7-57fc-4b94-8938-bdb848f5bcec",
         "party_id": 369,
         "constituency": "MANDLA(14)",
         "candidate_name": "FAGGAN SINGH KULASTE",
@@ -744,7 +744,7 @@
         "margin": "103846"
     },
     {
-        "uuid": "cbdefc3e-c79f-4a24-b8eb-c2bacbd40db9",
+        "uuid": "0cee413a-b40f-4083-b989-8d5ce705df11",
         "party_id": 369,
         "constituency": "BALAGHAT(15)",
         "candidate_name": "BHARTI PARDHI",
@@ -752,7 +752,7 @@
         "margin": "174512"
     },
     {
-        "uuid": "add6e0be-df6b-4d63-9a62-41afda6cd0a6",
+        "uuid": "846a0e87-a79d-4dd0-b81b-098b98278111",
         "party_id": 369,
         "constituency": "CHHINDWARA(16)",
         "candidate_name": "BUNTY VIVEK SAHU",
@@ -760,7 +760,7 @@
         "margin": "113618"
     },
     {
-        "uuid": "85879664-69fd-497a-9ba7-87321b803a45",
+        "uuid": "18e358ed-efa2-4153-b23b-ae12a7648dbc",
         "party_id": 369,
         "constituency": "HOSHANGABAD(17)",
         "candidate_name": "DARSHAN SINGH CHOUDHARY",
@@ -768,7 +768,7 @@
         "margin": "431696"
     },
     {
-        "uuid": "3f57de7e-b03b-4419-9b1d-9696bc87fe82",
+        "uuid": "fd507106-f315-45b9-8126-5102c2bb9a6e",
         "party_id": 369,
         "constituency": "VIDISHA(18)",
         "candidate_name": "SHIVRAJ SINGH CHOUHAN",
@@ -776,7 +776,7 @@
         "margin": "821408"
     },
     {
-        "uuid": "a9158f36-bcb6-4609-b8b5-7bf4d8f840b6",
+        "uuid": "675e6bac-4117-4c60-8e1c-48d1885c40da",
         "party_id": 369,
         "constituency": "BHOPAL(19)",
         "candidate_name": "ALOK SHARMA",
@@ -784,7 +784,7 @@
         "margin": "501499"
     },
     {
-        "uuid": "dc88e633-02d4-48da-9675-c543c6b7e2b5",
+        "uuid": "7bfcd374-9373-4b69-b73e-ee659f44d4af",
         "party_id": 369,
         "constituency": "RAJGARH(20)",
         "candidate_name": "RODMAL NAGAR",
@@ -792,7 +792,7 @@
         "margin": "146089"
     },
     {
-        "uuid": "b968ed15-6dc7-49d7-8cb9-fb464ce0f3bb",
+        "uuid": "bdc9bdf5-db92-4df1-9c71-541fd1859010",
         "party_id": 369,
         "constituency": "DEWAS(21)",
         "candidate_name": "MAHENDRA SINGH SOLANKY",
@@ -800,7 +800,7 @@
         "margin": "425225"
     },
     {
-        "uuid": "b4ff0e7b-c596-4a21-93ba-119f75a2be4c",
+        "uuid": "6c5828cc-da6f-461f-b267-bcb311adc49f",
         "party_id": 369,
         "constituency": "UJJAIN(22)",
         "candidate_name": "ANIL FIROJIYA",
@@ -808,7 +808,7 @@
         "margin": "375860"
     },
     {
-        "uuid": "6e7ded9e-4309-4e5a-bbcc-15c198832d90",
+        "uuid": "1f34064e-381d-4aae-bc63-e70db6321435",
         "party_id": 369,
         "constituency": "MANDSOUR(23)",
         "candidate_name": "SUDHEER GUPTA",
@@ -816,7 +816,7 @@
         "margin": "500655"
     },
     {
-        "uuid": "a904c120-47df-4ce6-a12e-337338a9f74b",
+        "uuid": "04d5342f-35cc-4342-881b-5175f3bd0309",
         "party_id": 369,
         "constituency": "RATLAM(24)",
         "candidate_name": "ANITA NAGARSINGH CHOUHAN",
@@ -824,7 +824,7 @@
         "margin": "207232"
     },
     {
-        "uuid": "24103f38-a635-4fe8-a7fb-bd8003fb3c77",
+        "uuid": "887842f0-6deb-400b-9af5-22b2f51be02b",
         "party_id": 369,
         "constituency": "DHAR(25)",
         "candidate_name": "SAVITRI THAKUR",
@@ -832,7 +832,7 @@
         "margin": "218665"
     },
     {
-        "uuid": "a28d25a2-ff7f-4bbe-baf5-30eaed2e1d3b",
+        "uuid": "bdde6b5e-d4ed-4c09-91ad-cecdfa4f3cf3",
         "party_id": 369,
         "constituency": "INDORE(26)",
         "candidate_name": "SHANKAR LALWANI",
@@ -840,7 +840,7 @@
         "margin": "1175092"
     },
     {
-        "uuid": "260189e9-c859-490a-85ff-1d95f959cd1c",
+        "uuid": "ff138e92-d24f-43a0-a5ec-f0b38067a92f",
         "party_id": 369,
         "constituency": "KHARGONE(27)",
         "candidate_name": "GAJENDRA SINGH PATEL",
@@ -848,7 +848,7 @@
         "margin": "135018"
     },
     {
-        "uuid": "82f57012-c3a3-4215-be1f-e8bedafd0690",
+        "uuid": "a78f1d18-e27c-4ab9-a792-534382d6c166",
         "party_id": 369,
         "constituency": "KHANDWA(28)",
         "candidate_name": "GYANESHWAR PATIL",
@@ -856,7 +856,7 @@
         "margin": "269971"
     },
     {
-        "uuid": "e81ba441-8373-4b71-802e-f1f4c9ac2ab3",
+        "uuid": "7668bd41-2975-4f2b-9857-29fcd1dd6a72",
         "party_id": 369,
         "constituency": "BETUL(29)",
         "candidate_name": "DURGADAS (D. D.) UIKEY",
@@ -864,7 +864,7 @@
         "margin": "379761"
     },
     {
-        "uuid": "2f13de66-1b61-4c3f-a16e-bbe0634dde38",
+        "uuid": "29be56c8-094e-4465-b52d-289d64d9eff2",
         "party_id": 369,
         "constituency": "Jalgaon(3)",
         "candidate_name": "SMITA UDAY WAGH",
@@ -872,7 +872,7 @@
         "margin": "251594"
     },
     {
-        "uuid": "c2974276-e7d8-40bc-9ec2-2a24cf359112",
+        "uuid": "51cf8d04-02c3-4d3e-acb9-42e4f015b0b3",
         "party_id": 369,
         "constituency": "Raver(4)",
         "candidate_name": "KHADSE RAKSHA NIKHIL",
@@ -880,7 +880,7 @@
         "margin": "272183"
     },
     {
-        "uuid": "909ada49-f900-4d55-89b2-273fc94c6cd9",
+        "uuid": "c3c946d4-e81b-4e6f-8633-b3070920519f",
         "party_id": 369,
         "constituency": "Akola(6)",
         "candidate_name": "ANUP SANJAY DHOTRE",
@@ -888,7 +888,7 @@
         "margin": "40626"
     },
     {
-        "uuid": "1f1fe951-c2bf-44c1-a1ff-99fc26e5e45d",
+        "uuid": "c203436b-0ce6-4b5f-b1a1-b02a39b877e5",
         "party_id": 369,
         "constituency": "Nagpur(10)",
         "candidate_name": "NITIN JAIRAM GADKARI",
@@ -896,7 +896,7 @@
         "margin": "137603"
     },
     {
-        "uuid": "93be9047-bbb8-4c7a-8cf7-33784b45b3d8",
+        "uuid": "67c55ecd-131f-4b21-938e-f9cb6ef5cb27",
         "party_id": 369,
         "constituency": "Palghar(22)",
         "candidate_name": "DR. HEMANT VISHNU SAVARA",
@@ -904,7 +904,7 @@
         "margin": "183306"
     },
     {
-        "uuid": "897463e2-1b3e-49d2-acc6-4145fb406e46",
+        "uuid": "d1b16aec-a05c-4b8a-ade1-fdeed734e825",
         "party_id": 369,
         "constituency": "Mumbai North(26)",
         "candidate_name": "PIYUSH GOYAL",
@@ -912,7 +912,7 @@
         "margin": "357608"
     },
     {
-        "uuid": "79cd4ade-4324-4d9a-a00c-8b71a0e465ef",
+        "uuid": "4b1ef7b6-51c1-4164-8829-6d7c0fff5122",
         "party_id": 369,
         "constituency": "Pune(34)",
         "candidate_name": "MURLIDHAR MOHOL",
@@ -920,7 +920,7 @@
         "margin": "123038"
     },
     {
-        "uuid": "2aab03d8-064b-422b-8870-f1f1fb050f93",
+        "uuid": "89ddcc0c-a824-4efb-96b2-7f694b1557f0",
         "party_id": 369,
         "constituency": "Satara(45)",
         "candidate_name": "SHRIMANT CHH UDAYANRAJE PRATAPSINHAMAHARAJ BHONSLE",
@@ -928,7 +928,7 @@
         "margin": "32771"
     },
     {
-        "uuid": "f5c18730-b8c4-426d-b21e-6d7577679247",
+        "uuid": "ef439a61-9e73-4ded-86eb-8f18a96e13fa",
         "party_id": 369,
         "constituency": "Ratnagiri- Sindhudurg(46)",
         "candidate_name": "NARAYAN TATU RANE",
@@ -936,7 +936,7 @@
         "margin": "47858"
     },
     {
-        "uuid": "1db958ee-901b-4317-814a-69742c5a6a97",
+        "uuid": "da7a28e5-2f65-40a3-9bf7-e09a3428372c",
         "party_id": 369,
         "constituency": "Bargarh(1)",
         "candidate_name": "PRADEEP PUROHIT",
@@ -944,7 +944,7 @@
         "margin": "251667"
     },
     {
-        "uuid": "29773043-5384-4c18-9095-cab70f5da6d8",
+        "uuid": "19edd5be-914c-422e-9eaa-516c48d996a4",
         "party_id": 369,
         "constituency": "Sundargarh(2)",
         "candidate_name": "JUAL ORAM",
@@ -952,7 +952,7 @@
         "margin": "138808"
     },
     {
-        "uuid": "89ecb174-52cb-4543-80f3-10e2885c08f7",
+        "uuid": "3394c65f-297a-43fa-9890-b60ad7ec7b17",
         "party_id": 369,
         "constituency": "Sambalpur(3)",
         "candidate_name": "DHARMENDRA PRADHAN",
@@ -960,7 +960,7 @@
         "margin": "119836"
     },
     {
-        "uuid": "9f5c6266-7465-4671-a84e-d92272da56d8",
+        "uuid": "a9dda081-74d7-49db-9ef9-bf9176b24d92",
         "party_id": 369,
         "constituency": "Keonjhar(4)",
         "candidate_name": "ANANTA NAYAK",
@@ -968,7 +968,7 @@
         "margin": "97042"
     },
     {
-        "uuid": "59bf6b52-082b-4ab1-9d53-1bcfafbdd192",
+        "uuid": "a58e8e65-125d-4ad7-98ce-a84613835c93",
         "party_id": 369,
         "constituency": "Mayurbhanj(5)",
         "candidate_name": "NABA CHARAN MAJHI",
@@ -976,7 +976,7 @@
         "margin": "219334"
     },
     {
-        "uuid": "42153230-a547-4e8f-a065-19738ac85ba2",
+        "uuid": "87030afa-fdf9-4689-8be9-f8775d0c3d5a",
         "party_id": 369,
         "constituency": "Balasore(6)",
         "candidate_name": "PRATAP CHANDRA SARANGI",
@@ -984,7 +984,7 @@
         "margin": "147156"
     },
     {
-        "uuid": "4921f91c-90e9-4d7c-9531-642257820171",
+        "uuid": "c051bd83-11f4-43b7-9c59-ec852d77f95e",
         "party_id": 369,
         "constituency": "Bhadrak(7)",
         "candidate_name": "AVIMANYU SETHI",
@@ -992,7 +992,7 @@
         "margin": "91544"
     },
     {
-        "uuid": "11deb57f-a73c-4905-a9b0-0dad02ee851d",
+        "uuid": "b4780306-116b-4a49-ab91-7481cd1f02fb",
         "party_id": 369,
         "constituency": "Jajpur(8)",
         "candidate_name": "RABINDRA NARAYAN BEHERA",
@@ -1000,7 +1000,7 @@
         "margin": "1587"
     },
     {
-        "uuid": "14a5196f-017a-47ce-b70d-2f4ed30b5ee5",
+        "uuid": "00fb3244-5b8b-417c-b5e2-d82828c51372",
         "party_id": 369,
         "constituency": "Dhenkanal(9)",
         "candidate_name": "RUDRA NARAYAN PANY",
@@ -1008,7 +1008,7 @@
         "margin": "76567"
     },
     {
-        "uuid": "ca1b0174-5b66-4648-b0d9-c608da389056",
+        "uuid": "21bf9993-379a-451d-a363-c539b5d3f92c",
         "party_id": 369,
         "constituency": "Bolangir(10)",
         "candidate_name": "SANGEETA KUMARI SINGH DEO",
@@ -1016,7 +1016,7 @@
         "margin": "132664"
     },
     {
-        "uuid": "0acc0a9e-150f-44e0-ad82-667538fe52de",
+        "uuid": "04e67ffa-575d-4dd6-a243-7e0f3d2e57b5",
         "party_id": 369,
         "constituency": "Kalahandi(11)",
         "candidate_name": "MALVIKA DEVI",
@@ -1024,7 +1024,7 @@
         "margin": "133813"
     },
     {
-        "uuid": "1dcb62bd-de05-4a6e-929e-933d8cb384a5",
+        "uuid": "c15afcbd-ad18-48d2-9a00-646341fc147f",
         "party_id": 369,
         "constituency": "Nabarangpur(12)",
         "candidate_name": "BALABHADRA MAJHI",
@@ -1032,7 +1032,7 @@
         "margin": "87536"
     },
     {
-        "uuid": "5433b53e-d020-42ef-9e63-61a4271973e4",
+        "uuid": "1a222dae-290f-407d-bfe8-87b3373c2598",
         "party_id": 369,
         "constituency": "Kandhamal(13)",
         "candidate_name": "SUKANTA KUMAR PANIGRAHI",
@@ -1040,7 +1040,7 @@
         "margin": "21371"
     },
     {
-        "uuid": "0cee8488-bf63-46a0-af23-31bdd7e58d07",
+        "uuid": "e42eb576-9d93-43dc-a4ad-9310833b785a",
         "party_id": 369,
         "constituency": "Cuttack(14)",
         "candidate_name": "BHARTRUHARI MAHTAB",
@@ -1048,7 +1048,7 @@
         "margin": "57077"
     },
     {
-        "uuid": "60bc21e2-624c-4a3a-ad7a-c8abf7985737",
+        "uuid": "d60c618e-4f41-416b-af9b-c4e19636ea8a",
         "party_id": 369,
         "constituency": "Kendrapara(15)",
         "candidate_name": "BAIJAYANT PANDA",
@@ -1056,7 +1056,7 @@
         "margin": "66536"
     },
     {
-        "uuid": "cb0367cd-7da2-4c3e-aa10-c3592c6f9d97",
+        "uuid": "b450c6a8-d80e-4c32-b359-4176e5671679",
         "party_id": 369,
         "constituency": "Jagatsinghpur(16)",
         "candidate_name": "BIBHU PRASAD TARAI",
@@ -1064,7 +1064,7 @@
         "margin": "40696"
     },
     {
-        "uuid": "d85afb40-0a29-45f3-9efe-6d400274f0b7",
+        "uuid": "ec812eb5-2f9c-46c3-af46-2abba55965d0",
         "party_id": 369,
         "constituency": "Puri(17)",
         "candidate_name": "SAMBIT PATRA",
@@ -1072,7 +1072,7 @@
         "margin": "104709"
     },
     {
-        "uuid": "a7da4e51-8a0b-4aa0-8ae5-04de2177c77e",
+        "uuid": "315f00a2-d331-4a2c-a3f2-d064fa5f4a45",
         "party_id": 369,
         "constituency": "Bhubaneswar(18)",
         "candidate_name": "APARAJITA SARANGI",
@@ -1080,7 +1080,7 @@
         "margin": "35152"
     },
     {
-        "uuid": "89573170-d3f6-40da-a9c7-1204510f4422",
+        "uuid": "5ff35541-3a44-4318-839d-c90971ef742e",
         "party_id": 369,
         "constituency": "Aska(19)",
         "candidate_name": "ANITA SUBHADARSHINI",
@@ -1088,7 +1088,7 @@
         "margin": "99974"
     },
     {
-        "uuid": "56eb06fc-c174-4ddd-8272-51d8d4d11be5",
+        "uuid": "0ee53e4c-2fb6-4f5d-8dd9-d62e71b39497",
         "party_id": 369,
         "constituency": "Berhampur(20)",
         "candidate_name": "DR. PRADEEP KUMAR PANIGRAHY",
@@ -1096,7 +1096,7 @@
         "margin": "165476"
     },
     {
-        "uuid": "ee1befd8-bf5e-4430-b2dd-812034b47a81",
+        "uuid": "007282f4-257b-457f-b91a-b789af64d96f",
         "party_id": 369,
         "constituency": "BIKANER (2)",
         "candidate_name": "ARJUN RAM MEGHWAL",
@@ -1104,7 +1104,7 @@
         "margin": "55711"
     },
     {
-        "uuid": "0f8c7fda-c136-4576-a7df-206078423236",
+        "uuid": "cefed385-28e6-4115-a87b-4f9b4ee81080",
         "party_id": 369,
         "constituency": "JAIPUR RURAL(6)",
         "candidate_name": "RAO RAJENDRA SINGH",
@@ -1112,7 +1112,7 @@
         "margin": "1615"
     },
     {
-        "uuid": "309e97d6-7df8-4739-be99-c34510bfae93",
+        "uuid": "60e18c9f-d0e6-48ce-bee5-3218a666f504",
         "party_id": 369,
         "constituency": "JAIPUR(7)",
         "candidate_name": "MANJU SHARMA",
@@ -1120,7 +1120,7 @@
         "margin": "331767"
     },
     {
-        "uuid": "721fae4b-42ff-4a70-aede-2c5a7b087a33",
+        "uuid": "0e614291-4c4b-4ca4-b9d1-4f3127834b68",
         "party_id": 369,
         "constituency": "ALWAR(8)",
         "candidate_name": "BHUPENDER YADAV",
@@ -1128,7 +1128,7 @@
         "margin": "48282"
     },
     {
-        "uuid": "f5a71c5b-a393-46e3-ad16-02f9cf6d3296",
+        "uuid": "f0faa8f0-4c90-4034-be25-b1f1e685d810",
         "party_id": 369,
         "constituency": "AJMER (13)",
         "candidate_name": "BHAGIRATH CHOUDHARY",
@@ -1136,7 +1136,7 @@
         "margin": "329991"
     },
     {
-        "uuid": "5debdc50-675d-4ceb-8281-a10bfce74deb",
+        "uuid": "b0083234-4a48-4538-b30d-60aa45cdb16c",
         "party_id": 369,
         "constituency": "PALI(15)",
         "candidate_name": "P. P. CHAUDHARY",
@@ -1144,7 +1144,7 @@
         "margin": "245351"
     },
     {
-        "uuid": "159abdab-0f46-42ee-b215-3590c6006745",
+        "uuid": "9c52900d-374f-4026-9d20-9ac0479c1c6a",
         "party_id": 369,
         "constituency": "JODHPUR(16)",
         "candidate_name": "GAJENDRA SINGH SHEKHAWAT",
@@ -1152,7 +1152,7 @@
         "margin": "115677"
     },
     {
-        "uuid": "f17d2cc8-390f-4481-ba5f-c450ca25bed6",
+        "uuid": "4333d5d6-0863-4f3e-bee7-315433daf4c3",
         "party_id": 369,
         "constituency": "JALORE (18)",
         "candidate_name": "LUMBARAM",
@@ -1160,7 +1160,7 @@
         "margin": "201543"
     },
     {
-        "uuid": "2d50a57f-115a-4a8d-9c34-ab1083162eda",
+        "uuid": "c090c3bf-6f55-47a6-a5a6-db95e7477b00",
         "party_id": 369,
         "constituency": "UDAIPUR (19)",
         "candidate_name": "MANNA LAL RAWAT",
@@ -1168,7 +1168,7 @@
         "margin": "261608"
     },
     {
-        "uuid": "d265839a-b94b-4126-be3c-68de11442c93",
+        "uuid": "735b6e79-2f61-4659-93ac-c09987c859be",
         "party_id": 369,
         "constituency": "CHITTORGARH(21)",
         "candidate_name": "CHANDRA PRAKASH JOSHI",
@@ -1176,7 +1176,7 @@
         "margin": "389877"
     },
     {
-        "uuid": "e06a35cb-97cd-4067-9fe0-e1ca8c61d606",
+        "uuid": "f5361a8a-030b-47d5-9ed3-03101bede8f8",
         "party_id": 369,
         "constituency": "RAJSAMAND(22)",
         "candidate_name": "MAHIMA KUMARI MEWAR",
@@ -1184,7 +1184,7 @@
         "margin": "392223"
     },
     {
-        "uuid": "9982b867-8389-4498-9b98-89a619f854b5",
+        "uuid": "1624dc3a-650a-4b4b-94c1-6cfb78eee842",
         "party_id": 369,
         "constituency": "BHILWARA(23)",
         "candidate_name": "DAMODAR AGARWAL",
@@ -1192,7 +1192,7 @@
         "margin": "354606"
     },
     {
-        "uuid": "7948f64a-1775-407f-a22d-55b1aa0ceb09",
+        "uuid": "5000b356-024b-43ec-9791-064e70bd94ee",
         "party_id": 369,
         "constituency": "KOTA(24)",
         "candidate_name": "OM BIRLA",
@@ -1200,7 +1200,7 @@
         "margin": "41974"
     },
     {
-        "uuid": "97697f41-5fa5-45a5-b3a2-2b24c3bcfb1e",
+        "uuid": "6cddfc9e-e999-425a-97e0-ac5e964ab1bb",
         "party_id": 369,
         "constituency": "JHALAWAR-BARAN(25)",
         "candidate_name": "DUSHYANT SINGH",
@@ -1208,7 +1208,7 @@
         "margin": "370989"
     },
     {
-        "uuid": "96dc2fc0-9204-4d40-9138-e355d24f979d",
+        "uuid": "e78624f7-95a2-4954-b441-bab259c2b643",
         "party_id": 369,
         "constituency": "Tripura West(1)",
         "candidate_name": "BIPLAB KUMAR DEB",
@@ -1216,7 +1216,7 @@
         "margin": "611578"
     },
     {
-        "uuid": "46fc21b9-da5d-4378-a4f8-83f23966d421",
+        "uuid": "957ff9c1-faf5-41a1-99c5-392ffecce1e8",
         "party_id": 369,
         "constituency": "Tripura East(2)",
         "candidate_name": "KRITI DEVI DEBBARMAN",
@@ -1224,7 +1224,7 @@
         "margin": "486819"
     },
     {
-        "uuid": "15297bcb-3285-46db-8a8b-eeff3ffd96f9",
+        "uuid": "b55213c9-fda5-4855-9c21-6d4b3cef8e41",
         "party_id": 369,
         "constituency": "Amroha(9)",
         "candidate_name": "KANWAR SINGH TANWAR",
@@ -1232,7 +1232,7 @@
         "margin": "28670"
     },
     {
-        "uuid": "c1083fcc-9cab-4ee5-a5d8-294d0513fc05",
+        "uuid": "6354b575-5866-4370-aaa6-7d23e6c5d7ae",
         "party_id": 369,
         "constituency": "Meerut(10)",
         "candidate_name": "ARUN GOVIL",
@@ -1240,7 +1240,7 @@
         "margin": "10585"
     },
     {
-        "uuid": "f5ed8c4f-6118-4ee6-b84c-fa05a048e424",
+        "uuid": "2b385b82-f509-4d3b-abfa-7d07fe56970c",
         "party_id": 369,
         "constituency": "Ghaziabad(12)",
         "candidate_name": "ATUL GARG",
@@ -1248,7 +1248,7 @@
         "margin": "336965"
     },
     {
-        "uuid": "467658c4-64b8-419d-8ea6-d054a99284f6",
+        "uuid": "a9bac6ec-7e6c-48a1-8bfb-a3cd5efdc66c",
         "party_id": 369,
         "constituency": "Gautam Buddha Nagar(13)",
         "candidate_name": "DR. MAHESH SHARMA",
@@ -1256,7 +1256,7 @@
         "margin": "559472"
     },
     {
-        "uuid": "6cd5bbd2-ce7f-45df-97e9-3c6832cd821c",
+        "uuid": "69483286-d497-4685-8b79-a0b5328a8e8a",
         "party_id": 369,
         "constituency": "Bulandshahr(14)",
         "candidate_name": "DR BHOLA SINGH",
@@ -1264,7 +1264,7 @@
         "margin": "275134"
     },
     {
-        "uuid": "cbad3a2a-2114-4b1a-8b36-fd2b3a37c178",
+        "uuid": "4abfbf13-1de8-4d2e-8e83-0f6b91f22555",
         "party_id": 369,
         "constituency": "Aligarh(15)",
         "candidate_name": "SATISH KUMAR GAUTAM",
@@ -1272,7 +1272,7 @@
         "margin": "15647"
     },
     {
-        "uuid": "8bc3cd46-44ed-4f41-a222-ed25975eaa8e",
+        "uuid": "129c31e9-dec6-48be-af4a-97d13abf1c82",
         "party_id": 369,
         "constituency": "Hathras(16)",
         "candidate_name": "ANOOP PRADHAN BALMIKI",
@@ -1280,7 +1280,7 @@
         "margin": "247318"
     },
     {
-        "uuid": "39d22dbf-bf73-4d55-802f-9386ba430ae7",
+        "uuid": "875d52ab-6cf9-448a-a10b-37145d23cf53",
         "party_id": 369,
         "constituency": "Mathura(17)",
         "candidate_name": "HEMAMALINI DHARMENDRA DEOL",
@@ -1288,7 +1288,7 @@
         "margin": "293407"
     },
     {
-        "uuid": "1865f27b-272d-4a91-ad01-99499b2690a1",
+        "uuid": "75c34bc5-af1f-41fb-9e5e-1928dbdeef74",
         "party_id": 369,
         "constituency": "Agra(18)",
         "candidate_name": "PROF S P SINGH BAGHEL",
@@ -1296,7 +1296,7 @@
         "margin": "271294"
     },
     {
-        "uuid": "92d996eb-cbac-487a-9a80-d96cc19c4c93",
+        "uuid": "af7258f3-f275-48b2-b86f-f2f664623480",
         "party_id": 369,
         "constituency": "Fatehpur Sikri(19)",
         "candidate_name": "RAJKUMAR CHAHAR",
@@ -1304,7 +1304,7 @@
         "margin": "43405"
     },
     {
-        "uuid": "61bf9e6c-e06b-4553-8f69-6082b7bdf4e9",
+        "uuid": "9b23d77b-65bc-43f9-889a-a5a741ae8df2",
         "party_id": 369,
         "constituency": "Bareilly(25)",
         "candidate_name": "CHHATRA PAL SINGH GANGWAR",
@@ -1312,7 +1312,7 @@
         "margin": "34804"
     },
     {
-        "uuid": "65c4f83e-28f6-4a6c-b5a6-5d7244b63cf5",
+        "uuid": "c405e048-f622-4110-b583-d2325ab7b15f",
         "party_id": 369,
         "constituency": "Pilibhit(26)",
         "candidate_name": "JITIN PRASADA",
@@ -1320,7 +1320,7 @@
         "margin": "164935"
     },
     {
-        "uuid": "f8819d84-4d4f-441c-9c5a-5025a6bc9568",
+        "uuid": "b30430c7-918b-4da2-b382-8711dab566e5",
         "party_id": 369,
         "constituency": "Shahjahanpur(27)",
         "candidate_name": "ARUN KUMAR SAGAR",
@@ -1328,7 +1328,7 @@
         "margin": "55379"
     },
     {
-        "uuid": "f3100645-9fd6-4064-a516-c663bd01a0a2",
+        "uuid": "c0b11042-2617-4ee9-a880-f218730135c3",
         "party_id": 369,
         "constituency": "Hardoi(31)",
         "candidate_name": "JAI PRAKASH",
@@ -1336,7 +1336,7 @@
         "margin": "27856"
     },
     {
-        "uuid": "1d60b048-c53a-4b7d-b1ec-4fc366d3c5fd",
+        "uuid": "6213b74f-266d-45fb-89b9-b89fa8d2b017",
         "party_id": 369,
         "constituency": "Misrikh(32)",
         "candidate_name": "ASHOK KUMAR RAWAT",
@@ -1344,7 +1344,7 @@
         "margin": "33406"
     },
     {
-        "uuid": "936fbabd-24ff-47c1-8edf-fb2e0d69ea24",
+        "uuid": "63cd9abf-cb72-4319-a74c-0ec6df461660",
         "party_id": 369,
         "constituency": "Unnao(33)",
         "candidate_name": "SWAMI SACHCHIDANAND HARI SAKSHI",
@@ -1352,7 +1352,7 @@
         "margin": "35818"
     },
     {
-        "uuid": "5fe21dd9-f07d-4d21-a260-90d3cc4ae8f1",
+        "uuid": "99bef746-4c56-429a-99da-5e4d88de770c",
         "party_id": 369,
         "constituency": "Lucknow(35)",
         "candidate_name": "RAJ NATH SINGH",
@@ -1360,7 +1360,7 @@
         "margin": "135159"
     },
     {
-        "uuid": "69329adb-a750-425b-b94c-d37378c12fed",
+        "uuid": "35024d47-97d7-440e-a6c3-3f96718c1b5a",
         "party_id": 369,
         "constituency": "Farrukhabad(40)",
         "candidate_name": "MUKESH RAJPUT",
@@ -1368,7 +1368,7 @@
         "margin": "2678"
     },
     {
-        "uuid": "0ac84916-3439-4d00-9be4-ed8f81f043a9",
+        "uuid": "852f5174-dc07-4abb-8206-247d0bdb2997",
         "party_id": 369,
         "constituency": "Kanpur(43)",
         "candidate_name": "RAMESH AWASTHI",
@@ -1376,7 +1376,7 @@
         "margin": "20968"
     },
     {
-        "uuid": "ded9598d-906a-4eda-803c-46d0d5d55631",
+        "uuid": "32961917-8498-47fd-8586-97001942e00e",
         "party_id": 369,
         "constituency": "Akbarpur(44)",
         "candidate_name": "DEVENDRA SINGH ALIAS BHOLE SINGH",
@@ -1384,7 +1384,7 @@
         "margin": "44345"
     },
     {
-        "uuid": "6f523937-2d9d-49a3-bf58-d128067d6199",
+        "uuid": "40ac1bb8-7f0a-4d2a-8ec3-942c67b05a81",
         "party_id": 369,
         "constituency": "Jhansi(46)",
         "candidate_name": "ANURAG SHARMA",
@@ -1392,7 +1392,7 @@
         "margin": "102614"
     },
     {
-        "uuid": "aea5a545-5f56-433d-bf64-b23ecf75b4a1",
+        "uuid": "702b1176-962c-4231-b71d-d428b3298293",
         "party_id": 369,
         "constituency": "Phulpur(51)",
         "candidate_name": "PRAVEEN PATEL",
@@ -1400,7 +1400,7 @@
         "margin": "4332"
     },
     {
-        "uuid": "90ad3aac-6ede-4e73-ae19-77ea6c7bc043",
+        "uuid": "e166ab81-5ab4-449e-b9fa-7272d7693520",
         "party_id": 369,
         "constituency": "Baharaich(56)",
         "candidate_name": "ANAND KUMAR",
@@ -1408,7 +1408,7 @@
         "margin": "64227"
     },
     {
-        "uuid": "07af22b1-5e0a-4d6c-8dfa-e9f63e867574",
+        "uuid": "0cc88010-f087-46c4-ba14-6118055d97b4",
         "party_id": 369,
         "constituency": "Kaiserganj(57)",
         "candidate_name": "KARAN BHUSHAN SINGH",
@@ -1416,7 +1416,7 @@
         "margin": "148843"
     },
     {
-        "uuid": "884ac529-bb91-400a-9f08-4b96ec72974d",
+        "uuid": "70ee612b-a2f6-46e5-a17b-493d7b08e998",
         "party_id": 369,
         "constituency": "Gonda(59)",
         "candidate_name": "KIRTIVARDHAN SINGH",
@@ -1424,7 +1424,7 @@
         "margin": "46224"
     },
     {
-        "uuid": "f6274129-6701-44e1-a329-83ba2f178575",
+        "uuid": "0d6e7d8a-2bef-44c1-af9b-829c28f8ae6a",
         "party_id": 369,
         "constituency": "Domariyaganj(60)",
         "candidate_name": "JAGDAMBIKA PAL",
@@ -1432,7 +1432,7 @@
         "margin": "42728"
     },
     {
-        "uuid": "b45aebfd-9a50-4224-aad0-a7cd38693d73",
+        "uuid": "0c9ad06b-da48-493e-9928-258700e1060b",
         "party_id": 369,
         "constituency": "Maharajganj(63)",
         "candidate_name": "PANKAJ CHAUDHARY",
@@ -1440,7 +1440,7 @@
         "margin": "35451"
     },
     {
-        "uuid": "130e7738-4c57-4689-9c06-e670e8d8e90c",
+        "uuid": "68b5e21d-1465-4648-bc70-e855d78dd49f",
         "party_id": 369,
         "constituency": "Gorakhpur(64)",
         "candidate_name": "RAVINDRA SHUKLA ALIAS RAVI KISHAN",
@@ -1448,7 +1448,7 @@
         "margin": "103526"
     },
     {
-        "uuid": "4803a3b0-327c-4f3d-a092-96c3e221fe32",
+        "uuid": "6409c207-c176-43d3-a429-b45629f10575",
         "party_id": 369,
         "constituency": "Kushi Nagar(65)",
         "candidate_name": "VIJAY KUMAR DUBAY",
@@ -1456,7 +1456,7 @@
         "margin": "81790"
     },
     {
-        "uuid": "40048605-feb0-4dbd-8c2e-22c55753fd73",
+        "uuid": "9541e74f-a88e-44ac-9e75-d5cabcbcc750",
         "party_id": 369,
         "constituency": "Deoria(66)",
         "candidate_name": "SHASHANK MANI",
@@ -1464,7 +1464,7 @@
         "margin": "34842"
     },
     {
-        "uuid": "013623ff-d8b9-4b36-a808-76263ac2d230",
+        "uuid": "22937596-3780-4144-a850-3eb92f445f34",
         "party_id": 369,
         "constituency": "Bansgaon(67)",
         "candidate_name": "KAMLESH PASWAN",
@@ -1472,7 +1472,7 @@
         "margin": "3150"
     },
     {
-        "uuid": "160a1b5c-c6ee-414a-b228-8d24ea9cf707",
+        "uuid": "140b518e-a902-47c8-8d49-59148a8dda0a",
         "party_id": 369,
         "constituency": "Varanasi(77)",
         "candidate_name": "NARENDRA MODI",
@@ -1480,7 +1480,7 @@
         "margin": "152513"
     },
     {
-        "uuid": "b5439416-c63e-45d3-ae29-74bb2bd754c3",
+        "uuid": "0645cfc7-9108-4404-b07d-85c643677eee",
         "party_id": 369,
         "constituency": "Bhadohi(78)",
         "candidate_name": "DR. VINOD KUMAR BIND",
@@ -1488,7 +1488,7 @@
         "margin": "44072"
     },
     {
-        "uuid": "e20373ad-f817-40e0-9245-799f97240809",
+        "uuid": "5ee77916-9dfb-482f-b789-2c19d549ef1e",
         "party_id": 369,
         "constituency": "Alipurduars(2)",
         "candidate_name": "MANOJ TIGGA",
@@ -1496,7 +1496,7 @@
         "margin": "75447"
     },
     {
-        "uuid": "26a90edf-ca89-44c2-abef-335b8f2abcb3",
+        "uuid": "e63543cb-514b-4cdd-9fdf-298520d3a52a",
         "party_id": 369,
         "constituency": "Jalpaiguri(3)",
         "candidate_name": "DR JAYANTA KUMAR ROY",
@@ -1504,7 +1504,7 @@
         "margin": "86693"
     },
     {
-        "uuid": "6d2cad24-f1f5-4164-ae2e-2b0f73753f9f",
+        "uuid": "d0af1c11-376d-4660-a2ea-74796dc40f16",
         "party_id": 369,
         "constituency": "Darjeeling(4)",
         "candidate_name": "RAJU BISTA",
@@ -1512,7 +1512,7 @@
         "margin": "178525"
     },
     {
-        "uuid": "37c96f1a-8b77-4640-8836-b7db08e9667c",
+        "uuid": "758e0430-cdf7-4514-b141-a439b1ea4512",
         "party_id": 369,
         "constituency": "Raiganj(5)",
         "candidate_name": "KARTICK CHANDRA PAUL",
@@ -1520,7 +1520,7 @@
         "margin": "68197"
     },
     {
-        "uuid": "afe82cf3-257c-4b31-9250-5f63a1d1b8b8",
+        "uuid": "af339de2-ec88-4e96-982d-7e6cfbd9a997",
         "party_id": 369,
         "constituency": "Balurghat(6)",
         "candidate_name": "SUKANTA MAJUMDAR",
@@ -1528,7 +1528,7 @@
         "margin": "10386"
     },
     {
-        "uuid": "f21b201b-136d-4b2f-b24d-daf1d54ca05d",
+        "uuid": "3c40658c-1169-4585-ae48-b6df8e18fe75",
         "party_id": 369,
         "constituency": "Maldaha Uttar(7)",
         "candidate_name": "KHAGEN MURMU",
@@ -1536,7 +1536,7 @@
         "margin": "77708"
     },
     {
-        "uuid": "7c88e1a0-32a7-488b-afda-69784c47a281",
+        "uuid": "88e745a4-c198-4ef5-a99a-253e7c5e93ae",
         "party_id": 369,
         "constituency": "Ranaghat(13)",
         "candidate_name": "JAGANNATH SARKAR",
@@ -1544,7 +1544,7 @@
         "margin": "186899"
     },
     {
-        "uuid": "67db4fbe-f2d0-4eaa-9ccc-2906f40216b8",
+        "uuid": "1e036168-971e-4fa3-81d4-b659a287b472",
         "party_id": 369,
         "constituency": "Bangaon(14)",
         "candidate_name": "SHANTANU THAKUR",
@@ -1552,7 +1552,7 @@
         "margin": "73693"
     },
     {
-        "uuid": "505a6c5a-c0d9-4ba4-9ff7-dd8d1a6af1d3",
+        "uuid": "93c526b4-55ef-4d58-99a8-5d9dc4e0054b",
         "party_id": 369,
         "constituency": "Tamluk(30)",
         "candidate_name": "ABHIJIT GANGOPADHYAY",
@@ -1560,7 +1560,7 @@
         "margin": "77733"
     },
     {
-        "uuid": "564baec0-e4d7-43ee-9961-ae02fa0a41f4",
+        "uuid": "aace809d-b855-4335-b69b-c3c3f886ecd6",
         "party_id": 369,
         "constituency": "Kanthi(31)",
         "candidate_name": "ADHIKARI SOUMENDU",
@@ -1568,7 +1568,7 @@
         "margin": "47764"
     },
     {
-        "uuid": "0a7d5348-6e93-4c86-89d1-992f3e665a64",
+        "uuid": "d8ee5036-a6d1-46e4-8057-2aa6ead41155",
         "party_id": 369,
         "constituency": "Purulia(35)",
         "candidate_name": "JYOTIRMAY SINGH MAHATO",
@@ -1576,7 +1576,7 @@
         "margin": "17079"
     },
     {
-        "uuid": "593e28c3-710d-4924-8857-a8287071457c",
+        "uuid": "7b1d9e74-9430-4c09-b633-9ef3af24c432",
         "party_id": 369,
         "constituency": "Bishnupur(37)",
         "candidate_name": "KHAN SAUMITRA",
@@ -1584,7 +1584,7 @@
         "margin": "5567"
     },
     {
-        "uuid": "b5ca3049-dcd7-49c4-bbd3-5d3bb02c11c5",
+        "uuid": "6fd597aa-b677-4a62-b373-a0b43f21061d",
         "party_id": 369,
         "constituency": "SURGUJA(1)",
         "candidate_name": "CHINTAMANI MAHARAJ",
@@ -1592,7 +1592,7 @@
         "margin": "64822"
     },
     {
-        "uuid": "e98f7828-2a00-4ad8-bd71-da6660cdfb74",
+        "uuid": "492115dc-153b-4427-87b5-53cf77dfa61b",
         "party_id": 369,
         "constituency": "RAIGARH(2)",
         "candidate_name": "RADHESHYAM RATHIYA",
@@ -1600,7 +1600,7 @@
         "margin": "240391"
     },
     {
-        "uuid": "58f0b54a-fc19-4ad2-9a07-4f3c85021b24",
+        "uuid": "b2b0a6bc-d385-439f-aec7-efe7e025b570",
         "party_id": 369,
         "constituency": "JANJGIR-CHAMPA(3)",
         "candidate_name": "KAMLESH JANGDE",
@@ -1608,7 +1608,7 @@
         "margin": "60000"
     },
     {
-        "uuid": "2784a5f8-f316-4f89-a47f-8cd308fdf6d6",
+        "uuid": "7974db26-c6ea-4432-80fe-cc69b308a3a1",
         "party_id": 369,
         "constituency": "BILASPUR(5)",
         "candidate_name": "TOKHAN SAHU",
@@ -1616,7 +1616,7 @@
         "margin": "164558"
     },
     {
-        "uuid": "314e0762-a512-49ff-9c22-1438955ee76a",
+        "uuid": "c718b280-e615-4149-ac17-63791cbd22ad",
         "party_id": 369,
         "constituency": "RAJNANDGAON(6)",
         "candidate_name": "SANTOSH PANDEY",
@@ -1624,7 +1624,7 @@
         "margin": "44411"
     },
     {
-        "uuid": "48a7d95c-5401-459e-b2b3-4327f58e8ffb",
+        "uuid": "e820c811-794c-4988-9b29-3c3e1a1de489",
         "party_id": 369,
         "constituency": "DURG(7)",
         "candidate_name": "VIJAY BAGHEL",
@@ -1632,7 +1632,7 @@
         "margin": "438226"
     },
     {
-        "uuid": "9d72d073-6e1c-4d14-9948-6a75ba16adf0",
+        "uuid": "dd44300b-cf97-4947-b516-0846cd30ca5d",
         "party_id": 369,
         "constituency": "RAIPUR(8)",
         "candidate_name": "BRIJMOHAN AGRAWAL",
@@ -1640,7 +1640,7 @@
         "margin": "575285"
     },
     {
-        "uuid": "b66ee9cb-604a-4ab7-b7b1-7e84f9291cf5",
+        "uuid": "83746e69-77fb-42ac-a441-828d0ef310d4",
         "party_id": 369,
         "constituency": "MAHASAMUND(9)",
         "candidate_name": "ROOP KUMARI CHOUDHARY",
@@ -1648,7 +1648,7 @@
         "margin": "145456"
     },
     {
-        "uuid": "b905da40-e1a1-45b1-bb5e-c262978bbba9",
+        "uuid": "64601b19-6964-441a-bcbd-e168fe5c36a2",
         "party_id": 369,
         "constituency": "BASTAR(10)",
         "candidate_name": "MAHESH KASHYAP",
@@ -1656,7 +1656,7 @@
         "margin": "55245"
     },
     {
-        "uuid": "82845614-7faf-4aac-8623-deb5e8aac7ab",
+        "uuid": "0ccbdcc6-bb32-47b0-ad72-6209645fb4b1",
         "party_id": 369,
         "constituency": "KANKER(11)",
         "candidate_name": "BHOJRAJ NAG",
@@ -1664,7 +1664,7 @@
         "margin": "1884"
     },
     {
-        "uuid": "18926bbb-edff-420a-b0a7-ff033c7642b7",
+        "uuid": "2f03da54-b263-494f-ab7d-3ac4b230e504",
         "party_id": 369,
         "constituency": "Godda(3)",
         "candidate_name": "NISHIKANT DUBEY",
@@ -1672,7 +1672,7 @@
         "margin": "101813"
     },
     {
-        "uuid": "d41aa99d-0ea2-47ab-a4e2-ec7308db3286",
+        "uuid": "d3475a98-745f-4567-8e20-8a915f988e61",
         "party_id": 369,
         "constituency": "Chatra(4)",
         "candidate_name": "KALI CHARAN SINGH",
@@ -1680,7 +1680,7 @@
         "margin": "220959"
     },
     {
-        "uuid": "a18baa72-3a4f-4835-925a-37fccd0a1e8a",
+        "uuid": "243a6b1d-9011-4499-a32d-ff1bf8f965ce",
         "party_id": 369,
         "constituency": "Kodarma(5)",
         "candidate_name": "ANNPURNA DEVI",
@@ -1688,7 +1688,7 @@
         "margin": "377014"
     },
     {
-        "uuid": "4d09ffa5-368e-47c7-bd43-85ce928f42d7",
+        "uuid": "352a674f-7d22-466d-93bc-d77e41bee13a",
         "party_id": 369,
         "constituency": "Dhanbad(7)",
         "candidate_name": "DULU MAHATO",
@@ -1696,7 +1696,7 @@
         "margin": "331583"
     },
     {
-        "uuid": "469b965f-7534-420b-83eb-dd77acc84bbf",
+        "uuid": "9e6eefd9-5fa1-4d30-a341-e0cacb7d9953",
         "party_id": 369,
         "constituency": "Ranchi(8)",
         "candidate_name": "SANJAY SETH",
@@ -1704,7 +1704,7 @@
         "margin": "120512"
     },
     {
-        "uuid": "6f3ea7e2-ffe9-49ad-bffa-fa0afe0fa86e",
+        "uuid": "33d7dec2-06f5-42c0-8d0d-0cbe2501fc35",
         "party_id": 369,
         "constituency": "Jamshedpur(9)",
         "candidate_name": "BIDYUT BARAN MAHATO",
@@ -1712,7 +1712,7 @@
         "margin": "259782"
     },
     {
-        "uuid": "bba6918e-3cab-477a-b121-2b93094237c5",
+        "uuid": "40120ff0-4f6a-4b69-8e98-581b42160a2d",
         "party_id": 369,
         "constituency": "Palamau(13)",
         "candidate_name": "VISHNU DAYAL RAM",
@@ -1720,7 +1720,7 @@
         "margin": "288807"
     },
     {
-        "uuid": "9733e4b3-f773-4b73-938d-e4740e1fb2cb",
+        "uuid": "ef87f56c-3253-468d-8022-bc00fa09e174",
         "party_id": 369,
         "constituency": "Hazaribagh(14)",
         "candidate_name": "MANISH JAISWAL",
@@ -1728,7 +1728,7 @@
         "margin": "276686"
     },
     {
-        "uuid": "befe4cc4-1505-46d4-9619-615cf602c66d",
+        "uuid": "9710e6b2-9f30-40ab-af12-ae4fb7b2c050",
         "party_id": 369,
         "constituency": "Tehri Garhwal(1)",
         "candidate_name": "MALA RAJYA LAKSHMI SHAH",
@@ -1736,7 +1736,7 @@
         "margin": "272493"
     },
     {
-        "uuid": "6920561b-b8d9-4ccd-943b-4d65f0ee1736",
+        "uuid": "22427f7f-f946-4ed3-910c-718d1741d978",
         "party_id": 369,
         "constituency": "Garhwal(2)",
         "candidate_name": "ANIL BALUNI",
@@ -1744,7 +1744,7 @@
         "margin": "163503"
     },
     {
-        "uuid": "6b83b680-3097-4a3c-8be4-4ca0064adad0",
+        "uuid": "e6f9e533-49fe-4636-b089-8a4b0f7cc13b",
         "party_id": 369,
         "constituency": "Almora(3)",
         "candidate_name": "AJAY TAMTA",
@@ -1752,7 +1752,7 @@
         "margin": "234097"
     },
     {
-        "uuid": "ab9783f1-833c-4fcf-bd38-8ad9c3d4ed96",
+        "uuid": "9b84e792-c2b2-48c9-aaaf-73dd19c6bd1f",
         "party_id": 369,
         "constituency": "Nainital-Udhamsingh Nagar(4)",
         "candidate_name": "AJAY BHATT",
@@ -1760,7 +1760,7 @@
         "margin": "334548"
     },
     {
-        "uuid": "233555bd-e168-44f1-89c3-1f4ae20882d0",
+        "uuid": "04719ff4-f122-4f7e-8f1a-5e757e7e64fc",
         "party_id": 369,
         "constituency": "Haridwar(5)",
         "candidate_name": "TRIVENDRA SINGH RAWAT",
@@ -1768,7 +1768,7 @@
         "margin": "164056"
     },
     {
-        "uuid": "26ee159a-ab9f-4e7f-90e7-4e89d1baac90",
+        "uuid": "72a2bf10-9a17-4a79-ae65-1e6da3250d62",
         "party_id": 369,
         "constituency": "Adilabad (1)",
         "candidate_name": "GODAM NAGESH",
@@ -1776,7 +1776,7 @@
         "margin": "90652"
     },
     {
-        "uuid": "7ea23091-1c3f-48ff-a28f-d101cf20f56b",
+        "uuid": "cd338984-17da-4671-af0f-077757fcedd6",
         "party_id": 369,
         "constituency": "Karimnagar (3)",
         "candidate_name": "BANDI SANJAY KUMAR",
@@ -1784,7 +1784,7 @@
         "margin": "225209"
     },
     {
-        "uuid": "af447254-7c48-4050-b255-dbe08e642b0d",
+        "uuid": "3af405c1-6f85-49b1-b037-81dbd7f06070",
         "party_id": 369,
         "constituency": "Nizamabad(4)",
         "candidate_name": "ARVIND DHARMAPURI",
@@ -1792,7 +1792,7 @@
         "margin": "109241"
     },
     {
-        "uuid": "828c1d9d-b0b9-488a-8f12-f2bc863a5f4c",
+        "uuid": "8eb819f2-80c2-4235-83b4-e0b4a570a816",
         "party_id": 369,
         "constituency": "Medak(6)",
         "candidate_name": "MADHAVANENI RAGHUNANDAN RAO",
@@ -1800,7 +1800,7 @@
         "margin": "39139"
     },
     {
-        "uuid": "dfed6792-1aad-4381-a097-a002198c9fbe",
+        "uuid": "1cf02703-7239-4a18-a090-b942f12ed0d1",
         "party_id": 369,
         "constituency": "Malkajgiri(7)",
         "candidate_name": "EATALA RAJENDER",
@@ -1808,7 +1808,7 @@
         "margin": "391475"
     },
     {
-        "uuid": "312fbe70-aa86-4089-ad39-141625b6015e",
+        "uuid": "7724dfb9-3c48-42a6-bdd0-0baa246e4698",
         "party_id": 369,
         "constituency": "Secunderabad(8)",
         "candidate_name": "G. KISHAN REDDY",
@@ -1816,7 +1816,7 @@
         "margin": "49944"
     },
     {
-        "uuid": "de0b427f-170b-40fa-91f5-6e74dae1e139",
+        "uuid": "3e33f954-78f8-45b7-ad02-984d7fb5a318",
         "party_id": 369,
         "constituency": "Chevella(10)",
         "candidate_name": "KONDA VISHWESHWAR REDDY",
@@ -1824,7 +1824,7 @@
         "margin": "172897"
     },
     {
-        "uuid": "f57038da-e08b-4b18-aaac-eb01c754bf44",
+        "uuid": "79f0f43a-8dc1-44d9-96ac-ad3297561c1a",
         "party_id": 369,
         "constituency": "Mahbubnagar(11)",
         "candidate_name": "ARUNA. D. K",
@@ -1832,7 +1832,7 @@
         "margin": "4500"
     },
     {
-        "uuid": "0aad35bc-74c4-4c76-aac6-9094baf3adc4",
+        "uuid": "34f81e21-6c80-48a5-b329-d698f5847aa4",
         "party_id": 369,
         "constituency": "Andaman & Nicobar Islands(1)",
         "candidate_name": "BISHNU PADA RAY",
@@ -1840,7 +1840,7 @@
         "margin": "24396"
     },
     {
-        "uuid": "a3d9449f-ea36-4018-ab8e-fa39a4f67144",
+        "uuid": "658520d2-392e-4215-8b3e-76127d77132e",
         "party_id": 369,
         "constituency": "Dadar & Nagar Haveli(2)",
         "candidate_name": "DELKAR KALABEN MOHANBHAI",
@@ -1848,7 +1848,7 @@
         "margin": "57584"
     },
     {
-        "uuid": "c1abe761-a924-4e41-9511-22431b9daf92",
+        "uuid": "3493e235-5c9f-4ccf-8fb7-364c9368129e",
         "party_id": 369,
         "constituency": "Chandni Chowk(1)",
         "candidate_name": "PRAVEEN KHANDELWAL",
@@ -1856,7 +1856,7 @@
         "margin": "89325"
     },
     {
-        "uuid": "009f09a1-aba1-4e67-8d5c-5aadde89702a",
+        "uuid": "0a018886-feee-4c48-ae3b-f4cbf69d3e14",
         "party_id": 369,
         "constituency": "North-East Delhi(2)",
         "candidate_name": "MANOJ TIWARI",
@@ -1864,7 +1864,7 @@
         "margin": "138778"
     },
     {
-        "uuid": "99262c71-f5c5-49ad-a3a1-2b2ac218619b",
+        "uuid": "099573e7-0a4c-4cec-a84c-21f0282dc4a9",
         "party_id": 369,
         "constituency": "East Delhi(3)",
         "candidate_name": "HARSH MALHOTRA",
@@ -1872,7 +1872,7 @@
         "margin": "93663"
     },
     {
-        "uuid": "8fa78b3e-f1bf-4259-aba1-b69cb0f278a1",
+        "uuid": "98e5271d-121e-4ebe-b7ae-a698c7953cc6",
         "party_id": 369,
         "constituency": "New Delhi(4)",
         "candidate_name": "BANSURI SWARAJ",
@@ -1880,7 +1880,7 @@
         "margin": "78370"
     },
     {
-        "uuid": "db6b04fa-87a8-4f90-a764-4441e6bf6a75",
+        "uuid": "19eb72de-527d-4c5c-8b12-82e07230ec92",
         "party_id": 369,
         "constituency": "North-West Delhi(5)",
         "candidate_name": "YOGENDER CHANDOLIYA",
@@ -1888,7 +1888,7 @@
         "margin": "290849"
     },
     {
-        "uuid": "9274e54c-0fef-49b7-b2bb-3cf653cc61c7",
+        "uuid": "19d2bcce-93c5-425e-9849-d043c5f26fa0",
         "party_id": 369,
         "constituency": "West Delhi(6)",
         "candidate_name": "KAMALJEET SEHRAWAT",
@@ -1896,7 +1896,7 @@
         "margin": "199013"
     },
     {
-        "uuid": "81f68f6b-a028-4eae-9689-795a79388a94",
+        "uuid": "c5a83304-3d93-4b1e-803d-3991af8678da",
         "party_id": 369,
         "constituency": "South Delhi(7)",
         "candidate_name": "RAMVIR SINGH BIDHURI",
@@ -1904,7 +1904,7 @@
         "margin": "124333"
     },
     {
-        "uuid": "e58f8fbd-af73-48b1-b24a-6a814a5142d3",
+        "uuid": "f6d0c011-7d68-4e05-8c35-f498c756311f",
         "party_id": 369,
         "constituency": "UDHAMPUR(4)",
         "candidate_name": "DR JITENDRA SINGH",
@@ -1912,7 +1912,7 @@
         "margin": "124373"
     },
     {
-        "uuid": "f9850be9-9293-4c61-9e4a-84923dc8bfa0",
+        "uuid": "dbf974bc-041b-4d62-bd44-7a00919b4ad6",
         "party_id": 369,
         "constituency": "JAMMU(5)",
         "candidate_name": "JUGAL KISHORE",
@@ -1920,7 +1920,7 @@
         "margin": "135498"
     },
     {
-        "uuid": "f43f5adb-446f-4aea-949c-70394aa3a996",
+        "uuid": "25dd0e95-2950-473e-962c-b484d384bc56",
         "party_id": 742,
         "constituency": "Dhubri (2)",
         "candidate_name": "RAKIBUL HUSSAIN",
@@ -1928,7 +1928,7 @@
         "margin": "1012476"
     },
     {
-        "uuid": "49d0020d-aa55-48fe-af40-6abf24bcb969",
+        "uuid": "4c9c0757-f273-4843-b855-c32d90a039a6",
         "party_id": 742,
         "constituency": "Nagaon(9)",
         "candidate_name": "PRADYUT BORDOLOI",
@@ -1936,7 +1936,7 @@
         "margin": "212231"
     },
     {
-        "uuid": "580fde17-2b50-4fdc-9211-0eb302aeb0a8",
+        "uuid": "c38fac43-e739-4af8-9b3c-a4806a46436e",
         "party_id": 742,
         "constituency": "Jorhat(14)",
         "candidate_name": "GAURAV GOGOI",
@@ -1944,7 +1944,7 @@
         "margin": "144393"
     },
     {
-        "uuid": "e70c1489-013a-48ae-8274-17510800fec0",
+        "uuid": "563a2496-f8e4-4280-aead-723d62c21bfb",
         "party_id": 742,
         "constituency": "Kishanganj(10)",
         "candidate_name": "MOHAMMAD JAWED",
@@ -1952,7 +1952,7 @@
         "margin": "59692"
     },
     {
-        "uuid": "bf24f5f7-0887-4084-b9f2-0d583f327200",
+        "uuid": "ab289015-730c-485d-b3d0-6e8444d1fe79",
         "party_id": 742,
         "constituency": "Katihar(11)",
         "candidate_name": "TARIQ ANWAR",
@@ -1960,7 +1960,7 @@
         "margin": "49863"
     },
     {
-        "uuid": "0e59b4e8-6364-4f1a-a759-30d77fdf5a97",
+        "uuid": "894df422-eebd-4aa8-bdcb-1644e5caaa9d",
         "party_id": 742,
         "constituency": "Sasaram(34)",
         "candidate_name": "MANOJ KUMAR",
@@ -1968,7 +1968,7 @@
         "margin": "19157"
     },
     {
-        "uuid": "720bfad4-c067-4798-a336-400e50e981c3",
+        "uuid": "09ebf9b5-b631-4181-81f4-3bd1956aaf51",
         "party_id": 742,
         "constituency": "South Goa(2)",
         "candidate_name": "CAPTAIN  VIRIATO FERNANDES",
@@ -1976,7 +1976,7 @@
         "margin": "13535"
     },
     {
-        "uuid": "3ab9d716-6968-4eca-9e32-898b0c9b8f36",
+        "uuid": "8972f0df-4f8d-4681-88bb-5eb04f52ba5e",
         "party_id": 742,
         "constituency": "Banaskantha(2)",
         "candidate_name": "GENIBEN NAGAJI THAKOR",
@@ -1984,7 +1984,7 @@
         "margin": "30406"
     },
     {
-        "uuid": "617317dd-7395-4611-ac8c-465c7c274eb6",
+        "uuid": "18ac7f4b-42b4-45b6-9757-f6405cab1c59",
         "party_id": 742,
         "constituency": "AMBALA(1)",
         "candidate_name": "VARUN CHAUDHRY",
@@ -1992,7 +1992,7 @@
         "margin": "49036"
     },
     {
-        "uuid": "25a6318d-9bb9-4c73-8943-8469d56347e0",
+        "uuid": "8e2b3c57-0ff9-416f-8f61-e35ae6ef9997",
         "party_id": 742,
         "constituency": "SIRSA(3)",
         "candidate_name": "SELJA",
@@ -2000,7 +2000,7 @@
         "margin": "268497"
     },
     {
-        "uuid": "4b10568a-9fa8-4ea0-9314-d0b77ee9d7f8",
+        "uuid": "d9352ec0-0573-4d3b-9a6d-4340d27417f4",
         "party_id": 742,
         "constituency": "HISAR(4)",
         "candidate_name": "JAI PARKASH (J P) S/O HARIKESH",
@@ -2008,7 +2008,7 @@
         "margin": "63381"
     },
     {
-        "uuid": "45676b87-0945-4d44-8876-6851116ffc8d",
+        "uuid": "4898ff6f-028e-40ed-9e05-929d3cd36244",
         "party_id": 742,
         "constituency": "SONIPAT(6)",
         "candidate_name": "SATPAL BRAHAMCHARI",
@@ -2016,7 +2016,7 @@
         "margin": "21816"
     },
     {
-        "uuid": "dc7ba9c8-4ba7-47dc-bc87-1646bdcd1608",
+        "uuid": "80bd1751-13e0-4b16-abde-585362a43a95",
         "party_id": 742,
         "constituency": "ROHTAK(7)",
         "candidate_name": "DEEPENDER SINGH HOODA",
@@ -2024,7 +2024,7 @@
         "margin": "345298"
     },
     {
-        "uuid": "3773e4fb-8175-482b-8775-87b78310fa6a",
+        "uuid": "c9a0af60-7b18-49f9-8073-7a27932997d6",
         "party_id": 742,
         "constituency": "Chikkodi(1)",
         "candidate_name": "PRIYANKA SATISH JARKIHOLI",
@@ -2032,7 +2032,7 @@
         "margin": "90834"
     },
     {
-        "uuid": "7c2047ac-bb65-4a3a-a3e0-66d9bdb674d3",
+        "uuid": "e2c7aef8-23cd-48f1-86dc-b4e8792fe121",
         "party_id": 742,
         "constituency": "Gulbarga(5)",
         "candidate_name": "RADHAKRISHNA",
@@ -2040,7 +2040,7 @@
         "margin": "27205"
     },
     {
-        "uuid": "e98a1d89-d602-44e7-88ed-b06c062a08c6",
+        "uuid": "28a08cd4-7d93-44e6-8d23-bf25309fda2e",
         "party_id": 742,
         "constituency": "Raichur(6)",
         "candidate_name": "G. KUMAR NAIK.",
@@ -2048,7 +2048,7 @@
         "margin": "79781"
     },
     {
-        "uuid": "db92b13c-523c-4e01-b0fb-7685c390059b",
+        "uuid": "49a0d818-7c08-460d-b547-53fb9b73428e",
         "party_id": 742,
         "constituency": "Bidar(7)",
         "candidate_name": "SAGAR ESHWAR KHANDRE",
@@ -2056,7 +2056,7 @@
         "margin": "128875"
     },
     {
-        "uuid": "a317b7bd-7aa9-4859-8770-6a2be5903a89",
+        "uuid": "101e487d-3cba-477e-a046-c2b54792490e",
         "party_id": 742,
         "constituency": "Koppal(8)",
         "candidate_name": "K. RAJASHEKAR BASAVARAJ HITNAL",
@@ -2064,7 +2064,7 @@
         "margin": "46357"
     },
     {
-        "uuid": "4f45062d-7c9f-426b-b087-16c59f387b1d",
+        "uuid": "51130f88-574c-4cd8-813b-bbcbf061df1a",
         "party_id": 742,
         "constituency": "Bellary(9)",
         "candidate_name": "E. TUKARAM",
@@ -2072,7 +2072,7 @@
         "margin": "98992"
     },
     {
-        "uuid": "c17404a3-b21a-4def-8ddf-894563a2a182",
+        "uuid": "3a4a6fe8-598e-4dc5-b51d-dae0fccd87b9",
         "party_id": 742,
         "constituency": "Davanagere(13)",
         "candidate_name": "DR. PRABHA MALLIKARJUN",
@@ -2080,7 +2080,7 @@
         "margin": "26094"
     },
     {
-        "uuid": "302dee0a-9f55-4845-b2d8-a9b6ed4fe937",
+        "uuid": "67c89ce4-0d28-4b93-9a13-b93647415798",
         "party_id": 742,
         "constituency": "Hassan(16)",
         "candidate_name": "SHREYAS. M. PATEL",
@@ -2088,7 +2088,7 @@
         "margin": "42649"
     },
     {
-        "uuid": "4aa8ecfc-005b-4dc8-8724-f8cb17bbf3bc",
+        "uuid": "cf12c4e5-80cd-4f89-b763-dc01be3f1eaf",
         "party_id": 742,
         "constituency": "Chamarajanagar(22)",
         "candidate_name": "SUNIL BOSE",
@@ -2096,7 +2096,7 @@
         "margin": "188706"
     },
     {
-        "uuid": "462bb694-69ea-42c6-a75e-94e419923d3b",
+        "uuid": "7bc078c4-e9de-4dc4-90b8-30d8606f7aee",
         "party_id": 742,
         "constituency": "Kasaragod(1)",
         "candidate_name": "RAJMOHAN UNNITHAN",
@@ -2104,7 +2104,7 @@
         "margin": "100649"
     },
     {
-        "uuid": "30dd2aad-1fd5-48ba-bb27-d33c4754c4ce",
+        "uuid": "c058e705-e7ab-4625-9124-b3e79581a062",
         "party_id": 742,
         "constituency": "Kannur(2)",
         "candidate_name": "K. SUDHAKARAN",
@@ -2112,7 +2112,7 @@
         "margin": "108982"
     },
     {
-        "uuid": "f6f5a6c7-695a-463d-835c-2990e9fe7283",
+        "uuid": "7230c0e2-7f86-47ef-875b-363818875a3b",
         "party_id": 742,
         "constituency": "Vadakara(3)",
         "candidate_name": "SHAFI PARAMBIL",
@@ -2120,7 +2120,7 @@
         "margin": "114506"
     },
     {
-        "uuid": "0cd6fef9-605d-47d8-ac5a-974d7c45113f",
+        "uuid": "8c52b5ca-c4e3-4042-8a04-780dc0e854b2",
         "party_id": 742,
         "constituency": "Wayanad(4)",
         "candidate_name": "RAHUL GANDHI",
@@ -2128,7 +2128,7 @@
         "margin": "364422"
     },
     {
-        "uuid": "d0035c85-be0d-4040-896d-8cb7907beabd",
+        "uuid": "3fbd5ef8-d67c-40a8-8550-f0e01eaed565",
         "party_id": 742,
         "constituency": "Kozhikode(5)",
         "candidate_name": "M. K. RAGHAVAN",
@@ -2136,7 +2136,7 @@
         "margin": "146176"
     },
     {
-        "uuid": "9baf99da-d87f-415b-8ab3-95fa64429bf0",
+        "uuid": "dd8f48c6-c140-485e-86ef-bbcf68a6646a",
         "party_id": 742,
         "constituency": "Palakkad(8)",
         "candidate_name": "V K SREEKANDAN",
@@ -2144,7 +2144,7 @@
         "margin": "75283"
     },
     {
-        "uuid": "a006cf2a-cc9c-4eb1-b825-ccad3afafcdd",
+        "uuid": "d58c7998-22e9-4a78-86ef-44f9c0131508",
         "party_id": 742,
         "constituency": "Chalakudy(11)",
         "candidate_name": "BENNY BEHANAN",
@@ -2152,7 +2152,7 @@
         "margin": "63754"
     },
     {
-        "uuid": "19b70d29-70df-4201-82ac-e4695a8f71d3",
+        "uuid": "2bcbfe6d-39bd-46be-8014-5b8d32237422",
         "party_id": 742,
         "constituency": "Ernakulam(12)",
         "candidate_name": "HIBI EDEN",
@@ -2160,7 +2160,7 @@
         "margin": "250385"
     },
     {
-        "uuid": "406cb117-011f-4c23-92c4-56cccbe123cd",
+        "uuid": "6978a8fd-a145-45ea-8524-e57f38bb66e1",
         "party_id": 742,
         "constituency": "Idukki(13)",
         "candidate_name": "ADV. DEAN KURIAKOSE",
@@ -2168,7 +2168,7 @@
         "margin": "133727"
     },
     {
-        "uuid": "d88280bc-205f-4dc7-9faf-523f24ef7d0c",
+        "uuid": "abca9ff7-9e00-46d1-8d30-379b9b2f4d72",
         "party_id": 742,
         "constituency": "Alappuzha(15)",
         "candidate_name": "K. C VENUGOPAL",
@@ -2176,7 +2176,7 @@
         "margin": "63513"
     },
     {
-        "uuid": "f9e1b801-0701-49bd-b5c8-15384dd336ab",
+        "uuid": "f4d368ba-71d9-4572-a673-5dac8aa3c455",
         "party_id": 742,
         "constituency": "Mavelikkara (16)",
         "candidate_name": "KODIKUNNIL SURESH",
@@ -2184,7 +2184,7 @@
         "margin": "10868"
     },
     {
-        "uuid": "68e300a0-82d3-47a4-b63a-fffbef3e0ed1",
+        "uuid": "13ba258c-4e62-49c3-baab-1daca806e7cf",
         "party_id": 742,
         "constituency": "Pathanamthitta(17)",
         "candidate_name": "ANTO ANTONY",
@@ -2192,7 +2192,7 @@
         "margin": "66119"
     },
     {
-        "uuid": "cf131ec1-e703-47d8-ac96-e5361fe593fb",
+        "uuid": "af3bc24c-0834-48a6-9b5a-fc88158c8e59",
         "party_id": 742,
         "constituency": "Attingal(19)",
         "candidate_name": "ADV ADOOR PRAKASH",
@@ -2200,7 +2200,7 @@
         "margin": "684"
     },
     {
-        "uuid": "e0a55e88-15ac-4545-a3bb-abb3f8f86d56",
+        "uuid": "15c4ea4c-4d74-457e-9286-a7b0a926ef37",
         "party_id": 742,
         "constituency": "Thiruvananthapuram(20)",
         "candidate_name": "SHASHI THAROOR",
@@ -2208,7 +2208,7 @@
         "margin": "16077"
     },
     {
-        "uuid": "0e5a3775-f9f0-41a9-ac4c-bd0c02068de1",
+        "uuid": "b4760767-d4df-40fe-bbe4-538bac153299",
         "party_id": 742,
         "constituency": "Nandurbar(1)",
         "candidate_name": "ADV GOWAAL KAGADA PADAVI",
@@ -2216,7 +2216,7 @@
         "margin": "159120"
     },
     {
-        "uuid": "44ce98f2-5098-47ed-981d-e8056cc3c684",
+        "uuid": "b1cadc12-8db5-4685-b385-d5290ef90032",
         "party_id": 742,
         "constituency": "Dhule(2)",
         "candidate_name": "BACHHAV SHOBHA DINESH",
@@ -2224,7 +2224,7 @@
         "margin": "3831"
     },
     {
-        "uuid": "548a826c-a5ee-4355-a45e-d8b45119ce38",
+        "uuid": "77080216-ee7b-4f28-ab54-b182e62bf439",
         "party_id": 742,
         "constituency": "Amravati (7)",
         "candidate_name": "BALWANT BASWANT WANKHADE",
@@ -2232,7 +2232,7 @@
         "margin": "19731"
     },
     {
-        "uuid": "8bc1a814-b874-47ff-b15a-a5512091384b",
+        "uuid": "68e837d1-856f-4ee9-b9ad-c61d0d4bed77",
         "party_id": 742,
         "constituency": "Ramtek (9)",
         "candidate_name": "Shyamkumar (Babalu) Daulat Barve",
@@ -2240,7 +2240,7 @@
         "margin": "76768"
     },
     {
-        "uuid": "a199dd78-f8d1-4f89-8c49-ae23d04b2b67",
+        "uuid": "2b5ea8d3-d910-4f27-b3f7-e0d5d0a0f65c",
         "party_id": 742,
         "constituency": "Bhandara Gondiya(11)",
         "candidate_name": "DR. PRASHANT YADAORAO PADOLE",
@@ -2248,7 +2248,7 @@
         "margin": "37380"
     },
     {
-        "uuid": "6ce675c9-07ac-487a-bac8-e3e35dfa8237",
+        "uuid": "fe9f0727-24f0-4266-983a-1e7c62264032",
         "party_id": 742,
         "constituency": "Gadchiroli - Chimur(12)",
         "candidate_name": "DR. KIRSAN NAMDEO",
@@ -2256,7 +2256,7 @@
         "margin": "141696"
     },
     {
-        "uuid": "f2794729-0d4a-4aa0-8bd9-3e00aaee0b24",
+        "uuid": "2ee7e70b-44b3-415e-bcf2-33063700da39",
         "party_id": 742,
         "constituency": "Chandrapur(13)",
         "candidate_name": "DHANORKAR PRATIBHA SURESH ALIAS BALUBHAU",
@@ -2264,7 +2264,7 @@
         "margin": "260406"
     },
     {
-        "uuid": "5fd8c642-e5ec-4cf1-bec5-fbe5ceb621de",
+        "uuid": "43868866-002a-4ca1-90de-faea84274c25",
         "party_id": 742,
         "constituency": "Nanded(16)",
         "candidate_name": "CHAVAN VASANTRAO BALWANTRAO",
@@ -2272,7 +2272,7 @@
         "margin": "59442"
     },
     {
-        "uuid": "07b4ab39-6c09-4d02-a384-252e27def0ec",
+        "uuid": "fd43179d-44bd-4d8b-80a2-da73ca75d8ed",
         "party_id": 742,
         "constituency": "Jalna(18)",
         "candidate_name": "KALYAN VAIJINATHRAO KALE",
@@ -2280,7 +2280,7 @@
         "margin": "109958"
     },
     {
-        "uuid": "7504daa4-9560-4421-9355-a7a3f3989b28",
+        "uuid": "0540d343-8b16-42b5-bd39-5e1e22f60519",
         "party_id": 742,
         "constituency": "Mumbai North Central(29)",
         "candidate_name": "GAIKWAD VARSHA EKNATH",
@@ -2288,7 +2288,7 @@
         "margin": "16514"
     },
     {
-        "uuid": "2eb1a3a4-11bf-485c-9f58-163df0766987",
+        "uuid": "72c00dc8-163e-449b-9cbd-cc6b447a2660",
         "party_id": 742,
         "constituency": "Latur (41)",
         "candidate_name": "DR. KALGE SHIVAJI BANDAPPA",
@@ -2296,7 +2296,7 @@
         "margin": "61881"
     },
     {
-        "uuid": "8c0c5134-a172-4dec-9fe0-4369f12023ad",
+        "uuid": "585534e2-614a-4dd6-9e6d-c60685ece053",
         "party_id": 742,
         "constituency": "Solapur(42)",
         "candidate_name": "PRANITI SUSHILKUMAR SHINDE",
@@ -2304,7 +2304,7 @@
         "margin": "74197"
     },
     {
-        "uuid": "4eea53c1-e5bf-4cb5-ab99-56b4583f7d15",
+        "uuid": "c5089074-56ce-4c26-9944-4f328947df4a",
         "party_id": 742,
         "constituency": "Kolhapur(47)",
         "candidate_name": "CHHATRAPATI SHAHU SHAHAJI",
@@ -2312,7 +2312,7 @@
         "margin": "154964"
     },
     {
-        "uuid": "9cdf7c39-4b79-4bab-97eb-95dab32f12e7",
+        "uuid": "f6aff286-fe8a-4f5d-bbd1-b3db553272a0",
         "party_id": 742,
         "constituency": "Inner Manipur(1)",
         "candidate_name": "ANGOMCHA BIMOL AKOIJAM",
@@ -2320,7 +2320,7 @@
         "margin": "109801"
     },
     {
-        "uuid": "9edf4de3-2ce8-4dbe-9615-230f9c4fd645",
+        "uuid": "2fb2af77-ad88-4625-a9e1-ccee9ced3761",
         "party_id": 742,
         "constituency": "Outer Manipur(2)",
         "candidate_name": "ALFRED KANNGAM S ARTHUR",
@@ -2328,7 +2328,7 @@
         "margin": "85418"
     },
     {
-        "uuid": "2a82524e-caab-41e5-a42c-a4d6aa77caa1",
+        "uuid": "b982f990-4b9c-454c-8d7f-efa0a7e7fd71",
         "party_id": 742,
         "constituency": "Tura(2)",
         "candidate_name": "SALENG A SANGMA",
@@ -2336,7 +2336,7 @@
         "margin": "155241"
     },
     {
-        "uuid": "f0584084-7b32-469f-8c90-4234729e2506",
+        "uuid": "c5823d11-ec30-4d64-996a-e64a258e3f5e",
         "party_id": 742,
         "constituency": "Nagaland(1)",
         "candidate_name": "S SUPONGMEREN JAMIR",
@@ -2344,7 +2344,7 @@
         "margin": "50984"
     },
     {
-        "uuid": "f1e08920-3b51-480f-9bc4-d60a6d3a4390",
+        "uuid": "97c5a2ec-bdc4-46fc-8831-7ca87d1d3627",
         "party_id": 742,
         "constituency": "Koraput(21)",
         "candidate_name": "SAPTAGIRI SANKAR ULAKA",
@@ -2352,7 +2352,7 @@
         "margin": "147744"
     },
     {
-        "uuid": "341df4e4-5c5a-405d-aa4d-ecbf3fbbf905",
+        "uuid": "c59a84e7-e7e0-4724-b09f-1d8e76f4c5e8",
         "party_id": 742,
         "constituency": "Gurdaspur(1)",
         "candidate_name": "SUKHJINDER SINGH RANDHAWA",
@@ -2360,7 +2360,7 @@
         "margin": "82861"
     },
     {
-        "uuid": "9e45622f-95ac-417d-9044-09cd0198bc68",
+        "uuid": "b3d1d138-288a-433f-98b9-54b09bd81056",
         "party_id": 742,
         "constituency": "Amritsar(2)",
         "candidate_name": "GURJEET SINGH AUJLA",
@@ -2368,7 +2368,7 @@
         "margin": "40301"
     },
     {
-        "uuid": "1ed1ad3c-d5f0-4f9a-88b7-1cd257fe4e94",
+        "uuid": "4fb15adf-d6a4-4979-b664-2c678a8a5dcc",
         "party_id": 742,
         "constituency": "Jalandhar(4)",
         "candidate_name": "CHARANJIT SINGH CHANNI",
@@ -2376,7 +2376,7 @@
         "margin": "175993"
     },
     {
-        "uuid": "2df9dcec-2ecb-4589-8b5f-f579ad32eba8",
+        "uuid": "63619db7-3fbb-4ccc-a38e-f293f753248e",
         "party_id": 742,
         "constituency": "Ludhiana(7)",
         "candidate_name": "AMRINDER SINGH RAJA WARRING",
@@ -2384,7 +2384,7 @@
         "margin": "20942"
     },
     {
-        "uuid": "b542a7df-128e-4af6-bad0-0c65523d56b0",
+        "uuid": "55bb3afd-23d7-4c78-b1e2-f7b9819dbb98",
         "party_id": 742,
         "constituency": "Fatehgarh Sahib(8)",
         "candidate_name": "AMAR SINGH",
@@ -2392,7 +2392,7 @@
         "margin": "34202"
     },
     {
-        "uuid": "65b4372c-bf9b-452a-b54f-c9d2d4dbb10b",
+        "uuid": "7313c31a-be64-4a86-b825-7f8c869f4bac",
         "party_id": 742,
         "constituency": "Firozpur(10)",
         "candidate_name": "SHER SINGH GHUBAYA",
@@ -2400,7 +2400,7 @@
         "margin": "3242"
     },
     {
-        "uuid": "ae1b42f5-fe08-4873-97dc-fc21d590a1f8",
+        "uuid": "88844f43-51ff-43cf-9ceb-a3a46c69bbec",
         "party_id": 742,
         "constituency": "Patiala(13)",
         "candidate_name": "DR DHARAMVIRA GANDHI",
@@ -2408,7 +2408,7 @@
         "margin": "14831"
     },
     {
-        "uuid": "16e0e350-a228-4d4a-9ae1-ba6cf6e872e0",
+        "uuid": "8465cb42-3991-4693-a00e-08934742f362",
         "party_id": 742,
         "constituency": "GANGANAGAR (1)",
         "candidate_name": "KULDEEP INDORA",
@@ -2416,7 +2416,7 @@
         "margin": "88153"
     },
     {
-        "uuid": "a835b534-e559-4310-95e1-fddfb88e7d9b",
+        "uuid": "c77af58e-cf50-4cac-b49c-861d5ffcc7bf",
         "party_id": 742,
         "constituency": "CHURU(3)",
         "candidate_name": "RAHUL KASWAN",
@@ -2424,7 +2424,7 @@
         "margin": "72737"
     },
     {
-        "uuid": "ed0f288a-06b4-4c86-a790-0c541c1358b0",
+        "uuid": "2a298d44-297d-4146-9e92-2ba26a1167a4",
         "party_id": 742,
         "constituency": "JHUNJHUNU     (4)",
         "candidate_name": "BRIJENDRA SINGH OLA",
@@ -2432,7 +2432,7 @@
         "margin": "18235"
     },
     {
-        "uuid": "b13b325d-1e47-4574-a20d-a16314d6c8e3",
+        "uuid": "a58272ad-b7e2-4e9e-8244-7e8df9473cb4",
         "party_id": 742,
         "constituency": "BHARATPUR (9)",
         "candidate_name": "SANJNA JATAV",
@@ -2440,7 +2440,7 @@
         "margin": "51983"
     },
     {
-        "uuid": "3bf1a4d6-8e1e-4c29-811e-acd8d91b0449",
+        "uuid": "82a1cd38-dc43-4f31-b3ec-fc7aed04c71b",
         "party_id": 742,
         "constituency": "KARAULI-DHOLPUR (10)",
         "candidate_name": "BHAJAN LAL JATAV",
@@ -2448,7 +2448,7 @@
         "margin": "98945"
     },
     {
-        "uuid": "b0a96a0e-585b-47f9-afa1-9ca4e0ceed73",
+        "uuid": "ac6126b1-4bd6-43bc-b32a-f68f251b5eea",
         "party_id": 742,
         "constituency": "DAUSA (11)",
         "candidate_name": "MURARI LAL MEENA",
@@ -2456,7 +2456,7 @@
         "margin": "237340"
     },
     {
-        "uuid": "25fd67cf-2b93-44e7-a4d5-7a924cac9052",
+        "uuid": "6a65da1a-5bf8-42de-8cbe-c5c171f0668d",
         "party_id": 742,
         "constituency": "TONK-SAWAI MADHOPUR (12)",
         "candidate_name": "HARISH CHANDRA MEENA",
@@ -2464,7 +2464,7 @@
         "margin": "64949"
     },
     {
-        "uuid": "f5c33ad2-dda1-4d59-980b-d2e819d56e01",
+        "uuid": "a8c7261f-36ae-4cfe-a2a9-ca3dd914c3de",
         "party_id": 742,
         "constituency": "BARMER(17)",
         "candidate_name": "UMMEDA RAM BENIWAL",
@@ -2472,7 +2472,7 @@
         "margin": "118176"
     },
     {
-        "uuid": "52daef5c-1e37-47f0-a9b9-1e0bba09d3fc",
+        "uuid": "487a4f7b-7e55-42ec-ad7c-73f9ac00197b",
         "party_id": 742,
         "constituency": "TIRUVALLUR(1)",
         "candidate_name": "Sasikanth Senthil",
@@ -2480,7 +2480,7 @@
         "margin": "572155"
     },
     {
-        "uuid": "99ac4884-0c87-4f19-8fb6-19b6454d0078",
+        "uuid": "f75e15a2-8d88-4813-b0be-95251f295d1b",
         "party_id": 742,
         "constituency": "KRISHNAGIRI(9)",
         "candidate_name": "GOPINATH K",
@@ -2488,7 +2488,7 @@
         "margin": "192486"
     },
     {
-        "uuid": "abd09291-fb96-44e7-964c-d0cedc9c3041",
+        "uuid": "bd891289-fab4-44dc-a824-62880df8c029",
         "party_id": 742,
         "constituency": "KARUR(23)",
         "candidate_name": "JOTHIMANI. S",
@@ -2496,7 +2496,7 @@
         "margin": "166816"
     },
     {
-        "uuid": "07006f12-22ef-41ea-8b8d-11e470944d9f",
+        "uuid": "4d426bc8-2850-4008-a9a6-04a16295c69a",
         "party_id": 742,
         "constituency": "CUDDALORE(26)",
         "candidate_name": "M.K. VISHNUPRASAD",
@@ -2504,7 +2504,7 @@
         "margin": "185896"
     },
     {
-        "uuid": "d53aad46-ebfb-4cdc-8aff-b1f1127d8c11",
+        "uuid": "7ad72e0a-5611-47fe-bb99-5374dc7f00e7",
         "party_id": 742,
         "constituency": "MAYILADUTHURAI(28)",
         "candidate_name": "SUDHA R",
@@ -2512,7 +2512,7 @@
         "margin": "271183"
     },
     {
-        "uuid": "265bb0df-1b40-4138-ae5c-2ca97fad2993",
+        "uuid": "c8377e2a-3d88-40c9-87be-27891808547b",
         "party_id": 742,
         "constituency": "SIVAGANGA(31)",
         "candidate_name": "KARTI P CHIDAMBARAM",
@@ -2520,7 +2520,7 @@
         "margin": "205664"
     },
     {
-        "uuid": "091a14ca-c407-4f1c-b2ac-d5eae08940ed",
+        "uuid": "5b062882-0414-45f9-9047-0c1df0afa5e1",
         "party_id": 742,
         "constituency": "VIRUDHUNAGAR(34)",
         "candidate_name": "MANICKAM TAGORE B",
@@ -2528,7 +2528,7 @@
         "margin": "4379"
     },
     {
-        "uuid": "4636c433-54c0-4ad0-bf3c-aa565b181a80",
+        "uuid": "324fc7ca-aa91-4617-9233-2bc66278af29",
         "party_id": 742,
         "constituency": "TIRUNELVELI(38)",
         "candidate_name": "ROBERT BRUCE C",
@@ -2536,7 +2536,7 @@
         "margin": "165620"
     },
     {
-        "uuid": "ec9a5c01-daf6-4b7e-bbe8-e69647fe6626",
+        "uuid": "1616ca95-21fc-40b2-b6f3-2116056e06e0",
         "party_id": 742,
         "constituency": "KANNIYAKUMARI(39)",
         "candidate_name": "VIJAYAKUMAR (Alias) VIJAY VASANTH",
@@ -2544,7 +2544,7 @@
         "margin": "179907"
     },
     {
-        "uuid": "37424e95-70cd-45a5-9382-7aba84b21a15",
+        "uuid": "45122b44-bbaf-4f92-be90-70132cf4e83c",
         "party_id": 742,
         "constituency": "Saharanpur(1)",
         "candidate_name": "IMRAN MASOOD",
@@ -2552,7 +2552,7 @@
         "margin": "64542"
     },
     {
-        "uuid": "03265616-893d-4698-a033-070e464948ed",
+        "uuid": "1b8a8d72-8d06-4187-b325-1bee2dedf73b",
         "party_id": 742,
         "constituency": "Sitapur(30)",
         "candidate_name": "RAKESH RATHOR",
@@ -2560,7 +2560,7 @@
         "margin": "89641"
     },
     {
-        "uuid": "6f14e7ae-b5e1-431a-9048-57a8359b4712",
+        "uuid": "95ee6d5c-c0b0-4958-8a63-6353c7eab739",
         "party_id": 742,
         "constituency": "Rae Bareli(36)",
         "candidate_name": "RAHUL GANDHI",
@@ -2568,7 +2568,7 @@
         "margin": "390030"
     },
     {
-        "uuid": "b20edb23-d723-449b-b24a-e84ed7bc6f2b",
+        "uuid": "19c016c5-864e-42e3-8b9d-4f87904e9ccb",
         "party_id": 742,
         "constituency": "Amethi(37)",
         "candidate_name": "KISHORI LAL",
@@ -2576,7 +2576,7 @@
         "margin": "167196"
     },
     {
-        "uuid": "588458ad-5823-4818-9714-7bf4ef069279",
+        "uuid": "ca6f3f9c-8b79-4cc7-b85f-e887b1eb82dd",
         "party_id": 742,
         "constituency": "Allahabad(52)",
         "candidate_name": "UJJWAL RAMAN SINGH",
@@ -2584,7 +2584,7 @@
         "margin": "58795"
     },
     {
-        "uuid": "8577428c-fd85-4246-9da1-da9a2862e1c2",
+        "uuid": "262f5510-cda7-4c23-b242-bdf4c7471ac0",
         "party_id": 742,
         "constituency": "Barabanki(53)",
         "candidate_name": "TANUJ PUNIA",
@@ -2592,7 +2592,7 @@
         "margin": "215704"
     },
     {
-        "uuid": "98af78bf-1ce4-46cb-bd37-c3685ec6753d",
+        "uuid": "998a386f-0fef-418d-8237-97012d9ad02c",
         "party_id": 742,
         "constituency": "Maldaha Dakshin(8)",
         "candidate_name": "ISHA KHAN CHOUDHURY",
@@ -2600,7 +2600,7 @@
         "margin": "128368"
     },
     {
-        "uuid": "7bcf6e86-9e82-4bfa-ac16-5673022e9085",
+        "uuid": "78933c19-d776-4a56-ba39-d21070ccf48f",
         "party_id": 742,
         "constituency": "KORBA(4)",
         "candidate_name": "JYOTSNA CHARANDAS MAHANT",
@@ -2608,7 +2608,7 @@
         "margin": "43283"
     },
     {
-        "uuid": "aa5fccb2-48d9-4935-a023-236f5e0e8d8e",
+        "uuid": "0e3295ff-0153-4e37-88fc-1b0761435ae1",
         "party_id": 742,
         "constituency": "Khunti(11)",
         "candidate_name": "KALI CHARAN MUNDA",
@@ -2616,7 +2616,7 @@
         "margin": "149675"
     },
     {
-        "uuid": "499370f0-5e16-42e8-8bb6-ad19f2ac65fe",
+        "uuid": "7991d1a4-5b19-40e5-a8a3-b6c28be8ccde",
         "party_id": 742,
         "constituency": "Lohardaga(12)",
         "candidate_name": "SUKHDEO BHAGAT",
@@ -2624,7 +2624,7 @@
         "margin": "139138"
     },
     {
-        "uuid": "073e9d29-1b21-46d6-b736-69d294be9387",
+        "uuid": "ff28482f-9a42-4f39-b455-3d3a9c2be9d5",
         "party_id": 742,
         "constituency": "Peddapalle (2)",
         "candidate_name": "VAMSI KRISHNA GADDAM",
@@ -2632,7 +2632,7 @@
         "margin": "131364"
     },
     {
-        "uuid": "cac5d702-c9c7-4c0e-9272-00975bf229f5",
+        "uuid": "e9dec11e-9d4c-47d6-9399-7d59f2dbdd86",
         "party_id": 742,
         "constituency": "Zahirabad(5)",
         "candidate_name": "SURESH KUMAR SHETKAR",
@@ -2640,7 +2640,7 @@
         "margin": "46188"
     },
     {
-        "uuid": "0bed31ba-7a26-4069-966e-503c4daf5cca",
+        "uuid": "9872c400-01bc-4330-9196-9bcf1714b07c",
         "party_id": 742,
         "constituency": "Nagarkurnool(12)",
         "candidate_name": "DR.MALLU RAVI",
@@ -2648,7 +2648,7 @@
         "margin": "94414"
     },
     {
-        "uuid": "69b8e14d-551b-4104-93db-e0130f391d0b",
+        "uuid": "5f3d2f85-ace9-49fe-8962-d13c010a8d8f",
         "party_id": 742,
         "constituency": "Nalgonda(13)",
         "candidate_name": "KUNDURU RAGHUVEER",
@@ -2656,7 +2656,7 @@
         "margin": "559905"
     },
     {
-        "uuid": "53502ec4-48a2-4f7f-9f67-0a7b1591efdc",
+        "uuid": "9a218740-58a8-40c9-a3ac-f211618c128d",
         "party_id": 742,
         "constituency": "Bhongir (14)",
         "candidate_name": "CHAMALA KIRAN KUMAR REDDY",
@@ -2664,7 +2664,7 @@
         "margin": "222170"
     },
     {
-        "uuid": "36c67219-a1f9-4da2-aebd-b75df82227a0",
+        "uuid": "6beb0721-4a4b-4f84-bc5a-c0a1cdbed839",
         "party_id": 742,
         "constituency": "Warangal(15)",
         "candidate_name": "KADIYAM KAVYA",
@@ -2672,7 +2672,7 @@
         "margin": "220339"
     },
     {
-        "uuid": "6e68e427-2574-44cc-b649-51218eb9ed3c",
+        "uuid": "a7207cbf-c241-4822-9e19-e8a9fa633391",
         "party_id": 742,
         "constituency": "Mahabubabad  (16)",
         "candidate_name": "BALRAM NAIK PORIKA",
@@ -2680,7 +2680,7 @@
         "margin": "349165"
     },
     {
-        "uuid": "28c5285e-e758-41d1-9aa2-d6e639cd5002",
+        "uuid": "9c5fcc53-3353-491a-93bb-47f3da3149ba",
         "party_id": 742,
         "constituency": "Khammam (17)",
         "candidate_name": "RAMASAHAYAM RAGHURAM REDDY",
@@ -2688,7 +2688,7 @@
         "margin": "467847"
     },
     {
-        "uuid": "5740a00c-d276-4bcc-b3c2-34f597f6d66f",
+        "uuid": "963c718d-6714-4348-b3ea-f534c16954c6",
         "party_id": 742,
         "constituency": "Chandigarh(1)",
         "candidate_name": "MANISH TEWARI",
@@ -2696,7 +2696,7 @@
         "margin": "2504"
     },
     {
-        "uuid": "929b088e-16b0-4e40-b956-0941b0c785f4",
+        "uuid": "3299d095-c41b-4c2f-babb-c6bbb724bd53",
         "party_id": 742,
         "constituency": "Lakshadweep(1)",
         "candidate_name": "MUHAMMED HAMDULLAH SAYEED",
@@ -2704,7 +2704,7 @@
         "margin": "2647"
     },
     {
-        "uuid": "65e6c6c6-d6c4-4216-b4d4-367bfc903005",
+        "uuid": "8bf870b6-9017-4ab3-b107-248b0b9b8082",
         "party_id": 742,
         "constituency": "PUDUCHERRY(1)",
         "candidate_name": "VE VAITHILINGAM",
@@ -2712,7 +2712,7 @@
         "margin": "136516"
     },
     {
-        "uuid": "671a7e0b-eb0d-41b9-a9fe-3b98a05cf4cf",
+        "uuid": "81d136a1-1f2c-4a3e-b206-fedc2badc492",
         "party_id": 1680,
         "constituency": "Kairana(2)",
         "candidate_name": "IQRA CHOUDHARY",
@@ -2720,7 +2720,7 @@
         "margin": "69116"
     },
     {
-        "uuid": "7aa988dd-90c8-4c56-8a8d-047f4590d803",
+        "uuid": "4a285f1b-d6ab-46a0-8ee3-a2528a8c2a6b",
         "party_id": 1680,
         "constituency": "Muzaffarnagar(3)",
         "candidate_name": "HARENDRA SINGH MALIK",
@@ -2728,7 +2728,7 @@
         "margin": "24672"
     },
     {
-        "uuid": "651e536c-4d29-44c2-883d-6e02f3179fce",
+        "uuid": "b18265fe-1603-45fa-bd10-ee4b49c553ff",
         "party_id": 1680,
         "constituency": "Moradabad(6)",
         "candidate_name": "RUCHI VIRA",
@@ -2736,7 +2736,7 @@
         "margin": "105762"
     },
     {
-        "uuid": "17e2ff24-63f6-4d28-96fc-e73639a24c29",
+        "uuid": "580b22bd-0334-443c-a4fc-61c3da0e74d3",
         "party_id": 1680,
         "constituency": "Rampur(7)",
         "candidate_name": "MOHIBBULLAH",
@@ -2744,7 +2744,7 @@
         "margin": "87434"
     },
     {
-        "uuid": "f98528ee-e0c5-4b0d-9de9-b28db3479f97",
+        "uuid": "afcf0715-a878-4604-9411-a8c519329498",
         "party_id": 1680,
         "constituency": "Sambhal(8)",
         "candidate_name": "ZIA UR REHMAN",
@@ -2752,7 +2752,7 @@
         "margin": "121494"
     },
     {
-        "uuid": "a5b7acc1-deb5-4c60-abe4-3c5366d5a6e6",
+        "uuid": "afd9a76b-5a70-4a9c-9aca-a469f63eefc0",
         "party_id": 1680,
         "constituency": "Firozabad(20)",
         "candidate_name": "AKSHAYA YADAV",
@@ -2760,7 +2760,7 @@
         "margin": "89312"
     },
     {
-        "uuid": "20074507-5434-4f81-9515-b5b855ed55c3",
+        "uuid": "087b875b-68f0-412d-a4b3-2154d231d3bb",
         "party_id": 1680,
         "constituency": "Mainpuri(21)",
         "candidate_name": "DIMPLE YADAV",
@@ -2768,7 +2768,7 @@
         "margin": "221639"
     },
     {
-        "uuid": "ec96535c-863d-493e-9ca7-9c2511433f23",
+        "uuid": "a69dc9df-60e7-4b55-8e4a-f2768844288a",
         "party_id": 1680,
         "constituency": "Etah(22)",
         "candidate_name": "DEVESH SHAKYA",
@@ -2776,7 +2776,7 @@
         "margin": "28052"
     },
     {
-        "uuid": "309ba335-95f5-4c6e-a9f1-5906229aea72",
+        "uuid": "99ffbc8e-a8c7-482c-8eb6-f8b0c2b15091",
         "party_id": 1680,
         "constituency": "Badaun(23)",
         "candidate_name": "ADITYA YADAV",
@@ -2784,7 +2784,7 @@
         "margin": "34991"
     },
     {
-        "uuid": "55551c97-1d4e-4271-9ea8-1bceb5444f9a",
+        "uuid": "f294269b-c99d-4e0b-b909-0adf3a19ad02",
         "party_id": 1680,
         "constituency": "Aonla(24)",
         "candidate_name": "NEERAJ MAURYA",
@@ -2792,7 +2792,7 @@
         "margin": "15969"
     },
     {
-        "uuid": "ea5d15fb-ae31-4f02-ba05-87c236e60101",
+        "uuid": "a3fa9327-09e1-43ee-a66f-1915a9f6b7e2",
         "party_id": 1680,
         "constituency": "Kheri(28)",
         "candidate_name": "UTKARSH VERMA 'MADHUR'",
@@ -2800,7 +2800,7 @@
         "margin": "34329"
     },
     {
-        "uuid": "2b2e6ba3-73c4-44cd-bc8f-177efe5dc496",
+        "uuid": "839021a9-fdc2-42d7-b7e8-6424abaceab1",
         "party_id": 1680,
         "constituency": "Dhaurahra(29)",
         "candidate_name": "ANAND BHADAURIYA",
@@ -2808,7 +2808,7 @@
         "margin": "4449"
     },
     {
-        "uuid": "e8b06b32-921b-433d-971f-e6a0fd62b1da",
+        "uuid": "94895c96-54dc-427a-8141-9c34b4a23026",
         "party_id": 1680,
         "constituency": "Mohanlalganj(34)",
         "candidate_name": "R.K. CHAUDHARY",
@@ -2816,7 +2816,7 @@
         "margin": "70292"
     },
     {
-        "uuid": "e8d4b7d9-a977-4296-b1e8-319d254e90b9",
+        "uuid": "0669cd30-9ecd-4856-b607-f883d6dd8d08",
         "party_id": 1680,
         "constituency": "Sultanpur(38)",
         "candidate_name": "RAMBHUAL NISHAD",
@@ -2824,7 +2824,7 @@
         "margin": "43174"
     },
     {
-        "uuid": "02f55b8a-8332-49e2-87cc-5c9f1d4498cb",
+        "uuid": "48bdce58-841b-465a-b4c1-6a29b53d571a",
         "party_id": 1680,
         "constituency": "Pratapgarh(39)",
         "candidate_name": "SHIV PAL SINGH PATEL (DR. S P SINGH)",
@@ -2832,7 +2832,7 @@
         "margin": "66206"
     },
     {
-        "uuid": "85e6615e-bafe-405c-bce6-4b17b953c32f",
+        "uuid": "e83bb460-4985-4b4a-94ae-c1ea1a77ae2c",
         "party_id": 1680,
         "constituency": "Etawah(41)",
         "candidate_name": "JITENDRA KUMAR DOHARE",
@@ -2840,7 +2840,7 @@
         "margin": "58419"
     },
     {
-        "uuid": "0e28117c-1cb8-4a94-8c89-3cf6ae3bcb3c",
+        "uuid": "c2a5306d-d11c-4291-bbce-fa7aab1747ea",
         "party_id": 1680,
         "constituency": "Kannauj(42)",
         "candidate_name": "AKHILESH YADAV",
@@ -2848,7 +2848,7 @@
         "margin": "170922"
     },
     {
-        "uuid": "febdc478-74af-457b-bd36-5f97453ab733",
+        "uuid": "80fc1a66-0605-44ee-860c-9c09117bf458",
         "party_id": 1680,
         "constituency": "Jalaun(45)",
         "candidate_name": "NARAYAN DAS AHIRWAR",
@@ -2856,7 +2856,7 @@
         "margin": "53898"
     },
     {
-        "uuid": "73473c6d-20b1-4931-a4c3-8fb935d49537",
+        "uuid": "569002ca-de54-43b8-b2cc-deed1e4b8ac0",
         "party_id": 1680,
         "constituency": "Hamirpur(47)",
         "candidate_name": "AJENDRA SINGH LODHI",
@@ -2864,7 +2864,7 @@
         "margin": "2629"
     },
     {
-        "uuid": "a3d71eda-1a52-4e4c-9025-c710677458bd",
+        "uuid": "38ad7cea-f306-43ec-a3d7-cfb982ac94c5",
         "party_id": 1680,
         "constituency": "Banda(48)",
         "candidate_name": "KRISHNA DEVI SHIVSHANKER PATEL",
@@ -2872,7 +2872,7 @@
         "margin": "71210"
     },
     {
-        "uuid": "46ede343-c3fe-45bb-ba85-c4a57bc604ba",
+        "uuid": "7a6f6745-bd5d-496f-9831-1c7c40e52072",
         "party_id": 1680,
         "constituency": "Fatehpur(49)",
         "candidate_name": "NARESH CHANDRA UTTAM PATEL",
@@ -2880,7 +2880,7 @@
         "margin": "33199"
     },
     {
-        "uuid": "a47e00cc-c989-4dba-b842-108d239b1c86",
+        "uuid": "abd28df7-7cfb-4d14-8c0b-10aedf35c751",
         "party_id": 1680,
         "constituency": "Kaushambi(50)",
         "candidate_name": "PUSHPENDRA SAROJ",
@@ -2888,7 +2888,7 @@
         "margin": "103944"
     },
     {
-        "uuid": "4da1694e-149b-4d8c-8a38-978543750061",
+        "uuid": "b77d068d-a3a7-4eff-ab56-4e8a8aeef668",
         "party_id": 1680,
         "constituency": "Faizabad(54)",
         "candidate_name": "AWADHESH PRASAD",
@@ -2896,7 +2896,7 @@
         "margin": "54567"
     },
     {
-        "uuid": "93d0fdec-70ba-428b-a4da-9e760878a49e",
+        "uuid": "80b0b688-aab6-4a79-ad31-3443a95f2d44",
         "party_id": 1680,
         "constituency": "Ambedkar Nagar(55)",
         "candidate_name": "LALJI VERMA",
@@ -2904,7 +2904,7 @@
         "margin": "137247"
     },
     {
-        "uuid": "da5441a0-8351-4677-865d-101a88a89f7e",
+        "uuid": "0e8c9730-26a9-4886-90d7-6076b1e6b716",
         "party_id": 1680,
         "constituency": "Shrawasti(58)",
         "candidate_name": "RAM SHIROMANI VERMA",
@@ -2912,7 +2912,7 @@
         "margin": "76673"
     },
     {
-        "uuid": "8a801a97-949f-43df-8a6b-de5824b1c619",
+        "uuid": "825c2ed3-471a-47d4-92c9-86a5b5d92986",
         "party_id": 1680,
         "constituency": "Basti(61)",
         "candidate_name": "RAM PRASAD CHAUDHARY",
@@ -2920,7 +2920,7 @@
         "margin": "100994"
     },
     {
-        "uuid": "facda879-2b0a-47e4-8f16-d9beffab7e40",
+        "uuid": "8b2aeedb-2fb1-47df-8570-c23387ab211f",
         "party_id": 1680,
         "constituency": "Sant Kabir Nagar(62)",
         "candidate_name": "LAXMIKANT PAPPU NISHAD",
@@ -2928,7 +2928,7 @@
         "margin": "92170"
     },
     {
-        "uuid": "4b37128a-29ec-4f34-8a8a-50a8b3c1c21d",
+        "uuid": "33ae5858-53f6-451e-b271-210babc2a243",
         "party_id": 1680,
         "constituency": "Lalganj(68)",
         "candidate_name": "DAROGA PRASAD SAROJ",
@@ -2936,7 +2936,7 @@
         "margin": "115023"
     },
     {
-        "uuid": "b360a4b0-8aa3-4b04-a2f3-d4f2625680ad",
+        "uuid": "19d1025c-f8fd-4de4-ba9b-a3eee231ca81",
         "party_id": 1680,
         "constituency": "Azamgarh(69)",
         "candidate_name": "DHARMENDRA YADAV",
@@ -2944,7 +2944,7 @@
         "margin": "161035"
     },
     {
-        "uuid": "d33e94a0-853b-4f65-95d2-935808af7d09",
+        "uuid": "0896d543-ade2-4962-b578-ac71590a0e64",
         "party_id": 1680,
         "constituency": "Ghosi(70)",
         "candidate_name": "RAJEEV RAI",
@@ -2952,7 +2952,7 @@
         "margin": "162943"
     },
     {
-        "uuid": "cdd6c2d2-4d33-4b0b-94a7-5297042339a1",
+        "uuid": "53fba42c-c607-43cf-9690-9a956b65dce9",
         "party_id": 1680,
         "constituency": "Salempur(71)",
         "candidate_name": "RAMASHANKAR RAJBHAR",
@@ -2960,7 +2960,7 @@
         "margin": "3573"
     },
     {
-        "uuid": "d5de84f2-066e-4e0f-85dc-25c946cbb9a1",
+        "uuid": "cc58aa08-5407-4163-ba13-a41dc768a7fc",
         "party_id": 1680,
         "constituency": "Ballia(72)",
         "candidate_name": "SANATAN PANDEY",
@@ -2968,7 +2968,7 @@
         "margin": "43384"
     },
     {
-        "uuid": "2bd1a4cf-6e0c-480d-8f1d-bcd984798d05",
+        "uuid": "926db833-fe09-440c-b8f0-902d26227bdf",
         "party_id": 1680,
         "constituency": "Jaunpur(73)",
         "candidate_name": "BABU SINGH KUSHWAHA",
@@ -2976,7 +2976,7 @@
         "margin": "99335"
     },
     {
-        "uuid": "c4cbf8d1-2526-44e3-b0f3-e861ec07d7fb",
+        "uuid": "eb11e543-4330-4bba-8256-1e7c3cb9a517",
         "party_id": 1680,
         "constituency": "Machhlishahr(74)",
         "candidate_name": "PRIYA SAROJ",
@@ -2984,7 +2984,7 @@
         "margin": "35850"
     },
     {
-        "uuid": "2ba9c212-8995-499c-be34-dd10b98bbd3b",
+        "uuid": "eac15412-f4ce-4956-a8be-4dbbb0a310f7",
         "party_id": 1680,
         "constituency": "Ghazipur(75)",
         "candidate_name": "AFZAL ANSARI",
@@ -2992,7 +2992,7 @@
         "margin": "124861"
     },
     {
-        "uuid": "4d9e840c-a7d7-44cd-972a-17595d90c92a",
+        "uuid": "427d7f61-14a4-405a-b385-56df79eaf59a",
         "party_id": 1680,
         "constituency": "Chandauli(76)",
         "candidate_name": "BIRENDRA SINGH",
@@ -3000,7 +3000,7 @@
         "margin": "21565"
     },
     {
-        "uuid": "9bf3d0d2-07d7-4102-8124-3f5da6a476bb",
+        "uuid": "c5a9554a-0c13-4468-a13a-5ff3bbcf3942",
         "party_id": 1680,
         "constituency": "Robertsganj(80)",
         "candidate_name": "CHHOTELAL",
@@ -3008,7 +3008,7 @@
         "margin": "129234"
     },
     {
-        "uuid": "acb49cfd-7858-4866-a5dd-7597892d6bd6",
+        "uuid": "55b91777-bd81-4c88-9f7f-2316fce4bbac",
         "party_id": 140,
         "constituency": "Coochbehar(1)",
         "candidate_name": "JAGADISH CHANDRA BARMA BASUNIA",
@@ -3016,7 +3016,7 @@
         "margin": "39250"
     },
     {
-        "uuid": "6fab7fc1-b3d3-4994-b850-b369e7712ba7",
+        "uuid": "1a785cae-b0d4-459c-a2c7-76b3451f0049",
         "party_id": 140,
         "constituency": "Jangipur(9)",
         "candidate_name": "KHALILUR RAHAMAN",
@@ -3024,7 +3024,7 @@
         "margin": "116637"
     },
     {
-        "uuid": "b4c941ad-4ad2-43ae-b8e2-8eb4b856868f",
+        "uuid": "b5370f0b-a8c1-42ba-887f-7f9a8b3404ed",
         "party_id": 140,
         "constituency": "Baharampur(10)",
         "candidate_name": "PATHAN YUSUF",
@@ -3032,7 +3032,7 @@
         "margin": "85022"
     },
     {
-        "uuid": "da7555f3-c8e0-4309-a604-91006f1ce032",
+        "uuid": "cdeeb65d-47ec-4513-b1fa-6c8427c7ce2a",
         "party_id": 140,
         "constituency": "Murshidabad(11)",
         "candidate_name": "ABU TAHER KHAN",
@@ -3040,7 +3040,7 @@
         "margin": "164215"
     },
     {
-        "uuid": "b020da5a-c350-415c-bc7c-93e717faee00",
+        "uuid": "157cf497-0e69-4366-beae-6ba67bac2fbc",
         "party_id": 140,
         "constituency": "Krishnanagar(12)",
         "candidate_name": "MAHUA MOITRA",
@@ -3048,7 +3048,7 @@
         "margin": "56705"
     },
     {
-        "uuid": "0abfabcf-7cb5-4636-893f-17332c1b9e40",
+        "uuid": "66580764-cb30-4145-84d6-eadd17b0804b",
         "party_id": 140,
         "constituency": "Barrackpur(15)",
         "candidate_name": "PARTHA BHOWMICK",
@@ -3056,7 +3056,7 @@
         "margin": "64438"
     },
     {
-        "uuid": "edf416d4-6e50-4edb-9915-421eed2aa537",
+        "uuid": "e9f7c69e-37c6-4dd8-b600-c8183e76ea7d",
         "party_id": 140,
         "constituency": "Dum dum(16)",
         "candidate_name": "SOUGATA RAY",
@@ -3064,7 +3064,7 @@
         "margin": "70660"
     },
     {
-        "uuid": "b204b08b-d986-4457-a6df-983768c176a6",
+        "uuid": "f0362f8b-fbab-45f7-88f0-2b91ca180a4d",
         "party_id": 140,
         "constituency": "Barasat(17)",
         "candidate_name": "KAKOLI GHOSH DASTIDAR",
@@ -3072,7 +3072,7 @@
         "margin": "114189"
     },
     {
-        "uuid": "c4abb93a-0f6b-486f-81e7-b2b12151d99d",
+        "uuid": "549c2d79-54bd-4b43-9762-43fdb4463df7",
         "party_id": 140,
         "constituency": "Basirhat(18)",
         "candidate_name": "SK NURUL ISLAM",
@@ -3080,7 +3080,7 @@
         "margin": "333547"
     },
     {
-        "uuid": "60c82b0c-3e68-443f-b063-6d93e68faff5",
+        "uuid": "be5e4db9-3afb-4819-80ec-e9baba9aac9e",
         "party_id": 140,
         "constituency": "Joynagar(19)",
         "candidate_name": "PRATIMA MONDAL",
@@ -3088,7 +3088,7 @@
         "margin": "470219"
     },
     {
-        "uuid": "ad061cfa-b547-4913-9a70-56ef10cd6360",
+        "uuid": "17fcbd73-563a-4789-9c1f-8b59e2ece509",
         "party_id": 140,
         "constituency": "Mathurapur(20)",
         "candidate_name": "BAPI HALDAR",
@@ -3096,7 +3096,7 @@
         "margin": "201057"
     },
     {
-        "uuid": "8efe7471-9063-4041-8032-5af6c7065d33",
+        "uuid": "066ccaba-a9cb-461e-a79b-66cfb1deb9e8",
         "party_id": 140,
         "constituency": "Diamond harbour(21)",
         "candidate_name": "ABHISHEK BANERJEE",
@@ -3104,7 +3104,7 @@
         "margin": "710930"
     },
     {
-        "uuid": "a1b7411f-877d-4c26-9a3f-f00ef2d9aa79",
+        "uuid": "68594596-585d-4a79-ad46-3db0e7222e5d",
         "party_id": 140,
         "constituency": "Jadavpur(22)",
         "candidate_name": "SAYANI GHOSH",
@@ -3112,7 +3112,7 @@
         "margin": "258201"
     },
     {
-        "uuid": "2f1358e2-6372-4431-bd1d-512b21739327",
+        "uuid": "2f565a7f-a044-4a76-a376-fbcae7132452",
         "party_id": 140,
         "constituency": "Kolkata Dakshin(23)",
         "candidate_name": "MALA ROY",
@@ -3120,7 +3120,7 @@
         "margin": "187231"
     },
     {
-        "uuid": "71835744-9fff-442a-aa9d-1726f33decaf",
+        "uuid": "1a33cf64-fa2d-48a5-a11e-c62046ba082f",
         "party_id": 140,
         "constituency": "Kolkata Uttar(24)",
         "candidate_name": "BANDYOPADHYAY SUDIP",
@@ -3128,7 +3128,7 @@
         "margin": "92560"
     },
     {
-        "uuid": "a6eb1c45-ace9-472f-a8fb-21d90a6b8d4b",
+        "uuid": "224943d2-9097-415e-98fc-2be5ca771ac0",
         "party_id": 140,
         "constituency": "Howrah(25)",
         "candidate_name": "PRASUN BANERJEE",
@@ -3136,7 +3136,7 @@
         "margin": "169442"
     },
     {
-        "uuid": "3229f630-981d-41b8-be8d-e97abeb9dc0d",
+        "uuid": "14035898-6a39-4a93-8693-569e5000ef3d",
         "party_id": 140,
         "constituency": "Uluberia(26)",
         "candidate_name": "SAJDA AHMED",
@@ -3144,7 +3144,7 @@
         "margin": "218673"
     },
     {
-        "uuid": "f4ee6a85-8788-4ef1-ba61-972050d37bbf",
+        "uuid": "0460f2bb-eee2-4206-b6d3-b8dff7f171b3",
         "party_id": 140,
         "constituency": "Srerampur(27)",
         "candidate_name": "KALYAN BANERJEE",
@@ -3152,7 +3152,7 @@
         "margin": "174830"
     },
     {
-        "uuid": "03921ab2-61f2-4efc-8e76-5406e0876687",
+        "uuid": "803999ca-3ef1-429d-9d7d-af3fe16e6c65",
         "party_id": 140,
         "constituency": "Hooghly(28)",
         "candidate_name": "RACHNA BANERJEE",
@@ -3160,7 +3160,7 @@
         "margin": "76853"
     },
     {
-        "uuid": "c272ed1b-8790-4eb3-b556-4c1f14659855",
+        "uuid": "f1d6ac3c-ba93-4c93-ae05-3d5382726f9b",
         "party_id": 140,
         "constituency": "Arambagh(29)",
         "candidate_name": "BAG MITALI",
@@ -3168,7 +3168,7 @@
         "margin": "6399"
     },
     {
-        "uuid": "a4603b1e-bb84-4614-b00a-19fdb9566fa7",
+        "uuid": "172e09bf-8383-435e-9f48-e136e98fc973",
         "party_id": 140,
         "constituency": "Ghatal(32)",
         "candidate_name": "ADHIKARI DEEPAK (DEV)",
@@ -3176,7 +3176,7 @@
         "margin": "182868"
     },
     {
-        "uuid": "dbc88fcf-dffc-483e-8731-cc3afd7b97dd",
+        "uuid": "01ad10c9-ae52-4f53-b9ce-c61a85a63cc2",
         "party_id": 140,
         "constituency": "Jhargram(33)",
         "candidate_name": "KALIPADA SAREN (KHERWAL)",
@@ -3184,7 +3184,7 @@
         "margin": "174048"
     },
     {
-        "uuid": "9e944eba-5877-4541-84f3-260e0f7a98a6",
+        "uuid": "ab8426bd-7c39-4f02-8bf7-0ab7ad8412c4",
         "party_id": 140,
         "constituency": "Medinipur(34)",
         "candidate_name": "JUNE MALIAH",
@@ -3192,7 +3192,7 @@
         "margin": "27191"
     },
     {
-        "uuid": "5c1a3175-c7da-46dd-aea2-3d6980e70133",
+        "uuid": "7d348b77-2326-4b92-85e7-9efad13cc8c9",
         "party_id": 140,
         "constituency": "Bankura(36)",
         "candidate_name": "ARUP CHAKRABORTY",
@@ -3200,7 +3200,7 @@
         "margin": "32778"
     },
     {
-        "uuid": "94fa1cc4-7a29-47f3-8f08-c233e25af0de",
+        "uuid": "7f8ee201-8484-4d2e-836c-c839a07cc71a",
         "party_id": 140,
         "constituency": "Bardhaman Purba(38)",
         "candidate_name": "DR. SHARMILA SARKAR",
@@ -3208,7 +3208,7 @@
         "margin": "160572"
     },
     {
-        "uuid": "e13fdf64-6c6c-4269-ab98-daedcb151e9d",
+        "uuid": "e55cda29-86b9-4b52-95cc-1ee802cf17c6",
         "party_id": 140,
         "constituency": "Bardhaman-Durgapur(39)",
         "candidate_name": "AZAD KIRTI JHA",
@@ -3216,7 +3216,7 @@
         "margin": "137981"
     },
     {
-        "uuid": "f618a86d-5030-408b-a1a0-5fd01f2c0f59",
+        "uuid": "3b9b9704-2e76-4ddc-a042-41263c3711bf",
         "party_id": 140,
         "constituency": "Asansol(40)",
         "candidate_name": "SHATRUGHAN PRASAD SINHA",
@@ -3224,7 +3224,7 @@
         "margin": "59564"
     },
     {
-        "uuid": "63a07f54-30f1-4582-8f5d-a018822ab911",
+        "uuid": "c5f53e5f-52d3-48ea-b0e3-9bfb608a7515",
         "party_id": 140,
         "constituency": "Bolpur(41)",
         "candidate_name": "ASIT KUMAR MAL",
@@ -3232,7 +3232,7 @@
         "margin": "327253"
     },
     {
-        "uuid": "08a7e016-e649-407a-bbf6-a8bf9723539a",
+        "uuid": "a8a6d7bb-53a7-4d20-b272-515e1a4772e0",
         "party_id": 140,
         "constituency": "Birbhum(42)",
         "candidate_name": "SATABDI ROY",
@@ -3240,7 +3240,7 @@
         "margin": "197650"
     },
     {
-        "uuid": "877d86a7-a57c-4127-a147-f60c3b8420a6",
+        "uuid": "9cf4490a-4131-485c-9d20-8467747c7efe",
         "party_id": 582,
         "constituency": "CHENNAI NORTH(2)",
         "candidate_name": "DR.KALANIDHI VEERASWAMY",
@@ -3248,7 +3248,7 @@
         "margin": "339222"
     },
     {
-        "uuid": "6f0aaa20-598d-4b6d-b285-bd80839273f3",
+        "uuid": "5a1be65f-93cd-451a-bcd6-7c81fd8f2c70",
         "party_id": 582,
         "constituency": "CHENNAI SOUTH(3)",
         "candidate_name": "T.SUMATHY (ALIAS) THAMIZHACHI THANGAPANDIAN",
@@ -3256,7 +3256,7 @@
         "margin": "225945"
     },
     {
-        "uuid": "49689e0a-aead-406c-b21c-a34cd129d927",
+        "uuid": "86e8b495-205c-4352-af40-c794e5ba2fee",
         "party_id": 582,
         "constituency": "CHENNAI CENTRAL(4)",
         "candidate_name": "DAYANIDHI MARAN",
@@ -3264,7 +3264,7 @@
         "margin": "244689"
     },
     {
-        "uuid": "e2fa309c-0330-4613-a631-4d9fff44cd62",
+        "uuid": "115476c9-df51-4fd5-b89f-5a9f8fa77113",
         "party_id": 582,
         "constituency": "SRIPERUMBUDUR(5)",
         "candidate_name": "T R BAALU",
@@ -3272,7 +3272,7 @@
         "margin": "487029"
     },
     {
-        "uuid": "8e92dd8c-f4d1-423a-b573-f56d7a26a485",
+        "uuid": "b508fedc-1bed-4579-8508-61d8eaa224e2",
         "party_id": 582,
         "constituency": "KANCHEEPURAM(6)",
         "candidate_name": "SELVAM. G",
@@ -3280,7 +3280,7 @@
         "margin": "221473"
     },
     {
-        "uuid": "e036f868-51e7-43a6-a0e3-b308f9755f1d",
+        "uuid": "02aa6874-b37b-4363-b1b0-54f0beb5c3c0",
         "party_id": 582,
         "constituency": "ARAKKONAM(7)",
         "candidate_name": "S JAGATHRATCHAKAN",
@@ -3288,7 +3288,7 @@
         "margin": "306559"
     },
     {
-        "uuid": "dc065405-1901-4233-a991-cafb7415488b",
+        "uuid": "6352d570-e72e-4e04-bb61-f9c4cbb27e7b",
         "party_id": 582,
         "constituency": "VELLORE(8)",
         "candidate_name": "DM KATHIR ANAND",
@@ -3296,7 +3296,7 @@
         "margin": "215702"
     },
     {
-        "uuid": "b6122499-bf83-41da-953f-cda435f8c3ec",
+        "uuid": "0316f75c-8ffc-4dc9-b617-0ce3ff254992",
         "party_id": 582,
         "constituency": "DHARMAPURI(10)",
         "candidate_name": "MANI. A.",
@@ -3304,7 +3304,7 @@
         "margin": "21300"
     },
     {
-        "uuid": "15896b13-8498-4cf2-bb2c-b171a055664e",
+        "uuid": "01f413f1-bcb4-4873-806c-33a338ca7872",
         "party_id": 582,
         "constituency": "TIRUVANNAMALAI(11)",
         "candidate_name": "ANNADURAI, C.N.",
@@ -3312,7 +3312,7 @@
         "margin": "233931"
     },
     {
-        "uuid": "366c9810-0e8a-48bc-ae5b-858f5a7524f7",
+        "uuid": "d0017cd0-23b1-49a6-b848-7d4da2931f5d",
         "party_id": 582,
         "constituency": "ARANI(12)",
         "candidate_name": "THARANIVENTHAN M S",
@@ -3320,7 +3320,7 @@
         "margin": "208766"
     },
     {
-        "uuid": "01beff9d-78ea-4aff-acfe-09afbe5ed962",
+        "uuid": "09c5b704-9c0b-4ad9-919f-0ef367bf7820",
         "party_id": 582,
         "constituency": "KALLAKURICHI(14)",
         "candidate_name": "MALAIYARASAN D",
@@ -3328,7 +3328,7 @@
         "margin": "53784"
     },
     {
-        "uuid": "fa3ac27d-61da-4861-8d81-a71cb375f9e5",
+        "uuid": "96b08101-0144-49a6-bc41-506a3989b790",
         "party_id": 582,
         "constituency": "SALEM(15)",
         "candidate_name": "SELVAGANAPATHI T M",
@@ -3336,7 +3336,7 @@
         "margin": "70357"
     },
     {
-        "uuid": "3f5bbf67-3da8-4a65-9129-b107df408220",
+        "uuid": "fbf3a9c4-979a-418c-90cc-104c377ddc71",
         "party_id": 582,
         "constituency": "NAMAKKAL(16)",
         "candidate_name": "MATHESWARAN V S",
@@ -3344,7 +3344,7 @@
         "margin": "29112"
     },
     {
-        "uuid": "f3254e2b-df0f-45ce-8e1a-ee4f31b7b3bd",
+        "uuid": "1d552ea9-adfa-476a-9aa3-8839574fcef6",
         "party_id": 582,
         "constituency": "ERODE(17)",
         "candidate_name": "K E PRAKASH",
@@ -3352,7 +3352,7 @@
         "margin": "236566"
     },
     {
-        "uuid": "474e3d53-e77f-4513-b1c0-4aec40c423ea",
+        "uuid": "714aaff4-35b1-45ff-8f5d-f3c98861850d",
         "party_id": 582,
         "constituency": "NILGIRIS(19)",
         "candidate_name": "RAJA A",
@@ -3360,7 +3360,7 @@
         "margin": "240585"
     },
     {
-        "uuid": "3bcfba28-8214-44e8-8c65-70254be6b258",
+        "uuid": "d96100fc-3df3-4812-a289-406037635f47",
         "party_id": 582,
         "constituency": "COIMBATORE(20)",
         "candidate_name": "GANAPATHY RAJKUMAR P",
@@ -3368,7 +3368,7 @@
         "margin": "118068"
     },
     {
-        "uuid": "f7d5f86d-0969-4c6a-a754-bbf34b6e7f0b",
+        "uuid": "4f3ebf2a-dac8-4e87-91dd-53a83b19b8f5",
         "party_id": 582,
         "constituency": "POLLACHI(21)",
         "candidate_name": "ESWARASAMY K",
@@ -3376,7 +3376,7 @@
         "margin": "252042"
     },
     {
-        "uuid": "0cd7ad32-f6ec-43f9-9958-026d053cb114",
+        "uuid": "a46864bb-fb1e-4526-91f1-0a88b5288f6f",
         "party_id": 582,
         "constituency": "PERAMBALUR(25)",
         "candidate_name": "ARUN NEHRU",
@@ -3384,7 +3384,7 @@
         "margin": "389107"
     },
     {
-        "uuid": "942503b3-d66c-4164-a2c4-073d02321046",
+        "uuid": "e481ae90-c11a-41b8-8b24-2cb5150b684b",
         "party_id": 582,
         "constituency": "THANJAVUR(30)",
         "candidate_name": "MURASOLI S",
@@ -3392,7 +3392,7 @@
         "margin": "319583"
     },
     {
-        "uuid": "91cb57bb-fbf9-499e-8844-a68e79780b0b",
+        "uuid": "8b632762-db1d-4b0b-a004-531af3198a43",
         "party_id": 582,
         "constituency": "THENI(33)",
         "candidate_name": "THANGA TAMILSELVAN",
@@ -3400,7 +3400,7 @@
         "margin": "278825"
     },
     {
-        "uuid": "45317f08-699d-4cec-a319-30cf417aa170",
+        "uuid": "f32e8c26-8d0d-43a4-9331-6f4bf89ebf73",
         "party_id": 582,
         "constituency": "THOOTHUKKUDI(36)",
         "candidate_name": "KANIMOZHI KARUNANIDHI",
@@ -3408,7 +3408,7 @@
         "margin": "392738"
     },
     {
-        "uuid": "bf89c997-eaf8-4bd1-a8ca-05a85a22be2a",
+        "uuid": "b3026d52-dffc-4881-a96c-dad8e25d3f21",
         "party_id": 582,
         "constituency": "TENKASI(37)",
         "candidate_name": "DR RANI SRI KUMAR",
@@ -3416,7 +3416,7 @@
         "margin": "196199"
     },
     {
-        "uuid": "7dbc8342-c4f4-45cf-b942-09b9737e3d5d",
+        "uuid": "857b4ddc-b6d9-4754-b30f-e79a1d9b6b1b",
         "party_id": 1745,
         "constituency": "Srikakulam(2)",
         "candidate_name": "KINJARAPU RAMMOHAN NAIDU",
@@ -3424,7 +3424,7 @@
         "margin": "327901"
     },
     {
-        "uuid": "8a80e4c0-ecf4-49e0-bc4f-2d9481a33dce",
+        "uuid": "3cddb95f-bd93-416b-96ed-1f0a7ffda2ab",
         "party_id": 1745,
         "constituency": "Vizianagaram(3)",
         "candidate_name": "APPALANAIDU KALISETTI",
@@ -3432,7 +3432,7 @@
         "margin": "249351"
     },
     {
-        "uuid": "3a34ef88-9d09-4c86-961a-b2ea90aab568",
+        "uuid": "ab02f859-80ce-4b1b-a014-b209ded7fc01",
         "party_id": 1745,
         "constituency": "Visakhapatnam(4)",
         "candidate_name": "SRIBHARAT MATHUKUMILI",
@@ -3440,7 +3440,7 @@
         "margin": "504247"
     },
     {
-        "uuid": "af22e9ba-a2d5-4829-9bf2-4e4982f3a1f9",
+        "uuid": "d91a9b6b-a211-4eb5-aca5-bb8d3d711d10",
         "party_id": 1745,
         "constituency": "Amalapuram (SC)(7)",
         "candidate_name": "G M HARISH (BALAYOGI)",
@@ -3448,7 +3448,7 @@
         "margin": "342196"
     },
     {
-        "uuid": "4e1f442e-583e-4e51-8d83-ea86a6179d2d",
+        "uuid": "82efe008-6832-407e-90e2-3d091c1baa02",
         "party_id": 1745,
         "constituency": "Eluru(10)",
         "candidate_name": "PUTTA MAHESH KUMAR",
@@ -3456,7 +3456,7 @@
         "margin": "181857"
     },
     {
-        "uuid": "e7404167-4f83-45c8-804d-4fd9d2fdc56f",
+        "uuid": "a2e7057d-6d76-4003-a6a1-2cf0f7f5f553",
         "party_id": 1745,
         "constituency": "Vijayawada(12)",
         "candidate_name": "KESINENI SIVANATH (CHINNI)",
@@ -3464,7 +3464,7 @@
         "margin": "282085"
     },
     {
-        "uuid": "27aee9fc-d6b3-4fac-b074-543085caf685",
+        "uuid": "dac4d821-3b7f-4692-ab27-18f0a1613d59",
         "party_id": 1745,
         "constituency": "Guntur(13)",
         "candidate_name": "DR CHANDRA SEKHAR PEMMASANI",
@@ -3472,7 +3472,7 @@
         "margin": "344695"
     },
     {
-        "uuid": "af790e60-5ec4-4b1c-85a5-738aad84e7b3",
+        "uuid": "4ca1071a-8094-411e-b971-15994111e5e5",
         "party_id": 1745,
         "constituency": "Narsaraopet(14)",
         "candidate_name": "LAVU SRIKRISHNA DEVARAYALU",
@@ -3480,7 +3480,7 @@
         "margin": "159729"
     },
     {
-        "uuid": "b7451e05-93c9-442e-88f4-f1a9c2e5deab",
+        "uuid": "7c3d1c7b-9b30-4656-bffb-f2a55a2f9b38",
         "party_id": 1745,
         "constituency": "Bapatla (SC)(15)",
         "candidate_name": "KRISHNA PRASAD TENNETI",
@@ -3488,7 +3488,7 @@
         "margin": "208031"
     },
     {
-        "uuid": "9b1817a0-263d-4bad-b931-77974ed00472",
+        "uuid": "5ba79b84-2f9f-4b7f-90f9-89e5dd7ca36c",
         "party_id": 1745,
         "constituency": "Ongole(16)",
         "candidate_name": "MAGUNTA SREENIVASULU REDDY",
@@ -3496,7 +3496,7 @@
         "margin": "50199"
     },
     {
-        "uuid": "fe5fe9ea-db67-491e-b13b-c4bc19d19df3",
+        "uuid": "efc8f289-a260-4f12-a276-9de3e3142d22",
         "party_id": 1745,
         "constituency": "Nandyal(17)",
         "candidate_name": "DR BYREDDY SHABARI",
@@ -3504,7 +3504,7 @@
         "margin": "111975"
     },
     {
-        "uuid": "9a167658-73ba-4995-b60a-5a326e07d638",
+        "uuid": "d4cbfa84-ca19-40ff-ad86-e66486ce7dcf",
         "party_id": 1745,
         "constituency": "Kurnoolu(18)",
         "candidate_name": "BASTIPATI NAGARAJU PANCHALINGALA",
@@ -3512,7 +3512,7 @@
         "margin": "111298"
     },
     {
-        "uuid": "aeb1e2cd-e618-4973-9762-2d5fd542bd62",
+        "uuid": "a3b10697-d27f-45a2-954d-0ec78e2a73be",
         "party_id": 1745,
         "constituency": "Ananthapur(19)",
         "candidate_name": "AMBICA G LAKSHMINARAYANA VALMIKI",
@@ -3520,7 +3520,7 @@
         "margin": "188555"
     },
     {
-        "uuid": "e0a3f487-042c-4db3-aa63-4e88d7341b5f",
+        "uuid": "145fa7c6-005a-46b8-ac93-0fb0e1f290c3",
         "party_id": 1745,
         "constituency": "Hindupur(20)",
         "candidate_name": "B K PARTHASARATHI",
@@ -3528,7 +3528,7 @@
         "margin": "132427"
     },
     {
-        "uuid": "a1a620b6-d522-49d0-95bf-6d0322eec4e1",
+        "uuid": "95436277-c103-44a3-9cfd-c2213b87e291",
         "party_id": 1745,
         "constituency": "Nellore(22)",
         "candidate_name": "PRABHAKAR REDDY VEMIREDDY",
@@ -3536,7 +3536,7 @@
         "margin": "245902"
     },
     {
-        "uuid": "3fd1ee53-21d3-4f00-82be-0110bc7308db",
+        "uuid": "742fd03b-a0a7-4ee3-aabe-6945f116bd5a",
         "party_id": 1745,
         "constituency": "Chittoor(SC)(25)",
         "candidate_name": "DAGGUMALLA PRASADA RAO",
@@ -3544,7 +3544,7 @@
         "margin": "220479"
     },
     {
-        "uuid": "4dbd54b8-0a0c-4fa5-b525-e18f568bf5fe",
+        "uuid": "808dcb42-ebd8-4b6a-8975-befdc414bc83",
         "party_id": 805,
         "constituency": "Valmiki Nagar (1)",
         "candidate_name": "SUNIL KUMAR",
@@ -3552,7 +3552,7 @@
         "margin": "98675"
     },
     {
-        "uuid": "a620366e-3e81-4093-9036-e1ac584b573b",
+        "uuid": "c0c4e7c8-cc2b-414d-957a-9af6b630a1c6",
         "party_id": 805,
         "constituency": "Sheohar(4)",
         "candidate_name": "LOVELY ANAND",
@@ -3560,7 +3560,7 @@
         "margin": "29143"
     },
     {
-        "uuid": "7f1a1955-c329-4bb6-9b22-eb9f0cc81f6f",
+        "uuid": "fa6e97de-088b-47d7-89ee-b28c4862efed",
         "party_id": 805,
         "constituency": "Sitamarhi(5)",
         "candidate_name": "DEVESH CHANDRA THAKUR",
@@ -3568,7 +3568,7 @@
         "margin": "51356"
     },
     {
-        "uuid": "2fefd683-77c0-4e20-994e-806bb38fafe3",
+        "uuid": "ad501b99-8e41-4ef8-92a9-bdab7b231597",
         "party_id": 805,
         "constituency": "Jhanjharpur(7)",
         "candidate_name": "RAMPRIT MANDAL",
@@ -3576,7 +3576,7 @@
         "margin": "184169"
     },
     {
-        "uuid": "a95aa70f-6d3e-4d28-bb47-3a785528d15a",
+        "uuid": "126fe76b-cd9a-4207-89bd-c1dc7c9cd107",
         "party_id": 805,
         "constituency": "Supaul(8)",
         "candidate_name": "DILESHWAR KAMAIT",
@@ -3584,7 +3584,7 @@
         "margin": "169803"
     },
     {
-        "uuid": "bf63d830-748c-415b-b422-5bbec2ca1003",
+        "uuid": "8f67a822-2069-431d-92a9-4e44965a5fb8",
         "party_id": 805,
         "constituency": "Madhepura(13)",
         "candidate_name": "DINESH CHANDRA YADAV",
@@ -3592,7 +3592,7 @@
         "margin": "174534"
     },
     {
-        "uuid": "b80a88cf-a9ed-4e20-855f-082b4a51daca",
+        "uuid": "ba313b3e-565f-487b-8f1c-88a077d73223",
         "party_id": 805,
         "constituency": "Gopalganj(17)",
         "candidate_name": "DR. ALOK KUMAR SUMAN",
@@ -3600,7 +3600,7 @@
         "margin": "127180"
     },
     {
-        "uuid": "33ef49d1-6115-4df4-b85e-2975bd214c4b",
+        "uuid": "418b7d06-8d0e-451d-92da-fc538d69c8d1",
         "party_id": 805,
         "constituency": "Siwan(18)",
         "candidate_name": "VIJAYLAKSHMI DEVI",
@@ -3608,7 +3608,7 @@
         "margin": "92857"
     },
     {
-        "uuid": "5f746727-7e9f-46a2-9047-2f3c7c82b117",
+        "uuid": "ed7c41bd-2b76-439f-b9d2-b3d8f8b2922d",
         "party_id": 805,
         "constituency": "Bhagalpur(26)",
         "candidate_name": "AJAY KUMAR MANDAL",
@@ -3616,7 +3616,7 @@
         "margin": "104868"
     },
     {
-        "uuid": "7fcb9861-364e-4836-a528-557dd2c1ff14",
+        "uuid": "317de604-b396-4ec3-a08f-b4c1f41ab811",
         "party_id": 805,
         "constituency": "Banka(27)",
         "candidate_name": "GIRIDHARI YADAV",
@@ -3624,7 +3624,7 @@
         "margin": "103844"
     },
     {
-        "uuid": "263e545b-68fe-4efd-93c9-3b6be7e430f9",
+        "uuid": "1926c968-b15a-4635-9b22-61eac03b0b59",
         "party_id": 805,
         "constituency": "Munger(28)",
         "candidate_name": "RAJIV RANJAN SINGH ALIAS LALAN SINGH",
@@ -3632,7 +3632,7 @@
         "margin": "80870"
     },
     {
-        "uuid": "29d30787-f9e8-43a6-8a03-da0e8e2ecc5e",
+        "uuid": "3c6c9fd1-be6e-4cfb-9098-92414453076f",
         "party_id": 805,
         "constituency": "Nalanda(29)",
         "candidate_name": "KAUSHALENDRA KUMAR",
@@ -3640,7 +3640,7 @@
         "margin": "169114"
     },
     {
-        "uuid": "95aab312-0cf1-41d8-8eb5-d26cc60be10e",
+        "uuid": "8d722f3d-e114-4830-bf83-702e594d1e6c",
         "party_id": 3369,
         "constituency": "Yavatmal- Washim(14)",
         "candidate_name": "SANJAY UTTAMRAO DESHMUKH",
@@ -3648,7 +3648,7 @@
         "margin": "94473"
     },
     {
-        "uuid": "1cac1c96-ddce-4086-b4e6-5c8d5ff0e5dc",
+        "uuid": "9b4fd7a1-5804-42e4-9f73-499383b0099d",
         "party_id": 3369,
         "constituency": "Hingoli(15)",
         "candidate_name": "AASHTIKAR PATIL NAGESH BAPURAO",
@@ -3656,7 +3656,7 @@
         "margin": "108602"
     },
     {
-        "uuid": "0e3210af-f8bc-4da3-b420-e48087926938",
+        "uuid": "246cb147-711f-4423-a4d7-ff46f4eb3f38",
         "party_id": 3369,
         "constituency": "Parbhani(17)",
         "candidate_name": "JADHAV SANJAY ( BANDU ) HARIBHAU",
@@ -3664,7 +3664,7 @@
         "margin": "134061"
     },
     {
-        "uuid": "4615dfe1-1b05-424f-b9e7-ad09fb06a502",
+        "uuid": "ac051c4f-ad5f-4db3-b38c-60813c8da068",
         "party_id": 3369,
         "constituency": "Nashik(21)",
         "candidate_name": "RAJABHAU (PARAG) PRAKASH WAJE",
@@ -3672,7 +3672,7 @@
         "margin": "162001"
     },
     {
-        "uuid": "63ea25bf-731f-4da0-8b94-ff53cf4f01a9",
+        "uuid": "b6155301-182a-4c81-b1b8-38554964521b",
         "party_id": 3369,
         "constituency": "Mumbai North East(28)",
         "candidate_name": "SANJAY DINA PATIL",
@@ -3680,7 +3680,7 @@
         "margin": "29861"
     },
     {
-        "uuid": "b790c872-f595-4874-aaf6-fd03b1a00556",
+        "uuid": "d6f55832-7ae7-4032-9294-cf81dc46a97f",
         "party_id": 3369,
         "constituency": "Mumbai South Central(30)",
         "candidate_name": "ANIL YESHWANT DESAI",
@@ -3688,7 +3688,7 @@
         "margin": "53384"
     },
     {
-        "uuid": "9ef6a401-6158-48e3-8e62-d414ab97384b",
+        "uuid": "0a1f829b-8156-4c94-a73a-8aead967cc05",
         "party_id": 3369,
         "constituency": "Mumbai South(31)",
         "candidate_name": "ARVIND GANPAT SAWANT",
@@ -3696,7 +3696,7 @@
         "margin": "52673"
     },
     {
-        "uuid": "8ef9565d-0037-4ee9-8993-14be038dd0e5",
+        "uuid": "5f958968-c874-4b6c-a567-1a6806b515e3",
         "party_id": 3369,
         "constituency": "Shirdi (38)",
         "candidate_name": "BHAUSAHEB RAJARAM WAKCHAURE",
@@ -3704,7 +3704,7 @@
         "margin": "50529"
     },
     {
-        "uuid": "90b29a6f-2884-4478-9485-7ec0b21141cb",
+        "uuid": "4f2553a9-f737-49c7-9574-390e05eb6c10",
         "party_id": 3369,
         "constituency": "Osmanabad(40)",
         "candidate_name": "OMPRAKASH BHUPALSINH ALIAS PAVAN RAJENIMBALKAR",
@@ -3712,7 +3712,7 @@
         "margin": "329846"
     },
     {
-        "uuid": "2bfaf77d-2a4d-4220-939b-45c99ab2a231",
+        "uuid": "ece91404-729f-4818-828e-69528067c192",
         "party_id": 3620,
         "constituency": "Wardha(8)",
         "candidate_name": "AMAR SHARADRAO KALE",
@@ -3720,7 +3720,7 @@
         "margin": "81648"
     },
     {
-        "uuid": "b24010ae-417a-4a0d-bbb4-f7f90fab9384",
+        "uuid": "30cd5227-6df3-4665-b84f-faff039f8537",
         "party_id": 3620,
         "constituency": "Dindori (20)",
         "candidate_name": "BHASKAR MURLIDHAR BHAGARE",
@@ -3728,7 +3728,7 @@
         "margin": "113199"
     },
     {
-        "uuid": "96224103-1e50-4134-b7b5-1cae6732c7e2",
+        "uuid": "1b262154-dc18-448d-bd55-6ff31f4d9c08",
         "party_id": 3620,
         "constituency": "Bhiwandi(23)",
         "candidate_name": "BALYA MAMA - SURESH GOPINATH MHATRE",
@@ -3736,7 +3736,7 @@
         "margin": "66121"
     },
     {
-        "uuid": "c7643845-b3b1-4fa0-b4ea-0b19319230f5",
+        "uuid": "fec90a71-d2a4-49a8-8c78-8c04417927be",
         "party_id": 3620,
         "constituency": "Baramati(35)",
         "candidate_name": "SUPRIYA SULE",
@@ -3744,7 +3744,7 @@
         "margin": "158333"
     },
     {
-        "uuid": "ad6a3ede-0eee-4240-ba19-70b3e7396739",
+        "uuid": "4e8d5e5f-513c-43f5-9134-eb6ccb9783b5",
         "party_id": 3620,
         "constituency": "Shirur(36)",
         "candidate_name": "DR. AMOL RAMSING KOLHE",
@@ -3752,7 +3752,7 @@
         "margin": "140951"
     },
     {
-        "uuid": "c8062996-b547-4e4b-a8d2-bbc843dbde57",
+        "uuid": "618d347c-a771-43b8-8128-2afea15bc898",
         "party_id": 3620,
         "constituency": "Ahmednagar(37)",
         "candidate_name": "NILESH DNYANDEV LANKE",
@@ -3760,7 +3760,7 @@
         "margin": "28929"
     },
     {
-        "uuid": "9dc30775-102c-4a7b-b363-7024a835162d",
+        "uuid": "199fa308-53a9-43c7-8c3f-5cb6d2c4c8ff",
         "party_id": 3620,
         "constituency": "Beed(39)",
         "candidate_name": "BAJRANG MANOHAR SONWANE",
@@ -3768,7 +3768,7 @@
         "margin": "6553"
     },
     {
-        "uuid": "5d33dae1-84bd-4eda-a296-0363e0c50e4e",
+        "uuid": "621c27ce-89fb-4ddc-96d8-8a880fc9d91a",
         "party_id": 3620,
         "constituency": "Madha(43)",
         "candidate_name": "MOHITE-PATIL DHAIRYASHEEL RAJSINH",
@@ -3776,7 +3776,7 @@
         "margin": "120837"
     },
     {
-        "uuid": "0311d947-3618-4e6f-9e9a-ce30dfbcda6d",
+        "uuid": "480d0838-71e0-4945-8c6b-b78dcdec7700",
         "party_id": 3529,
         "constituency": "Buldhana(5)",
         "candidate_name": "JADHAV PRATAPRAO GANPATRAO",
@@ -3784,7 +3784,7 @@
         "margin": "29479"
     },
     {
-        "uuid": "4470778e-06b6-4d13-b831-9406ad4c8c34",
+        "uuid": "6dcf8731-e9f4-4e34-a0af-65fdf8c485ae",
         "party_id": 3529,
         "constituency": "Aurangabad(19)",
         "candidate_name": "BHUMARE SANDIPANRAO ASARAM",
@@ -3792,7 +3792,7 @@
         "margin": "134650"
     },
     {
-        "uuid": "bd3ffdf9-ba65-46a5-9636-f4d74278874e",
+        "uuid": "8f5b3b37-840b-432a-a539-de020111a41c",
         "party_id": 3529,
         "constituency": "Kalyan(24)",
         "candidate_name": "DR SHRIKANT EKNATH SHINDE",
@@ -3800,7 +3800,7 @@
         "margin": "209144"
     },
     {
-        "uuid": "8af081c7-d44a-4f05-ba37-61b98ef6039d",
+        "uuid": "96f713df-c4f1-451d-a411-18f3ab6a8755",
         "party_id": 3529,
         "constituency": "Thane(25)",
         "candidate_name": "NARESH GANPAT MHASKE",
@@ -3808,7 +3808,7 @@
         "margin": "217011"
     },
     {
-        "uuid": "1569ee43-4079-4d0f-9ead-2ece7e1dbcf3",
+        "uuid": "fb6f89f0-4ef5-42ea-8dc7-a8f2dfee5637",
         "party_id": 3529,
         "constituency": "Mumbai North West(27)",
         "candidate_name": "RAVINDRA DATTARAM WAIKAR",
@@ -3816,7 +3816,7 @@
         "margin": "48"
     },
     {
-        "uuid": "5a73cb8e-bb95-4ef9-80b8-10fb4ed321a5",
+        "uuid": "09307279-c48a-4153-9020-d23517cab07d",
         "party_id": 3529,
         "constituency": "Maval(33)",
         "candidate_name": "SHRIRANG APPA CHANDU BARNE",
@@ -3824,7 +3824,7 @@
         "margin": "96615"
     },
     {
-        "uuid": "9ba55ebe-f507-4e60-bbf9-839c07d1c17a",
+        "uuid": "73d47dac-c023-4f1e-be9a-6678082194cf",
         "party_id": 3529,
         "constituency": "Hatkanangale(48)",
         "candidate_name": "DHAIRYASHEEL SAMBHAJIRAO MANE",
@@ -3832,7 +3832,7 @@
         "margin": "13426"
     },
     {
-        "uuid": "8bf2d407-207a-48bb-a031-edd1874bd49d",
+        "uuid": "988699a3-068e-4b2a-b59f-41833803f383",
         "party_id": 3165,
         "constituency": "Vaishali(16)",
         "candidate_name": "VEENA DEVI",
@@ -3840,7 +3840,7 @@
         "margin": "89634"
     },
     {
-        "uuid": "58581870-0138-4baf-b07b-c3add2b16b54",
+        "uuid": "2f8b5e29-2b1e-463f-b8bb-221af5c14ae2",
         "party_id": 3165,
         "constituency": "Hajipur(21)",
         "candidate_name": "CHIRAG PASWAN",
@@ -3848,7 +3848,7 @@
         "margin": "170105"
     },
     {
-        "uuid": "45da363e-2f3b-4405-b153-c61cce56ab38",
+        "uuid": "0eb08b76-ef1f-420b-b6c0-8bf8eebc31c5",
         "party_id": 3165,
         "constituency": "Samastipur(23)",
         "candidate_name": "SHAMBHAVI",
@@ -3856,7 +3856,7 @@
         "margin": "187251"
     },
     {
-        "uuid": "50d3ea57-1d42-47b3-b4d1-9639e66981de",
+        "uuid": "ffcee629-9091-49ed-a719-b96f45bc3fa7",
         "party_id": 3165,
         "constituency": "Khagaria(25)",
         "candidate_name": "RAJESH VERMA",
@@ -3864,7 +3864,7 @@
         "margin": "161131"
     },
     {
-        "uuid": "7477d53d-16fc-43b1-a26e-5a802c03deb1",
+        "uuid": "cc773f9f-9c95-443b-b90c-38b7fa3e1c3e",
         "party_id": 3165,
         "constituency": "Jamui(40)",
         "candidate_name": "ARUN BHARTI",
@@ -3872,7 +3872,7 @@
         "margin": "112482"
     },
     {
-        "uuid": "8302f9c1-f6f5-4508-b5b5-9f6947fad8b4",
+        "uuid": "2e738762-7035-46be-b9af-fae586b5d157",
         "party_id": 1888,
         "constituency": "Araku (ST)(1)",
         "candidate_name": "GUMMA THANUJA RANI",
@@ -3880,7 +3880,7 @@
         "margin": "50580"
     },
     {
-        "uuid": "c6171298-ac77-4195-8df9-a9e54a06dcf6",
+        "uuid": "0af07931-f30a-4eb9-b6f7-ada2e22ada70",
         "party_id": 1888,
         "constituency": "Kadapa(21)",
         "candidate_name": "Y. S. AVINASH REDDY",
@@ -3888,7 +3888,7 @@
         "margin": "62695"
     },
     {
-        "uuid": "cc6fbe15-5572-45a4-bcee-c4c83c86b13e",
+        "uuid": "c0d47b40-6f6f-473f-bc89-bab34fb3c7df",
         "party_id": 1888,
         "constituency": "Thirupathi(SC)(23)",
         "candidate_name": "GURUMOORTHY MADDILA",
@@ -3896,7 +3896,7 @@
         "margin": "14569"
     },
     {
-        "uuid": "f12b4feb-ffd7-4380-a311-68e51c41002f",
+        "uuid": "642ffc3c-3198-4f97-9fb6-76c89098d75d",
         "party_id": 1888,
         "constituency": "Rajampet(24)",
         "candidate_name": "P V MIDHUN REDDY",
@@ -3904,7 +3904,7 @@
         "margin": "76071"
     },
     {
-        "uuid": "607f43f4-a618-4466-92f2-74feec43896c",
+        "uuid": "f3be8a8e-411b-47e5-aee7-97b43fc57735",
         "party_id": 1420,
         "constituency": "Patliputra(31)",
         "candidate_name": "MISHA BHARTI",
@@ -3912,7 +3912,7 @@
         "margin": "85174"
     },
     {
-        "uuid": "00bb51c2-0519-428d-a388-bc2ca43777e4",
+        "uuid": "7778f8d0-cb86-47cb-bcb0-1db9e76b7620",
         "party_id": 1420,
         "constituency": "Buxar(33)",
         "candidate_name": "SUDHAKAR SINGH",
@@ -3920,7 +3920,7 @@
         "margin": "30091"
     },
     {
-        "uuid": "6452c387-fdd8-4e71-b96f-f3bc5c9323e3",
+        "uuid": "c105888f-762b-4095-a46d-f7bf321af2c6",
         "party_id": 1420,
         "constituency": "Jahanabad(36)",
         "candidate_name": "SURENDRA PRASAD YADAV",
@@ -3928,7 +3928,7 @@
         "margin": "142591"
     },
     {
-        "uuid": "bc585ded-4852-406d-825c-2864f10ded17",
+        "uuid": "9036c49e-4fb4-4e56-9bc4-92349ce67e6e",
         "party_id": 1420,
         "constituency": "Aurangabad(37)",
         "candidate_name": "ABHAY KUMAR SINHA",
@@ -3936,7 +3936,7 @@
         "margin": "79111"
     },
     {
-        "uuid": "487bdcb7-58c7-4103-ac88-ae8d0f866ce6",
+        "uuid": "afbda217-e72b-40e0-818b-552f4d48217d",
         "party_id": 547,
         "constituency": "Alathur (9)",
         "candidate_name": "K.RADHAKRISHNAN",
@@ -3944,7 +3944,7 @@
         "margin": "20111"
     },
     {
-        "uuid": "2d522448-ad3c-4c29-a3c1-059aafed10a9",
+        "uuid": "da7472eb-83e2-427a-b6d4-18551673862a",
         "party_id": 547,
         "constituency": "SIKAR(5)",
         "candidate_name": "AMRARAM",
@@ -3952,7 +3952,7 @@
         "margin": "72896"
     },
     {
-        "uuid": "a0394ef2-1581-409f-9c82-85fd542a8f5f",
+        "uuid": "e59062ee-678e-4b0a-9162-6da160c3198c",
         "party_id": 547,
         "constituency": "DINDIGUL(22)",
         "candidate_name": "SACHITHANANTHAM R",
@@ -3960,7 +3960,7 @@
         "margin": "443821"
     },
     {
-        "uuid": "3e1fb1e2-4e7f-4273-8869-8fd1c1ac6613",
+        "uuid": "3dc5eaec-aa7f-4ca4-b9de-123a805ffbc8",
         "party_id": 547,
         "constituency": "MADURAI(32)",
         "candidate_name": "VENKATESAN S",
@@ -3968,7 +3968,7 @@
         "margin": "209409"
     },
     {
-        "uuid": "e68079b4-85a7-4dc0-bf47-06a71827621d",
+        "uuid": "7293596a-0fce-4b79-963f-1b503cffe8c4",
         "party_id": 772,
         "constituency": "Malappuram(6)",
         "candidate_name": "E.T.  MOHAMMED BASHEER",
@@ -3976,7 +3976,7 @@
         "margin": "300118"
     },
     {
-        "uuid": "6e9ab50a-90ae-4a07-a985-c8e26388a81c",
+        "uuid": "4b847b74-7d62-4a0a-898a-baf8651e839f",
         "party_id": 772,
         "constituency": "Ponnani(7)",
         "candidate_name": "DR. M.P ABDUSSAMAD SAMADANI",
@@ -3984,7 +3984,7 @@
         "margin": "235760"
     },
     {
-        "uuid": "04b84bbb-f480-42c8-a8cc-c6274cc038fd",
+        "uuid": "e5156047-da52-443c-b2d2-891594b38e6d",
         "party_id": 772,
         "constituency": "RAMANATHAPURAM(35)",
         "candidate_name": "NAVASKANI K",
@@ -3992,7 +3992,7 @@
         "margin": "166782"
     },
     {
-        "uuid": "69903f0f-98cf-4ff7-b5a4-6b9eeae65fa2",
+        "uuid": "021632ad-a86b-4c10-90ff-41d1dd828007",
         "party_id": 1,
         "constituency": "Hoshiarpur(5)",
         "candidate_name": "DR. RAJ KUMAR CHABBEWAL",
@@ -4000,7 +4000,7 @@
         "margin": "44111"
     },
     {
-        "uuid": "5618135c-12ed-4410-bc3c-77ff8d12a4c7",
+        "uuid": "c0297bde-9515-48c2-a7f2-138923d397a8",
         "party_id": 1,
         "constituency": "Anandpur Sahib(6)",
         "candidate_name": "MALVINDER SINGH KANG",
@@ -4008,7 +4008,7 @@
         "margin": "10846"
     },
     {
-        "uuid": "b95a5666-a639-4ecb-8d07-36cc46b45444",
+        "uuid": "a597c486-f67a-452c-83aa-8c1680897b41",
         "party_id": 1,
         "constituency": "Sangrur(12)",
         "candidate_name": "GURMEET SINGH MEET HAYER",
@@ -4016,7 +4016,7 @@
         "margin": "172560"
     },
     {
-        "uuid": "a3e5b82c-6433-40c7-8f78-330929782661",
+        "uuid": "b4c41cd2-929b-4f12-976d-b2a57add5367",
         "party_id": 852,
         "constituency": "Rajmahal(1)",
         "candidate_name": "VIJAY KUMAR HANSDAK",
@@ -4024,7 +4024,7 @@
         "margin": "178264"
     },
     {
-        "uuid": "9e229419-1e32-4380-b911-9000328f53a5",
+        "uuid": "b32e6175-2d9c-400f-a8db-57931c9dfede",
         "party_id": 852,
         "constituency": "Dumka(2)",
         "candidate_name": "NALIN SOREN",
@@ -4032,7 +4032,7 @@
         "margin": "22527"
     },
     {
-        "uuid": "93b407ed-c5cf-4270-9ba0-920d9dba2338",
+        "uuid": "935c9ad5-4e5d-4668-b826-f4619e2f8d80",
         "party_id": 852,
         "constituency": "Singhbhum(10)",
         "candidate_name": "JOBA MAJHI",
@@ -4040,7 +4040,7 @@
         "margin": "168402"
     },
     {
-        "uuid": "46923984-9ff4-42b4-89fb-b64dd43cb1e2",
+        "uuid": "08ddb53f-497c-43ec-9936-1bc3a1b644e6",
         "party_id": 860,
         "constituency": "Kakinada(6)",
         "candidate_name": "TANGELLA UDAY SRINIVAS (TEA TIME UDAY)",
@@ -4048,7 +4048,7 @@
         "margin": "229491"
     },
     {
-        "uuid": "34ca6a7d-ce01-49cb-83ea-71ec88e01430",
+        "uuid": "59b43c8b-9617-4d4c-8f4e-f987f0309847",
         "party_id": 860,
         "constituency": "Machilipatnam(11)",
         "candidate_name": "BALASHOWRY VALLABHANENI",
@@ -4056,7 +4056,7 @@
         "margin": "223179"
     },
     {
-        "uuid": "0757c1a3-fb2d-4780-8f48-e5bca26a2394",
+        "uuid": "f0aef614-3715-47f2-a21b-3c229a82a8a3",
         "party_id": 545,
         "constituency": "Arrah(32)",
         "candidate_name": "SUDAMA PRASAD",
@@ -4064,7 +4064,7 @@
         "margin": "59808"
     },
     {
-        "uuid": "4b28f8b9-b111-41b3-9c80-59261b219df4",
+        "uuid": "b371f5a9-34ec-4285-a1dd-21ae5a2e9f29",
         "party_id": 545,
         "constituency": "Karakat(35)",
         "candidate_name": "RAJA RAM SINGH",
@@ -4072,7 +4072,7 @@
         "margin": "105858"
     },
     {
-        "uuid": "8b43c6a6-04f8-4ea5-b043-701f32ac7f7f",
+        "uuid": "b48ee0fb-063e-4676-a8fd-7ec2614d9ae5",
         "party_id": 804,
         "constituency": "Mandya(20)",
         "candidate_name": "H.D. KUMARASWAMY",
@@ -4080,7 +4080,7 @@
         "margin": "284620"
     },
     {
-        "uuid": "e7961ce3-72b5-43f2-a9c2-b8347ae5d5ed",
+        "uuid": "e265c86b-e43e-44e5-a3ba-91281bf378a5",
         "party_id": 804,
         "constituency": "Kolar(28)",
         "candidate_name": "M. MALLESH BABU",
@@ -4088,7 +4088,7 @@
         "margin": "71388"
     },
     {
-        "uuid": "07dc38ab-0f5d-489e-8563-617e79bce99d",
+        "uuid": "eb8114ac-0305-40ec-874d-8ce5b082df7d",
         "party_id": 1847,
         "constituency": "VILUPPURAM(13)",
         "candidate_name": "RAVIKUMAR. D",
@@ -4096,7 +4096,7 @@
         "margin": "70703"
     },
     {
-        "uuid": "215fe4cb-5f8a-483a-8947-91c510861a39",
+        "uuid": "2838e252-0928-412f-bb35-e63ffe4e3b76",
         "party_id": 1847,
         "constituency": "CHIDAMBARAM(27)",
         "candidate_name": "THIRUMAAVALAVAN THOL",
@@ -4104,7 +4104,7 @@
         "margin": "103554"
     },
     {
-        "uuid": "97d7f1c4-aea8-4d94-83b3-da70079b26c5",
+        "uuid": "d1cc8c2e-09eb-44a2-827a-8cf05d1ce167",
         "party_id": 544,
         "constituency": "TIRUPPUR(18)",
         "candidate_name": "SUBBARAYAN, K.",
@@ -4112,7 +4112,7 @@
         "margin": "125928"
     },
     {
-        "uuid": "a3f8f990-b31c-4925-ac13-4bab83828fc3",
+        "uuid": "b2ad877e-c737-4458-b487-f6384f4082e0",
         "party_id": 544,
         "constituency": "NAGAPATTINAM(29)",
         "candidate_name": "SELVARAJ V",
@@ -4120,7 +4120,7 @@
         "margin": "208957"
     },
     {
-        "uuid": "5701591d-3bd0-4d03-b0e6-d4e57738bdec",
+        "uuid": "48f1dbc3-3a75-497b-ba46-ab10afc1575f",
         "party_id": 1458,
         "constituency": "Bijnor(4)",
         "candidate_name": "CHANDAN CHAUHAN",
@@ -4128,7 +4128,7 @@
         "margin": "37508"
     },
     {
-        "uuid": "6cd3ed56-2e59-4d51-ac4c-8ce0ae6d070e",
+        "uuid": "9ac2dcc5-3150-45d7-8758-9e2c01bf0f4c",
         "party_id": 1458,
         "constituency": "Baghpat(11)",
         "candidate_name": "DR RAJKUMAR SANGWAN",
@@ -4136,7 +4136,7 @@
         "margin": "159459"
     },
     {
-        "uuid": "b0c08b85-4fbe-4b8f-927a-8809a60becb9",
+        "uuid": "ae59d78c-5a65-4731-8cfa-be2c56c3d478",
         "party_id": 834,
         "constituency": "SRINAGAR(2)",
         "candidate_name": "AGA SYED RUHULLAH MEHDI",
@@ -4144,7 +4144,7 @@
         "margin": "188416"
     },
     {
-        "uuid": "4d6feaef-76a7-406d-9e58-5b58161419a6",
+        "uuid": "db205ad3-a383-4451-b707-91dd34da4080",
         "party_id": 834,
         "constituency": "ANANTNAG-RAJOURI(3)",
         "candidate_name": "MIAN ALTAF AHMAD",
@@ -4152,7 +4152,7 @@
         "margin": "281794"
     },
     {
-        "uuid": "54cdd539-1eb0-4024-97eb-9ed215ec5bb7",
+        "uuid": "4f26cd91-7806-43b4-a4d2-ece9488d0257",
         "party_id": 1998,
         "constituency": "Kokrajhar (1)",
         "candidate_name": "JOYANTA BASUMATARY",
@@ -4160,7 +4160,7 @@
         "margin": "51583"
     },
     {
-        "uuid": "abcdb1c7-2f36-4536-a8e7-90ac7b32d16f",
+        "uuid": "6c577c6a-64e0-46c7-9b5a-9a61b74db4df",
         "party_id": 83,
         "constituency": "Barpeta(3)",
         "candidate_name": "PHANI BHUSAN CHOUDHURY",
@@ -4168,7 +4168,7 @@
         "margin": "222351"
     },
     {
-        "uuid": "4591c05c-fb54-4d9c-a3f5-7e7d92a7afae",
+        "uuid": "6a3954d5-d136-48ec-b29f-445190d04375",
         "party_id": 664,
         "constituency": "Gaya(38)",
         "candidate_name": "JITAN RAM MANJHI",
@@ -4176,7 +4176,7 @@
         "margin": "101812"
     },
     {
-        "uuid": "04ace672-4c2b-45e4-a211-f46f9be3a9df",
+        "uuid": "3f9acd7a-c0cc-467d-8327-94926a02bc91",
         "party_id": 911,
         "constituency": "Kottayam(14)",
         "candidate_name": "ADV K FRANCIS GEORGE",
@@ -4184,7 +4184,7 @@
         "margin": "87266"
     },
     {
-        "uuid": "a8453823-9bb3-4151-8046-0d7d7bfe9dcc",
+        "uuid": "ee870459-5511-4dd5-836f-45afbaf91e23",
         "party_id": 1534,
         "constituency": "Kollam(18)",
         "candidate_name": "N K PREMACHANDRAN",
@@ -4192,7 +4192,7 @@
         "margin": "150302"
     },
     {
-        "uuid": "9eb4fa85-4a9a-4992-9f08-89b7214b4bfb",
+        "uuid": "78455af9-a736-4dac-a55d-352d37878734",
         "party_id": 1142,
         "constituency": "Raigad(32)",
         "candidate_name": "TATKARE SUNIL DATTATREY",
@@ -4200,7 +4200,7 @@
         "margin": "82784"
     },
     {
-        "uuid": "e1d494df-3c65-4566-94da-a4d0e92a2945",
+        "uuid": "ccc2c44e-b01a-42d9-bb4c-10eca73030a5",
         "party_id": 3388,
         "constituency": "Shillong(1)",
         "candidate_name": "DR. RICKY ANDREW J. SYNGKON",
@@ -4208,7 +4208,7 @@
         "margin": "371910"
     },
     {
-        "uuid": "3e842085-b1c4-4110-8bdf-ff0d770de749",
+        "uuid": "31e1919d-03d3-4521-9743-c44209218426",
         "party_id": 2757,
         "constituency": "MIZORAM(1)",
         "candidate_name": "RICHARD VANLALHMANGAIHA",
@@ -4216,7 +4216,7 @@
         "margin": "68288"
     },
     {
-        "uuid": "e542e81e-9575-4156-af13-769a9a0193d8",
+        "uuid": "29a16f98-2eb2-4310-b631-74e9727cf7f7",
         "party_id": 1584,
         "constituency": "Bathinda(11)",
         "candidate_name": "HARSIMRAT KAUR BADAL",
@@ -4224,7 +4224,7 @@
         "margin": "49656"
     },
     {
-        "uuid": "a5d8968f-0a04-4b97-85e2-e75550fc03c5",
+        "uuid": "fecf3a28-b5c3-480a-9350-77c00a2f5fa2",
         "party_id": 2484,
         "constituency": "NAGAUR(14)",
         "candidate_name": "HANUMAN BENIWAL",
@@ -4232,7 +4232,7 @@
         "margin": "42225"
     },
     {
-        "uuid": "f9ab4a52-a637-4501-aa9f-5549937a7f32",
+        "uuid": "6bd5b800-9935-487e-ac7d-9a9c910c3cca",
         "party_id": 3482,
         "constituency": "BANSWARA (20)",
         "candidate_name": "RAJ KUMAR ROAT",
@@ -4240,7 +4240,7 @@
         "margin": "247054"
     },
     {
-        "uuid": "8c963245-68a6-463f-bec2-dc1c51ba7dae",
+        "uuid": "37131d10-d898-4ecb-bd17-a7faf4aeabdd",
         "party_id": 1658,
         "constituency": "Sikkim(1)",
         "candidate_name": "INDRA HANG SUBBA",
@@ -4248,7 +4248,7 @@
         "margin": "80830"
     },
     {
-        "uuid": "28c0c651-5c73-490d-8a79-5a245401adc6",
+        "uuid": "27877633-155a-400a-b427-e8ff1ff042fa",
         "party_id": 1046,
         "constituency": "TIRUCHIRAPPALLI(24)",
         "candidate_name": "DURAI VAIKO",
@@ -4256,7 +4256,7 @@
         "margin": "313094"
     },
     {
-        "uuid": "6992856b-30d2-4776-b738-4cc61491339f",
+        "uuid": "98b3ea9b-6ba4-4572-9a7b-99f48551bd98",
         "party_id": 2989,
         "constituency": "Nagina(5)",
         "candidate_name": "CHANDRASHEKHAR",
@@ -4264,7 +4264,7 @@
         "margin": "151473"
     },
     {
-        "uuid": "c9c2fe9b-6bbb-48b9-a396-c39489236e62",
+        "uuid": "ea7a7096-9190-4d7f-859e-d24fd3dd1d2c",
         "party_id": 2070,
         "constituency": "Mirzapur(79)",
         "candidate_name": "ANUPRIYA PATEL",
@@ -4272,7 +4272,7 @@
         "margin": "37810"
     },
     {
-        "uuid": "130234ad-5736-4005-988f-ef64debe5c76",
+        "uuid": "a93e4a9a-7107-45b6-9b07-0682cf887fb1",
         "party_id": 160,
         "constituency": "Giridih(6)",
         "candidate_name": "CHANDRA PRAKASH CHOUDHARY",
@@ -4280,7 +4280,7 @@
         "margin": "80880"
     },
     {
-        "uuid": "691bbe47-693a-4822-894d-a1cefd1cce96",
+        "uuid": "f16ad5b9-c923-442d-bc7e-c61af0163cb3",
         "party_id": 118,
         "constituency": "Hyderabad(9)",
         "candidate_name": "ASADUDDIN OWAISI",
@@ -4288,7 +4288,7 @@
         "margin": "338087"
     },
     {
-        "uuid": "07f43118-ae9d-4d07-8c07-aeac370ae8d0",
+        "uuid": "a38537a0-1abf-4d0d-ba75-326d26e80b17",
         "party_id": 743,
         "constituency": "Purnia(12)",
         "candidate_name": "RAJESH RANJAN ALIAS PAPPU YADAV",
@@ -4296,7 +4296,7 @@
         "margin": "23847"
     },
     {
-        "uuid": "b037cded-d28d-4b8c-b8d8-c1f3bbe974ce",
+        "uuid": "ea3af024-1888-46a8-831b-392a90562980",
         "party_id": 743,
         "constituency": "Sangli(44)",
         "candidate_name": "VISHAL (DADA) PRAKASHBAPU PATIL",
@@ -4304,7 +4304,7 @@
         "margin": "100053"
     },
     {
-        "uuid": "8019c6b8-bcb1-4673-9f9a-05a4f148027d",
+        "uuid": "f1be1a83-a01d-4d09-8d02-1ec67740ee6f",
         "party_id": 743,
         "constituency": "Khadoor Sahib(3)",
         "candidate_name": "AMRITPAL SINGH",
@@ -4312,7 +4312,7 @@
         "margin": "197120"
     },
     {
-        "uuid": "443a6268-f2d9-495e-b6f1-3a38d38a5d22",
+        "uuid": "0810c245-f1bb-47ec-bb3e-04fdba6b5899",
         "party_id": 743,
         "constituency": "Faridkot(9)",
         "candidate_name": "SARABJEET SINGH KHALSA",
@@ -4320,7 +4320,7 @@
         "margin": "70053"
     },
     {
-        "uuid": "0042a4c8-b875-4f66-ba90-961cde9bec4c",
+        "uuid": "25eaa972-a74f-4bc2-bceb-b2a2bf4f6c07",
         "party_id": 743,
         "constituency": "Daman & Diu (1)",
         "candidate_name": "PATEL UMESHBHAI BABUBHAI",
@@ -4328,7 +4328,7 @@
         "margin": "6225"
     },
     {
-        "uuid": "a700c6a8-c565-4244-a833-590128e5b6ed",
+        "uuid": "aa01b36b-ee3b-482a-91ee-663d58399941",
         "party_id": 743,
         "constituency": "BARAMULLA(1)",
         "candidate_name": "ABDUL RASHID SHEIKH",
@@ -4336,7 +4336,7 @@
         "margin": "204142"
     },
     {
-        "uuid": "4bd245c1-9366-4a1a-b6cc-b1d1693f3c0d",
+        "uuid": "cd63b0e5-254b-4827-9c4a-904f42722e7e",
         "party_id": 743,
         "constituency": "Ladakh(1)",
         "candidate_name": "MOHMAD HANEEFA",
