@@ -219,9 +219,15 @@ class LokSabhaScraper:
                     if len(cols) >= 2:
                         party_full_name = cols[0].text.strip()
                         party_name = party_full_name.split(" - ")[0]
-                        party_id = party_full_name.split(" - ")[1]
+                        party_short_name = party_full_name.split(" - ")[1]
                         seats_won = cols[1].text.strip()
-                        party_details.append({"name": party_name, "party_id": party_id, "total_seats": seats_won})
+                        party_id = cols[1].find("a")["href"].split("-")[-1].split(".")[0]
+                        party_details.append({
+                            "name": party_name,
+                            "short_name": party_short_name,
+                            "seats_won": seats_won,
+                            "party_id": party_id
+                        })
 
         # Remove duplicates
         seen = set()
