@@ -1,1 +1,2174 @@
-[]
+[
+    {
+        "name": "Anakapalle",
+        "url": "candidateswise-S015.htm"
+    },
+    {
+        "name": "Rajahmundry",
+        "url": "candidateswise-S018.htm"
+    },
+    {
+        "name": "Narsapuram",
+        "url": "candidateswise-S019.htm"
+    },
+    {
+        "name": "Arunachal West",
+        "url": "candidateswise-S021.htm"
+    },
+    {
+        "name": "Arunachal East",
+        "url": "candidateswise-S022.htm"
+    },
+    {
+        "name": "Darrang-Udalguri",
+        "url": "candidateswise-S034.htm"
+    },
+    {
+        "name": "Guwahati",
+        "url": "candidateswise-S035.htm"
+    },
+    {
+        "name": "Diphu",
+        "url": "candidateswise-S036.htm"
+    },
+    {
+        "name": "Karimganj",
+        "url": "candidateswise-S037.htm"
+    },
+    {
+        "name": "Silchar ",
+        "url": "candidateswise-S038.htm"
+    },
+    {
+        "name": "Kaziranga",
+        "url": "candidateswise-S0310.htm"
+    },
+    {
+        "name": "Sonitpur",
+        "url": "candidateswise-S0311.htm"
+    },
+    {
+        "name": "Lakhimpur",
+        "url": "candidateswise-S0312.htm"
+    },
+    {
+        "name": "Dibrugarh",
+        "url": "candidateswise-S0313.htm"
+    },
+    {
+        "name": "Paschim Champaran",
+        "url": "candidateswise-S042.htm"
+    },
+    {
+        "name": "Purvi Champaran",
+        "url": "candidateswise-S043.htm"
+    },
+    {
+        "name": "Madhubani",
+        "url": "candidateswise-S046.htm"
+    },
+    {
+        "name": "Araria",
+        "url": "candidateswise-S049.htm"
+    },
+    {
+        "name": "Darbhanga",
+        "url": "candidateswise-S0414.htm"
+    },
+    {
+        "name": "Muzaffarpur",
+        "url": "candidateswise-S0415.htm"
+    },
+    {
+        "name": "Maharajganj",
+        "url": "candidateswise-S0419.htm"
+    },
+    {
+        "name": "Saran",
+        "url": "candidateswise-S0420.htm"
+    },
+    {
+        "name": "Ujiarpur",
+        "url": "candidateswise-S0422.htm"
+    },
+    {
+        "name": "Begusarai",
+        "url": "candidateswise-S0424.htm"
+    },
+    {
+        "name": "Patna Sahib",
+        "url": "candidateswise-S0430.htm"
+    },
+    {
+        "name": "Nawada",
+        "url": "candidateswise-S0439.htm"
+    },
+    {
+        "name": "North Goa",
+        "url": "candidateswise-S051.htm"
+    },
+    {
+        "name": "Kachchh",
+        "url": "candidateswise-S061.htm"
+    },
+    {
+        "name": "Patan",
+        "url": "candidateswise-S063.htm"
+    },
+    {
+        "name": "Mahesana",
+        "url": "candidateswise-S064.htm"
+    },
+    {
+        "name": "Sabarkantha",
+        "url": "candidateswise-S065.htm"
+    },
+    {
+        "name": "Gandhinagar",
+        "url": "candidateswise-S066.htm"
+    },
+    {
+        "name": "Ahmedabad East",
+        "url": "candidateswise-S067.htm"
+    },
+    {
+        "name": "Ahmedabad West",
+        "url": "candidateswise-S068.htm"
+    },
+    {
+        "name": "Surendranagar",
+        "url": "candidateswise-S069.htm"
+    },
+    {
+        "name": "Rajkot",
+        "url": "candidateswise-S0610.htm"
+    },
+    {
+        "name": "Porbandar",
+        "url": "candidateswise-S0611.htm"
+    },
+    {
+        "name": "Jamnagar",
+        "url": "candidateswise-S0612.htm"
+    },
+    {
+        "name": "Junagadh",
+        "url": "candidateswise-S0613.htm"
+    },
+    {
+        "name": "Amreli",
+        "url": "candidateswise-S0614.htm"
+    },
+    {
+        "name": "Bhavnagar",
+        "url": "candidateswise-S0615.htm"
+    },
+    {
+        "name": "Anand",
+        "url": "candidateswise-S0616.htm"
+    },
+    {
+        "name": "Kheda",
+        "url": "candidateswise-S0617.htm"
+    },
+    {
+        "name": "Panchmahal",
+        "url": "candidateswise-S0618.htm"
+    },
+    {
+        "name": "Dahod",
+        "url": "candidateswise-S0619.htm"
+    },
+    {
+        "name": "Vadodara",
+        "url": "candidateswise-S0620.htm"
+    },
+    {
+        "name": "Chhota Udaipur",
+        "url": "candidateswise-S0621.htm"
+    },
+    {
+        "name": "Bharuch",
+        "url": "candidateswise-S0622.htm"
+    },
+    {
+        "name": "Bardoli",
+        "url": "candidateswise-S0623.htm"
+    },
+    {
+        "name": "Surat",
+        "url": "candidateswise-S0624.htm"
+    },
+    {
+        "name": "Navsari",
+        "url": "candidateswise-S0625.htm"
+    },
+    {
+        "name": "Valsad",
+        "url": "candidateswise-S0626.htm"
+    },
+    {
+        "name": "KURUKSHETRA",
+        "url": "candidateswise-S072.htm"
+    },
+    {
+        "name": "KARNAL",
+        "url": "candidateswise-S075.htm"
+    },
+    {
+        "name": "BHIWANI-MAHENDRAGARH",
+        "url": "candidateswise-S078.htm"
+    },
+    {
+        "name": "GURGAON",
+        "url": "candidateswise-S079.htm"
+    },
+    {
+        "name": "FARIDABAD",
+        "url": "candidateswise-S0710.htm"
+    },
+    {
+        "name": "KANGRA",
+        "url": "candidateswise-S081.htm"
+    },
+    {
+        "name": "MANDI",
+        "url": "candidateswise-S082.htm"
+    },
+    {
+        "name": "HAMIRPUR",
+        "url": "candidateswise-S083.htm"
+    },
+    {
+        "name": "SHIMLA",
+        "url": "candidateswise-S084.htm"
+    },
+    {
+        "name": "Belgaum",
+        "url": "candidateswise-S102.htm"
+    },
+    {
+        "name": "Bagalkot",
+        "url": "candidateswise-S103.htm"
+    },
+    {
+        "name": "Bijapur",
+        "url": "candidateswise-S104.htm"
+    },
+    {
+        "name": "Haveri",
+        "url": "candidateswise-S1010.htm"
+    },
+    {
+        "name": "Dharwad",
+        "url": "candidateswise-S1011.htm"
+    },
+    {
+        "name": "Uttara Kannada",
+        "url": "candidateswise-S1012.htm"
+    },
+    {
+        "name": "Shimoga",
+        "url": "candidateswise-S1014.htm"
+    },
+    {
+        "name": "Udupi Chikmagalur",
+        "url": "candidateswise-S1015.htm"
+    },
+    {
+        "name": "Dakshina Kannada",
+        "url": "candidateswise-S1017.htm"
+    },
+    {
+        "name": "Chitradurga",
+        "url": "candidateswise-S1018.htm"
+    },
+    {
+        "name": "Tumkur",
+        "url": "candidateswise-S1019.htm"
+    },
+    {
+        "name": "Mysore",
+        "url": "candidateswise-S1021.htm"
+    },
+    {
+        "name": "Bangalore Rural",
+        "url": "candidateswise-S1023.htm"
+    },
+    {
+        "name": "Bangalore North",
+        "url": "candidateswise-S1024.htm"
+    },
+    {
+        "name": "Bangalore central",
+        "url": "candidateswise-S1025.htm"
+    },
+    {
+        "name": "Bangalore South",
+        "url": "candidateswise-S1026.htm"
+    },
+    {
+        "name": "Chikkballapur",
+        "url": "candidateswise-S1027.htm"
+    },
+    {
+        "name": "Thrissur",
+        "url": "candidateswise-S1110.htm"
+    },
+    {
+        "name": "MORENA",
+        "url": "candidateswise-S121.htm"
+    },
+    {
+        "name": "BHIND",
+        "url": "candidateswise-S122.htm"
+    },
+    {
+        "name": "GWALIOR",
+        "url": "candidateswise-S123.htm"
+    },
+    {
+        "name": "GUNA",
+        "url": "candidateswise-S124.htm"
+    },
+    {
+        "name": "SAGAR",
+        "url": "candidateswise-S125.htm"
+    },
+    {
+        "name": "TIKAMGARH",
+        "url": "candidateswise-S126.htm"
+    },
+    {
+        "name": "DAMOH",
+        "url": "candidateswise-S127.htm"
+    },
+    {
+        "name": "KHAJURAHO",
+        "url": "candidateswise-S128.htm"
+    },
+    {
+        "name": "SATNA",
+        "url": "candidateswise-S129.htm"
+    },
+    {
+        "name": "REWA",
+        "url": "candidateswise-S1210.htm"
+    },
+    {
+        "name": "SIDHI",
+        "url": "candidateswise-S1211.htm"
+    },
+    {
+        "name": "SHAHDOL",
+        "url": "candidateswise-S1212.htm"
+    },
+    {
+        "name": "JABALPUR",
+        "url": "candidateswise-S1213.htm"
+    },
+    {
+        "name": "MANDLA",
+        "url": "candidateswise-S1214.htm"
+    },
+    {
+        "name": "BALAGHAT",
+        "url": "candidateswise-S1215.htm"
+    },
+    {
+        "name": "CHHINDWARA",
+        "url": "candidateswise-S1216.htm"
+    },
+    {
+        "name": "HOSHANGABAD",
+        "url": "candidateswise-S1217.htm"
+    },
+    {
+        "name": "VIDISHA",
+        "url": "candidateswise-S1218.htm"
+    },
+    {
+        "name": "BHOPAL",
+        "url": "candidateswise-S1219.htm"
+    },
+    {
+        "name": "RAJGARH",
+        "url": "candidateswise-S1220.htm"
+    },
+    {
+        "name": "DEWAS",
+        "url": "candidateswise-S1221.htm"
+    },
+    {
+        "name": "UJJAIN",
+        "url": "candidateswise-S1222.htm"
+    },
+    {
+        "name": "MANDSOUR",
+        "url": "candidateswise-S1223.htm"
+    },
+    {
+        "name": "RATLAM",
+        "url": "candidateswise-S1224.htm"
+    },
+    {
+        "name": "DHAR",
+        "url": "candidateswise-S1225.htm"
+    },
+    {
+        "name": "INDORE",
+        "url": "candidateswise-S1226.htm"
+    },
+    {
+        "name": "KHARGONE",
+        "url": "candidateswise-S1227.htm"
+    },
+    {
+        "name": "KHANDWA",
+        "url": "candidateswise-S1228.htm"
+    },
+    {
+        "name": "BETUL",
+        "url": "candidateswise-S1229.htm"
+    },
+    {
+        "name": "Jalgaon",
+        "url": "candidateswise-S133.htm"
+    },
+    {
+        "name": "Raver",
+        "url": "candidateswise-S134.htm"
+    },
+    {
+        "name": "Akola",
+        "url": "candidateswise-S136.htm"
+    },
+    {
+        "name": "Nagpur",
+        "url": "candidateswise-S1310.htm"
+    },
+    {
+        "name": "Palghar",
+        "url": "candidateswise-S1322.htm"
+    },
+    {
+        "name": "Mumbai North",
+        "url": "candidateswise-S1326.htm"
+    },
+    {
+        "name": "Pune",
+        "url": "candidateswise-S1334.htm"
+    },
+    {
+        "name": "Satara",
+        "url": "candidateswise-S1345.htm"
+    },
+    {
+        "name": "Ratnagiri- Sindhudurg",
+        "url": "candidateswise-S1346.htm"
+    },
+    {
+        "name": "Bargarh",
+        "url": "candidateswise-S181.htm"
+    },
+    {
+        "name": "Sundargarh",
+        "url": "candidateswise-S182.htm"
+    },
+    {
+        "name": "Sambalpur",
+        "url": "candidateswise-S183.htm"
+    },
+    {
+        "name": "Keonjhar",
+        "url": "candidateswise-S184.htm"
+    },
+    {
+        "name": "Mayurbhanj",
+        "url": "candidateswise-S185.htm"
+    },
+    {
+        "name": "Balasore",
+        "url": "candidateswise-S186.htm"
+    },
+    {
+        "name": "Bhadrak",
+        "url": "candidateswise-S187.htm"
+    },
+    {
+        "name": "Jajpur",
+        "url": "candidateswise-S188.htm"
+    },
+    {
+        "name": "Dhenkanal",
+        "url": "candidateswise-S189.htm"
+    },
+    {
+        "name": "Bolangir",
+        "url": "candidateswise-S1810.htm"
+    },
+    {
+        "name": "Kalahandi",
+        "url": "candidateswise-S1811.htm"
+    },
+    {
+        "name": "Nabarangpur",
+        "url": "candidateswise-S1812.htm"
+    },
+    {
+        "name": "Kandhamal",
+        "url": "candidateswise-S1813.htm"
+    },
+    {
+        "name": "Cuttack",
+        "url": "candidateswise-S1814.htm"
+    },
+    {
+        "name": "Kendrapara",
+        "url": "candidateswise-S1815.htm"
+    },
+    {
+        "name": "Jagatsinghpur",
+        "url": "candidateswise-S1816.htm"
+    },
+    {
+        "name": "Puri",
+        "url": "candidateswise-S1817.htm"
+    },
+    {
+        "name": "Bhubaneswar",
+        "url": "candidateswise-S1818.htm"
+    },
+    {
+        "name": "Aska",
+        "url": "candidateswise-S1819.htm"
+    },
+    {
+        "name": "Berhampur",
+        "url": "candidateswise-S1820.htm"
+    },
+    {
+        "name": "BIKANER ",
+        "url": "candidateswise-S202.htm"
+    },
+    {
+        "name": "JAIPUR RURAL",
+        "url": "candidateswise-S206.htm"
+    },
+    {
+        "name": "JAIPUR",
+        "url": "candidateswise-S207.htm"
+    },
+    {
+        "name": "ALWAR",
+        "url": "candidateswise-S208.htm"
+    },
+    {
+        "name": "AJMER ",
+        "url": "candidateswise-S2013.htm"
+    },
+    {
+        "name": "PALI",
+        "url": "candidateswise-S2015.htm"
+    },
+    {
+        "name": "JODHPUR",
+        "url": "candidateswise-S2016.htm"
+    },
+    {
+        "name": "JALORE ",
+        "url": "candidateswise-S2018.htm"
+    },
+    {
+        "name": "UDAIPUR ",
+        "url": "candidateswise-S2019.htm"
+    },
+    {
+        "name": "CHITTORGARH",
+        "url": "candidateswise-S2021.htm"
+    },
+    {
+        "name": "RAJSAMAND",
+        "url": "candidateswise-S2022.htm"
+    },
+    {
+        "name": "BHILWARA",
+        "url": "candidateswise-S2023.htm"
+    },
+    {
+        "name": "KOTA",
+        "url": "candidateswise-S2024.htm"
+    },
+    {
+        "name": "JHALAWAR-BARAN",
+        "url": "candidateswise-S2025.htm"
+    },
+    {
+        "name": "Tripura West",
+        "url": "candidateswise-S231.htm"
+    },
+    {
+        "name": "Tripura East",
+        "url": "candidateswise-S232.htm"
+    },
+    {
+        "name": "Amroha",
+        "url": "candidateswise-S249.htm"
+    },
+    {
+        "name": "Meerut",
+        "url": "candidateswise-S2410.htm"
+    },
+    {
+        "name": "Ghaziabad",
+        "url": "candidateswise-S2412.htm"
+    },
+    {
+        "name": "Gautam Buddha Nagar",
+        "url": "candidateswise-S2413.htm"
+    },
+    {
+        "name": "Bulandshahr",
+        "url": "candidateswise-S2414.htm"
+    },
+    {
+        "name": "Aligarh",
+        "url": "candidateswise-S2415.htm"
+    },
+    {
+        "name": "Hathras",
+        "url": "candidateswise-S2416.htm"
+    },
+    {
+        "name": "Mathura",
+        "url": "candidateswise-S2417.htm"
+    },
+    {
+        "name": "Agra",
+        "url": "candidateswise-S2418.htm"
+    },
+    {
+        "name": "Fatehpur Sikri",
+        "url": "candidateswise-S2419.htm"
+    },
+    {
+        "name": "Bareilly",
+        "url": "candidateswise-S2425.htm"
+    },
+    {
+        "name": "Pilibhit",
+        "url": "candidateswise-S2426.htm"
+    },
+    {
+        "name": "Shahjahanpur",
+        "url": "candidateswise-S2427.htm"
+    },
+    {
+        "name": "Hardoi",
+        "url": "candidateswise-S2431.htm"
+    },
+    {
+        "name": "Misrikh",
+        "url": "candidateswise-S2432.htm"
+    },
+    {
+        "name": "Unnao",
+        "url": "candidateswise-S2433.htm"
+    },
+    {
+        "name": "Lucknow",
+        "url": "candidateswise-S2435.htm"
+    },
+    {
+        "name": "Farrukhabad",
+        "url": "candidateswise-S2440.htm"
+    },
+    {
+        "name": "Kanpur",
+        "url": "candidateswise-S2443.htm"
+    },
+    {
+        "name": "Akbarpur",
+        "url": "candidateswise-S2444.htm"
+    },
+    {
+        "name": "Jhansi",
+        "url": "candidateswise-S2446.htm"
+    },
+    {
+        "name": "Phulpur",
+        "url": "candidateswise-S2451.htm"
+    },
+    {
+        "name": "Baharaich",
+        "url": "candidateswise-S2456.htm"
+    },
+    {
+        "name": "Kaiserganj",
+        "url": "candidateswise-S2457.htm"
+    },
+    {
+        "name": "Gonda",
+        "url": "candidateswise-S2459.htm"
+    },
+    {
+        "name": "Domariyaganj",
+        "url": "candidateswise-S2460.htm"
+    },
+    {
+        "name": "Maharajganj",
+        "url": "candidateswise-S2463.htm"
+    },
+    {
+        "name": "Gorakhpur",
+        "url": "candidateswise-S2464.htm"
+    },
+    {
+        "name": "Kushi Nagar",
+        "url": "candidateswise-S2465.htm"
+    },
+    {
+        "name": "Deoria",
+        "url": "candidateswise-S2466.htm"
+    },
+    {
+        "name": "Bansgaon",
+        "url": "candidateswise-S2467.htm"
+    },
+    {
+        "name": "Varanasi",
+        "url": "candidateswise-S2477.htm"
+    },
+    {
+        "name": "Bhadohi",
+        "url": "candidateswise-S2478.htm"
+    },
+    {
+        "name": "Alipurduars",
+        "url": "candidateswise-S252.htm"
+    },
+    {
+        "name": "Jalpaiguri",
+        "url": "candidateswise-S253.htm"
+    },
+    {
+        "name": "Darjeeling",
+        "url": "candidateswise-S254.htm"
+    },
+    {
+        "name": "Raiganj",
+        "url": "candidateswise-S255.htm"
+    },
+    {
+        "name": "Balurghat",
+        "url": "candidateswise-S256.htm"
+    },
+    {
+        "name": "Maldaha Uttar",
+        "url": "candidateswise-S257.htm"
+    },
+    {
+        "name": "Ranaghat",
+        "url": "candidateswise-S2513.htm"
+    },
+    {
+        "name": "Bangaon",
+        "url": "candidateswise-S2514.htm"
+    },
+    {
+        "name": "Tamluk",
+        "url": "candidateswise-S2530.htm"
+    },
+    {
+        "name": "Kanthi",
+        "url": "candidateswise-S2531.htm"
+    },
+    {
+        "name": "Purulia",
+        "url": "candidateswise-S2535.htm"
+    },
+    {
+        "name": "Bishnupur",
+        "url": "candidateswise-S2537.htm"
+    },
+    {
+        "name": "SURGUJA",
+        "url": "candidateswise-S261.htm"
+    },
+    {
+        "name": "RAIGARH",
+        "url": "candidateswise-S262.htm"
+    },
+    {
+        "name": "JANJGIR-CHAMPA",
+        "url": "candidateswise-S263.htm"
+    },
+    {
+        "name": "BILASPUR",
+        "url": "candidateswise-S265.htm"
+    },
+    {
+        "name": "RAJNANDGAON",
+        "url": "candidateswise-S266.htm"
+    },
+    {
+        "name": "DURG",
+        "url": "candidateswise-S267.htm"
+    },
+    {
+        "name": "RAIPUR",
+        "url": "candidateswise-S268.htm"
+    },
+    {
+        "name": "MAHASAMUND",
+        "url": "candidateswise-S269.htm"
+    },
+    {
+        "name": "BASTAR",
+        "url": "candidateswise-S2610.htm"
+    },
+    {
+        "name": "KANKER",
+        "url": "candidateswise-S2611.htm"
+    },
+    {
+        "name": "Godda",
+        "url": "candidateswise-S273.htm"
+    },
+    {
+        "name": "Chatra",
+        "url": "candidateswise-S274.htm"
+    },
+    {
+        "name": "Kodarma",
+        "url": "candidateswise-S275.htm"
+    },
+    {
+        "name": "Dhanbad",
+        "url": "candidateswise-S277.htm"
+    },
+    {
+        "name": "Ranchi",
+        "url": "candidateswise-S278.htm"
+    },
+    {
+        "name": "Jamshedpur",
+        "url": "candidateswise-S279.htm"
+    },
+    {
+        "name": "Palamau",
+        "url": "candidateswise-S2713.htm"
+    },
+    {
+        "name": "Hazaribagh",
+        "url": "candidateswise-S2714.htm"
+    },
+    {
+        "name": "Tehri Garhwal",
+        "url": "candidateswise-S281.htm"
+    },
+    {
+        "name": "Garhwal",
+        "url": "candidateswise-S282.htm"
+    },
+    {
+        "name": "Almora",
+        "url": "candidateswise-S283.htm"
+    },
+    {
+        "name": "Nainital-Udhamsingh Nagar",
+        "url": "candidateswise-S284.htm"
+    },
+    {
+        "name": "Haridwar",
+        "url": "candidateswise-S285.htm"
+    },
+    {
+        "name": "Adilabad ",
+        "url": "candidateswise-S291.htm"
+    },
+    {
+        "name": "Karimnagar ",
+        "url": "candidateswise-S293.htm"
+    },
+    {
+        "name": "Nizamabad",
+        "url": "candidateswise-S294.htm"
+    },
+    {
+        "name": "Medak",
+        "url": "candidateswise-S296.htm"
+    },
+    {
+        "name": "Malkajgiri",
+        "url": "candidateswise-S297.htm"
+    },
+    {
+        "name": "Secunderabad",
+        "url": "candidateswise-S298.htm"
+    },
+    {
+        "name": "Chevella",
+        "url": "candidateswise-S2910.htm"
+    },
+    {
+        "name": "Mahbubnagar",
+        "url": "candidateswise-S2911.htm"
+    },
+    {
+        "name": "Andaman & Nicobar Islands",
+        "url": "candidateswise-U011.htm"
+    },
+    {
+        "name": "Dadar & Nagar Haveli",
+        "url": "candidateswise-U032.htm"
+    },
+    {
+        "name": "Chandni Chowk",
+        "url": "candidateswise-U051.htm"
+    },
+    {
+        "name": "North-East Delhi",
+        "url": "candidateswise-U052.htm"
+    },
+    {
+        "name": "East Delhi",
+        "url": "candidateswise-U053.htm"
+    },
+    {
+        "name": "New Delhi",
+        "url": "candidateswise-U054.htm"
+    },
+    {
+        "name": "North-West Delhi",
+        "url": "candidateswise-U055.htm"
+    },
+    {
+        "name": "West Delhi",
+        "url": "candidateswise-U056.htm"
+    },
+    {
+        "name": "South Delhi",
+        "url": "candidateswise-U057.htm"
+    },
+    {
+        "name": "UDHAMPUR",
+        "url": "candidateswise-U084.htm"
+    },
+    {
+        "name": "JAMMU",
+        "url": "candidateswise-U085.htm"
+    },
+    {
+        "name": "Dhubri ",
+        "url": "candidateswise-S032.htm"
+    },
+    {
+        "name": "Nagaon",
+        "url": "candidateswise-S039.htm"
+    },
+    {
+        "name": "Jorhat",
+        "url": "candidateswise-S0314.htm"
+    },
+    {
+        "name": "Kishanganj",
+        "url": "candidateswise-S0410.htm"
+    },
+    {
+        "name": "Katihar",
+        "url": "candidateswise-S0411.htm"
+    },
+    {
+        "name": "Sasaram",
+        "url": "candidateswise-S0434.htm"
+    },
+    {
+        "name": "South Goa",
+        "url": "candidateswise-S052.htm"
+    },
+    {
+        "name": "Banaskantha",
+        "url": "candidateswise-S062.htm"
+    },
+    {
+        "name": "AMBALA",
+        "url": "candidateswise-S071.htm"
+    },
+    {
+        "name": "SIRSA",
+        "url": "candidateswise-S073.htm"
+    },
+    {
+        "name": "HISAR",
+        "url": "candidateswise-S074.htm"
+    },
+    {
+        "name": "SONIPAT",
+        "url": "candidateswise-S076.htm"
+    },
+    {
+        "name": "ROHTAK",
+        "url": "candidateswise-S077.htm"
+    },
+    {
+        "name": "Chikkodi",
+        "url": "candidateswise-S101.htm"
+    },
+    {
+        "name": "Gulbarga",
+        "url": "candidateswise-S105.htm"
+    },
+    {
+        "name": "Raichur",
+        "url": "candidateswise-S106.htm"
+    },
+    {
+        "name": "Bidar",
+        "url": "candidateswise-S107.htm"
+    },
+    {
+        "name": "Koppal",
+        "url": "candidateswise-S108.htm"
+    },
+    {
+        "name": "Bellary",
+        "url": "candidateswise-S109.htm"
+    },
+    {
+        "name": "Davanagere",
+        "url": "candidateswise-S1013.htm"
+    },
+    {
+        "name": "Hassan",
+        "url": "candidateswise-S1016.htm"
+    },
+    {
+        "name": "Chamarajanagar",
+        "url": "candidateswise-S1022.htm"
+    },
+    {
+        "name": "Kasaragod",
+        "url": "candidateswise-S111.htm"
+    },
+    {
+        "name": "Kannur",
+        "url": "candidateswise-S112.htm"
+    },
+    {
+        "name": "Vadakara",
+        "url": "candidateswise-S113.htm"
+    },
+    {
+        "name": "Wayanad",
+        "url": "candidateswise-S114.htm"
+    },
+    {
+        "name": "Kozhikode",
+        "url": "candidateswise-S115.htm"
+    },
+    {
+        "name": "Palakkad",
+        "url": "candidateswise-S118.htm"
+    },
+    {
+        "name": "Chalakudy",
+        "url": "candidateswise-S1111.htm"
+    },
+    {
+        "name": "Ernakulam",
+        "url": "candidateswise-S1112.htm"
+    },
+    {
+        "name": "Idukki",
+        "url": "candidateswise-S1113.htm"
+    },
+    {
+        "name": "Alappuzha",
+        "url": "candidateswise-S1115.htm"
+    },
+    {
+        "name": "Mavelikkara ",
+        "url": "candidateswise-S1116.htm"
+    },
+    {
+        "name": "Pathanamthitta",
+        "url": "candidateswise-S1117.htm"
+    },
+    {
+        "name": "Attingal",
+        "url": "candidateswise-S1119.htm"
+    },
+    {
+        "name": "Thiruvananthapuram",
+        "url": "candidateswise-S1120.htm"
+    },
+    {
+        "name": "Nandurbar",
+        "url": "candidateswise-S131.htm"
+    },
+    {
+        "name": "Dhule",
+        "url": "candidateswise-S132.htm"
+    },
+    {
+        "name": "Amravati ",
+        "url": "candidateswise-S137.htm"
+    },
+    {
+        "name": "Ramtek ",
+        "url": "candidateswise-S139.htm"
+    },
+    {
+        "name": "Bhandara Gondiya",
+        "url": "candidateswise-S1311.htm"
+    },
+    {
+        "name": "Gadchiroli - Chimur",
+        "url": "candidateswise-S1312.htm"
+    },
+    {
+        "name": "Chandrapur",
+        "url": "candidateswise-S1313.htm"
+    },
+    {
+        "name": "Nanded",
+        "url": "candidateswise-S1316.htm"
+    },
+    {
+        "name": "Jalna",
+        "url": "candidateswise-S1318.htm"
+    },
+    {
+        "name": "Mumbai North Central",
+        "url": "candidateswise-S1329.htm"
+    },
+    {
+        "name": "Latur ",
+        "url": "candidateswise-S1341.htm"
+    },
+    {
+        "name": "Solapur",
+        "url": "candidateswise-S1342.htm"
+    },
+    {
+        "name": "Kolhapur",
+        "url": "candidateswise-S1347.htm"
+    },
+    {
+        "name": "Inner Manipur",
+        "url": "candidateswise-S141.htm"
+    },
+    {
+        "name": "Outer Manipur",
+        "url": "candidateswise-S142.htm"
+    },
+    {
+        "name": "Tura",
+        "url": "candidateswise-S152.htm"
+    },
+    {
+        "name": "Nagaland",
+        "url": "candidateswise-S171.htm"
+    },
+    {
+        "name": "Koraput",
+        "url": "candidateswise-S1821.htm"
+    },
+    {
+        "name": "Gurdaspur",
+        "url": "candidateswise-S191.htm"
+    },
+    {
+        "name": "Amritsar",
+        "url": "candidateswise-S192.htm"
+    },
+    {
+        "name": "Jalandhar",
+        "url": "candidateswise-S194.htm"
+    },
+    {
+        "name": "Ludhiana",
+        "url": "candidateswise-S197.htm"
+    },
+    {
+        "name": "Fatehgarh Sahib",
+        "url": "candidateswise-S198.htm"
+    },
+    {
+        "name": "Firozpur",
+        "url": "candidateswise-S1910.htm"
+    },
+    {
+        "name": "Patiala",
+        "url": "candidateswise-S1913.htm"
+    },
+    {
+        "name": "GANGANAGAR ",
+        "url": "candidateswise-S201.htm"
+    },
+    {
+        "name": "CHURU",
+        "url": "candidateswise-S203.htm"
+    },
+    {
+        "name": "JHUNJHUNU     ",
+        "url": "candidateswise-S204.htm"
+    },
+    {
+        "name": "BHARATPUR ",
+        "url": "candidateswise-S209.htm"
+    },
+    {
+        "name": "KARAULI-DHOLPUR ",
+        "url": "candidateswise-S2010.htm"
+    },
+    {
+        "name": "DAUSA ",
+        "url": "candidateswise-S2011.htm"
+    },
+    {
+        "name": "TONK-SAWAI MADHOPUR ",
+        "url": "candidateswise-S2012.htm"
+    },
+    {
+        "name": "BARMER",
+        "url": "candidateswise-S2017.htm"
+    },
+    {
+        "name": "TIRUVALLUR",
+        "url": "candidateswise-S221.htm"
+    },
+    {
+        "name": "KRISHNAGIRI",
+        "url": "candidateswise-S229.htm"
+    },
+    {
+        "name": "KARUR",
+        "url": "candidateswise-S2223.htm"
+    },
+    {
+        "name": "CUDDALORE",
+        "url": "candidateswise-S2226.htm"
+    },
+    {
+        "name": "MAYILADUTHURAI",
+        "url": "candidateswise-S2228.htm"
+    },
+    {
+        "name": "SIVAGANGA",
+        "url": "candidateswise-S2231.htm"
+    },
+    {
+        "name": "VIRUDHUNAGAR",
+        "url": "candidateswise-S2234.htm"
+    },
+    {
+        "name": "TIRUNELVELI",
+        "url": "candidateswise-S2238.htm"
+    },
+    {
+        "name": "KANNIYAKUMARI",
+        "url": "candidateswise-S2239.htm"
+    },
+    {
+        "name": "Saharanpur",
+        "url": "candidateswise-S241.htm"
+    },
+    {
+        "name": "Sitapur",
+        "url": "candidateswise-S2430.htm"
+    },
+    {
+        "name": "Rae Bareli",
+        "url": "candidateswise-S2436.htm"
+    },
+    {
+        "name": "Amethi",
+        "url": "candidateswise-S2437.htm"
+    },
+    {
+        "name": "Allahabad",
+        "url": "candidateswise-S2452.htm"
+    },
+    {
+        "name": "Barabanki",
+        "url": "candidateswise-S2453.htm"
+    },
+    {
+        "name": "Maldaha Dakshin",
+        "url": "candidateswise-S258.htm"
+    },
+    {
+        "name": "KORBA",
+        "url": "candidateswise-S264.htm"
+    },
+    {
+        "name": "Khunti",
+        "url": "candidateswise-S2711.htm"
+    },
+    {
+        "name": "Lohardaga",
+        "url": "candidateswise-S2712.htm"
+    },
+    {
+        "name": "Peddapalle ",
+        "url": "candidateswise-S292.htm"
+    },
+    {
+        "name": "Zahirabad",
+        "url": "candidateswise-S295.htm"
+    },
+    {
+        "name": "Nagarkurnool",
+        "url": "candidateswise-S2912.htm"
+    },
+    {
+        "name": "Nalgonda",
+        "url": "candidateswise-S2913.htm"
+    },
+    {
+        "name": "Bhongir ",
+        "url": "candidateswise-S2914.htm"
+    },
+    {
+        "name": "Warangal",
+        "url": "candidateswise-S2915.htm"
+    },
+    {
+        "name": "Mahabubabad  ",
+        "url": "candidateswise-S2916.htm"
+    },
+    {
+        "name": "Khammam ",
+        "url": "candidateswise-S2917.htm"
+    },
+    {
+        "name": "Chandigarh",
+        "url": "candidateswise-U021.htm"
+    },
+    {
+        "name": "Lakshadweep",
+        "url": "candidateswise-U061.htm"
+    },
+    {
+        "name": "PUDUCHERRY",
+        "url": "candidateswise-U071.htm"
+    },
+    {
+        "name": "Kairana",
+        "url": "candidateswise-S242.htm"
+    },
+    {
+        "name": "Muzaffarnagar",
+        "url": "candidateswise-S243.htm"
+    },
+    {
+        "name": "Moradabad",
+        "url": "candidateswise-S246.htm"
+    },
+    {
+        "name": "Rampur",
+        "url": "candidateswise-S247.htm"
+    },
+    {
+        "name": "Sambhal",
+        "url": "candidateswise-S248.htm"
+    },
+    {
+        "name": "Firozabad",
+        "url": "candidateswise-S2420.htm"
+    },
+    {
+        "name": "Mainpuri",
+        "url": "candidateswise-S2421.htm"
+    },
+    {
+        "name": "Etah",
+        "url": "candidateswise-S2422.htm"
+    },
+    {
+        "name": "Badaun",
+        "url": "candidateswise-S2423.htm"
+    },
+    {
+        "name": "Aonla",
+        "url": "candidateswise-S2424.htm"
+    },
+    {
+        "name": "Kheri",
+        "url": "candidateswise-S2428.htm"
+    },
+    {
+        "name": "Dhaurahra",
+        "url": "candidateswise-S2429.htm"
+    },
+    {
+        "name": "Mohanlalganj",
+        "url": "candidateswise-S2434.htm"
+    },
+    {
+        "name": "Sultanpur",
+        "url": "candidateswise-S2438.htm"
+    },
+    {
+        "name": "Pratapgarh",
+        "url": "candidateswise-S2439.htm"
+    },
+    {
+        "name": "Etawah",
+        "url": "candidateswise-S2441.htm"
+    },
+    {
+        "name": "Kannauj",
+        "url": "candidateswise-S2442.htm"
+    },
+    {
+        "name": "Jalaun",
+        "url": "candidateswise-S2445.htm"
+    },
+    {
+        "name": "Hamirpur",
+        "url": "candidateswise-S2447.htm"
+    },
+    {
+        "name": "Banda",
+        "url": "candidateswise-S2448.htm"
+    },
+    {
+        "name": "Fatehpur",
+        "url": "candidateswise-S2449.htm"
+    },
+    {
+        "name": "Kaushambi",
+        "url": "candidateswise-S2450.htm"
+    },
+    {
+        "name": "Faizabad",
+        "url": "candidateswise-S2454.htm"
+    },
+    {
+        "name": "Ambedkar Nagar",
+        "url": "candidateswise-S2455.htm"
+    },
+    {
+        "name": "Shrawasti",
+        "url": "candidateswise-S2458.htm"
+    },
+    {
+        "name": "Basti",
+        "url": "candidateswise-S2461.htm"
+    },
+    {
+        "name": "Sant Kabir Nagar",
+        "url": "candidateswise-S2462.htm"
+    },
+    {
+        "name": "Lalganj",
+        "url": "candidateswise-S2468.htm"
+    },
+    {
+        "name": "Azamgarh",
+        "url": "candidateswise-S2469.htm"
+    },
+    {
+        "name": "Ghosi",
+        "url": "candidateswise-S2470.htm"
+    },
+    {
+        "name": "Salempur",
+        "url": "candidateswise-S2471.htm"
+    },
+    {
+        "name": "Ballia",
+        "url": "candidateswise-S2472.htm"
+    },
+    {
+        "name": "Jaunpur",
+        "url": "candidateswise-S2473.htm"
+    },
+    {
+        "name": "Machhlishahr",
+        "url": "candidateswise-S2474.htm"
+    },
+    {
+        "name": "Ghazipur",
+        "url": "candidateswise-S2475.htm"
+    },
+    {
+        "name": "Chandauli",
+        "url": "candidateswise-S2476.htm"
+    },
+    {
+        "name": "Robertsganj",
+        "url": "candidateswise-S2480.htm"
+    },
+    {
+        "name": "Coochbehar",
+        "url": "candidateswise-S251.htm"
+    },
+    {
+        "name": "Jangipur",
+        "url": "candidateswise-S259.htm"
+    },
+    {
+        "name": "Baharampur",
+        "url": "candidateswise-S2510.htm"
+    },
+    {
+        "name": "Murshidabad",
+        "url": "candidateswise-S2511.htm"
+    },
+    {
+        "name": "Krishnanagar",
+        "url": "candidateswise-S2512.htm"
+    },
+    {
+        "name": "Barrackpur",
+        "url": "candidateswise-S2515.htm"
+    },
+    {
+        "name": "Dum dum",
+        "url": "candidateswise-S2516.htm"
+    },
+    {
+        "name": "Barasat",
+        "url": "candidateswise-S2517.htm"
+    },
+    {
+        "name": "Basirhat",
+        "url": "candidateswise-S2518.htm"
+    },
+    {
+        "name": "Joynagar",
+        "url": "candidateswise-S2519.htm"
+    },
+    {
+        "name": "Mathurapur",
+        "url": "candidateswise-S2520.htm"
+    },
+    {
+        "name": "Diamond harbour",
+        "url": "candidateswise-S2521.htm"
+    },
+    {
+        "name": "Jadavpur",
+        "url": "candidateswise-S2522.htm"
+    },
+    {
+        "name": "Kolkata Dakshin",
+        "url": "candidateswise-S2523.htm"
+    },
+    {
+        "name": "Kolkata Uttar",
+        "url": "candidateswise-S2524.htm"
+    },
+    {
+        "name": "Howrah",
+        "url": "candidateswise-S2525.htm"
+    },
+    {
+        "name": "Uluberia",
+        "url": "candidateswise-S2526.htm"
+    },
+    {
+        "name": "Srerampur",
+        "url": "candidateswise-S2527.htm"
+    },
+    {
+        "name": "Hooghly",
+        "url": "candidateswise-S2528.htm"
+    },
+    {
+        "name": "Arambagh",
+        "url": "candidateswise-S2529.htm"
+    },
+    {
+        "name": "Ghatal",
+        "url": "candidateswise-S2532.htm"
+    },
+    {
+        "name": "Jhargram",
+        "url": "candidateswise-S2533.htm"
+    },
+    {
+        "name": "Medinipur",
+        "url": "candidateswise-S2534.htm"
+    },
+    {
+        "name": "Bankura",
+        "url": "candidateswise-S2536.htm"
+    },
+    {
+        "name": "Bardhaman Purba",
+        "url": "candidateswise-S2538.htm"
+    },
+    {
+        "name": "Bardhaman-Durgapur",
+        "url": "candidateswise-S2539.htm"
+    },
+    {
+        "name": "Asansol",
+        "url": "candidateswise-S2540.htm"
+    },
+    {
+        "name": "Bolpur",
+        "url": "candidateswise-S2541.htm"
+    },
+    {
+        "name": "Birbhum",
+        "url": "candidateswise-S2542.htm"
+    },
+    {
+        "name": "CHENNAI NORTH",
+        "url": "candidateswise-S222.htm"
+    },
+    {
+        "name": "CHENNAI SOUTH",
+        "url": "candidateswise-S223.htm"
+    },
+    {
+        "name": "CHENNAI CENTRAL",
+        "url": "candidateswise-S224.htm"
+    },
+    {
+        "name": "SRIPERUMBUDUR",
+        "url": "candidateswise-S225.htm"
+    },
+    {
+        "name": "KANCHEEPURAM",
+        "url": "candidateswise-S226.htm"
+    },
+    {
+        "name": "ARAKKONAM",
+        "url": "candidateswise-S227.htm"
+    },
+    {
+        "name": "VELLORE",
+        "url": "candidateswise-S228.htm"
+    },
+    {
+        "name": "DHARMAPURI",
+        "url": "candidateswise-S2210.htm"
+    },
+    {
+        "name": "TIRUVANNAMALAI",
+        "url": "candidateswise-S2211.htm"
+    },
+    {
+        "name": "ARANI",
+        "url": "candidateswise-S2212.htm"
+    },
+    {
+        "name": "KALLAKURICHI",
+        "url": "candidateswise-S2214.htm"
+    },
+    {
+        "name": "SALEM",
+        "url": "candidateswise-S2215.htm"
+    },
+    {
+        "name": "NAMAKKAL",
+        "url": "candidateswise-S2216.htm"
+    },
+    {
+        "name": "ERODE",
+        "url": "candidateswise-S2217.htm"
+    },
+    {
+        "name": "NILGIRIS",
+        "url": "candidateswise-S2219.htm"
+    },
+    {
+        "name": "COIMBATORE",
+        "url": "candidateswise-S2220.htm"
+    },
+    {
+        "name": "POLLACHI",
+        "url": "candidateswise-S2221.htm"
+    },
+    {
+        "name": "PERAMBALUR",
+        "url": "candidateswise-S2225.htm"
+    },
+    {
+        "name": "THANJAVUR",
+        "url": "candidateswise-S2230.htm"
+    },
+    {
+        "name": "THENI",
+        "url": "candidateswise-S2233.htm"
+    },
+    {
+        "name": "THOOTHUKKUDI",
+        "url": "candidateswise-S2236.htm"
+    },
+    {
+        "name": "TENKASI",
+        "url": "candidateswise-S2237.htm"
+    },
+    {
+        "name": "Srikakulam",
+        "url": "candidateswise-S012.htm"
+    },
+    {
+        "name": "Vizianagaram",
+        "url": "candidateswise-S013.htm"
+    },
+    {
+        "name": "Visakhapatnam",
+        "url": "candidateswise-S014.htm"
+    },
+    {
+        "name": "Amalapuram ",
+        "url": "candidateswise-S017.htm"
+    },
+    {
+        "name": "Eluru",
+        "url": "candidateswise-S0110.htm"
+    },
+    {
+        "name": "Vijayawada",
+        "url": "candidateswise-S0112.htm"
+    },
+    {
+        "name": "Guntur",
+        "url": "candidateswise-S0113.htm"
+    },
+    {
+        "name": "Narsaraopet",
+        "url": "candidateswise-S0114.htm"
+    },
+    {
+        "name": "Bapatla ",
+        "url": "candidateswise-S0115.htm"
+    },
+    {
+        "name": "Ongole",
+        "url": "candidateswise-S0116.htm"
+    },
+    {
+        "name": "Nandyal",
+        "url": "candidateswise-S0117.htm"
+    },
+    {
+        "name": "Kurnoolu",
+        "url": "candidateswise-S0118.htm"
+    },
+    {
+        "name": "Ananthapur",
+        "url": "candidateswise-S0119.htm"
+    },
+    {
+        "name": "Hindupur",
+        "url": "candidateswise-S0120.htm"
+    },
+    {
+        "name": "Nellore",
+        "url": "candidateswise-S0122.htm"
+    },
+    {
+        "name": "Chittoor",
+        "url": "candidateswise-S0125.htm"
+    },
+    {
+        "name": "Valmiki Nagar ",
+        "url": "candidateswise-S041.htm"
+    },
+    {
+        "name": "Sheohar",
+        "url": "candidateswise-S044.htm"
+    },
+    {
+        "name": "Sitamarhi",
+        "url": "candidateswise-S045.htm"
+    },
+    {
+        "name": "Jhanjharpur",
+        "url": "candidateswise-S047.htm"
+    },
+    {
+        "name": "Supaul",
+        "url": "candidateswise-S048.htm"
+    },
+    {
+        "name": "Madhepura",
+        "url": "candidateswise-S0413.htm"
+    },
+    {
+        "name": "Gopalganj",
+        "url": "candidateswise-S0417.htm"
+    },
+    {
+        "name": "Siwan",
+        "url": "candidateswise-S0418.htm"
+    },
+    {
+        "name": "Bhagalpur",
+        "url": "candidateswise-S0426.htm"
+    },
+    {
+        "name": "Banka",
+        "url": "candidateswise-S0427.htm"
+    },
+    {
+        "name": "Munger",
+        "url": "candidateswise-S0428.htm"
+    },
+    {
+        "name": "Nalanda",
+        "url": "candidateswise-S0429.htm"
+    },
+    {
+        "name": "Yavatmal- Washim",
+        "url": "candidateswise-S1314.htm"
+    },
+    {
+        "name": "Hingoli",
+        "url": "candidateswise-S1315.htm"
+    },
+    {
+        "name": "Parbhani",
+        "url": "candidateswise-S1317.htm"
+    },
+    {
+        "name": "Nashik",
+        "url": "candidateswise-S1321.htm"
+    },
+    {
+        "name": "Mumbai North East",
+        "url": "candidateswise-S1328.htm"
+    },
+    {
+        "name": "Mumbai South Central",
+        "url": "candidateswise-S1330.htm"
+    },
+    {
+        "name": "Mumbai South",
+        "url": "candidateswise-S1331.htm"
+    },
+    {
+        "name": "Shirdi ",
+        "url": "candidateswise-S1338.htm"
+    },
+    {
+        "name": "Osmanabad",
+        "url": "candidateswise-S1340.htm"
+    },
+    {
+        "name": "Wardha",
+        "url": "candidateswise-S138.htm"
+    },
+    {
+        "name": "Dindori ",
+        "url": "candidateswise-S1320.htm"
+    },
+    {
+        "name": "Bhiwandi",
+        "url": "candidateswise-S1323.htm"
+    },
+    {
+        "name": "Baramati",
+        "url": "candidateswise-S1335.htm"
+    },
+    {
+        "name": "Shirur",
+        "url": "candidateswise-S1336.htm"
+    },
+    {
+        "name": "Ahmednagar",
+        "url": "candidateswise-S1337.htm"
+    },
+    {
+        "name": "Beed",
+        "url": "candidateswise-S1339.htm"
+    },
+    {
+        "name": "Madha",
+        "url": "candidateswise-S1343.htm"
+    },
+    {
+        "name": "Buldhana",
+        "url": "candidateswise-S135.htm"
+    },
+    {
+        "name": "Aurangabad",
+        "url": "candidateswise-S1319.htm"
+    },
+    {
+        "name": "Kalyan",
+        "url": "candidateswise-S1324.htm"
+    },
+    {
+        "name": "Thane",
+        "url": "candidateswise-S1325.htm"
+    },
+    {
+        "name": "Mumbai North West",
+        "url": "candidateswise-S1327.htm"
+    },
+    {
+        "name": "Maval",
+        "url": "candidateswise-S1333.htm"
+    },
+    {
+        "name": "Hatkanangale",
+        "url": "candidateswise-S1348.htm"
+    },
+    {
+        "name": "Vaishali",
+        "url": "candidateswise-S0416.htm"
+    },
+    {
+        "name": "Hajipur",
+        "url": "candidateswise-S0421.htm"
+    },
+    {
+        "name": "Samastipur",
+        "url": "candidateswise-S0423.htm"
+    },
+    {
+        "name": "Khagaria",
+        "url": "candidateswise-S0425.htm"
+    },
+    {
+        "name": "Jamui",
+        "url": "candidateswise-S0440.htm"
+    },
+    {
+        "name": "Araku ",
+        "url": "candidateswise-S011.htm"
+    },
+    {
+        "name": "Kadapa",
+        "url": "candidateswise-S0121.htm"
+    },
+    {
+        "name": "Thirupathi",
+        "url": "candidateswise-S0123.htm"
+    },
+    {
+        "name": "Rajampet",
+        "url": "candidateswise-S0124.htm"
+    },
+    {
+        "name": "Patliputra",
+        "url": "candidateswise-S0431.htm"
+    },
+    {
+        "name": "Buxar",
+        "url": "candidateswise-S0433.htm"
+    },
+    {
+        "name": "Jahanabad",
+        "url": "candidateswise-S0436.htm"
+    },
+    {
+        "name": "Aurangabad",
+        "url": "candidateswise-S0437.htm"
+    },
+    {
+        "name": "Alathur ",
+        "url": "candidateswise-S119.htm"
+    },
+    {
+        "name": "SIKAR",
+        "url": "candidateswise-S205.htm"
+    },
+    {
+        "name": "DINDIGUL",
+        "url": "candidateswise-S2222.htm"
+    },
+    {
+        "name": "MADURAI",
+        "url": "candidateswise-S2232.htm"
+    },
+    {
+        "name": "Malappuram",
+        "url": "candidateswise-S116.htm"
+    },
+    {
+        "name": "Ponnani",
+        "url": "candidateswise-S117.htm"
+    },
+    {
+        "name": "RAMANATHAPURAM",
+        "url": "candidateswise-S2235.htm"
+    },
+    {
+        "name": "Hoshiarpur",
+        "url": "candidateswise-S195.htm"
+    },
+    {
+        "name": "Anandpur Sahib",
+        "url": "candidateswise-S196.htm"
+    },
+    {
+        "name": "Sangrur",
+        "url": "candidateswise-S1912.htm"
+    },
+    {
+        "name": "Rajmahal",
+        "url": "candidateswise-S271.htm"
+    },
+    {
+        "name": "Dumka",
+        "url": "candidateswise-S272.htm"
+    },
+    {
+        "name": "Singhbhum",
+        "url": "candidateswise-S2710.htm"
+    },
+    {
+        "name": "Kakinada",
+        "url": "candidateswise-S016.htm"
+    },
+    {
+        "name": "Machilipatnam",
+        "url": "candidateswise-S0111.htm"
+    },
+    {
+        "name": "Arrah",
+        "url": "candidateswise-S0432.htm"
+    },
+    {
+        "name": "Karakat",
+        "url": "candidateswise-S0435.htm"
+    },
+    {
+        "name": "Mandya",
+        "url": "candidateswise-S1020.htm"
+    },
+    {
+        "name": "Kolar",
+        "url": "candidateswise-S1028.htm"
+    },
+    {
+        "name": "VILUPPURAM",
+        "url": "candidateswise-S2213.htm"
+    },
+    {
+        "name": "CHIDAMBARAM",
+        "url": "candidateswise-S2227.htm"
+    },
+    {
+        "name": "TIRUPPUR",
+        "url": "candidateswise-S2218.htm"
+    },
+    {
+        "name": "NAGAPATTINAM",
+        "url": "candidateswise-S2229.htm"
+    },
+    {
+        "name": "Bijnor",
+        "url": "candidateswise-S244.htm"
+    },
+    {
+        "name": "Baghpat",
+        "url": "candidateswise-S2411.htm"
+    },
+    {
+        "name": "SRINAGAR",
+        "url": "candidateswise-U082.htm"
+    },
+    {
+        "name": "ANANTNAG-RAJOURI",
+        "url": "candidateswise-U083.htm"
+    },
+    {
+        "name": "Kokrajhar ",
+        "url": "candidateswise-S031.htm"
+    },
+    {
+        "name": "Barpeta",
+        "url": "candidateswise-S033.htm"
+    },
+    {
+        "name": "Gaya",
+        "url": "candidateswise-S0438.htm"
+    },
+    {
+        "name": "Kottayam",
+        "url": "candidateswise-S1114.htm"
+    },
+    {
+        "name": "Kollam",
+        "url": "candidateswise-S1118.htm"
+    },
+    {
+        "name": "Raigad",
+        "url": "candidateswise-S1332.htm"
+    },
+    {
+        "name": "Shillong",
+        "url": "candidateswise-S151.htm"
+    },
+    {
+        "name": "MIZORAM",
+        "url": "candidateswise-S161.htm"
+    },
+    {
+        "name": "Bathinda",
+        "url": "candidateswise-S1911.htm"
+    },
+    {
+        "name": "NAGAUR",
+        "url": "candidateswise-S2014.htm"
+    },
+    {
+        "name": "BANSWARA ",
+        "url": "candidateswise-S2020.htm"
+    },
+    {
+        "name": "Sikkim",
+        "url": "candidateswise-S211.htm"
+    },
+    {
+        "name": "TIRUCHIRAPPALLI",
+        "url": "candidateswise-S2224.htm"
+    },
+    {
+        "name": "Nagina",
+        "url": "candidateswise-S245.htm"
+    },
+    {
+        "name": "Mirzapur",
+        "url": "candidateswise-S2479.htm"
+    },
+    {
+        "name": "Giridih",
+        "url": "candidateswise-S276.htm"
+    },
+    {
+        "name": "Hyderabad",
+        "url": "candidateswise-S299.htm"
+    },
+    {
+        "name": "Purnia",
+        "url": "candidateswise-S0412.htm"
+    },
+    {
+        "name": "Sangli",
+        "url": "candidateswise-S1344.htm"
+    },
+    {
+        "name": "Khadoor Sahib",
+        "url": "candidateswise-S193.htm"
+    },
+    {
+        "name": "Faridkot",
+        "url": "candidateswise-S199.htm"
+    },
+    {
+        "name": "Daman & Diu ",
+        "url": "candidateswise-U031.htm"
+    },
+    {
+        "name": "BARAMULLA",
+        "url": "candidateswise-U081.htm"
+    },
+    {
+        "name": "Ladakh",
+        "url": "candidateswise-U091.htm"
+    }
+]
