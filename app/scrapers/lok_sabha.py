@@ -229,15 +229,7 @@ class LokSabhaScraper:
                             "party_id": party_id
                         })
 
-        # Remove duplicates
-        seen = set()
-        unique_parties = []
-        for party in party_details:
-            if party["party_id"] not in seen:
-                seen.add(party["party_id"])
-                unique_parties.append(party)
-
-        return unique_parties
+        return party_details
 
     def _scrape_constituencies(self) -> None:
         """Discover and scrape constituency data."""
