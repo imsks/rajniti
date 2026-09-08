@@ -1,0 +1,269 @@
+[
+  {
+    "id": "rti-online",
+    "name": "RTI Online",
+    "description": "File a Right to Information request with any central ministry or department, pay the fee online and track the reply.",
+    "url": "https://rtionline.gov.in",
+    "agency": "Department of Personnel and Training",
+    "problems": ["rti"],
+    "platforms": ["web"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "cpgrams",
+    "name": "CPGRAMS (Public Grievance Portal)",
+    "description": "Lodge a complaint against any central government department or public sector body and follow it until it is closed.",
+    "url": "https://pgportal.gov.in",
+    "agency": "Department of Administrative Reforms and Public Grievances",
+    "problems": ["public-grievance", "corruption"],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "cvc-complaint",
+    "name": "Central Vigilance Commission Complaint Portal",
+    "description": "Report corruption by a central government official, including bribe demands, to the anti-corruption watchdog.",
+    "url": "https://portal.cvc.gov.in",
+    "agency": "Central Vigilance Commission",
+    "problems": ["corruption"],
+    "platforms": ["web"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "umang",
+    "name": "UMANG",
+    "description": "Single app for hundreds of central and state services — EPF passbook, gas booking, pension, land records and more.",
+    "url": "https://web.umang.gov.in",
+    "agency": "Ministry of Electronics and Information Technology",
+    "problems": [
+      "public-grievance",
+      "documents",
+      "pension-welfare",
+      "labour-employment",
+      "health"
+    ],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central",
+    "helpline": "1800-11-5246"
+  },
+  {
+    "id": "digilocker",
+    "name": "DigiLocker",
+    "description": "Keep driving licence, RC, PAN, marksheets and other documents in a government-issued digital wallet accepted as valid proof.",
+    "url": "https://www.digilocker.gov.in",
+    "agency": "Ministry of Electronics and Information Technology",
+    "problems": ["documents"],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "uidai-aadhaar",
+    "name": "myAadhaar / mAadhaar",
+    "description": "Update your Aadhaar address, download your Aadhaar, lock biometrics and check where your Aadhaar was used.",
+    "url": "https://myaadhaar.uidai.gov.in",
+    "agency": "Unique Identification Authority of India",
+    "problems": ["documents"],
+    "platforms": ["web", "android", "ios", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "1947"
+  },
+  {
+    "id": "national-consumer-helpline",
+    "name": "National Consumer Helpline",
+    "description": "Complain about a seller, e-commerce site or service provider that cheated you, delayed a refund or sold a defective product.",
+    "url": "https://consumerhelpline.gov.in",
+    "agency": "Department of Consumer Affairs",
+    "problems": ["consumer-grievance"],
+    "platforms": ["web", "android", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "1915"
+  },
+  {
+    "id": "e-daakhil",
+    "name": "e-Daakhil",
+    "description": "File a consumer court case online without visiting the commission, and track hearings.",
+    "url": "https://edaakhil.nic.in",
+    "agency": "National Consumer Disputes Redressal Commission",
+    "problems": ["consumer-grievance"],
+    "platforms": ["web"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "cybercrime-portal",
+    "name": "National Cyber Crime Reporting Portal",
+    "description": "Report online fraud, UPI scams, hacking and online harassment. Reporting financial fraud within the first hours helps freeze the money.",
+    "url": "https://cybercrime.gov.in",
+    "agency": "Ministry of Home Affairs",
+    "problems": ["cybercrime", "women-child-safety"],
+    "platforms": ["web", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "1930"
+  },
+  {
+    "id": "erss-112",
+    "name": "112 India (Emergency Response Support System)",
+    "description": "One number and app for police, fire and ambulance, with an SOS that shares your location.",
+    "url": "https://112.gov.in",
+    "agency": "Ministry of Home Affairs",
+    "problems": ["emergency", "women-child-safety"],
+    "platforms": ["android", "ios", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "112"
+  },
+  {
+    "id": "she-box",
+    "name": "SHe-Box",
+    "description": "Complain about sexual harassment at the workplace, whether the workplace is government or private.",
+    "url": "https://shebox.wcd.gov.in",
+    "agency": "Ministry of Women and Child Development",
+    "problems": ["women-child-safety"],
+    "platforms": ["web"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "childline-1098",
+    "name": "Childline 1098",
+    "description": "Round-the-clock helpline for a child in distress — abuse, child labour, child marriage or a missing child.",
+    "url": "https://www.childlineindia.org",
+    "agency": "Ministry of Women and Child Development",
+    "problems": ["women-child-safety", "emergency"],
+    "platforms": ["helpline"],
+    "jurisdiction": "central",
+    "helpline": "1098"
+  },
+  {
+    "id": "swachhata-app",
+    "name": "Swachhata App",
+    "description": "Photograph and report garbage, overflowing bins, open drains and public toilet problems to your city corporation.",
+    "url": "https://swachh.city",
+    "agency": "Ministry of Housing and Urban Affairs",
+    "problems": ["civic-complaint"],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "dilrmp-land-records",
+    "name": "Bhu-Naksha / Land Records (DILRMP)",
+    "description": "Directory of every state's land records portal for khasra, khatauni, mutation status and cadastral maps.",
+    "url": "https://dilrmp.gov.in",
+    "agency": "Department of Land Resources",
+    "problems": ["land-records"],
+    "platforms": ["web"],
+    "jurisdiction": "state"
+  },
+  {
+    "id": "jeevan-pramaan",
+    "name": "Jeevan Pramaan",
+    "description": "Submit a digital life certificate for your pension from home instead of standing in a bank queue.",
+    "url": "https://jeevanpramaan.gov.in",
+    "agency": "Ministry of Electronics and Information Technology",
+    "problems": ["pension-welfare"],
+    "platforms": ["web", "android"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "mera-ration",
+    "name": "Mera Ration / NFSA",
+    "description": "Check your ration card entitlement, find a fair price shop and use your card in any state under One Nation One Ration Card.",
+    "url": "https://nfsa.gov.in",
+    "agency": "Department of Food and Public Distribution",
+    "problems": ["pension-welfare"],
+    "platforms": ["web", "android"],
+    "jurisdiction": "central",
+    "helpline": "1967"
+  },
+  {
+    "id": "voter-services-portal",
+    "name": "Voter Services Portal / Voter Helpline",
+    "description": "Apply for a voter ID, correct your details, check your name in the roll and find your polling booth.",
+    "url": "https://voters.eci.gov.in",
+    "agency": "Election Commission of India",
+    "problems": ["voter-services"],
+    "platforms": ["web", "android", "ios", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "1950"
+  },
+  {
+    "id": "cvigil",
+    "name": "cVIGIL",
+    "description": "Report money, liquor or gifts being distributed and other model code of conduct violations during elections, with photo proof.",
+    "url": "https://cvigil.eci.gov.in",
+    "agency": "Election Commission of India",
+    "problems": ["voter-services", "corruption"],
+    "platforms": ["android", "ios"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "ayushman-bharat-pmjay",
+    "name": "Ayushman Bharat PM-JAY",
+    "description": "Check if your family is eligible for free hospital treatment, make your Ayushman card and find empanelled hospitals.",
+    "url": "https://pmjay.gov.in",
+    "agency": "National Health Authority",
+    "problems": ["health"],
+    "platforms": ["web", "android", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "14555"
+  },
+  {
+    "id": "national-scholarship-portal",
+    "name": "National Scholarship Portal",
+    "description": "Apply for central and state scholarships from one place and track the status of your application.",
+    "url": "https://scholarships.gov.in",
+    "agency": "Ministry of Electronics and Information Technology",
+    "problems": ["education-scholarship"],
+    "platforms": ["web", "android"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN",
+    "description": "Check your instalment status, complete e-KYC and raise a grievance if the farmer income support has not reached you.",
+    "url": "https://pmkisan.gov.in",
+    "agency": "Ministry of Agriculture and Farmers Welfare",
+    "problems": ["farmer-agriculture", "pension-welfare"],
+    "platforms": ["web", "android", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "155261"
+  },
+  {
+    "id": "epfigms",
+    "name": "EPFiGMS",
+    "description": "Complain when your provident fund is not deposited, a withdrawal is stuck or a transfer claim is rejected.",
+    "url": "https://epfigms.gov.in",
+    "agency": "Employees' Provident Fund Organisation",
+    "problems": ["labour-employment"],
+    "platforms": ["web"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "income-tax-efiling",
+    "name": "Income Tax e-Filing",
+    "description": "File your income tax return, check refund status and raise a grievance about a demand or refund.",
+    "url": "https://www.incometax.gov.in",
+    "agency": "Income Tax Department",
+    "problems": ["tax-finance"],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central"
+  },
+  {
+    "id": "rbi-cms",
+    "name": "RBI Complaint Management System",
+    "description": "Escalate a complaint against a bank, NBFC or payment operator to the RBI Ombudsman when the bank does not resolve it.",
+    "url": "https://cms.rbi.org.in",
+    "agency": "Reserve Bank of India",
+    "problems": ["tax-finance", "consumer-grievance"],
+    "platforms": ["web", "helpline"],
+    "jurisdiction": "central",
+    "helpline": "14448"
+  },
+  {
+    "id": "parivahan-sewa",
+    "name": "Parivahan Sewa / mParivahan",
+    "description": "Apply for a driving licence, transfer vehicle ownership, pay road tax and carry a valid digital RC and licence.",
+    "url": "https://parivahan.gov.in",
+    "agency": "Ministry of Road Transport and Highways",
+    "problems": ["transport-vehicle", "documents"],
+    "platforms": ["web", "android", "ios"],
+    "jurisdiction": "central"
+  }
+]

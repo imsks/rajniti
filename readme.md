@@ -186,7 +186,15 @@ frontend/           # Next.js — see frontend/README.md
 | `GET` | `/api/v1/politicians/state/<state>` | Filter by state |
 | `GET` | `/api/v1/politicians/party/<party>` | Filter by party |
 | `GET` | `/api/v1/stats` | Summary statistics |
+| `GET` | `/api/v1/civic-services/problems` | Guided flow: "what problem are you facing?" options |
+| `GET` | `/api/v1/civic-services?problem=` | Govt. apps/portals/helplines for a problem (`?platform=`, `?jurisdiction=`, `?q=`) |
+| `GET` | `/api/v1/civic-services/<id>` | Single govt. service |
 | `GET` | `/api/v1/health` | Health check |
+
+Citizens' awareness data lives in `app/data/civic_services.json` and is tagged with the
+fixed taxonomy in `app/schemas/civic_services.py` (problem domain, platform, jurisdiction).
+To add a service, append an entry using existing tags — records with unknown tags or
+missing `id`/`name`/`url` are dropped at load time with a warning.
 
 ---
 

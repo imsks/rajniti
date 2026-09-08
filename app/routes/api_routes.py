@@ -9,6 +9,7 @@ import logging
 
 from flask import Blueprint, jsonify, request
 
+from app.controllers.civic_service_controller import CivicServiceController
 from app.controllers.politician_controller import PoliticianController
 
 logger = logging.getLogger(__name__)
@@ -16,6 +17,7 @@ logger = logging.getLogger(__name__)
 api_bp = Blueprint("api", __name__, url_prefix="/api/v1")
 
 politician_ctrl = PoliticianController()
+civic_ctrl = CivicServiceController()
 
 
 # ==================== POLITICIAN ROUTES ====================
@@ -275,6 +277,68 @@ def answer_predefined_question(question_id):
         return jsonify({"success": False, "error": str(e)}), 500
 
 
+# ==================== CIVIC SERVICES (CITIZENS' AWARENESS) ====================
+
+_CIVIC_SERVER_ERROR = "Unable to load government services right now."
+_CIVIC_INVALID_FILTER = (
+    "Invalid filter. Use a problem from /api/v1/civic-services/problems, "
+    "a platform (web, android, ios, helpline, sms) and a jurisdiction "
+    "(central, state)."
+)
+
+
+@api_bp.route("/civic-services/problems", methods=["GET"])
+def list_civic_problems():
+    """Guided flow: the list of 'what problem are you facing?' options."""
+    try:
+        return jsonify({"success": True, "data": civic_ctrl.get_problems()})
+    except Exception as e:
+        logger.error("list_civic_problems error: %s", e)
+        return jsonify({"success": False, "error": _CIVIC_SERVER_ERROR}), 500
+
+
+@api_bp.route("/civic-services", methods=["GET"])
+def list_civic_services():
+    """
+    Government apps, portals and helplines for a citizen's problem.
+
+    Query params:
+        problem: problem domain tag, e.g. rti | corruption (optional)
+        platform: web | android | ios | helpline | sms (optional)
+        jurisdiction: central | state (optional)
+        q: free-text search over name/description/agency (optional)
+        limit: int (default 50, max 100)
+    """
+    try:
+        result = civic_ctrl.find(
+            problem=request.args.get("problem"),
+            platform=request.args.get("platform"),
+            jurisdiction=request.args.get("jurisdiction"),
+            query=request.args.get("q"),
+            limit=request.args.get("limit", default=50, type=int),
+        )
+        return jsonify({"success": True, "data": result})
+    except ValueError as e:
+        logger.info("list_civic_services invalid filter: %s", e)
+        return jsonify({"success": False, "error": _CIVIC_INVALID_FILTER}), 400
+    except Exception as e:
+        logger.error("list_civic_services error: %s", e)
+        return jsonify({"success": False, "error": _CIVIC_SERVER_ERROR}), 500
+
+
+@api_bp.route("/civic-services/<service_id>", methods=["GET"])
+def get_civic_service(service_id):
+    """Get a single government service by ID."""
+    try:
+        service = civic_ctrl.get_by_id(service_id)
+        if not service:
+            return jsonify({"success": False, "error": "Service not found"}), 404
+        return jsonify({"success": True, "data": service})
+    except Exception as e:
+        logger.error("get_civic_service error: %s", e)
+        return jsonify({"success": False, "error": _CIVIC_SERVER_ERROR}), 500
+
+
 # ==================== ROOT & HEALTH ====================
 
 
@@ -294,6 +358,8 @@ def api_root():
                 "stats": "/api/v1/stats",
                 "states": "/api/v1/states",
                 "parties": "/api/v1/parties",
+                "civic_services": "/api/v1/civic-services?problem=<problem>",
+                "civic_problems": "/api/v1/civic-services/problems",
                 "questions": "/api/v1/questions",
                 "ask": "/api/v1/questions/ask (POST, 501 until vector store is wired)",
                 "health": "/api/v1/health",
