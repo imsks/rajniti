@@ -155,6 +155,33 @@ class PoliticianService:
 
         return self._attach_metadata(self._attach_performance(p)) if p else None
 
+    def get_by_party(self, party: str, election_type: Optional[str] = None):
+        self._ensure_slugs()
+        party_l = party.lower()
+
+        data = (
+            self._load(election_type)
+            if election_type
+            else self._load("MP") + self._load("MLA")
+        )
+        self._attach_slugs_to_records(data)
+
+        results = []
+
+        for p in data:
+            elections = (p.get("political_background") or {}).get("elections") or []
+            if not elections:
+                continue
+
+            # ✅ latest election ONLY
+            latest = max(elections, key=lambda x: x.get("year", 0))
+            current_party = (latest.get("party") or "").lower()
+
+            if current_party == party_l:
+                results.append(self._attach_performance(p))
+
+        return results
+
     def search(
         self,
         query: str,
@@ -190,10 +217,16 @@ class PoliticianService:
 
             if party_l is not None:
                 elections = (p.get("political_background") or {}).get("elections") or []
-                if not any(
-                    (e.get("party") or "").lower() == party_l for e in elections
-                ):
-                    continue
+                if party_l is not None:
+                    elections = (p.get("political_background") or {}).get("elections") or []
+                    if not elections:
+                        continue
+
+                    latest = max(elections, key=lambda x: x.get("year", 0))
+                    latest_party = (latest.get("party") or "").lower()
+
+                    if latest_party != party_l:
+                        continue
 
             results.append(self._attach_metadata(self._attach_performance(p)))
 
