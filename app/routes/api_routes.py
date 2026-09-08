@@ -64,7 +64,7 @@ def search_politicians():
             election_type=request.args.get("type"),
             state=request.args.get("state"),
             party=request.args.get("party"),
-            limit=request.args.get("limit", default=50, type=int),
+            limit=min(request.args.get("limit", default=50, type=int), 200),
         )
         return jsonify({"success": True, "data": result})
     except Exception as e:
@@ -240,6 +240,22 @@ def ask_question():
         if not data or not data.get("question"):
             return jsonify({"success": False, "error": "Question is required"}), 400
 
+        qs = _get_questions_service()
+        if not qs:
+            return (
+                jsonify(
+                    {
+                        "success": False,
+                        "error": "Questions service unavailable. Vector DB may not be configured.",
+                    }
+                ),
+                503,
+            )
+
+        result = qs.answer_question(
+            question=data["question"],
+            n_results=min(data.get("n_results", 5), 50),
+        )
         return (
             jsonify(
                 {
@@ -259,6 +275,23 @@ def ask_question():
 def answer_predefined_question(question_id):
     """Answer a predefined question by ID (not yet wired)."""
     try:
+        qs = _get_questions_service()
+        if not qs:
+            return (
+                jsonify(
+                    {
+                        "success": False,
+                        "error": "Questions service unavailable.",
+                    }
+                ),
+                503,
+            )
+
+        n_results = min(request.args.get("n_results", default=5, type=int), 50)
+        result = qs.answer_predefined_question(
+            question_id=question_id,
+            n_results=n_results,
+        )
         return (
             jsonify(
                 {
